@@ -49,4 +49,8 @@ Thanks to them, you can add new articles and read them easily. Just remember tha
 <br />
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa-square-plus" title="And more !"  url="https://github.com/wallabag/wallabag/wiki/wallabag-ecosystem" url_text="Have a look at the wallabag ecosystem" %}}
+<br />
+{{% /blocks/feature %}}
+
 {{% /blocks/section %}}
