@@ -13,4 +13,4 @@ command = "npm run build:production"
 
 [[redirects]]
   from = "/en/news.rss"
-  to = "/en/blog/index.xml"
+  to = "/en/blog/announcements/index.xml"
