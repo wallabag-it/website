@@ -11,7 +11,7 @@ description: >
 No big changes. The main one is that it's not hosted on the same webserver anymore than the web application available on [app.wallabag.it](https://app.wallabag.it).
 Like that, if the service encounters some issues, the website is still available.
 
-The RSS feed has changed, the URL is now https://wallabag.it/en/blog/index.xml but there is a redirection between the old URL and the new one.
+The RSS feed has changed, the URL is now https://wallabag.it/en/blog/announcements/index.xml but there is a redirection between the old URL and the new one.
 
 Have a nice day!
 
