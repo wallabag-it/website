@@ -15,7 +15,7 @@ title: wallabag.it
 
 [wallabag is an open source application](https://wallabag.org) to **save your web articles and allows you to read them later**, on your smartphone, your tablet or your ereader. We propose to you a quality service to host your account: you'll get the latest version of the application and **you'll get a professional support**.
 
-It was founded in 2013 by Nicolas Lœuillet, a french web developer. Because it can be difficult to install and maintain wallabag, Nicolas created in 2016 **wallabag.it**, this online service to allow you to archive the web.
+wallabag was founded in 2013 by Nicolas Lœuillet, a french web developer. Because it can be difficult to install and maintain wallabag, Nicolas created in 2016 **wallabag.it**, this online service to allow you to archive the web.
 
 {{% /blocks/lead %}}
 

@@ -13,7 +13,7 @@ enableMissingTranslationPlaceholders: true
 enableRobotsTXT: true
 
 # Will give values to .Lastmod etc.
-enableGitInfo: true
+enableGitInfo: false
 
 # Comment out to disable taxonomies in Docsy
 # disableKinds: [taxonomy]
@@ -58,11 +58,21 @@ languages:
     title: wallabag.it
     params:
       description: wallabag.it — Read your articles later
-  #fr:
-  #  languageName: Français
-  #  title: wallabag.it
-  #  params:
-  #    description: A Docsy example site
+  fr:
+    languageName: Français
+    title: wallabag.it
+    contentDir: content/fr
+    params:
+      description: wallabag.it, archivez le web pour le consulter plus tard
+
+    menu:
+      main:
+        - name: Statut
+          weight: 50
+          url: 'https://status.wallabag.org/'
+        - name: Blog 🇬🇧
+          weight: 40
+          url: https://wallabag.it/en/blog/
 
 markup:
   goldmark:
@@ -101,12 +111,12 @@ params:
 
   # Menu title if your navbar has a versions selector to access old versions of your site.
   # This menu appears only if you have at least one [params.versions] set.
-  version_menu: Releases
+  #version_menu: Releases
 
   # Flag used in the "version-banner" partial to decide whether to display a
   # banner on every page indicating that this is an archived version of the docs.
   # Set this flag to "true" if you want to display the banner.
-  archived_version: false
+  #archived_version: false
 
   # The version number for the version of the docs represented in this doc set.
   # Used in the "version-banner" partial to display a version number for the
@@ -115,7 +125,7 @@ params:
 
   # A link to latest version of the docs. Used in the "version-banner" partial to
   # point people to the main doc site.
-  url_latest_version: https://example.com
+  #url_latest_version: https://example.com
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
   #github_repo: https://github.com/wallabag-it/website
@@ -128,7 +138,7 @@ params:
 
   # Uncomment this if your GitHub repo does not have "main" as the default branch,
   # or specify a new value if you want to reference another branch in your GitHub links
-  github_branch: main
+  #github_branch: main
 
   # Google Custom Search Engine ID. Remove or comment out to disable search.
   #gcs_engine_id: d72aa9b2712488cc3
