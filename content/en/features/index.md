@@ -1,5 +1,5 @@
 ---
-title: Keep your saved articles everywhere you are.
+title: All the wallabag.it features
 linkTitle: Features
 menu: {main: {weight: 10}}
 ---
@@ -10,7 +10,7 @@ menu: {main: {weight: 10}}
 
 {{% blocks/lead %}}
 
-You can find here smartphones applications, browsers addons or ereaders applications compatible with wallabag. Thanks to them, you can add new articles and read them easily. Just remember that before installing one of these applications, [you need to create firstly an account on wallabag.it](https://app.wallabag.it/).
+Have a look below of a part of the wallabag.it features.
 
 {{% /blocks/lead %}}
 
@@ -29,7 +29,7 @@ wallabag extracts the article's content (and only its content!) and displays it 
 Applications for your smartphone...
 {.h2}
 
-Android, iOS or Windows: An wallabag application is available for your device. It's so easy to read your saved articles on it. And it also works when you're offline.
+Android or iOS: a wallabag application is available for your device. It's so easy to read your saved articles on it. And it also works when you're offline.
 
 ![iOS application for wallabag](ios.png)
 {.text-center}
@@ -59,7 +59,7 @@ Thanks to our annotation system, you can hightlight extracts in your articles an
 
 Customize your account
 {.h3}
-Theme, language, reading speed, RSS: you can tune lots of parameters to make your wallabag something that suits you.
+Language, reading speed, RSS: you can tune lots of parameters to make your wallabag something that suits you.
 
 Keep your data forever
 {.h3}
