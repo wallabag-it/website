@@ -14,7 +14,7 @@ Have a look below of a part of the wallabag.it features.
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="white" %}}
 Comfortable reading
 {.h2}
 
@@ -43,7 +43,7 @@ Save new articles with one click thanks to our Chrome and Firefox addons.
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="white" %}}
 And even more ...
 {.h2}
 
@@ -54,7 +54,7 @@ You can also use the tags feature to categorize them (eg: sports, work, web, etc
 
 You found an interesting extract? Highlight it!
 {.h3}
-Thanks to our annotation system, you can hightlight extracts in your articles and write some notes.
+Thanks to our annotation system, you can highlight extracts in your articles and write some notes.
 
 Customize your account
 {.h3}
