@@ -14,7 +14,7 @@ Retrouvez ci-dessous une partie des fonctionnalités disponibles sur wallabag.it
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="white" %}}
 Lecture confortable
 {.h2}
 
@@ -43,7 +43,7 @@ Archivez de nouveaux articles en un clic grâce à l'extension pour Firefox ou C
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="white" %}}
 Et bien plus...
 {.h2}
 

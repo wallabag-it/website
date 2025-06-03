@@ -19,7 +19,7 @@ Grâce à ces outils, vous pourrez archiver et consulter vos articles à tout mo
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="light" type="row" %}}
+{{% blocks/section color="white" type="row" %}}
 
 {{% blocks/feature icon="fa-brands fa-android" title="Android" url="https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche" url_text="Télécharger l'application Android" %}}
 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i>

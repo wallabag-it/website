@@ -19,7 +19,7 @@ Thanks to them, you can add new articles and read them easily. Just remember tha
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="light" type="row" %}}
+{{% blocks/section color="white" type="row" %}}
 
 {{% blocks/feature icon="fa-brands fa-android" title="Android" url="https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche" url_text="Get the Android app" %}}
 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i>

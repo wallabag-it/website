@@ -1,0 +1,5 @@
+{{ partial "footer/copyright.html"  . -}}
+
+{{ with .Site.Params.privacy_policy -}}
+<p class="td-footer__about mt-2"><a href="{{ . }}">Mentions légales</a></p>
+{{- end -}}
