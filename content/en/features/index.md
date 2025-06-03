@@ -20,9 +20,7 @@ Comfortable reading
 
 wallabag extracts the article's content (and only its content!) and displays it in a comfortable view. Moreover, wallabag is responsive: you can read your articles on your smartphone or your tablet.
 
-{{% imgproc homepage Fit "1000x800" %}}
-Homepage of wallabag.it service.
-{{% /imgproc %}}
+{{< image80 src="homepage.png" alt="Homepage of wallabag.it service." >}}
 
 {{% /blocks/section %}}
 
@@ -41,9 +39,7 @@ iOS application for wallabag.
 
 Save new articles with one click thanks to our Chrome and Firefox addons.
 
-{{% imgproc firefox Fit "1000x800" %}}
-Firefox addon for wallabag.
-{{% /imgproc %}}
+{{< image80 src="firefox.png" alt="Firefox addon for wallabag." >}}
 
 {{% /blocks/section %}}
 

@@ -20,9 +20,7 @@ Lecture confortable
 
 wallabag extrait le contenu des articles (et uniquement, le contenu : bye bye la publicité !) et vous l'affiche dans une vue plus confortable. De plus, vous pouvez afficher vos articles sur smartphone ou votre tablette.
 
-{{% imgproc homepage Fit "1000x800" %}}
-Page d'accueil d'un compte wallabag.it.
-{{% /imgproc %}}
+{{< image80 src="homepage.png" alt="Page d'accueil d'un compte wallabag.it." >}}
 
 {{% /blocks/section %}}
 
@@ -41,9 +39,7 @@ Application iOS pour wallabag.
 
 Archivez de nouveaux articles en un clic grâce à l'extension pour Firefox ou Chrome.
 
-{{% imgproc firefox Fit "1000x800" %}}
-Extension wallabag pour Firefox.
-{{% /imgproc %}}
+{{< image80 src="firefox.png" alt="Extension wallabag pour Firefox." >}}
 
 {{% /blocks/section %}}
 
