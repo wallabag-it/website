@@ -20,8 +20,9 @@ Comfortable reading
 
 wallabag extracts the article's content (and only its content!) and displays it in a comfortable view. Moreover, wallabag is responsive: you can read your articles on your smartphone or your tablet.
 
-![Homepage of wallabag.it service](homepage.png)
-{.text-center}
+{{% imgproc homepage Fit "1000x800" %}}
+Homepage of wallabag.it service.
+{{% /imgproc %}}
 
 {{% /blocks/section %}}
 
@@ -31,17 +32,19 @@ Applications for your smartphone...
 
 Android or iOS: a wallabag application is available for your device. It's so easy to read your saved articles on it. And it also works when you're offline.
 
-![iOS application for wallabag](ios.png)
-{.text-center}
+{{% imgproc ios Fit "1000x800" %}}
+iOS application for wallabag.
+{{% /imgproc %}}
 
 ... and addons for your browser!
-{.h2 .text-end}
+{.h2}
 
 Save new articles with one click thanks to our Chrome and Firefox addons.
-{.text-end}
 
-![Firefox addon for wallabag](firefox.png)
-{.text-center}
+{{% imgproc firefox Fit "1000x800" %}}
+Firefox addon for wallabag.
+{{% /imgproc %}}
+
 {{% /blocks/section %}}
 
 {{% blocks/section color="light" %}}
