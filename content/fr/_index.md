@@ -3,8 +3,11 @@ title: wallabag.it
 ---
 
 {{< blocks/cover title="Archivez le web pour le consulter plus tard" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/">
   Se créer un compte <i class="fa fa-user-plus ms-2"></i>
+</a>
+<a class="btn btn-lg btn-light me-3 mb-4" href="https://app.wallabag.it/">
+  Se connecter <i class="fa fa-right-to-bracket ms-2"></i>
 </a>
 <p class="lead mt-5">Créez-vous un compte : vous bénéficierez ainsi d'une période d'essai (gratuite !) de 14 jours, sans aucune limitation.<br />(aucune information bancaire ne vous sera demandée)</p>
 {{< blocks/link-down color="white" >}}

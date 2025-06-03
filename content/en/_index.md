@@ -3,8 +3,11 @@ title: wallabag.it
 ---
 
 {{< blocks/cover title="Archive the web, read it where and when you want" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/">
   Create an account <i class="fa fa-user-plus ms-2"></i>
+</a>
+<a class="btn btn-lg btn-light me-3 mb-4" href="https://app.wallabag.it/">
+  Sign in <i class="fa fa-right-to-bracket ms-2"></i>
 </a>
 <p class="lead mt-5">Create an account, you'll get a 14-day free trial with no limitation.<br />(no credit card information required)</p>
 {{< blocks/link-down color="white" >}}
