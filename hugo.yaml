@@ -26,6 +26,9 @@ menu:
     - name: Status
       weight: 50
       url: 'https://status.wallabag.org/'
+    - name: Pricing
+      weight: 25
+      url: /en/#pricing
 
 # You can add your own taxonomies
 #taxonomies:
@@ -73,6 +76,9 @@ languages:
         - name: Blog 🇬🇧
           weight: 40
           url: https://wallabag.it/en/blog/
+        - name: Tarifs
+          weight: 35
+          url: /fr/#tarification
 
 markup:
   goldmark:

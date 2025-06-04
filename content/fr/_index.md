@@ -46,8 +46,9 @@ Parce que vos données vous appartiennent, nous ne souhaitons pas les stocker su
 {{% /blocks/section %}}
 
 {{% blocks/section color="white" %}}
-Tarification
-{.h1 .text-center}
+
+# Tarification
+{.text-center}
 {{% /blocks/section %}}
 
 {{% blocks/section type="row" color="light" %}}
@@ -58,6 +59,10 @@ Grâce à l'abonnement de 3 mois, vous pouvez tester sur une courte période et 
 
 {{% blocks/feature icon="fa-calendar-days" title="Un an pour 11€" %}}
 Grâce à l'abonnement annuel, vous économisez 3 mois par rapport à l'abonnement trimestriel. Vous êtes plus serein et vous n'aurez qu'une chose à faire : penser aux articles que vous souhaitez archiver et consulter.
+
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/">
+  Se créer un compte <i class="fa fa-user-plus ms-2"></i>
+</a>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-face-grin-hearts" title="L'abonnement ❤️ pour 30€ par an" %}}
