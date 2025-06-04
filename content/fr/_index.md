@@ -9,6 +9,9 @@ title: wallabag.it
 <a class="btn btn-lg btn-light me-3 mb-4" href="https://app.wallabag.it/">
   Se connecter <i class="fa fa-right-to-bracket ms-2"></i>
 </a>
+<a class="btn btn-lg btn-light me-3 mb-4" href="https://wallabag.it/en/blog">
+  Blog <i class="fa fa-newspaper ms-2"></i>
+</a>
 <p class="lead mt-5">Créez-vous un compte : vous bénéficierez ainsi d'une période d'essai (gratuite !) de 14 jours, sans aucune limitation.<br />(aucune information bancaire ne vous sera demandée)</p>
 {{< blocks/link-down color="white" >}}
 {{< /blocks/cover >}}
