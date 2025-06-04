@@ -75,7 +75,7 @@ languages:
           url: 'https://status.wallabag.org/'
         - name: Blog 🇬🇧
           weight: 40
-          url: https://wallabag.it/en/blog/
+          url: 'https://wallabag.it/en/blog/'
         - name: Tarifs
           weight: 35
           url: /fr/#tarification
