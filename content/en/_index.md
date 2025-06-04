@@ -46,8 +46,8 @@ Because your data belongs to you, we don't want to store them on US servers. Tha
 {{% /blocks/section %}}
 
 {{% blocks/section color="white" %}}
-Pricing
-{.h1 .text-center}
+# Pricing
+{.text-center}
 {{% /blocks/section %}}
 
 {{% blocks/section type="row" color="light" %}}
@@ -58,6 +58,10 @@ Thanks to the 3 months subscription, you can leave us sooner and get your freedo
 
 {{% blocks/feature icon="fa-calendar-days" title="One year for 11€" %}}
 Thanks to the annual subscription, you earn 3 months of subscription and you can be serene: you need only to think about saving web articles.
+
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/">
+  Create an account <i class="fa fa-user-plus ms-2"></i>
+</a>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-face-grin-hearts" title="The ❤️ subscription for 30€ a year" %}}
