@@ -3,3 +3,15 @@
 {{ with .Site.Params.privacy_policy -}}
 <p class="td-footer__about mt-2"><a href="{{ . }}">Mentions légales</a></p>
 {{- end -}}
+
+<script src="https://wallabag-it.zammad.com/assets/chat/chat-no-jquery.min.js"></script>
+<script>
+(function() {
+  new ZammadChat({
+    title: 'Ask us any question',
+    background: '#f97316',
+    fontSize: '13px',
+    chatId: 1
+  });
+})();
+</script>
