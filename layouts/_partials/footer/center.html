@@ -3,3 +3,20 @@
 {{ with .Site.Params.privacy_policy -}}
 <p class="td-footer__about mt-2"><a href="{{ . }}">Mentions légales</a></p>
 {{- end -}}
+
+<script>
+  (function(d,t) {
+    var BASE_URL="https://app.chatwoot.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'YZ2G2z3gyxvBV4cYQ8tCEopz',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
