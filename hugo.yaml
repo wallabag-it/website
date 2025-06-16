@@ -23,7 +23,7 @@ pagination:
 
 menu:
   main:
-    - name: Status
+    - name: Server status
       weight: 50
       url: 'https://status.wallabag.org/'
     - name: Pricing
@@ -74,7 +74,7 @@ languages:
 
     menu:
       main:
-        - name: Statut
+        - name: Statut du serveur
           weight: 50
           url: 'https://status.wallabag.org/'
         - name: Tarifs
@@ -211,11 +211,16 @@ params:
         icon: fab fa-github
         desc: wallabag project on Github
     # # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-    # developer:
-    #   - name: GitHub
-    #     url: https://github.com/google/docsy
-    #     icon: fab fa-github
-    #     desc: Development takes place here!
+    developer:
+      - name: How to migrate from Pocket to wallabag.it
+        url: https://wallabag-it.zammad.com/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it
+        desc: How to migrate from Pocket to wallabag.it
+      - name: How to migrate from Instapaper to wallabag.it
+        url: https://wallabag-it.zammad.com/help/en-gb/2-import/11-how-to-migrate-from-instapaper-to-wallabag-it
+        desc: How to migrate from Instapaper to wallabag.it
+      - name: How to migrate from Pinboard to wallabag.it
+        url: https://wallabag-it.zammad.com/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it
+        desc: How to migrate from Pinboard to wallabag.it
     #   - name: Slack
     #     url: https://example.org/slack
     #     icon: fab fa-slack
