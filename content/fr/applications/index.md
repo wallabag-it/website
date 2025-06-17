@@ -29,6 +29,10 @@ Grâce à ces outils, vous pourrez archiver et consulter vos articles à tout mo
 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i>
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa-solid fa-mobile-screen-button" title="Frigoligo" url="https://github.com/casimir/frigoligo" url_text="Télécharger l'application Frigoligo"  %}}
+Frigoligo est disponible sur Google Play et App Store
+{{% /blocks/feature %}}
+
 {{% blocks/feature icon="fa-brands fa-firefox" title="Firefox" url="https://addons.mozilla.org/firefox/addon/wallabagger/" url_text="Télécharger l'extension Firefox" %}}
 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i>
 {{% /blocks/feature %}}
