@@ -29,6 +29,10 @@ Thanks to them, you can add new articles and read them easily. Just remember tha
 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i>
 {{% /blocks/feature %}}
 
+{{% blocks/feature icon="fa-solid fa-mobile-screen-button" title="Frigoligo" url="https://github.com/casimir/frigoligo" url_text="Get the Frigoligo app"  %}}
+Frigoligo is available on Google Play and App Store
+{{% /blocks/feature %}}
+
 {{% blocks/feature icon="fa-brands fa-firefox" title="Firefox" url="https://addons.mozilla.org/firefox/addon/wallabagger/" url_text="Get the Firefox addon" %}}
 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i>
 {{% /blocks/feature %}}
