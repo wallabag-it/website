@@ -212,6 +212,9 @@ params:
         desc: wallabag project on Github
     # # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
+      - name: Which alternative to Pocket should I choose?
+        url: https://wallabag.it/en/blog/2025/06/23/which-alternative-to-pocket-should-i-choose/
+        desc: How to migrate from Pocket to wallabag.it
       - name: How to migrate from Pocket to wallabag.it
         url: https://wallabag-it.zammad.com/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it
         desc: How to migrate from Pocket to wallabag.it
