@@ -48,7 +48,7 @@ Organize your articles with tags, take notes, and quickly find past reads with f
 
 ### ✅ Easy migration from Pocket
 
-[Moving from Pocket is simple](https://wallabag-it.zammad.com/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it): wallabag.it provides a straightforward import tool that preserves your articles and metadata.
+[Moving from Pocket is simple](https://helpdesk.wallabag.it/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it): wallabag.it provides a straightforward import tool that preserves your articles and metadata.
 
 ## Pricing comparison
 
