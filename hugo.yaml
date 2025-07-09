@@ -31,7 +31,7 @@ menu:
       url: /en/#pricing
     - name: Knowledge base
       weight: 26
-      url: 'https://wallabag-it.zammad.com/help/en-gb'
+      url: 'https://helpdesk.wallabag.it/help/en-gb'
 
 
 # You can add your own taxonomies
@@ -82,7 +82,7 @@ languages:
           url: /fr/#tarification
         - name: Documentation
           weight: 26
-          url: 'https://wallabag-it.zammad.com/help/'
+          url: 'https://helpdesk.wallabag.it/help/'
 
 markup:
   goldmark:
@@ -216,13 +216,13 @@ params:
         url: https://wallabag.it/en/blog/2025/06/23/which-alternative-to-pocket-should-i-choose/
         desc: How to migrate from Pocket to wallabag.it
       - name: How to migrate from Pocket to wallabag.it
-        url: https://wallabag-it.zammad.com/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it
+        url: https://helpdesk.wallabag.it/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it
         desc: How to migrate from Pocket to wallabag.it
       - name: How to migrate from Instapaper to wallabag.it
-        url: https://wallabag-it.zammad.com/help/en-gb/2-import/11-how-to-migrate-from-instapaper-to-wallabag-it
+        url: https://helpdesk.wallabag.it/help/en-gb/2-import/11-how-to-migrate-from-instapaper-to-wallabag-it
         desc: How to migrate from Instapaper to wallabag.it
       - name: How to migrate from Pinboard to wallabag.it
-        url: https://wallabag-it.zammad.com/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it
+        url: https://helpdesk.wallabag.it/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it
         desc: How to migrate from Pinboard to wallabag.it
     #   - name: Slack
     #     url: https://example.org/slack
