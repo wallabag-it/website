@@ -69,7 +69,7 @@ Grâce à l'abonnement annuel, vous économisez 3 mois par rapport à l'abonneme
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-face-grin-hearts" title="L'abonnement ❤️ pour 30€ par an" %}}
-Grâce à l'abonnement ❤️, le service wallabag.it deviendra encore meilleur et plus durable.
+Vous avez les mêmes fonctionnalités que les autres abonnements, mais grâce à vous ❤️, le service wallabag.it deviendra encore meilleur et plus durable.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
