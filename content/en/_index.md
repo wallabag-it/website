@@ -65,7 +65,7 @@ Thanks to the annual subscription, you earn 3 months of subscription and you can
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-face-grin-hearts" title="The ❤️ subscription for 30€ a year" %}}
-Thanks to the ❤️ subscription, the service will become better and more sustainable.
+You have the same features than the other subscription, but thanks to you ❤️, the service will become better and more sustainable.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
