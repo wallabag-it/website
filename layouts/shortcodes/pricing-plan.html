@@ -1,0 +1,16 @@
+{{ $id := .Get "id" -}}
+{{ $plan := index (where site.Params.plans "id" $id) 0 -}}
+{{ if not $plan }}{{ errorf "pricing-plan: unknown plan id %q in %s" $id .Position }}{{ end -}}
+{{ $featured := eq (.Get "featured" | default "") "true" -}}
+<div class="col">
+<div class="card h-100 text-center position-relative{{ if $featured }} border-secondary border-2 shadow{{ else }} shadow-sm{{ end }}">
+{{ with .Get "badge" }}<span class="badge text-bg-secondary position-absolute top-0 start-50 translate-middle">{{ . }}</span>{{ end }}
+<div class="card-body d-flex flex-column p-4">
+<h3 class="h4 card-title">{{ .Get "title" }}</h3>
+<div class="display-5 fw-bold my-2">{{ $plan.price }}&nbsp;€</div>
+<p class="text-body-secondary mb-3">{{ .Get "period" }}</p>
+<div class="flex-grow-1">{{ .Inner | markdownify }}</div>
+<a class="btn {{ if $featured }}btn-secondary btn-lg{{ else }}btn-outline-primary{{ end }} mt-3" href="https://app.wallabag.it/register/">{{ .Get "cta" }} <i class="fa fa-user-plus ms-2"></i></a>
+</div>
+</div>
+</div>

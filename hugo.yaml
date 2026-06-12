@@ -26,9 +26,6 @@ menu:
     - name: Server status
       weight: 50
       url: 'https://status.wallabag.org/'
-    - name: Pricing
-      weight: 25
-      url: /en/#pricing
     - name: Knowledge base
       weight: 26
       url: 'https://helpdesk.wallabag.it/help/en-gb'
@@ -79,11 +76,8 @@ languages:
         - name: Statut du serveur
           weight: 50
           url: 'https://status.wallabag.org/'
-        - name: Tarifs
-          weight: 35
-          url: /fr/#tarification
         - name: Documentation
-          weight: 26
+          weight: 45
           url: 'https://helpdesk.wallabag.it/help/'
 
 markup:
@@ -109,13 +103,16 @@ params:
   # Subscription plans — single source of truth, reused by JSON-LD structured
   # data and (later) the pricing page. Prices in EUR.
   plans:
-    - name: "3 months"
+    - id: 3m
+      name: "3 months"
       price: "4"
       duration: P3M
-    - name: "1 year"
+    - id: 1y
+      name: "1 year"
       price: "11"
       duration: P1Y
-    - name: "Heart subscription"
+    - id: heart
+      name: "Heart subscription"
       price: "30"
       duration: P1Y
 
