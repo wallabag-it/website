@@ -20,7 +20,7 @@ menu: {main: {weight: 35}}
 {{< pricing-plan id="3m" title="3 mois" period="pour 3 mois" cta="Essayer gratuitement" >}}
 Testez le service complet sans engagement. Partez quand vous voulez — en emportant vos données.
 {{< /pricing-plan >}}
-{{< pricing-plan id="1y" featured="true" badge="Le plus populaire" title="1 an" period="par an — 3 mois offerts" cta="Essayer gratuitement" >}}
+{{< pricing-plan id="1y" featured="true" badge="Le plus populaire" title="1 an" period="par an" cta="Essayer gratuitement" >}}
 Le meilleur rapport qualité/prix : moins de 1€ par mois. Soyez serein, vous n'avez qu'une chose à penser — archiver de bons articles.
 {{< /pricing-plan >}}
 {{< pricing-plan id="heart" title="L'abonnement ❤️" period="par an" cta="Soutenir wallabag" >}}
@@ -62,7 +62,7 @@ Et tout ce que vous attendez d'un service de lecture différée
 <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Lecture confortable, sans distraction</li>
 <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Applications Android et iOS, avec lecture hors-ligne</li>
 <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Extensions Firefox et Chrome</li>
-<li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Tags et recherche plein texte</li>
+<li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Tags et recherche full text</li>
 </ul>
 </div>
 <div class="col-md-5">
@@ -109,8 +109,20 @@ wallabag.it face à la concurrence
 
 </div>
 
-Pour aller plus loin, lisez notre article : [Quelle alternative à Pocket choisir ?](/en/blog/2025/06/23/which-alternative-to-pocket-should-i-choose/) (en anglais)
+Pour aller plus loin, lisez notre article : [Quelle alternative à Pocket choisir ?](/fr/blog/2025/06/23/quelle-alternative-a-pocket-choisir/)
 {.text-center .mt-3}
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="white" %}}
+
+Questions fréquentes sur l'abonnement
+{.h2 .text-center .mb-5}
+
+{{< faq ids="trial-end,renewal,payment,refund" >}}
+
+[Consulter toutes les questions fréquentes →](/fr/faq/)
+{.text-center .mt-4}
 
 {{% /blocks/section %}}
 

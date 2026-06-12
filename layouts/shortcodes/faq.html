@@ -1,0 +1,20 @@
+{{/* FAQ accordion fed by data/faq.yaml (per-language, falls back to en).
+     Optional `ids` param ("trial-end,renewal,…") renders a subset, e.g. on
+     the pricing pages. The full FAQPage JSON-LD lives in structured-data.html. */ -}}
+{{ $items := index site.Data.faq site.Language.Lang | default (index site.Data.faq "en") -}}
+{{ with .Get "ids" -}}
+  {{ $items = where $items "id" "in" (split . ",") -}}
+{{ end -}}
+{{ $uid := printf "faq-accordion-%d" .Ordinal -}}
+<div class="accordion mx-auto text-start" id="{{ $uid }}" style="max-width: 800px;">
+{{ range $i, $item := $items }}
+<div class="accordion-item">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ $uid }}-{{ $i }}" aria-expanded="false" aria-controls="{{ $uid }}-{{ $i }}">{{ $item.q }}</button>
+</h3>
+<div id="{{ $uid }}-{{ $i }}" class="accordion-collapse collapse" data-bs-parent="#{{ $uid }}">
+<div class="accordion-body">{{ $item.a | markdownify }}</div>
+</div>
+</div>
+{{ end }}
+</div>

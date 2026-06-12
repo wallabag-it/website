@@ -1,17 +1,14 @@
 ---
 title: wallabag.it
 description: "Enregistrez vos articles web et lisez-les plus tard sur votre téléphone, tablette ou liseuse. wallabag.it est le service open-source de lecture différée, respectueux de la vie privée et hébergé en Europe — une alternative à Pocket, Instapaper et Pinboard. Essai gratuit de 14 jours, sans carte bancaire."
+# Without this, the hero background (featured-background.jpg) would be picked
+# as the og:image instead of the branded social card.
+images: [/images/social-card.png]
 ---
 
 {{< blocks/cover title="Archivez le web pour le consulter plus tard" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/">
-  Se créer un compte <i class="fa fa-user-plus ms-2"></i>
-</a>
-<a class="btn btn-lg btn-light me-3 mb-4" href="https://app.wallabag.it/">
-  Se connecter <i class="fa fa-right-to-bracket ms-2"></i>
-</a>
-<a class="btn btn-lg btn-light me-3 mb-4" href="https://wallabag.it/en/blog">
-  Blog <i class="fa fa-newspaper ms-2"></i>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="/fr/tarifs/">
+  Découvrir les offres — dès 11 €/an <i class="fa fa-arrow-right ms-2"></i>
 </a>
 <p class="lead mt-5">Créez-vous un compte : vous bénéficierez ainsi d'une période d'essai (gratuite !) de 14 jours, sans aucune limitation.<br />(aucune information bancaire ne vous sera demandée)</p>
 {{< blocks/link-down color="white" >}}
@@ -48,4 +45,3 @@ Parce que vos données vous appartiennent, nous ne souhaitons pas les stocker su
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/167435064?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="What is wallabag?"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 {{% /blocks/section %}}
-

@@ -25,6 +25,13 @@ $secondary: #f97316;
   }
 }
 
+/* Le plan mis en avant sur la page Tarifs est légèrement agrandi sur desktop. */
+@media (min-width: 768px) {
+  .pricing-card-featured {
+    transform: scale(1.05);
+  }
+}
+
 .zammad-chat {
   left: 30px !important;
   right: 0 !important;

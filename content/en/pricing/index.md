@@ -19,7 +19,7 @@ menu: {main: {weight: 25}}
 {{< pricing-plan id="3m" title="3 months" period="for 3 months" cta="Start free trial" >}}
 Try the full service with no long-term commitment. Leave whenever you want — and take your data with you.
 {{< /pricing-plan >}}
-{{< pricing-plan id="1y" featured="true" badge="Most popular" title="1 year" period="per year — 3 months free" cta="Start free trial" >}}
+{{< pricing-plan id="1y" featured="true" badge="Most popular" title="1 year" period="per year" cta="Start free trial" >}}
 The best value: less than 1€ a month. Be serene, you only have one thing to think about — saving great articles.
 {{< /pricing-plan >}}
 {{< pricing-plan id="heart" title="The ❤️ subscription" period="per year" cta="Support wallabag" >}}
@@ -110,6 +110,18 @@ How does wallabag.it compare?
 
 Want the full story? Read our article: [Which alternative to Pocket should I choose?](/en/blog/2025/06/23/which-alternative-to-pocket-should-i-choose/)
 {.text-center .mt-3}
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="white" %}}
+
+Frequently asked questions about subscriptions
+{.h2 .text-center .mb-5}
+
+{{< faq ids="trial-end,renewal,payment,refund" >}}
+
+[See all frequently asked questions →](/en/faq/)
+{.text-center .mt-4}
 
 {{% /blocks/section %}}
 

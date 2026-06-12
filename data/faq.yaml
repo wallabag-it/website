@@ -1,0 +1,107 @@
+# Frequently asked questions — single source of truth for the FAQ pages,
+# the pricing-page subset (via the `faq` shortcode `ids` param) and the
+# FAQPage JSON-LD emitted by layouts/_partials/structured-data.html.
+en:
+  - id: trial-end
+    q: "What happens at the end of the 14-day free trial?"
+    a: |
+      Nothing is charged automatically — we never ask for your credit card during the trial.
+      To keep using wallabag.it after the 14 days, simply pick a [subscription](https://app.wallabag.it/subscription/) from your account.
+  - id: trial-limits
+    q: "Are there any limitations during the free trial?"
+    a: |
+      You can save and read as many articles as you want, on every device.
+      Three resource-intensive features are reserved for subscribers: saving by email, RSS/Atom feeds and imports from other services.
+      [We explained why on the blog](/en/blog/2026/06/08/some-restrictions-for-trial-accounts-on-wallabag.it/).
+  - id: payment
+    q: "Which payment methods do you accept?"
+    a: |
+      Credit card and PayPal. Online payments are processed securely by our payment providers (Stripe, Payplug and PayPal) — we never see or store your card details.
+  - id: renewal
+    q: "Does my subscription renew automatically?"
+    a: |
+      No. A subscription is valid for 3 months or 1 year, and it's up to you to renew it at the end of the period — no surprise charge on your card.
+  - id: refund
+    q: "Can I get a refund?"
+    a: |
+      In accordance with EU consumer law, you have a 14-day withdrawal period after subscribing: just write to [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
+      And since the trial is free and requires no credit card, you can make up your mind before paying anything.
+  - id: migration
+    q: "How do I migrate from Pocket, Instapaper or another service?"
+    a: |
+      wallabag.it imports your reading list from Pocket, Instapaper, Pinboard, Omnivore, Shaarli, another wallabag instance or any RSS/Atom feed — tags and read/favourite statuses are preserved.
+      Step-by-step guides are available in our [knowledge base](https://helpdesk.wallabag.it/help/en-gb/2-import).
+  - id: export
+    q: "Can I export my data and leave whenever I want?"
+    a: |
+      Yes, at any time. You can download your articles in PDF, ePUB, mobi, JSON, CSV, txt or HTML. Your reading list belongs to you.
+  - id: selfhosted
+    q: "What's the difference with self-hosting wallabag?"
+    a: |
+      It's exactly the same open-source software, [wallabag](https://github.com/wallabag/wallabag).
+      With wallabag.it, we take care of the servers, the updates and the support for you — and your subscription directly funds the development of the project.
+  - id: privacy
+    q: "Where is my data stored? What about privacy?"
+    a: |
+      All your data is hosted on servers located in Europe, under GDPR. There are no ads, and we never read or sell your data.
+  - id: apps
+    q: "On which devices can I read my articles?"
+    a: |
+      Everywhere: on the web, with the Android and iOS apps (including offline reading), with the Firefox and Chrome add-ons, and even on Kobo and PocketBook e-readers.
+      See the [applications page](/en/applications/) for the full list.
+  - id: support
+    q: "How can I contact the support team?"
+    a: |
+      Write to [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it), browse the [knowledge base](https://helpdesk.wallabag.it/help/en-gb) or use the chat at the bottom of this site (when it's enabled), Nicolas answers.
+fr:
+  - id: trial-end
+    q: "Que se passe-t-il à la fin des 14 jours d'essai gratuit ?"
+    a: |
+      Rien n'est prélevé automatiquement — nous ne demandons jamais votre carte bancaire pendant l'essai.
+      Pour continuer à utiliser wallabag.it après les 14 jours, choisissez simplement un [abonnement](https://app.wallabag.it/subscription/) depuis votre compte.
+  - id: trial-limits
+    q: "Y a-t-il des limitations pendant l'essai gratuit ?"
+    a: |
+      Vous pouvez sauvegarder et lire autant d'articles que vous voulez, sur tous vos appareils.
+      Trois fonctionnalités gourmandes en ressources sont réservées aux abonnés : la sauvegarde par email, les flux RSS/Atom et les imports depuis d'autres services.
+      [Nous avons expliqué pourquoi sur le blog](/fr/blog/2026/06/08/des-restrictions-pour-les-comptes-d-essai/).
+  - id: payment
+    q: "Quels moyens de paiement acceptez-vous ?"
+    a: |
+      Carte bancaire et PayPal. Les paiements en ligne sont traités de façon sécurisée par nos prestataires (Stripe, Payplug et PayPal) — nous ne voyons ni ne stockons jamais vos données bancaires.
+  - id: renewal
+    q: "Mon abonnement est-il renouvelé automatiquement ?"
+    a: |
+      Non. Un abonnement est valable 3 mois ou 1 an, et c'est vous qui le renouvelez à l'issue de cette période — aucun prélèvement surprise sur votre carte.
+  - id: refund
+    q: "Puis-je être remboursé ?"
+    a: |
+      Conformément au droit de la consommation, vous disposez d'un délai de rétractation de 14 jours après la souscription : écrivez simplement à [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
+      Et comme l'essai est gratuit et sans carte bancaire, vous pouvez vous décider avant de payer quoi que ce soit.
+  - id: migration
+    q: "Comment migrer depuis Pocket, Instapaper ou un autre service ?"
+    a: |
+      wallabag.it importe votre liste de lecture depuis Pocket, Instapaper, Pinboard, Omnivore, Shaarli, une autre instance wallabag ou n'importe quel flux RSS/Atom — tags et statuts lu/favori sont conservés.
+      Des guides pas à pas sont disponibles dans notre [base de connaissances](https://helpdesk.wallabag.it/help/fr/2-import).
+  - id: export
+    q: "Puis-je exporter mes données et partir quand je veux ?"
+    a: |
+      Oui, à tout moment. Vous pouvez télécharger vos articles en PDF, ePUB, mobi, JSON, CSV, txt ou HTML. Votre liste de lecture vous appartient.
+  - id: selfhosted
+    q: "Quelle différence avec un wallabag auto-hébergé ?"
+    a: |
+      C'est exactement le même logiciel open source, [wallabag](https://github.com/wallabag/wallabag).
+      Avec wallabag.it, nous nous occupons des serveurs, des mises à jour et du support pour vous — et votre abonnement finance directement le développement du projet.
+  - id: privacy
+    q: "Où sont stockées mes données ? Et la vie privée ?"
+    a: |
+      Toutes vos données sont hébergées sur des serveurs situés en Europe, dans le respect du RGPD. Il n'y a aucune publicité, et nous ne lisons ni ne revendons jamais vos données.
+  - id: apps
+    q: "Sur quels appareils puis-je lire mes articles ?"
+    a: |
+      Partout : sur le web, avec les applications Android et iOS (y compris en lecture hors-ligne), avec les extensions Firefox et Chrome, et même sur les liseuses Kobo et PocketBook.
+      Consultez la [page applications](/fr/applications/) pour la liste complète.
+  - id: support
+    q: "Comment contacter le support ?"
+    a: |
+      Écrivez à [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it), parcourez la [base de connaissances](https://helpdesk.wallabag.it/help/fr) ou utilisez le chat en bas de ce site (quand il est activé !). Nicolas vous répondra.
