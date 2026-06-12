@@ -211,17 +211,13 @@ params:
         icon: fa fa-envelope
         desc: Any question? Contact us!
       - name: Mastodon
-        url: https://fosstodon.org/@wallabag
+        url: https://piaille.fr/@nicosomb
         icon: fab fa-mastodon
-        desc: Follow us on Mastodon to get the latest news.
+        desc: Follow Nicolas on Mastodon to get the latest news of wallabag.it
       - name: Status website
         url: https://status.wallabag.org
         icon: fa fa-laptop-medical
         desc: Follow this website to have some news about wallabag.it healthcheck
-      - name: Github
-        url: https://github.com/wallabag/wallabag
-        icon: fab fa-github
-        desc: wallabag project on Github
     # # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: Which alternative to Pocket should I choose?
