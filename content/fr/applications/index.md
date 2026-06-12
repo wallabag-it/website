@@ -1,6 +1,7 @@
 ---
 title: Conservez et consultez vos articles où que vous soyez.
 linkTitle: Applications
+description: "Lisez vos articles enregistrés partout avec wallabag.it : applications natives Android et iOS (lecture hors-ligne), extensions Firefox et Chrome, et prise en charge des liseuses Kobo et PocketBook."
 menu: {main: {weight: 20}}
 ---
 
