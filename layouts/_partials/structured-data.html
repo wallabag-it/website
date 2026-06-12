@@ -1,6 +1,7 @@
 {{/* JSON-LD structured data.
      - Organization: emitted on every page.
      - SoftwareApplication (with subscription offers): home, features, pricing.
+     - FAQPage (pages with faq_schema: true): built from data/faq.yaml.
      Built with dict/slice + jsonify so the JSON is always valid & escaped. */ -}}
 
 {{/* --- Organization (sitewide) --- */ -}}
@@ -38,4 +39,24 @@
     "offers" $offers
   -}}
 <script type="application/ld+json">{{ $app | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{ end -}}
+
+{{/* --- FAQPage (pages with faq_schema: true) --- */ -}}
+{{ if .Params.faq_schema -}}
+  {{ $items := index site.Data.faq site.Language.Lang | default (index site.Data.faq "en") -}}
+  {{ $questions := slice -}}
+  {{ range $items -}}
+    {{ $questions = $questions | append (dict
+      "@type" "Question"
+      "name" .q
+      "acceptedAnswer" (dict
+        "@type" "Answer"
+        "text" (.a | markdownify | plainify | strings.TrimSpace))) -}}
+  {{ end -}}
+  {{ $faq := dict
+    "@context" "https://schema.org"
+    "@type" "FAQPage"
+    "mainEntity" $questions
+  -}}
+<script type="application/ld+json">{{ $faq | jsonify (dict "indent" "  ") | safeJS }}</script>
 {{ end -}}

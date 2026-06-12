@@ -3,7 +3,7 @@
 {{ if not $plan }}{{ errorf "pricing-plan: unknown plan id %q in %s" $id .Position }}{{ end -}}
 {{ $featured := eq (.Get "featured" | default "") "true" -}}
 <div class="col">
-<div class="card h-100 text-center position-relative{{ if $featured }} border-secondary border-2 shadow{{ else }} shadow-sm{{ end }}">
+<div class="card h-100 text-center position-relative{{ if $featured }} border-secondary border-2 shadow pricing-card-featured{{ else }} shadow-sm{{ end }}">
 {{ with .Get "badge" }}<span class="badge text-bg-secondary position-absolute top-0 start-50 translate-middle">{{ . }}</span>{{ end }}
 <div class="card-body d-flex flex-column p-4">
 <h3 class="h4 card-title">{{ .Get "title" }}</h3>

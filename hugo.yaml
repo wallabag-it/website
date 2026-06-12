@@ -23,11 +23,11 @@ pagination:
 
 menu:
   main:
-    - name: Server status
+    - name: Status
       weight: 50
       url: 'https://status.wallabag.org/'
     - name: Knowledge base
-      weight: 26
+      weight: 45
       url: 'https://helpdesk.wallabag.it/help/en-gb'
 
 
@@ -73,12 +73,15 @@ languages:
 
     menu:
       main:
-        - name: Statut du serveur
+        - name: État du service
           weight: 50
           url: 'https://status.wallabag.org/'
         - name: Documentation
           weight: 45
           url: 'https://helpdesk.wallabag.it/help/'
+        - name: Blog
+          weight: 44
+          url: ../fr/blog
 
 markup:
   goldmark:
@@ -128,8 +131,8 @@ params:
 
   privacy_policy: /fr/mentions-legales/
 
-  # First one is picked as the Twitter card image if not set on page.
-  # images: [images/project-illustration.png]
+  # First one is picked as the OpenGraph/Twitter card image if not set on page.
+  images: [images/social-card.png]
 
   # Menu title if your navbar has a versions selector to access old versions of your site.
   # This menu appears only if you have at least one [params.versions] set.
