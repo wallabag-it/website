@@ -106,6 +106,19 @@ outputs:
   section: [HTML, RSS]
 
 params:
+  # Subscription plans — single source of truth, reused by JSON-LD structured
+  # data and (later) the pricing page. Prices in EUR.
+  plans:
+    - name: "3 months"
+      price: "4"
+      duration: P3M
+    - name: "1 year"
+      price: "11"
+      duration: P1Y
+    - name: "Heart subscription"
+      price: "30"
+      duration: P1Y
+
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
     taxonomyCloud: []

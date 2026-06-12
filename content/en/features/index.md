@@ -2,6 +2,7 @@
 title: All the wallabag.it features
 linkTitle: Features
 description: "Discover every wallabag.it feature: distraction-free reading, Android & iOS apps, browser add-ons, tags & full-text search, highlights and annotations, and export to PDF, ePUB, mobi and more. Plus premium features for subscribers."
+software_schema: true
 menu: {main: {weight: 10}}
 ---
 

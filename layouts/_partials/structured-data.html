@@ -1,0 +1,41 @@
+{{/* JSON-LD structured data.
+     - Organization: emitted on every page.
+     - SoftwareApplication (with subscription offers): home, features, pricing.
+     Built with dict/slice + jsonify so the JSON is always valid & escaped. */ -}}
+
+{{/* --- Organization (sitewide) --- */ -}}
+{{ $org := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "name" "wallabag.it"
+  "url" "https://wallabag.it"
+  "logo" (absURL "favicons/android-192x192.png")
+  "sameAs" (slice
+    "https://fosstodon.org/@wallabag"
+    "https://github.com/wallabag/wallabag")
+-}}
+<script type="application/ld+json">{{ $org | jsonify (dict "indent" "  ") | safeJS }}</script>
+
+{{/* --- SoftwareApplication (home + pages with software_schema: true) --- */ -}}
+{{ if or .IsHome .Params.software_schema -}}
+  {{ $offers := slice -}}
+  {{ range site.Params.plans -}}
+    {{ $offers = $offers | append (dict
+      "@type" "Offer"
+      "name" .name
+      "price" .price
+      "priceCurrency" "EUR"
+      "url" "https://app.wallabag.it/register/") -}}
+  {{ end -}}
+  {{ $app := dict
+    "@context" "https://schema.org"
+    "@type" "SoftwareApplication"
+    "name" "wallabag.it"
+    "applicationCategory" "ProductivityApplication"
+    "operatingSystem" "Web, Android, iOS"
+    "url" "https://wallabag.it"
+    "description" site.Params.description
+    "offers" $offers
+  -}}
+<script type="application/ld+json">{{ $app | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{ end -}}
