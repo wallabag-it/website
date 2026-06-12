@@ -1,6 +1,7 @@
 ---
 title: Keep your saved articles everywhere you are.
 linkTitle: Applications
+description: "Read your saved articles everywhere with wallabag.it: native Android and iOS apps (offline reading), Firefox and Chrome browser add-ons, and support for Kobo and PocketBook e-readers."
 menu: {main: {weight: 20}}
 ---
 

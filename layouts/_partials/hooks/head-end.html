@@ -1,3 +1,19 @@
+{{/* Canonical URL */ -}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* hreflang alternates for multilingual SEO (in addition to the sitemap).
+     x-default points to the default-language (en) version of the current page. */ -}}
+{{ if .IsTranslated -}}
+  {{ range .AllTranslations -}}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+  {{ end -}}
+  {{ range .AllTranslations -}}
+    {{ if eq .Language.LanguageCode "en" -}}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{ end -}}
+  {{ end -}}
+{{ end -}}
+
 <script>
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */

@@ -64,13 +64,15 @@ languages:
     languageName: English
     title: wallabag.it
     params:
-      description: wallabag.it — Read your articles later
+      homeTitle: "wallabag.it — Save & read your articles later · alternative to Pocket, Instapaper & Pinboard"
+      description: "Save web articles and read them later on any device. wallabag.it is the open-source, privacy-first read-it-later service hosted in Europe — a simple alternative to Pocket, Instapaper and Pinboard. 14-day free trial, no credit card."
   fr:
     languageName: Français
     title: wallabag.it
     contentDir: content/fr
     params:
-      description: wallabag.it, archivez le web pour le consulter plus tard
+      homeTitle: "wallabag.it — Enregistrez et lisez vos articles · alternative à Pocket, Instapaper et Pinboard"
+      description: "Enregistrez vos articles web et lisez-les plus tard sur tous vos appareils. wallabag.it est le service open-source de lecture différée, respectueux de la vie privée et hébergé en Europe — une alternative à Pocket, Instapaper et Pinboard. Essai gratuit de 14 jours, sans carte bancaire."
 
     menu:
       main:

@@ -1,5 +1,6 @@
 ---
 title: wallabag.it
+description: "Save web articles and read them later on your phone, tablet or e-reader. wallabag.it is the open-source, privacy-first read-it-later service hosted in Europe — a simple alternative to Pocket, Instapaper and Pinboard. Start a 14-day free trial, no credit card required."
 ---
 
 {{< blocks/cover title="Archive the web, read it where and when you want" image_anchor="top" height="full" >}}

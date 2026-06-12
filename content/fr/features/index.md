@@ -1,6 +1,7 @@
 ---
 title: Toutes les fonctionnalités de wallabag.it
 linkTitle: Fonctionnalités
+description: "Découvrez toutes les fonctionnalités de wallabag.it : lecture sans distraction, applications Android et iOS, extensions de navigateur, tags et recherche, surlignage et annotations, export en PDF, ePUB, mobi et plus. Et des fonctionnalités premium pour les abonnés."
 menu: {main: {weight: 10}}
 ---
 
