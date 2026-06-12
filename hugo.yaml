@@ -26,9 +26,6 @@ menu:
     - name: Server status
       weight: 50
       url: 'https://status.wallabag.org/'
-    - name: Pricing
-      weight: 25
-      url: /en/#pricing
     - name: Knowledge base
       weight: 26
       url: 'https://helpdesk.wallabag.it/help/en-gb'
@@ -79,11 +76,8 @@ languages:
         - name: Statut du serveur
           weight: 50
           url: 'https://status.wallabag.org/'
-        - name: Tarifs
-          weight: 35
-          url: /fr/#tarification
         - name: Documentation
-          weight: 26
+          weight: 45
           url: 'https://helpdesk.wallabag.it/help/'
 
 markup:
@@ -109,13 +103,16 @@ params:
   # Subscription plans — single source of truth, reused by JSON-LD structured
   # data and (later) the pricing page. Prices in EUR.
   plans:
-    - name: "3 months"
+    - id: 3m
+      name: "3 months"
       price: "4"
       duration: P3M
-    - name: "1 year"
+    - id: 1y
+      name: "1 year"
       price: "11"
       duration: P1Y
-    - name: "Heart subscription"
+    - id: heart
+      name: "Heart subscription"
       price: "30"
       duration: P1Y
 
@@ -214,17 +211,13 @@ params:
         icon: fa fa-envelope
         desc: Any question? Contact us!
       - name: Mastodon
-        url: https://fosstodon.org/@wallabag
+        url: https://piaille.fr/@nicosomb
         icon: fab fa-mastodon
-        desc: Follow us on Mastodon to get the latest news.
+        desc: Follow Nicolas on Mastodon to get the latest news of wallabag.it
       - name: Status website
         url: https://status.wallabag.org
         icon: fa fa-laptop-medical
         desc: Follow this website to have some news about wallabag.it healthcheck
-      - name: Github
-        url: https://github.com/wallabag/wallabag
-        icon: fab fa-github
-        desc: wallabag project on Github
     # # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: Which alternative to Pocket should I choose?

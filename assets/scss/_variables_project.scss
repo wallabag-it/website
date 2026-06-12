@@ -10,6 +10,21 @@ $secondary: #f97316;
   display: none;
 }
 
+/* Mise en avant de l'entrée Pricing/Tarifs du menu : rendue comme un bouton orange. */
+.td-navbar .nav-link[href="/en/pricing/"],
+.td-navbar .nav-link[href="/fr/tarifs/"] {
+  background-color: $secondary;
+  color: #fff !important;
+  border-radius: 2rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+
+  &:hover,
+  &:focus {
+    background-color: #ea580c;
+  }
+}
+
 .zammad-chat {
   left: 30px !important;
   right: 0 !important;
