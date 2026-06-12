@@ -82,7 +82,7 @@ fr:
     q: "Comment migrer depuis Pocket, Instapaper ou un autre service ?"
     a: |
       wallabag.it importe votre liste de lecture depuis Pocket, Instapaper, Pinboard, Omnivore, Shaarli, une autre instance wallabag ou n'importe quel flux RSS/Atom — tags et statuts lu/favori sont conservés.
-      Des guides pas à pas sont disponibles dans notre [base de connaissances](https://helpdesk.wallabag.it/help/fr/2-import).
+      Des guides pas à pas sont disponibles dans notre [base de connaissances](https://helpdesk.wallabag.it/help/en-gb/2-import).
   - id: export
     q: "Puis-je exporter mes données et partir quand je veux ?"
     a: |
@@ -104,4 +104,4 @@ fr:
   - id: support
     q: "Comment contacter le support ?"
     a: |
-      Écrivez à [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it), parcourez la [base de connaissances](https://helpdesk.wallabag.it/help/fr) ou utilisez le chat en bas de ce site (quand il est activé !). Nicolas vous répondra.
+      Écrivez à [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it), parcourez la [base de connaissances](https://helpdesk.wallabag.it/help/en-gb) ou utilisez le chat en bas de ce site (quand il est activé !). Nicolas vous répondra.

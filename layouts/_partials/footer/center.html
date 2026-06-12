@@ -1,14 +1,16 @@
 {{ partial "footer/copyright.html"  . -}}
 
+{{ $fr := eq .Site.Language.Lang "fr" -}}
 {{ with .Site.Params.privacy_policy -}}
-<p class="td-footer__about mt-2"><a href="{{ . }}">Mentions légales</a> - <a href="https://wallabag.it/fr/cgv">Conditions Générales de Vente</a></p>
+{{/* These pages only exist in French; on other languages we keep the links but translate the labels. */ -}}
+<p class="td-footer__about mt-2"><a href="{{ . }}">{{ if $fr }}Mentions légales{{ else }}Legal notice{{ end }}</a> - <a href="https://wallabag.it/fr/cgv">{{ if $fr }}Conditions Générales de Vente{{ else }}Terms of sale{{ end }}</a></p>
 {{- end -}}
 
 <script src="https://helpdesk.wallabag.it/assets/chat/chat-no-jquery.min.js"></script>
 <script>
 (function() {
   new ZammadChat({
-    title: 'Ask us any question',
+    title: {{ if $fr }}'Posez-nous vos questions'{{ else }}'Ask us any question'{{ end }},
     background: '#f97316',
     fontSize: '13px',
     chatId: 1

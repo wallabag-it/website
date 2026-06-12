@@ -71,6 +71,35 @@ languages:
       homeTitle: "wallabag.it — Enregistrez et lisez vos articles · alternative à Pocket, Instapaper et Pinboard"
       description: "Enregistrez vos articles web et lisez-les plus tard sur tous vos appareils. wallabag.it est le service open-source de lecture différée, respectueux de la vie privée et hébergé en Europe — une alternative à Pocket, Instapaper et Pinboard. Essai gratuit de 14 jours, sans carte bancaire."
 
+      # Footer links, French version (overrides the site-wide params.links on /fr pages).
+      links:
+        user:
+          - name: Nous contacter
+            url: mailto:helpdesk@wallabag.it
+            icon: fa fa-envelope
+            desc: Une question ? Écrivez-nous !
+          - name: Mastodon
+            url: https://piaille.fr/@nicosomb
+            icon: fab fa-mastodon
+            desc: Suivez Nicolas sur Mastodon pour les dernières nouvelles de wallabag.it
+          - name: État du service
+            url: https://status.wallabag.org
+            icon: fa fa-laptop-medical
+            desc: Suivez ce site pour connaître l'état de santé de wallabag.it
+        developer:
+          - name: Quelle alternative à Pocket choisir ?
+            url: https://wallabag.it/fr/blog/2025/06/23/quelle-alternative-a-pocket-choisir/
+            desc: Quelle alternative à Pocket choisir ?
+          - name: Comment migrer de Pocket vers wallabag.it
+            url: https://helpdesk.wallabag.it/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it
+            desc: Comment migrer de Pocket vers wallabag.it (guide en anglais)
+          - name: Comment migrer d'Instapaper vers wallabag.it
+            url: https://helpdesk.wallabag.it/help/en-gb/2-import/11-how-to-migrate-from-instapaper-to-wallabag-it
+            desc: Comment migrer d'Instapaper vers wallabag.it (guide en anglais)
+          - name: Comment migrer de Pinboard vers wallabag.it
+            url: https://helpdesk.wallabag.it/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it
+            desc: Comment migrer de Pinboard vers wallabag.it (guide en anglais)
+
     menu:
       main:
         - name: État du service
