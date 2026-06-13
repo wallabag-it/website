@@ -88,17 +88,17 @@ languages:
             desc: Suivez ce site pour connaître l'état de santé de wallabag.it
         developer:
           - name: Quelle alternative à Pocket choisir ?
-            url: https://wallabag.it/fr/blog/2025/06/23/quelle-alternative-a-pocket-choisir/
+            url: https://wallabag.it/fr/alternatives/pocket/
             desc: Quelle alternative à Pocket choisir ?
-          - name: Comment migrer de Pocket vers wallabag.it
-            url: https://helpdesk.wallabag.it/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it
-            desc: Comment migrer de Pocket vers wallabag.it (guide en anglais)
-          - name: Comment migrer d'Instapaper vers wallabag.it
-            url: https://helpdesk.wallabag.it/help/en-gb/2-import/11-how-to-migrate-from-instapaper-to-wallabag-it
-            desc: Comment migrer d'Instapaper vers wallabag.it (guide en anglais)
-          - name: Comment migrer de Pinboard vers wallabag.it
-            url: https://helpdesk.wallabag.it/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it
-            desc: Comment migrer de Pinboard vers wallabag.it (guide en anglais)
+          - name: Quelle alternative à Instapaper choisir ?
+            url: https://wallabag.it/fr/alternatives/instapaper/
+            desc: Quelle alternative à Instapaper choisir ?
+          - name: Quelle alternative à Raindrop.io choisir ?
+            url: https://wallabag.it/fr/alternatives/raindrop/
+            desc: Quelle alternative à Raindrop.io choisir ?
+          - name: Quelle alternative à Pinboard choisir ?
+            url: https://wallabag.it/fr/alternatives/pinboard/
+            desc: Quelle alternative à Pinboard choisir ?
 
     menu:
       main:
@@ -216,7 +216,7 @@ params:
     # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
     navbar_translucent_over_cover_disable: true
     # Enable to show the side bar menu in its compact state.
-    sidebar_menu_compact: false
+    sidebar_menu_compact: true
     # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
     sidebar_search_disable: true
 
@@ -253,17 +253,17 @@ params:
     # # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: Which alternative to Pocket should I choose?
-        url: https://wallabag.it/en/blog/2025/06/23/which-alternative-to-pocket-should-i-choose/
-        desc: How to migrate from Pocket to wallabag.it
-      - name: How to migrate from Pocket to wallabag.it
-        url: https://helpdesk.wallabag.it/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it
-        desc: How to migrate from Pocket to wallabag.it
-      - name: How to migrate from Instapaper to wallabag.it
-        url: https://helpdesk.wallabag.it/help/en-gb/2-import/11-how-to-migrate-from-instapaper-to-wallabag-it
-        desc: How to migrate from Instapaper to wallabag.it
-      - name: How to migrate from Pinboard to wallabag.it
-        url: https://helpdesk.wallabag.it/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it
-        desc: How to migrate from Pinboard to wallabag.it
+        url: https://wallabag.it/en/alternatives/pocket/
+        desc: Which alternative to Pocket should I choose?
+      - name: Which alternative to Instapaper should I choose?
+        url: https://wallabag.it/en/alternatives/instapaper/
+        desc: Which alternative to Instapaper should I choose?
+      - name: Which alternative to Raindrop.io should I choose?
+        url: https://wallabag.it/en/alternatives/raindrop/
+        desc: Which alternative to Raindrop.io should I choose?
+      - name: Which alternative to Pinboard should I choose?
+        url: https://wallabag.it/en/alternatives/pinboard/
+        desc: Which alternative to Pinboard should I choose?
     #   - name: Slack
     #     url: https://example.org/slack
     #     icon: fab fa-slack

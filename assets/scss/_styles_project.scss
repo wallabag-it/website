@@ -1,0 +1,45 @@
+// Hamburger menu on small screens.
+//
+// .td-navbar extends Bootstrap's .navbar-expand (always expanded, no collapse).
+// We override this below md to restore the standard hamburger/collapse behavior.
+// _styles_project.scss is loaded last in Docsy's main.scss, after Bootstrap and
+// Docsy rules, so !important overrides work as expected.
+
+// On md and above, always show the nav (Bootstrap's .collapse hides it globally).
+@include media-breakpoint-up(md) {
+  .td-navbar #main_navbar {
+    display: flex !important;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .td-navbar {
+    flex-wrap: wrap !important;
+
+    .navbar-toggler {
+      display: inline-flex !important;
+    }
+
+    // The nav container: hidden by default, revealed by Bootstrap JS via .show
+    #main_navbar {
+      display: none !important;
+      flex-basis: 100%;
+      height: auto !important;
+      overflow: visible !important;
+
+      &.show {
+        display: flex !important;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        width: 100%;
+      }
+
+      .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 0;
+        overflow-x: visible;
+      }
+    }
+  }
+}
