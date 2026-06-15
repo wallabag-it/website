@@ -2,7 +2,9 @@
 title: Des restrictions pour les comptes d'essai sur wallabag.it
 slug: des-restrictions-pour-les-comptes-d-essai
 date: 2026-06-08
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
+description: >
+  wallabag.it réserve désormais les fonctionnalités gourmandes en ressources — sauvegarde par email, import RSS et imports de services — aux abonnés, pour garantir un service rapide et fiable pour tous.
 ---
 
 J'ai récemment apporté un petit changement, mais un changement important, à wallabag.it, et j'aimerais vous expliquer pourquoi.  

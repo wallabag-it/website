@@ -1,6 +1,8 @@
 ---
 title: "Alternatives aux outils de lecture différée"
+linkTitle: Alternatives
 description: "Vous cherchez une alternative à Pocket, Instapaper ou Raindrop.io ? Comparez les options et découvrez pourquoi wallabag.it est un choix solide."
+menu: {main: {weight: 36}}
 ---
 
 {{% blocks/cover title="Alternatives aux outils de lecture différée" color="primary" height="auto" %}}
@@ -29,6 +31,18 @@ Raindrop.io organise vos liens, mais ne les lit pas pour vous. Si vous voulez vr
 [Quelle alternative à Pinboard choisir ?](pinboard/)
 {.h3}
 Pinboard archive vos liens, mais ne les lit pas pour vous. Voici pourquoi wallabag.it est une alternative plus complète pour lire vos articles plus tard.
+
+[Quelle alternative à Omnivore choisir ?](omnivore/)
+{.h3}
+Omnivore a fermé. Découvrez pourquoi wallabag.it est une alternative open source et pérenne pour votre liste de lecture.
+
+[Quelle alternative à Readwise Reader choisir ?](readwise/)
+{.h3}
+Readwise Reader coûte 96 €/an et stocke vos données aux États-Unis. Voici pourquoi wallabag.it couvre l'essentiel pour 11 €/an.
+
+[Quelle alternative à Matter choisir ?](matter/)
+{.h3}
+Le développement de Matter est à l'arrêt. Voici pourquoi wallabag.it est une alternative fiable et activement maintenue.
 
 {{% /blocks/section %}}
 

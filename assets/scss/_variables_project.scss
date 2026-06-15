@@ -25,6 +25,20 @@ $secondary: #c0e0de;
   }
 }
 
+/* Bouton "Mon compte" / "My account" dans le menu : couleur secondaire (même que btn-secondary). */
+.td-navbar .nav-link[href="https://app.wallabag.it"] {
+  background-color: $secondary;
+  color: $primary !important;
+  border-radius: 2rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+
+  &:hover,
+  &:focus {
+    background-color: darken($secondary, 10%);
+  }
+}
+
 /* Le plan mis en avant sur la page Tarifs est légèrement agrandi sur desktop. */
 @media (min-width: 768px) {
   .pricing-card-featured {

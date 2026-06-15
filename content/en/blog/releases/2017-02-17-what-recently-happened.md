@@ -1,7 +1,7 @@
 ---
 title: What recently happened on wallabag.it
 date: 2017-02-17
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
 description: >
   It’s been a long time that I didn’t write some news here. It’s because I have a lot of work on wallabag.it.
 ---

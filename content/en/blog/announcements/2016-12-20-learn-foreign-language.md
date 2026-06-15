@@ -1,7 +1,9 @@
 ---
 title: How to learn a foreign language thanks to wallabag
 date: 2017-12-20
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
+description: >
+  The Text to Speech feature in wallabag's Android app lets you listen to saved articles in a foreign language — a practical way to practise while reading.
 ---
 
 As you know, wallabag is an application to save and archive web articles. It's so useful if you don't have time to read articles and if you want to be sure to keep a version of a web page (did you already imagine if your favorite website suddenly closes?).

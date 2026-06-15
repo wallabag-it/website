@@ -3,7 +3,6 @@ title: Frequently asked questions
 linkTitle: FAQ
 description: "Answers to common questions about wallabag.it: free trial, payment and renewal, refunds, migration from Pocket or Instapaper, data export, privacy and supported devices."
 faq_schema: true
-menu: {main: {weight: 28}}
 ---
 
 {{% blocks/cover title="Frequently asked questions" color="primary" height="auto" %}}

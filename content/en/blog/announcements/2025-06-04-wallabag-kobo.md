@@ -1,7 +1,7 @@
 ---
 title: « Reading blogs on my Kobo e-reader via wallabag » by Jan Ouwens
 date: 2025-06-04
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
 description: >
   A great tutorial to read wallabag articles on your Kobo e-reader
 ---

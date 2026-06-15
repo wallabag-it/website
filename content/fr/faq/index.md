@@ -3,7 +3,6 @@ title: Questions fréquentes
 linkTitle: FAQ
 description: "Les réponses aux questions fréquentes sur wallabag.it : essai gratuit, paiement et renouvellement, remboursement, migration depuis Pocket ou Instapaper, export des données, vie privée et appareils compatibles."
 faq_schema: true
-menu: {main: {weight: 40}}
 ---
 
 {{% blocks/cover title="Questions fréquentes" color="primary" height="auto" %}}

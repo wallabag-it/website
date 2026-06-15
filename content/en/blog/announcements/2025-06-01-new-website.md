@@ -1,7 +1,7 @@
 ---
 title: New website for wallabag.it
 date: 2025-06-01
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
 description: >
   It was the time to refresh the website.
 ---

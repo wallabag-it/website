@@ -1,7 +1,9 @@
 ---
 title: Some restrictions for trial accounts on wallabag.it
 date: 2026-06-08
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
+description: >
+  wallabag.it now reserves resource-intensive features — saving by email, RSS import, and service imports — for subscribers, to keep the platform fast and reliable for everyone.
 ---
 
 I recently made a small but important change to wallabag.it, and I'd like to explain why.  

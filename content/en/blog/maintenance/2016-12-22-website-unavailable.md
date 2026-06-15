@@ -1,7 +1,7 @@
 ---
 title: All wallabag.it websites unavailable on December, 22 during 8 hours
 date: 2016-12-22
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
 description: >
   Our websites were unavailable during 8 hours today. We are sorry for this inconvience.
 ---
