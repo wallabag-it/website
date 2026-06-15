@@ -15,35 +15,7 @@ Vous utilisez un outil de lecture différée ou de gestion de marque-pages et vo
 {{% /blocks/lead %}}
 
 {{% blocks/section color="white" %}}
-
-[Quelle alternative à Pocket choisir ?](pocket/)
-{.h3}
-Pocket ferme. Instapaper, Raindrop.io, Pinboard : lequel choisir pour remplacer Pocket ? Ou wallabag.it ?
-
-[Quelle alternative à Instapaper choisir ?](instapaper/)
-{.h3}
-Instapaper est cher et son avenir incertain. Voici pourquoi wallabag.it est une alternative solide pour lire vos articles plus tard.
-
-[Quelle alternative à Raindrop.io choisir ?](raindrop/)
-{.h3}
-Raindrop.io organise vos liens, mais ne les lit pas pour vous. Si vous voulez vraiment lire vos articles plus tard, voici ce que propose wallabag.it.
-
-[Quelle alternative à Pinboard choisir ?](pinboard/)
-{.h3}
-Pinboard archive vos liens, mais ne les lit pas pour vous. Voici pourquoi wallabag.it est une alternative plus complète pour lire vos articles plus tard.
-
-[Quelle alternative à Omnivore choisir ?](omnivore/)
-{.h3}
-Omnivore a fermé. Découvrez pourquoi wallabag.it est une alternative open source et pérenne pour votre liste de lecture.
-
-[Quelle alternative à Readwise Reader choisir ?](readwise/)
-{.h3}
-Readwise Reader coûte 96 €/an et stocke vos données aux États-Unis. Voici pourquoi wallabag.it couvre l'essentiel pour 11 €/an.
-
-[Quelle alternative à Matter choisir ?](matter/)
-{.h3}
-Le développement de Matter est à l'arrêt. Voici pourquoi wallabag.it est une alternative fiable et activement maintenue.
-
+{{< alternatives-grid >}}
 {{% /blocks/section %}}
 
 {{% blocks/section color="primary" %}}
