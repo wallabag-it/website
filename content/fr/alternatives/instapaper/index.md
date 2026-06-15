@@ -1,6 +1,6 @@
 ---
 title: "Quelle alternative à Instapaper choisir ?"
-description: "Instapaper est cher et son avenir incertain. Voici pourquoi wallabag.it est une alternative solide pour lire vos articles plus tard, sans se ruiner."
+description: "Instapaper coûte 55 €/an et son avenir est incertain. wallabag.it est plus léger, moins cher et entièrement open source — toutes les fonctionnalités pour 11 €/an."
 date: 2026-06-13
 ---
 

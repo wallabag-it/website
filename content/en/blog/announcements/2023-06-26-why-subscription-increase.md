@@ -1,7 +1,9 @@
 ---
 title: Why wallabag.it subscription will increase
 date: 2023-06-26
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
+description: >
+  wallabag.it raises its price for the first time in seven years — from €9 to €11 per year — following hosting cost increases. Still the most affordable read-it-later service on the market.
 ---
 
 ## History of wallabag.it

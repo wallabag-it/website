@@ -21,16 +21,6 @@ enableGitInfo: false
 pagination:
   pagerSize: 5
 
-menu:
-  main:
-    - name: Status
-      weight: 50
-      url: 'https://status.wallabag.org/'
-    - name: Knowledge base
-      weight: 45
-      url: 'https://helpdesk.wallabag.it/help/en-gb'
-
-
 # You can add your own taxonomies
 #taxonomies:
 #  tag: tags
@@ -63,6 +53,11 @@ languages:
     params:
       homeTitle: "wallabag.it — Save & read your articles later · alternative to Pocket, Instapaper & Pinboard"
       description: "Save web articles and read them later on any device. wallabag.it is the open-source, privacy-first read-it-later service hosted in Europe — a simple alternative to Pocket, Instapaper and Pinboard. 14-day free trial, no credit card."
+    menu:
+      main:
+        - name: My account
+          weight: 100
+          url: 'https://app.wallabag.it'
   fr:
     languageName: Français
     title: wallabag.it
@@ -87,30 +82,24 @@ languages:
             icon: fa fa-laptop-medical
             desc: Suivez ce site pour connaître l'état de santé de wallabag.it
         developer:
-          - name: Quelle alternative à Pocket choisir ?
-            url: https://wallabag.it/fr/alternatives/pocket/
-            desc: Quelle alternative à Pocket choisir ?
-          - name: Quelle alternative à Instapaper choisir ?
-            url: https://wallabag.it/fr/alternatives/instapaper/
-            desc: Quelle alternative à Instapaper choisir ?
-          - name: Quelle alternative à Raindrop.io choisir ?
-            url: https://wallabag.it/fr/alternatives/raindrop/
-            desc: Quelle alternative à Raindrop.io choisir ?
-          - name: Quelle alternative à Pinboard choisir ?
-            url: https://wallabag.it/fr/alternatives/pinboard/
-            desc: Quelle alternative à Pinboard choisir ?
+          - name: Comparer les alternatives
+            url: ../alternatives/
+            desc: Comparez wallabag.it avec Pocket, Instapaper, Readwise Reader et d'autres services de lecture différée.
+          - name: Documentation
+            url: https://helpdesk.wallabag.it/help/
+            desc: Base de connaissances et aide pour wallabag.it.
+          - name: FAQ
+            url: /fr/faq/
+            desc: Questions fréquentes sur wallabag.it.
 
     menu:
       main:
-        - name: État du service
-          weight: 50
-          url: 'https://status.wallabag.org/'
-        - name: Documentation
-          weight: 45
-          url: 'https://helpdesk.wallabag.it/help/'
         - name: Blog
           weight: 44
           url: ../fr/blog
+        - name: Mon compte
+          weight: 100
+          url: 'https://app.wallabag.it'
 
 markup:
   goldmark:
@@ -252,18 +241,15 @@ params:
         desc: Follow this website to have some news about wallabag.it healthcheck
     # # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
-      - name: Which alternative to Pocket should I choose?
-        url: https://wallabag.it/en/alternatives/pocket/
-        desc: Which alternative to Pocket should I choose?
-      - name: Which alternative to Instapaper should I choose?
-        url: https://wallabag.it/en/alternatives/instapaper/
-        desc: Which alternative to Instapaper should I choose?
-      - name: Which alternative to Raindrop.io should I choose?
-        url: https://wallabag.it/en/alternatives/raindrop/
-        desc: Which alternative to Raindrop.io should I choose?
-      - name: Which alternative to Pinboard should I choose?
-        url: https://wallabag.it/en/alternatives/pinboard/
-        desc: Which alternative to Pinboard should I choose?
+      - name: Compare alternatives
+        url: ../alternatives/
+        desc: Compare wallabag.it with Pocket, Instapaper, Readwise Reader and other read-it-later services.
+      - name: Documentation
+        url: https://helpdesk.wallabag.it/help/en-gb
+        desc: Knowledge base and help for wallabag.it
+      - name: FAQ
+        url: /en/faq/
+        desc: Frequently asked questions about wallabag.it
     #   - name: Slack
     #     url: https://example.org/slack
     #     icon: fab fa-slack

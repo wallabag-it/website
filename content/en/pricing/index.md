@@ -108,7 +108,7 @@ How does wallabag.it compare?
 
 </div>
 
-Want the full story? Read our article: [Which alternative to Pocket should I choose?](/en/blog/2025/06/23/which-alternative-to-pocket-should-i-choose/)
+Want the full story? Read our article: [Which alternative to Pocket should I choose?](/en/alternatives/pocket/)
 {.text-center .mt-3}
 
 {{% /blocks/section %}}

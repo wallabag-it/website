@@ -1,7 +1,7 @@
 ---
 title: Eight annual subscriptions to win
 date: 2021-04-10
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
 description: >
   A little game to win a subscription
 ---

@@ -1,79 +1,50 @@
 ---
-title: Which alternative to Pocket should I choose?
+title: How to migrate from Pocket to wallabag
+slug: how-to-migrate-from-pocket-to-wallabag
 date: 2025-06-23
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
+description: >
+  Pocket has shut down. Here is a step-by-step guide to export your Pocket reading list and import it into wallabag.it in a few minutes.
 ---
 
-## With Pocket shutting down, what's next for read-it-later fans?
+Pocket has shut down. If you have been saving articles for years, you probably have a reading list you do not want to lose. The good news: migrating to wallabag.it takes about ten minutes.
 
-For years, Pocket has been a service for saving articles to read later—clean interface, multi-device syncing, and offline access. So when Mozilla announced it was discontinuing Pocket, it sent many readers scrambling for an alternative.
+## Step 1 — Export your Pocket data
 
-If you're wondering where to go next, you're not alone. Let's explore the best options—and why **wallabag.it** might be your best choice.
+Before or after your Pocket account closes, you can export your reading list:
 
-## Some alternatives
+1. Go to [getpocket.com/export](https://getpocket.com/export)
+2. Download the export file — a CSV containing all your saved URLs
 
-Several services have been present in the “read-it-later” ecosystem for many years:
+If you can no longer access your Pocket account, check whether you received an export email from Mozilla.
 
-- Instapaper offers a clean reading experience with highlights, notes, and text-to-speech. However, its best features are locked behind an expensive subscription.
-- Raindrop.io is more of a visual bookmarking tool than a pure reading app. It does have a reader view, but its focus leans heavily toward organizing links and websites.
-- Pinboard is a minimalist bookmarking service with a loyal following. It's stable and reliable—but lacks any kind of reading interface or offline features.
+## Step 2 — Create a wallabag.it account
 
-These tools all have their strengths, but if you're looking for something that mirrors Pocket's mission—and maybe goes even further—there's one name that stands out.
+Head to [wallabag.it](https://app.wallabag.it/register/) and start your 14-day free trial. No credit card required, no commitment.
 
-## Here is wallabag.it
+## Step 3 — Import your Pocket data
 
-wallabag.it is the hosted version of wallabag, an open-source read-it-later app. It was built with a simple idea in mind: **your reading list should belong to you**.
+1. In your wallabag account, open **Import** in the left-hand menu
+2. Select **Pocket**
+3. Upload the CSV file from Step 1
+4. wallabag.it fetches the full content of each article automatically
 
-Here's why it's an excellent alternative:
+Your articles will appear in your reading list within a few minutes. Tags from Pocket are preserved.
 
-### ✅ Full article storage
+## Step 4 — Set up your apps
 
-Unlike some tools that only save a link or partial content, wallabag retrieves the full text of the page—cleaned up and ad-free. Even if the original website disappears, your copy stays intact.
+To get the same day-to-day experience as Pocket:
 
-### ✅ Privacy by design
+- **Browser**: install the [Firefox add-on](https://addons.mozilla.org/firefox/addon/wallabag-v2/) or [Chrome extension](https://chrome.google.com/webstore/detail/wallabagger/gbmgphmejlcoihgedabhgjdpkiiiljog) to save articles in one click
+- **Android and iOS**: download the mobile app for offline reading on your phone or tablet
+- **Kobo e-reader**: wallabag.it connects directly to Kobo devices
 
-wallabag doesn't track you, sell your data, or clutter your reading with ads. It's open source, and wallabag.it is run by people who believe in user freedom, not exploitation.
+## What you get with wallabag.it
 
-### ✅ Hosted in Europe
+- Full article text, cleaned up, no ads
+- Offline reading on all your devices
+- Tags, annotations and full-text search
+- Open source, hosted in Europe, GDPR-compliant
+- From €11/year — less than one coffee a month
 
-All data on wallabag.it is stored on servers located in Europe, under the protection of strict EU privacy laws and GDPR compliance. A big reassurance for anyone wary of US based data handling practices.
-
-### ✅ Offline reading
-
-Sync your saved articles across devices—including phones, tablets, and even e-readers like Kobo—and enjoy them offline.
-
-### ✅ Tagging, annotations, and search
-
-Organize your articles with tags, take notes, and quickly find past reads with full-text search.
-
-### ✅ Easy migration from Pocket
-
-[Moving from Pocket is simple](https://helpdesk.wallabag.it/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it): wallabag.it provides a straightforward import tool that preserves your articles and metadata.
-
-## Pricing comparison
-
-Here's how wallabag.it compares with other popular services in terms of cost:
-
-| Service         | Yearly cost                                       | Notes                                                       |
-| --------------- | ------------------------------------------------- | ----------------------------------------------------------- |
-| **wallabag.it** | **11€/year**                                      | All features included, privacy-focused, open source         |
-| Instapaper      | 55€/year                                          | Includes full-text search, unlimited notes, text-to-speech  |
-| Raindrop.io     | 26€/year                                          | Adds full-text search, annotations, reminders, and backups  |
-| Pinboard        | 22€/year                                          | Minimal bookmarking tool, no reader mode, no offline access |
-
-➡️ **wallabag.it clearly offers the best value**: it provides a full-featured, distraction-free reading experience for just 11€/year, with no ads or upsells. You can also support development more generously with the 30€/year supporter plan, or try it for 4€ over 3 months.
-
-## Final thoughts
-
-Pocket's shutdown is a chance to rethink where your data lives and what kind of tools you want to support. If you're looking for a modern, respectful, open, and sustainable read-it-later service, wallabag.it is more than just a replacement—it's an upgrade.
-
-**wallabag.it is powerful, private, hosted in Europe and affordable.**
-
-So if you're still asking, _“Which Pocket alternative should I choose?”_ — your next stop might just be **wallabag.it**.
-
-<div class="mx-auto" style="width: 600px;">
-    <a class="btn btn-lg btn-secondary" href="https://app.wallabag.it/register/">
-    Create an account on wallabag.it <i class="fa fa-user-plus ms-2"></i>
-    </a><br/>
-    <em>(14-day free trial with no limitation, no credit card information required)</em>
-</div>
+Still deciding? Read [our comparison of Pocket alternatives](/en/alternatives/pocket/) to see how wallabag.it compares with other services.

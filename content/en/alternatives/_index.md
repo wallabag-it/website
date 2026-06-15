@@ -1,6 +1,8 @@
 ---
 title: "Alternatives to read-it-later tools"
+linkTitle: Alternatives
 description: "Looking for an alternative to Pocket, Instapaper or Raindrop.io? Compare your options and find out why wallabag.it is a solid choice."
+menu: {main: {weight: 27}}
 ---
 
 {{% blocks/cover title="Alternatives to read-it-later tools" color="primary" height="auto" %}}
@@ -29,6 +31,18 @@ Raindrop.io organises your links but does not read them for you. If you actually
 [Which alternative to Pinboard should I choose?](pinboard/)
 {.h3}
 Pinboard archives your links but does not fetch the content for you. Here is why wallabag.it is a more complete alternative for reading articles later.
+
+[Which alternative to Omnivore should I choose?](omnivore/)
+{.h3}
+Omnivore has shut down. Find out why wallabag.it is a sustainable, open-source alternative for your reading list.
+
+[Which alternative to Readwise Reader should I choose?](readwise/)
+{.h3}
+Readwise Reader costs €96/year and stores your data in the US. Here is why wallabag.it covers the essentials for €11/year.
+
+[Which alternative to Matter should I choose?](matter/)
+{.h3}
+Matter's development has been put on hold. Here is why wallabag.it is a reliable, actively maintained alternative.
 
 {{% /blocks/section %}}
 

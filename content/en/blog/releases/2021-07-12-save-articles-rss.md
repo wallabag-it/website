@@ -1,7 +1,9 @@
 ---
 title: Save articles from ATOM / RSS feeds
 date: 2021-07-12
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
+description: >
+  wallabag.it now supports saving articles directly from RSS and Atom feeds, updated every hour. Available to all subscribers.
 ---
 
 It was a long overdue feature: you can now have RSS or ATOM feeds directly into your wallabag account. Each hour, this feed is updated (or you can update it manually).

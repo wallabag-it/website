@@ -1,6 +1,6 @@
 ---
 title: "Which alternative to Pinboard should I choose?"
-description: "Pinboard archives your links but does not fetch the content for you. Here is why wallabag.it is a more complete alternative for reading articles later."
+description: "Pinboard saves URLs but has no reading view. wallabag.it fetches the full article, strips ads and lets you read offline — for €11/year."
 date: 2026-06-13
 ---
 

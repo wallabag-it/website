@@ -1,7 +1,7 @@
 ---
 title: Welcome to Pocket users!
 date: 2025-05-25
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
 description: >
   Some news after the Pocket shutdown announcement.
 ---

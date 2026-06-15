@@ -4,7 +4,7 @@ title: After a few weeks, it’s time to take stock
 linkTitle: About wallabag.it launch
 description: >
   Some news about wallabag.it launch
-author: Nicolas Lœuillet ([@nicosomb](https://piaille.fr/@nicosomb))
+author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
 ---
 
 I started wallabag 4 years ago. It was a personal project. Today, this application — to save web articles and read them later on your computer, your smartphone, your tablet or even your ereader — is used by hundreds of people.

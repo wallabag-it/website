@@ -109,7 +109,7 @@ wallabag.it face à la concurrence
 
 </div>
 
-Pour aller plus loin, lisez notre article : [Quelle alternative à Pocket choisir ?](/fr/blog/2025/06/23/quelle-alternative-a-pocket-choisir/)
+Pour aller plus loin, lisez notre article : [Quelle alternative à Pocket choisir ?](/fr/alternatives/pocket/)
 {.text-center .mt-3}
 
 {{% /blocks/section %}}

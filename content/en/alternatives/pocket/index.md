@@ -1,6 +1,6 @@
 ---
 title: "Which alternative to Pocket should I choose?"
-description: "Pocket has shut down. Discover the best alternatives and why wallabag.it is a solid choice for your reading list."
+description: "Pocket has shut down. See why wallabag.it is the privacy-first, open-source read-it-later service your reading list deserves — from €11/year."
 date: 2026-06-13
 ---
 
@@ -13,7 +13,7 @@ date: 2026-06-13
 
 For years, Pocket was the go-to service for saving articles to read later: clean interface, multi-device sync and offline reading. When Mozilla announced it was shutting Pocket down in 2025, many readers started looking for an alternative.
 
-If you are wondering where to go next, you are not alone. Here is a look at the best options, and why **wallabag.it** might be the right choice for you.
+If you are wondering where to go next, you are not alone. Here is a look at the best options in 2026, and why **wallabag.it** might be the right choice for you.
 
 ## Some alternatives
 
@@ -54,6 +54,10 @@ Organise your articles with tags, take notes, and quickly find past reads with f
 ### Easy migration from Pocket
 
 [Leaving Pocket is straightforward](https://helpdesk.wallabag.it/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it): wallabag.it provides an import tool that preserves your articles and their metadata.
+
+### Prefer to host it yourself?
+
+wallabag is also available as a self-hosted option — the same open-source software that powers wallabag.it is free to download and install on your own server. wallabag.it is the hosted version: no setup, no maintenance required, professional support included.
 
 ## Pricing comparison
 

@@ -1,6 +1,6 @@
 ---
 title: "Quelle alternative à Pocket choisir ?"
-description: "Pocket a fermé. Découvrez les meilleures alternatives et pourquoi wallabag.it est un choix solide pour votre liste de lecture."
+description: "Pocket a fermé. Découvrez pourquoi wallabag.it est le service de lecture différée open source et respectueux de la vie privée qu'il vous faut — dès 11 €/an."
 date: 2026-06-13
 ---
 
@@ -13,7 +13,7 @@ date: 2026-06-13
 
 Pendant des années, Pocket a été le service de référence pour sauvegarder des articles à lire plus tard : interface épurée, synchronisation multi-appareils et lecture hors ligne. Alors quand Mozilla a annoncé l'arrêt de Pocket en 2025, de nombreux lecteurs se sont mis en quête d'une alternative.
 
-Si vous vous demandez où aller maintenant, vous n'êtes pas seul. Passons en revue les meilleures options, et pourquoi **wallabag.it** pourrait bien être le meilleur choix.
+Si vous vous demandez où aller maintenant, vous n'êtes pas seul. Passons en revue les meilleures options en 2026, et pourquoi **wallabag.it** pourrait bien être le meilleur choix.
 
 ## Quelques alternatives
 
@@ -54,6 +54,10 @@ Organisez vos articles avec des tags, prenez des notes et retrouvez rapidement v
 ### Une migration facile depuis Pocket
 
 [Quitter Pocket est simple](https://helpdesk.wallabag.it/help/en-gb/2-import/6-how-to-migrate-from-pocket-to-wallabag-it) : wallabag.it propose un outil d'import qui préserve vos articles et leurs métadonnées.
+
+### Vous préférez héberger vous-même ?
+
+wallabag est aussi disponible en version auto-hébergée — le logiciel open source qui fait tourner wallabag.it est gratuit à télécharger et installer sur votre propre serveur. wallabag.it est la version hébergée : pas de configuration, pas de maintenance, support professionnel inclus.
 
 ## Comparaison des tarifs
 
