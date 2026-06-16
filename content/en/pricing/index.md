@@ -33,8 +33,8 @@ Same features as the other plans, but thanks to you ❤️ the service becomes b
 
 {{% blocks/section color="dark" type="row" %}}
 
-Premium features included with every subscription
-{.h2 .text-center .mb-5}
+## Premium features included with every subscription
+{.text-center .mb-5}
 
 {{% blocks/feature icon="fa-envelope" title="Save by email" %}}
 Get your private `save+USER+TOKEN@wallabag.it` address: forward any link by email and it's saved automatically. Perfect for newsletters and links shared by friends.
@@ -52,8 +52,8 @@ Publish your saved articles as private feeds — unread, starred, archived or by
 
 {{% blocks/section color="light" %}}
 
-And everything else you'd expect
-{.h2 .text-center}
+## And everything else you'd expect
+{.text-center}
 
 <div class="row justify-content-center mt-4">
 <div class="col-md-5">
@@ -81,8 +81,8 @@ And everything else you'd expect
 
 {{% blocks/section color="white" %}}
 
-What our readers say
-{.h2 .text-center .mb-5}
+## What our readers say
+{.text-center .mb-5}
 
 {{< testimonials >}}
 
@@ -90,8 +90,8 @@ What our readers say
 
 {{% blocks/section color="light" %}}
 
-How does wallabag.it compare?
-{.h2 .text-center}
+## How does wallabag.it compare?
+{.text-center}
 
 <div class="table-responsive mt-4">
 
@@ -115,8 +115,8 @@ Want the full story? Read our article: [Which alternative to Pocket should I cho
 
 {{% blocks/section color="white" %}}
 
-Frequently asked questions about subscriptions
-{.h2 .text-center .mb-5}
+## Frequently asked questions about subscriptions
+{.text-center .mb-5}
 
 {{< faq ids="trial-end,renewal,payment,refund" >}}
 
@@ -127,8 +127,8 @@ Frequently asked questions about subscriptions
 
 {{% blocks/section color="primary" %}}
 
-Ready to save your first article?
-{.h2 .text-center}
+## Ready to save your first article?
+{.text-center}
 
 <p class="lead text-center">Create your account now and enjoy a 14-day free trial with no limitation.<br />No credit card required.</p>
 <div class="text-center">

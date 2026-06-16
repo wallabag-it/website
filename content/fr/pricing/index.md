@@ -34,8 +34,8 @@ Les mêmes fonctionnalités que les autres abonnements, mais grâce à vous ❤�
 
 {{% blocks/section color="dark" type="row" %}}
 
-Des fonctionnalités premium incluses dans chaque abonnement
-{.h2 .text-center .mb-5}
+## Des fonctionnalités premium incluses dans chaque abonnement
+{.text-center .mb-5}
 
 {{% blocks/feature icon="fa-envelope" title="Sauvegarde par email" %}}
 Recevez votre adresse privée `save+USER+TOKEN@wallabag.it` : transférez n'importe quel lien par email, il est sauvegardé automatiquement. Idéal pour les newsletters et les liens partagés par vos proches.
@@ -53,8 +53,8 @@ Publiez vos articles sauvegardés sous forme de flux privés — non lus, favori
 
 {{% blocks/section color="light" %}}
 
-Et tout ce que vous attendez d'un service de lecture différée
-{.h2 .text-center}
+## Et tout ce que vous attendez d'un service de lecture différée
+{.text-center}
 
 <div class="row justify-content-center mt-4">
 <div class="col-md-5">
@@ -82,8 +82,8 @@ Et tout ce que vous attendez d'un service de lecture différée
 
 {{% blocks/section color="white" %}}
 
-Ce qu'en disent nos lecteurs
-{.h2 .text-center .mb-5}
+## Ce qu'en disent nos lecteurs
+{.text-center .mb-5}
 
 {{< testimonials >}}
 
@@ -91,8 +91,8 @@ Ce qu'en disent nos lecteurs
 
 {{% blocks/section color="light" %}}
 
-wallabag.it face à la concurrence
-{.h2 .text-center}
+## wallabag.it face à la concurrence
+{.text-center}
 
 <div class="table-responsive mt-4">
 
@@ -116,8 +116,8 @@ Pour aller plus loin, lisez notre article : [Quelle alternative à Pocket choisi
 
 {{% blocks/section color="white" %}}
 
-Questions fréquentes sur l'abonnement
-{.h2 .text-center .mb-5}
+## Questions fréquentes sur l'abonnement
+{.text-center .mb-5}
 
 {{< faq ids="trial-end,renewal,payment,refund" >}}
 
@@ -128,8 +128,8 @@ Questions fréquentes sur l'abonnement
 
 {{% blocks/section color="primary" %}}
 
-Prêt à archiver votre premier article ?
-{.h2 .text-center}
+## Prêt à archiver votre premier article ?
+{.text-center}
 
 <p class="lead text-center">Créez votre compte dès maintenant et profitez de 14 jours d'essai gratuit, sans aucune limitation.<br />Aucune carte bancaire demandée.</p>
 <div class="text-center">

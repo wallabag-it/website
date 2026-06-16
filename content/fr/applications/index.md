@@ -1,11 +1,12 @@
 ---
-title: Conservez et consultez vos articles où que vous soyez.
+title: "Applications wallabag.it : Android, iOS, navigateur et liseuses"
 linkTitle: Applications
 description: "Lisez vos articles enregistrés partout avec wallabag.it : applications natives Android et iOS (lecture hors-ligne), extensions Firefox et Chrome, et prise en charge des liseuses Kobo et PocketBook."
+software_schema: true
 menu: {main: {weight: 20}}
 ---
 
-{{% blocks/cover title="Applications" color="primary" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Lisez vos articles sauvegardés sur tous vos appareils" color="primary" image_anchor="bottom" height="auto" %}}
 
 Conservez et consultez vos articles où que vous soyez.
 {.mt-5}
@@ -29,7 +30,7 @@ Archivez et lisez vos articles hors connexion, où que vous soyez.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-brands fa-apple" title="iOS" %}}
-L'application wallabag officielle pour iPhone et iPad, avec lecture hors-ligne.
+L'application wallabag pour iPhone et iPad, avec lecture hors-ligne.
 
 <a href="https://apps.apple.com/app/wallabag-2-officiel/id1170800946"><img src="/images/badges/app-store-fr.svg" alt="Télécharger dans l'App Store" height="56" loading="lazy" /></a>
 {{% /blocks/feature %}}
@@ -61,5 +62,52 @@ Une application GNOME native pour votre ordinateur ou téléphone Linux
 {{% blocks/feature icon="fa-square-plus" title="Et bien plus !" url="https://github.com/wallabag/wallabag/wiki/wallabag-ecosystem" url_text="Jetez un œil à l'ensemble de l'écosystème wallabag" %}}
 Des applications et intégrations communautaires pour de nombreuses autres plateformes
 {{% /blocks/feature %}}
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="light" %}}
+
+## Applications mobiles avec lecture hors-ligne
+{.text-center}
+
+Les applications mobiles sont le moyen le plus simple de garder vos articles sauvegardés avec vous. Archivez un long article depuis votre ordinateur, ouvrez l'application plus tard, puis continuez votre lecture dans le train, dans une salle d'attente ou sans connexion fiable.
+
+### Android
+
+L'application Android synchronise votre compte wallabag.it, télécharge vos articles non lus et permet de les lire hors connexion dans une mise en page claire, sans distraction. C'est le compagnon naturel si vous sauvegardez des liens dans la journée et les lisez plus tard sur votre téléphone.
+
+### iPhone et iPad
+
+L'application wallabag pour iPhone et iPad, avec lecture hors-ligne. Vos articles sauvegardés restent disponibles sur iOS et iPadOS : wallabag.it remplace ainsi l'accumulation d'onglets par une vraie liste de lecture.
+
+### Frigoligo
+
+Frigoligo est un client wallabag alternatif pour celles et ceux qui préfèrent une autre expérience mobile. Il fait partie de l'écosystème wallabag et peut se connecter à votre compte wallabag.it.
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="white" %}}
+
+## Extensions navigateur et applications pour liseuses
+{.text-center}
+
+wallabag.it est utile parce que la sauvegarde et la lecture se font là où vous êtes déjà : dans votre navigateur, sur votre téléphone, sur votre tablette ou sur un appareil dédié à la lecture.
+
+### Extensions Firefox et Chrome
+
+Les extensions navigateur sauvegardent la page que vous lisez en un clic. Elles sont idéales quand vous trouvez un article pendant votre travail et préférez l'envoyer dans wallabag.it plutôt que garder un onglet ouvert.
+
+### Liseuses Kobo et PocketBook
+
+Si vous aimez lire longtemps sur un écran e-ink, des applications communautaires peuvent envoyer vos articles wallabag.it vers les liseuses Kobo et PocketBook. wallabag.it devient ainsi un service de lecture différée pratique pour celles et ceux qui ne veulent pas tout lire sur téléphone.
+
+### Linux et intégrations communautaires
+
+L'écosystème wallabag comprend aussi des clients pour ordinateur et mobile Linux, ainsi que des intégrations communautaires pour d'autres usages. Vous pouvez commencer avec l'application web et ajouter les outils qui correspondent à vos habitudes de lecture.
+
+<div class="text-center mt-4">
+<a class="btn btn-secondary me-2 mb-2" href="/fr/tarifs/">Commencer par 14 jours d'essai gratuit <i class="fa fa-user-plus ms-2"></i></a>
+<a class="btn btn-outline-primary mb-2" href="/fr/features/">Voir toutes les fonctionnalités wallabag.it</a>
+</div>
 
 {{% /blocks/section %}}

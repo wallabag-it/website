@@ -20,8 +20,8 @@ Vous utilisez un outil de lecture différée ou de gestion de marque-pages et vo
 
 {{% blocks/section color="primary" %}}
 
-Pas encore convaincu ?
-{.h2 .text-center}
+## Pas encore convaincu ?
+{.text-center}
 
 <div class="text-center">
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/fr/tarifs/">

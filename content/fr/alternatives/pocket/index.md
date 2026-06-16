@@ -80,8 +80,8 @@ La fermeture de Pocket est l'occasion de repenser l'endroit où vivent vos donn�
 
 {{% blocks/section color="primary" %}}
 
-wallabag.it est puissant, privé, hébergé en Europe et abordable.
-{.h2 .text-center}
+## wallabag.it est puissant, privé, hébergé en Europe et abordable.
+{.text-center}
 
 <div class="text-center">
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/fr/tarifs/">

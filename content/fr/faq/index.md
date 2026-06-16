@@ -19,8 +19,8 @@ faq_schema: true
 
 {{% blocks/section color="primary" %}}
 
-Envie d'essayer par vous-même ?
-{.h2 .text-center}
+## Envie d'essayer par vous-même ?
+{.text-center}
 
 <p class="lead text-center">Créez votre compte dès maintenant et profitez de 14 jours d'essai gratuit, sans aucune limitation.<br />Aucune carte bancaire demandée.</p>
 <div class="text-center">

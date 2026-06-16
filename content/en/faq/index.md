@@ -19,8 +19,8 @@ faq_schema: true
 
 {{% blocks/section color="primary" %}}
 
-Ready to try it yourself?
-{.h2 .text-center}
+## Ready to try it yourself?
+{.text-center}
 
 <p class="lead text-center">Create your account now and enjoy a 14-day free trial with no limitation.<br />No credit card required.</p>
 <div class="text-center">

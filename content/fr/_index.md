@@ -6,7 +6,7 @@ description: "Enregistrez vos articles web et lisez-les plus tard sur votre tél
 images: [/images/social-card.png]
 ---
 
-{{< blocks/cover title="Archivez le web pour le consulter plus tard" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Enregistrez vos articles et lisez-les plus tard, partout" image_anchor="top" height="full" >}}
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/fr/tarifs/">
   Découvrir les offres — dès 11 €/an <i class="fa fa-arrow-right ms-2"></i>
 </a>
@@ -17,11 +17,38 @@ images: [/images/social-card.png]
 
 {{% blocks/lead color="primary" %}}
 
-[wallabag est une application open-source](https://wallabag.org) pour **archiver des articles web et vous permettre de les consulter plus tard**, sur votre téléphone, votre tablette ou même votre liseuse. Nous vous offrons un service de qualité pour héberger vos données : vous profiterez des dernières fonctionnalités de wallabag (et même plus !) et **vous bénéficierez d'un support professionnel**.
+[wallabag est une application open source de lecture différée](https://wallabag.org) qui **sauvegarde vos articles web complets pour les lire plus tard**, sur votre téléphone, votre tablette ou votre liseuse. wallabag.it l'héberge pour vous : aucun serveur à maintenir, les dernières fonctionnalités incluses, vos données hébergées en Europe et **un support professionnel** quand vous en avez besoin.
 
-wallabag a été créé en 2013 par Nicolas Lœuillet, un développeur web français 🇫🇷. Parce qu'il peut-être difficile d'installer et maintenir wallabag sur votre propre serveur, Nicolas a fondé **wallabag.it** en 2016, un service en ligne qui vous permet d'archiver le web.
+wallabag a été créé en 2013 par Nicolas Lœuillet, un développeur web français 🇫🇷. Parce qu'il peut être difficile d'installer et maintenir wallabag sur votre propre serveur, Nicolas a fondé **wallabag.it** en 2016 : le service hébergé pour archiver le web sans renoncer à la vie privée ni au contrôle de vos données.
 
 {{% /blocks/lead %}}
+
+{{% blocks/section color="white" %}}
+
+## Ce que fait wallabag.it
+{.text-center}
+
+wallabag.it est la version hébergée de wallabag : un service de lecture différée qui sauvegarde le texte complet des articles web, nettoie la vue de lecture et garde votre bibliothèque disponible sur tous vos appareils.
+
+### Sauvegarder l'article complet, pas seulement un favori
+
+Quand vous archivez une page, wallabag récupère le contenu de l'article et le stocke dans votre compte. Vous pouvez y revenir plus tard, même si la page d'origine change, devient illisible ou disparaît.
+
+### Lire partout, y compris hors connexion
+
+Utilisez wallabag.it sur le web, sur Android et iPhone, avec les extensions navigateur, et même sur des liseuses comme Kobo ou PocketBook. Votre liste de lecture vous suit d'un appareil à l'autre.
+
+### Garder la maîtrise de vos données de lecture
+
+wallabag.it est open source, hébergé en Europe et financé par les abonnements. Vous pouvez exporter vos articles, tags et annotations quand vous le souhaitez.
+
+<div class="text-center mt-4">
+<a class="btn btn-secondary me-2 mb-2" href="/fr/features/">Découvrir les fonctionnalités <i class="fa fa-arrow-right ms-2"></i></a>
+<a class="btn btn-outline-primary me-2 mb-2" href="/fr/applications/">Voir les applications</a>
+<a class="btn btn-outline-primary mb-2" href="/fr/tarifs/">Comparer les offres</a>
+</div>
+
+{{% /blocks/section %}}
 
 {{% blocks/section color="dark" type="row" %}}
 

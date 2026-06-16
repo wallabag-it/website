@@ -75,8 +75,8 @@ If you use Raindrop.io mainly to save articles for later reading, wallabag.it do
 
 {{% blocks/section color="primary" %}}
 
-wallabag.it is powerful, private, hosted in Europe and affordable.
-{.h2 .text-center}
+## wallabag.it is powerful, private, hosted in Europe and affordable.
+{.text-center}
 
 <div class="text-center">
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/en/pricing/">

@@ -70,8 +70,8 @@ If you use Pinboard to track articles you have read or want to read, wallabag.it
 
 {{% blocks/section color="primary" %}}
 
-wallabag.it is powerful, private, hosted in Europe and affordable.
-{.h2 .text-center}
+## wallabag.it is powerful, private, hosted in Europe and affordable.
+{.text-center}
 
 <div class="text-center">
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/en/pricing/">
