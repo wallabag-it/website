@@ -20,8 +20,8 @@ Using a read-it-later app or bookmark manager and thinking about switching? Thes
 
 {{% blocks/section color="primary" %}}
 
-Not convinced yet?
-{.h2 .text-center}
+## Not convinced yet?
+{.text-center}
 
 <div class="text-center">
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/en/pricing/">

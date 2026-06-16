@@ -6,7 +6,7 @@ description: "Save web articles and read them later on your phone, tablet or e-r
 images: [/images/social-card.png]
 ---
 
-{{< blocks/cover title="Archive the web, read it where and when you want" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Save articles now, read them later on every device" image_anchor="top" height="full" >}}
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/en/pricing/">
   Discover our plans — from 11€ a year <i class="fa fa-arrow-right ms-2"></i>
 </a>
@@ -17,11 +17,38 @@ images: [/images/social-card.png]
 
 {{% blocks/lead color="primary" %}}
 
-[wallabag is an open source application](https://wallabag.org) to **save your web articles and allows you to read them later**, on your smartphone, your tablet or your ereader. We propose to you a quality service to host your account: you'll get the latest version of the application and **you'll get a professional support**.
+[wallabag is an open source read-it-later application](https://wallabag.org) that **saves full web articles so you can read them later**, on your phone, tablet or e-reader. wallabag.it hosts it for you: no server to maintain, the latest features included, your data hosted in Europe, and **professional support** when you need it.
 
-wallabag was founded in 2013 by Nicolas Lœuillet, a french web developer. Because it can be difficult to install and maintain wallabag, Nicolas created in 2016 **wallabag.it**, this online service to allow you to archive the web.
+wallabag was founded in 2013 by Nicolas Lœuillet, a French web developer. Because it can be difficult to install and maintain wallabag, Nicolas created **wallabag.it** in 2016: the hosted service for people who want to archive the web without giving up privacy or control.
 
 {{% /blocks/lead %}}
+
+{{% blocks/section color="white" %}}
+
+## What wallabag.it does
+{.text-center}
+
+wallabag.it is the hosted version of wallabag: a read-it-later service that saves the full text of web articles, cleans the reading view and keeps your library available across your devices.
+
+### Save the full article, not just a bookmark
+
+When you save a page, wallabag fetches the article content and stores it in your account. You can come back to it later even if the original page changes, becomes noisy or disappears.
+
+### Read anywhere, including offline
+
+Use wallabag.it on the web, on Android and iPhone, with browser add-ons, and even on e-readers such as Kobo or PocketBook. Your reading list follows you from one device to another.
+
+### Keep control of your reading data
+
+wallabag.it is open source, hosted in Europe and funded by subscriptions. You can export your articles, tags and annotations whenever you want.
+
+<div class="text-center mt-4">
+<a class="btn btn-secondary me-2 mb-2" href="/en/features/">Explore the features <i class="fa fa-arrow-right ms-2"></i></a>
+<a class="btn btn-outline-primary me-2 mb-2" href="/en/applications/">See the applications</a>
+<a class="btn btn-outline-primary mb-2" href="/en/pricing/">Compare the plans</a>
+</div>
+
+{{% /blocks/section %}}
 
 {{% blocks/section color="dark" type="row" %}}
 
@@ -45,4 +72,3 @@ Because your data belongs to you, we don't want to store them on US servers. Tha
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/167435064?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="What is wallabag?"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 {{% /blocks/section %}}
-

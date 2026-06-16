@@ -1,7 +1,9 @@
 {{/* JSON-LD structured data.
      - Organization: emitted on every page.
-     - SoftwareApplication (with subscription offers): home, features, pricing.
+     - SoftwareApplication (with subscription offers): home, applications, features, pricing.
      - FAQPage (pages with faq_schema: true): built from data/faq.yaml.
+     - BreadcrumbList: emitted on non-home pages.
+     - ItemList: emitted on alternatives hubs.
      Built with dict/slice + jsonify so the JSON is always valid & escaped. */ -}}
 
 {{/* --- Organization (sitewide) --- */ -}}
@@ -20,12 +22,38 @@
 {{/* --- SoftwareApplication (home + pages with software_schema: true) --- */ -}}
 {{ if or .IsHome .Params.software_schema -}}
   {{ $offers := slice -}}
+  {{ $offerDescription := "wallabag.it subscription with all premium features included and a 14-day free trial." -}}
+  {{ if eq site.Language.Lang "fr" -}}
+    {{ $offerDescription = "Abonnement wallabag.it avec toutes les fonctionnalités premium incluses et 14 jours d'essai gratuit." -}}
+  {{ end -}}
   {{ range site.Params.plans -}}
+    {{ $offerName := .name -}}
+    {{ if eq site.Language.Lang "fr" -}}
+      {{ if eq .id "3m" -}}
+        {{ $offerName = "3 mois" -}}
+      {{ else if eq .id "1y" -}}
+        {{ $offerName = "1 an" -}}
+      {{ else if eq .id "heart" -}}
+        {{ $offerName = "Abonnement soutien" -}}
+      {{ end -}}
+    {{ end -}}
     {{ $offers = $offers | append (dict
       "@type" "Offer"
-      "name" .name
+      "name" $offerName
+      "category" "Subscription"
+      "description" $offerDescription
       "price" .price
       "priceCurrency" "EUR"
+      "availability" "https://schema.org/InStock"
+      "seller" (dict
+        "@type" "Organization"
+        "name" "wallabag.it"
+        "url" "https://wallabag.it")
+      "priceSpecification" (dict
+        "@type" "UnitPriceSpecification"
+        "price" .price
+        "priceCurrency" "EUR"
+        "billingDuration" .duration)
       "url" "https://app.wallabag.it/register/") -}}
   {{ end -}}
   {{ $app := dict
@@ -39,6 +67,58 @@
     "offers" $offers
   -}}
 <script type="application/ld+json">{{ $app | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{ end -}}
+
+{{/* --- BreadcrumbList (non-home pages) --- */ -}}
+{{ if not .IsHome -}}
+  {{ $position := 1 -}}
+  {{ $items := slice (dict
+    "@type" "ListItem"
+    "position" $position
+    "name" site.Home.Title
+    "item" site.Home.Permalink) -}}
+  {{ range .Ancestors.Reverse -}}
+    {{ if not .IsHome -}}
+      {{ $position = add $position 1 -}}
+      {{ $items = $items | append (dict
+        "@type" "ListItem"
+        "position" $position
+        "name" .Title
+        "item" .Permalink) -}}
+    {{ end -}}
+  {{ end -}}
+  {{ $position = add $position 1 -}}
+  {{ $items = $items | append (dict
+    "@type" "ListItem"
+    "position" $position
+    "name" .Title
+    "item" .Permalink) -}}
+  {{ $breadcrumbs := dict
+    "@context" "https://schema.org"
+    "@type" "BreadcrumbList"
+    "itemListElement" $items
+  -}}
+<script type="application/ld+json">{{ $breadcrumbs | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{ end -}}
+
+{{/* --- ItemList (alternatives hub pages) --- */ -}}
+{{ if and (eq .Section "alternatives") .IsSection -}}
+  {{ $alternatives := index site.Data.alternatives site.Language.Lang | default (index site.Data.alternatives "en") -}}
+  {{ $items := slice -}}
+  {{ range $index, $alternative := $alternatives -}}
+    {{ $items = $items | append (dict
+      "@type" "ListItem"
+      "position" (add $index 1)
+      "name" (printf "wallabag.it vs %s" $alternative.name)
+      "url" (printf "%s%s/" $.Permalink $alternative.slug)) -}}
+  {{ end -}}
+  {{ $list := dict
+    "@context" "https://schema.org"
+    "@type" "ItemList"
+    "name" .Title
+    "itemListElement" $items
+  -}}
+<script type="application/ld+json">{{ $list | jsonify (dict "indent" "  ") | safeJS }}</script>
 {{ end -}}
 
 {{/* --- FAQPage (pages with faq_schema: true) --- */ -}}
@@ -61,8 +141,8 @@
 <script type="application/ld+json">{{ $faq | jsonify (dict "indent" "  ") | safeJS }}</script>
 {{ end -}}
 
-{{/* --- BlogPosting (blog section pages) --- */}}
-{{ if eq .Section "blog" -}}
+{{/* --- BlogPosting (individual blog posts only) --- */}}
+{{ if and (eq .Section "blog") .IsPage -}}
   {{ $summary := .Summary | plainify | strings.TrimSpace -}}
   {{ $desc := or .Description $summary -}}
   {{ $article := dict

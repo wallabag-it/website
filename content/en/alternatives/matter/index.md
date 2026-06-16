@@ -63,8 +63,8 @@ Matter is a good choice if you are primarily an iOS user focused on newsletters.
 
 {{% blocks/section color="primary" %}}
 
-wallabag.it is powerful, private, hosted in Europe and affordable.
-{.h2 .text-center}
+## wallabag.it is powerful, private, hosted in Europe and affordable.
+{.text-center}
 
 <div class="text-center">
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/en/pricing/">
