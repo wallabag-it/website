@@ -15,6 +15,17 @@ Using a read-it-later app or bookmark manager and thinking about switching? Thes
 {{% /blocks/lead %}}
 
 {{% blocks/section color="white" %}}
+
+## Why choose wallabag.it?
+{.text-center}
+
+Pocket has shut down. Omnivore has shut down. Some tools are proprietary, some are expensive, and some require you to maintain your own server.
+
+wallabag.it is the hosted version of an open-source read-it-later app: full article saving, offline reading, European hosting, export whenever you want, and no infrastructure to run yourself.
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="white" %}}
 {{< alternatives-grid >}}
 {{% /blocks/section %}}
 

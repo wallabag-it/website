@@ -15,6 +15,17 @@ Vous utilisez un outil de lecture différée ou de gestion de marque-pages et vo
 {{% /blocks/lead %}}
 
 {{% blocks/section color="white" %}}
+
+## Pourquoi choisir wallabag.it ?
+{.text-center}
+
+Pocket a fermé. Omnivore a fermé. Certains outils sont propriétaires, certains sont chers, et d'autres demandent de maintenir son propre serveur.
+
+wallabag.it est la version hébergée d'une application open source de lecture différée : sauvegarde du contenu complet, lecture hors connexion, hébergement européen, export quand vous le souhaitez, et aucune infrastructure à maintenir.
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="white" %}}
 {{< alternatives-grid >}}
 {{% /blocks/section %}}
 
