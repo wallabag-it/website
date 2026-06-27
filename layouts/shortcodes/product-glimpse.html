@@ -1,0 +1,38 @@
+{{ $lang := site.Language.Lang -}}
+{{ $copy := dict
+  "en" (dict
+    "eyebrow" "See wallabag.it in action"
+    "title" "A clean reading list that follows you everywhere"
+    "text" "Save an article from the browser, find the full readable version in wallabag.it, then continue reading on mobile or e-reader when you have time."
+    "cta" "Start the free trial"
+    "features" (slice "Full article saved" "Distraction-free reading" "Offline apps and export")
+    "image" "/en/features/homepage.png"
+    "alt" "wallabag.it reading list showing saved articles."
+  )
+  "fr" (dict
+    "eyebrow" "Voir wallabag.it en action"
+    "title" "Une liste de lecture claire, disponible partout"
+    "text" "Sauvegardez un article depuis le navigateur, retrouvez sa version lisible dans wallabag.it, puis continuez sur mobile ou liseuse quand vous avez le temps."
+    "cta" "Commencer l'essai gratuit"
+    "features" (slice "Article complet sauvegardé" "Lecture sans distraction" "Apps hors-ligne et export")
+    "image" "/fr/features/homepage.png"
+    "alt" "Liste de lecture wallabag.it affichant des articles sauvegardés."
+  )
+-}}
+{{ $item := index $copy $lang | default (index $copy "en") -}}
+<div class="row align-items-center g-4 product-glimpse">
+<div class="col-lg-5">
+<p class="text-uppercase text-body-secondary fw-semibold small mb-2">{{ $item.eyebrow }}</p>
+<h2 class="h3">{{ $item.title }}</h2>
+<p class="lead">{{ $item.text }}</p>
+<ul class="list-unstyled product-glimpse-list">
+{{ range $item.features }}
+<li><i class="fa fa-check text-secondary me-2"></i>{{ . }}</li>
+{{ end }}
+</ul>
+<a class="btn btn-secondary mt-2" href="https://app.wallabag.it/register/" data-cta="home-product-glimpse-trial">{{ $item.cta }} <i class="fa fa-user-plus ms-2"></i></a>
+</div>
+<div class="col-lg-7">
+<img class="img-fluid product-glimpse-img" src="{{ $item.image }}" alt="{{ $item.alt }}" loading="lazy">
+</div>
+</div>

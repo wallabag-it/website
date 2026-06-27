@@ -55,6 +55,9 @@ languages:
       description: "Save web articles and read them later on any device. wallabag.it is the open-source, privacy-first read-it-later service hosted in Europe — a simple alternative to Pocket, Instapaper and Pinboard. 14-day free trial, no credit card."
     menu:
       main:
+        - name: Free trial
+          weight: 90
+          url: 'https://app.wallabag.it/register/'
         - name: My account
           weight: 100
           url: 'https://app.wallabag.it'
@@ -97,6 +100,9 @@ languages:
         - name: Blog
           weight: 44
           url: ../fr/blog
+        - name: Essai gratuit
+          weight: 90
+          url: 'https://app.wallabag.it/register/'
         - name: Mon compte
           weight: 100
           url: 'https://app.wallabag.it'

@@ -6,7 +6,7 @@ description: "Save web articles and read them later on your phone, tablet or e-r
 images: [/images/social-card.png]
 ---
 
-{{< blocks/cover title="Save articles now, read them later on every device" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Save articles now, read them later on every device" image_anchor="top" height="auto" >}}
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="home-hero-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>
 </a>
@@ -14,8 +14,15 @@ images: [/images/social-card.png]
   See plans from 11€ a year
 </a>
 <p class="lead mt-5">Create an account, you'll get a 14-day free trial with no limitation.<br />(no credit card information required)</p>
+<p class="small text-white mb-0">Open source since 2013 · wallabag.it has existed since 2016 · hosted in Europe · export your data anytime</p>
 {{< blocks/link-down color="white" >}}
 {{< /blocks/cover >}}
+
+{{% blocks/section color="white" %}}
+
+{{< product-glimpse >}}
+
+{{% /blocks/section %}}
 
 
 {{% blocks/lead color="primary" %}}

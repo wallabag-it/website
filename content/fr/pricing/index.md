@@ -12,18 +12,19 @@ menu: {main: {weight: 35}}
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-hero-trial">
   Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
 </a>
+<p class="small text-white mb-0">Open source depuis 2013 · wallabag.it existe depuis 2016 · hébergé en Europe · export de vos données à tout moment</p>
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}
 
 {{< pricing-plans >}}
-{{< pricing-plan id="3m" title="3 mois" period="pour 3 mois" cta="Essayer gratuitement" >}}
+{{< pricing-plan id="3m" title="3 mois" period="pour 3 mois" cta="Essayer gratuitement" highlights="Service complet inclus|Sans carte bancaire|Export à tout moment" >}}
 Testez le service complet sans engagement. Partez quand vous voulez — en emportant vos données.
 {{< /pricing-plan >}}
-{{< pricing-plan id="1y" featured="true" badge="Le plus populaire" title="1 an" period="moins de 1 €/mois" cta="Essayer gratuitement" >}}
+{{< pricing-plan id="1y" featured="true" badge="Le plus populaire" title="1 an" period="moins de 1 €/mois" cta="Essayer gratuitement" highlights="Meilleur rapport qualité-prix|Aucun renouvellement surprise|Toutes les fonctionnalités" >}}
 Le choix le plus simple pour lire régulièrement : toutes les fonctionnalités, un paiement annuel clair, aucun renouvellement surprise.
 {{< /pricing-plan >}}
-{{< pricing-plan id="heart" title="L'abonnement ❤️" period="par an" cta="Soutenir wallabag" >}}
+{{< pricing-plan id="heart" title="L'abonnement ❤️" period="par an" cta="Soutenir wallabag" highlights="Soutien renforcé au projet|Même service complet|Maintenance professionnelle" >}}
 Les mêmes fonctionnalités que les autres abonnements, avec un soutien plus fort au projet open source, à l'hébergement et à la maintenance professionnelle de wallabag.it.
 {{< /pricing-plan >}}
 {{< /pricing-plans >}}
@@ -41,6 +42,26 @@ Les mêmes fonctionnalités que les autres abonnements, avec un soutien plus for
 Sauvegardez un article depuis le navigateur, gardez une liste de lecture propre, puis lisez sur mobile quand vous êtes hors ligne ou loin de votre ordinateur.
 
 {{< product-proof >}}
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="white" type="row" %}}
+
+## Pourquoi wallabag.it est payant
+{.text-center .mb-5}
+
+{{% blocks/feature icon="fa-user-secret" title="Sans publicité, sans revente de données" %}}
+Votre liste de lecture peut dire beaucoup de vous. wallabag.it vit des abonnements, pas du suivi publicitaire, de l'affichage de publicités ou de la revente de données.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-server" title="Hébergé et maintenu en Europe" %}}
+L'abonnement paie l'hébergement européen, les sauvegardes, les mises à jour, la supervision et le support qui gardent le service fiable au quotidien.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-heart" title="Il finance le projet open source wallabag" %}}
+wallabag existe depuis 2013 et wallabag.it depuis 2016. Votre abonnement aide à maintenir le service hébergé et le projet open source qui le rend possible.
+[Voir wallabag sur GitHub](https://github.com/wallabag/wallabag).
+{{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 

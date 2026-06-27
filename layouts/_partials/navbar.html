@@ -39,10 +39,12 @@
           {{ $href = .URL | relLangURL -}}
         {{ end -}}
         {{ $isExternal := ne $baseURL.Host (urls.Parse .URL).Host -}}
+        {{ $isRegister := in $href "app.wallabag.it/register" -}}
         <a {{/**/ -}}
           class="nav-link {{- if $active }} active {{- end }}" {{/**/ -}}
           href="{{ $href }}"
           {{- if $isExternal }} target="_blank" rel="noopener" {{- end -}}
+          {{- if $isRegister }} data-cta="nav-trial" {{- end -}}
         >
             {{- .Pre -}}
             <span>{{ .Name }}</span>

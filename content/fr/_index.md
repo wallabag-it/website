@@ -6,7 +6,7 @@ description: "Enregistrez vos articles web et lisez-les plus tard sur votre tél
 images: [/images/social-card.png]
 ---
 
-{{< blocks/cover title="Enregistrez vos articles et lisez-les plus tard, partout" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Enregistrez vos articles et lisez-les plus tard, partout" image_anchor="top" height="auto" >}}
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="home-hero-trial">
   Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
 </a>
@@ -14,8 +14,15 @@ images: [/images/social-card.png]
   Voir les offres dès 11 €/an
 </a>
 <p class="lead mt-5">Créez-vous un compte : vous bénéficierez ainsi d'une période d'essai (gratuite !) de 14 jours, sans aucune limitation.<br />(aucune information bancaire ne vous sera demandée)</p>
+<p class="small text-white mb-0">Open source depuis 2013 · wallabag.it existe depuis 2016 · hébergé en Europe · export de vos données à tout moment</p>
 {{< blocks/link-down color="white" >}}
 {{< /blocks/cover >}}
+
+{{% blocks/section color="white" %}}
+
+{{< product-glimpse >}}
+
+{{% /blocks/section %}}
 
 
 {{% blocks/lead color="primary" %}}

@@ -11,18 +11,19 @@ menu: {main: {weight: 25}}
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-hero-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>
 </a>
+<p class="small text-white mb-0">Open source since 2013 · wallabag.it has existed since 2016 · hosted in Europe · export your data anytime</p>
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}
 
 {{< pricing-plans >}}
-{{< pricing-plan id="3m" title="3 months" period="for 3 months" cta="Start free trial" >}}
+{{< pricing-plan id="3m" title="3 months" period="for 3 months" cta="Start free trial" highlights="Full service included|No credit card required|Export anytime" >}}
 Try the full service with no long-term commitment. Leave whenever you want — and take your data with you.
 {{< /pricing-plan >}}
-{{< pricing-plan id="1y" featured="true" badge="Most popular" title="1 year" period="less than 1€ a month" cta="Start free trial" >}}
+{{< pricing-plan id="1y" featured="true" badge="Most popular" title="1 year" period="less than 1€ a month" cta="Start free trial" highlights="Best value|No renewal surprise|All features included" >}}
 The clearest choice for regular reading: all features, one simple yearly payment, and no renewal surprise.
 {{< /pricing-plan >}}
-{{< pricing-plan id="heart" title="The ❤️ subscription" period="per year" cta="Support wallabag" >}}
+{{< pricing-plan id="heart" title="The ❤️ subscription" period="per year" cta="Support wallabag" highlights="Extra support for the project|Same complete service|Funds professional maintenance" >}}
 Same features as the other plans, with extra support for the open-source project, hosting and professional maintenance behind wallabag.it.
 {{< /pricing-plan >}}
 {{< /pricing-plans >}}
@@ -40,6 +41,26 @@ Same features as the other plans, with extra support for the open-source project
 Save an article from the browser, keep a clean reading list, then read on mobile when you are offline or away from your desk.
 
 {{< product-proof >}}
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="white" type="row" %}}
+
+## Why wallabag.it is paid
+{.text-center .mb-5}
+
+{{% blocks/feature icon="fa-user-secret" title="No ads, no data resale" %}}
+Your reading list can reveal a lot about you. wallabag.it is funded by subscriptions, not by tracking, advertising or selling data.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-server" title="Hosted and maintained in Europe" %}}
+The subscription pays for European hosting, backups, updates, monitoring and the support work that keeps the hosted service reliable.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-heart" title="It funds the open-source wallabag project" %}}
+wallabag has existed since 2013 and wallabag.it since 2016. Your subscription helps maintain the hosted service and the open-source project behind it.
+[See wallabag on GitHub](https://github.com/wallabag/wallabag).
+{{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
