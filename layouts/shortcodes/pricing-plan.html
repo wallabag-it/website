@@ -10,7 +10,7 @@
 <div class="display-5 fw-bold my-2">{{ $plan.price }}&nbsp;€</div>
 <p class="text-body-secondary mb-3">{{ .Get "period" }}</p>
 <div class="flex-grow-1">{{ .Inner | markdownify }}</div>
-<a class="btn {{ if $featured }}btn-secondary btn-lg{{ else }}btn-outline-primary{{ end }} mt-3" href="https://app.wallabag.it/register/">{{ .Get "cta" }} <i class="fa fa-user-plus ms-2"></i></a>
+<a class="btn {{ if $featured }}btn-secondary btn-lg{{ else }}btn-outline-primary{{ end }} mt-3" href="https://app.wallabag.it/register/" data-cta="pricing-plan-{{ $id }}">{{ .Get "cta" }} <i class="fa fa-user-plus ms-2"></i></a>
 </div>
 </div>
 </div>

@@ -84,8 +84,8 @@ La fermeture de Pocket est l'occasion de repenser l'endroit où vivent vos donn�
 {.text-center}
 
 <div class="text-center">
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="/fr/tarifs/">
-  Découvrir les offres — dès 11 €/an <i class="fa fa-arrow-right ms-2"></i>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="alternatives-trial">
+  Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
 </a>
 </div>
 

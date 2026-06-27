@@ -74,8 +74,8 @@ wallabag.it covers the core need — save an article, read it later, offline if 
 {.text-center}
 
 <div class="text-center">
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="/en/pricing/">
-  See our plans — from €11/year <i class="fa fa-arrow-right ms-2"></i>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="alternatives-trial">
+  Start your free trial <i class="fa fa-user-plus ms-2"></i>
 </a>
 </div>
 

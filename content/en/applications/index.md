@@ -17,7 +17,7 @@ Keep your saved articles everywhere you are.
 
 wallabag.it works wherever you read: native mobile apps, browser add-ons and even e-reader applications.
 
-Save an article from any device, then read it anywhere — **including offline** on your phone, tablet or e-reader. Just remember to [create your account on wallabag.it](https://app.wallabag.it/) before installing one of these applications.
+Save an article from any device, then read it anywhere — **including offline** on your phone, tablet or e-reader. Start by [creating your wallabag.it account](https://app.wallabag.it/register/) before installing one of these applications.
 
 {{% /blocks/lead %}}
 
@@ -106,7 +106,7 @@ If you prefer long reading sessions on an e-ink screen, community apps can bring
 The wallabag ecosystem also includes desktop and Linux mobile clients, plus community integrations for other workflows. You can start with the web app and add the tools that fit your own reading habits.
 
 <div class="text-center mt-4">
-<a class="btn btn-secondary me-2 mb-2" href="/en/pricing/">Start with a 14-day free trial <i class="fa fa-user-plus ms-2"></i></a>
+<a class="btn btn-secondary me-2 mb-2" href="https://app.wallabag.it/register/" data-cta="applications-bottom-trial">Start with a 14-day free trial <i class="fa fa-user-plus ms-2"></i></a>
 <a class="btn btn-outline-primary mb-2" href="/en/features/">See every wallabag.it feature</a>
 </div>
 

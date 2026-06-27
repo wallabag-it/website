@@ -7,8 +7,11 @@ images: [/images/social-card.png]
 ---
 
 {{< blocks/cover title="Enregistrez vos articles et lisez-les plus tard, partout" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="/fr/tarifs/">
-  Découvrir les offres — dès 11 €/an <i class="fa fa-arrow-right ms-2"></i>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="home-hero-trial">
+  Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
+</a>
+<a class="btn btn-lg btn-outline-light mb-4" href="/fr/tarifs/">
+  Voir les offres dès 11 €/an
 </a>
 <p class="lead mt-5">Créez-vous un compte : vous bénéficierez ainsi d'une période d'essai (gratuite !) de 14 jours, sans aucune limitation.<br />(aucune information bancaire ne vous sera demandée)</p>
 {{< blocks/link-down color="white" >}}
@@ -45,8 +48,19 @@ wallabag.it est open source, hébergé en Europe et financé par les abonnements
 <div class="text-center mt-4">
 <a class="btn btn-secondary me-2 mb-2" href="/fr/features/">Découvrir les fonctionnalités <i class="fa fa-arrow-right ms-2"></i></a>
 <a class="btn btn-outline-primary me-2 mb-2" href="/fr/applications/">Voir les applications</a>
-<a class="btn btn-outline-primary mb-2" href="/fr/tarifs/">Comparer les offres</a>
+<a class="btn btn-outline-primary mb-2" href="https://app.wallabag.it/register/" data-cta="home-product-section-trial">Commencer l'essai gratuit</a>
 </div>
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="light" %}}
+
+## Voir wallabag.it en action
+{.text-center}
+
+Du premier article sauvegardé à la lecture hors-ligne, wallabag.it sert une habitude simple : enregistrer maintenant, lire vraiment plus tard.
+
+{{< product-proof >}}
 
 {{% /blocks/section %}}
 

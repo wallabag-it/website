@@ -7,8 +7,11 @@ images: [/images/social-card.png]
 ---
 
 {{< blocks/cover title="Save articles now, read them later on every device" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="/en/pricing/">
-  Discover our plans — from 11€ a year <i class="fa fa-arrow-right ms-2"></i>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="home-hero-trial">
+  Start your free trial <i class="fa fa-user-plus ms-2"></i>
+</a>
+<a class="btn btn-lg btn-outline-light mb-4" href="/en/pricing/">
+  See plans from 11€ a year
 </a>
 <p class="lead mt-5">Create an account, you'll get a 14-day free trial with no limitation.<br />(no credit card information required)</p>
 {{< blocks/link-down color="white" >}}
@@ -45,8 +48,19 @@ wallabag.it is open source, hosted in Europe and funded by subscriptions. You ca
 <div class="text-center mt-4">
 <a class="btn btn-secondary me-2 mb-2" href="/en/features/">Explore the features <i class="fa fa-arrow-right ms-2"></i></a>
 <a class="btn btn-outline-primary me-2 mb-2" href="/en/applications/">See the applications</a>
-<a class="btn btn-outline-primary mb-2" href="/en/pricing/">Compare the plans</a>
+<a class="btn btn-outline-primary mb-2" href="https://app.wallabag.it/register/" data-cta="home-product-section-trial">Start the free trial</a>
 </div>
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="light" %}}
+
+## See wallabag.it in action
+{.text-center}
+
+From the first saved article to offline reading, wallabag.it is built for one simple habit: save now, read properly later.
+
+{{< product-proof >}}
 
 {{% /blocks/section %}}
 

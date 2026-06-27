@@ -9,7 +9,7 @@ menu: {main: {weight: 35}}
 
 {{% blocks/cover title="Des tarifs simples, sans surprise" color="primary" height="auto" %}}
 <p class="lead mt-3 mb-4">Tous les abonnements incluent toutes les fonctionnalités — choisissez simplement la durée qui vous convient.<br />Commencez par un <strong>essai gratuit de 14 jours</strong>, sans carte bancaire.</p>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-hero-trial">
   Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
 </a>
 {{% /blocks/cover %}}
@@ -20,15 +20,27 @@ menu: {main: {weight: 35}}
 {{< pricing-plan id="3m" title="3 mois" period="pour 3 mois" cta="Essayer gratuitement" >}}
 Testez le service complet sans engagement. Partez quand vous voulez — en emportant vos données.
 {{< /pricing-plan >}}
-{{< pricing-plan id="1y" featured="true" badge="Le plus populaire" title="1 an" period="par an" cta="Essayer gratuitement" >}}
-Le meilleur rapport qualité/prix : moins de 1€ par mois. Soyez serein, vous n'avez qu'une chose à penser — archiver de bons articles.
+{{< pricing-plan id="1y" featured="true" badge="Le plus populaire" title="1 an" period="moins de 1 €/mois" cta="Essayer gratuitement" >}}
+Le choix le plus simple pour lire régulièrement : toutes les fonctionnalités, un paiement annuel clair, aucun renouvellement surprise.
 {{< /pricing-plan >}}
 {{< pricing-plan id="heart" title="L'abonnement ❤️" period="par an" cta="Soutenir wallabag" >}}
-Les mêmes fonctionnalités que les autres abonnements, mais grâce à vous ❤️ le service devient meilleur et plus durable.
+Les mêmes fonctionnalités que les autres abonnements, avec un soutien plus fort au projet open source, à l'hébergement et à la maintenance professionnelle de wallabag.it.
 {{< /pricing-plan >}}
 {{< /pricing-plans >}}
 
 <p class="text-center text-body-secondary mt-4">Essai gratuit de 14 jours sans limitation · aucune carte bancaire demandée · exportez vos données à tout moment</p>
+<p class="text-center text-body-secondary">Votre abonnement finance directement le développement de wallabag et garde le service sans publicité.</p>
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="light" %}}
+
+## Ce que vous obtenez après l'inscription
+{.text-center}
+
+Sauvegardez un article depuis le navigateur, gardez une liste de lecture propre, puis lisez sur mobile quand vous êtes hors ligne ou loin de votre ordinateur.
+
+{{< product-proof >}}
 
 {{% /blocks/section %}}
 
@@ -133,7 +145,7 @@ Pour aller plus loin, lisez notre article : [Quelle alternative à Pocket choisi
 
 <p class="lead text-center">Créez votre compte dès maintenant et profitez de 14 jours d'essai gratuit, sans aucune limitation.<br />Aucune carte bancaire demandée.</p>
 <div class="text-center">
-<a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/">
+<a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-bottom-trial">
   Se créer un compte <i class="fa fa-user-plus ms-2"></i>
 </a>
 </div>

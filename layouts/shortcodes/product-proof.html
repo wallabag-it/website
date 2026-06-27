@@ -1,0 +1,27 @@
+{{ $lang := site.Language.Lang -}}
+{{ $copy := dict
+  "en" (slice
+    (dict "image" "/en/features/firefox.png" "alt" "wallabag browser extension saving an article in one click." "title" "Save in one click" "text" "Send articles to wallabag.it from your browser instead of keeping another tab open.")
+    (dict "image" "/en/features/homepage.png" "alt" "wallabag.it reading list with saved articles." "title" "Build a real reading list" "text" "The full article is stored in your account, cleaned up for focused reading and search.")
+    (dict "image" "/en/features/ios.png" "alt" "wallabag iOS application with offline reading." "title" "Read later, even offline" "text" "Open your saved articles on mobile or tablet when you finally have time to read.")
+  )
+  "fr" (slice
+    (dict "image" "/fr/features/firefox.png" "alt" "Extension navigateur wallabag sauvegardant un article en un clic." "title" "Sauvegarder en un clic" "text" "Envoyez les articles vers wallabag.it depuis votre navigateur au lieu de garder un nouvel onglet ouvert.")
+    (dict "image" "/fr/features/homepage.png" "alt" "Liste de lecture wallabag.it avec des articles sauvegardés." "title" "Créer une vraie liste de lecture" "text" "L'article complet est stocké dans votre compte, nettoyé pour une lecture confortable et retrouvable.")
+    (dict "image" "/fr/features/ios.png" "alt" "Application iOS wallabag avec lecture hors-ligne." "title" "Lire plus tard, même hors connexion" "text" "Retrouvez vos articles sauvegardés sur mobile ou tablette quand vous avez enfin le temps de lire.")
+  )
+-}}
+{{ $items := index $copy $lang | default (index $copy "en") -}}
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-4 product-proof">
+{{ range $items }}
+<div class="col">
+<div class="card h-100 shadow-sm overflow-hidden">
+<img class="card-img-top product-proof-img" src="{{ .image }}" alt="{{ .alt }}" loading="lazy">
+<div class="card-body">
+<h3 class="h5 card-title">{{ .title }}</h3>
+<p class="card-text">{{ .text }}</p>
+</div>
+</div>
+</div>
+{{ end }}
+</div>
