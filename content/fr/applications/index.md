@@ -17,7 +17,7 @@ Conservez et consultez vos articles où que vous soyez.
 
 wallabag.it vous suit partout où vous lisez : applications mobiles natives, extensions pour navigateurs et même applications pour liseuses.
 
-Archivez un article depuis n'importe quel appareil, puis lisez-le où vous voulez — **y compris hors connexion** sur votre téléphone, votre tablette ou votre liseuse. Pensez simplement à [créer votre compte sur wallabag.it](https://app.wallabag.it/) avant d'installer l'une de ces applications.
+Archivez un article depuis n'importe quel appareil, puis lisez-le où vous voulez — **y compris hors connexion** sur votre téléphone, votre tablette ou votre liseuse. Commencez par [créer votre compte wallabag.it](https://app.wallabag.it/register/) avant d'installer l'une de ces applications.
 
 {{% /blocks/lead %}}
 
@@ -106,7 +106,7 @@ Si vous aimez lire longtemps sur un écran e-ink, des applications communautaire
 L'écosystème wallabag comprend aussi des clients pour ordinateur et mobile Linux, ainsi que des intégrations communautaires pour d'autres usages. Vous pouvez commencer avec l'application web et ajouter les outils qui correspondent à vos habitudes de lecture.
 
 <div class="text-center mt-4">
-<a class="btn btn-secondary me-2 mb-2" href="/fr/tarifs/">Commencer par 14 jours d'essai gratuit <i class="fa fa-user-plus ms-2"></i></a>
+<a class="btn btn-secondary me-2 mb-2" href="https://app.wallabag.it/register/" data-cta="applications-bottom-trial">Commencer par 14 jours d'essai gratuit <i class="fa fa-user-plus ms-2"></i></a>
 <a class="btn btn-outline-primary mb-2" href="/fr/features/">Voir toutes les fonctionnalités wallabag.it</a>
 </div>
 

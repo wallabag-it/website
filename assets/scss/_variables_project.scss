@@ -50,3 +50,10 @@ $secondary: #c0e0de;
   left: 30px !important;
   right: 0 !important;
 }
+
+.product-proof-img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+  background: #f8fafc;
+}

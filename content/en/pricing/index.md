@@ -8,7 +8,7 @@ menu: {main: {weight: 25}}
 
 {{% blocks/cover title="Simple pricing. Read the web on your terms." color="primary" height="auto" %}}
 <p class="lead mt-3 mb-4">Every plan includes all features — pick the duration that suits you.<br />Start with a <strong>14-day free trial</strong>, no credit card required.</p>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-hero-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>
 </a>
 {{% /blocks/cover %}}
@@ -19,15 +19,27 @@ menu: {main: {weight: 25}}
 {{< pricing-plan id="3m" title="3 months" period="for 3 months" cta="Start free trial" >}}
 Try the full service with no long-term commitment. Leave whenever you want — and take your data with you.
 {{< /pricing-plan >}}
-{{< pricing-plan id="1y" featured="true" badge="Most popular" title="1 year" period="per year" cta="Start free trial" >}}
-The best value: less than 1€ a month. Be serene, you only have one thing to think about — saving great articles.
+{{< pricing-plan id="1y" featured="true" badge="Most popular" title="1 year" period="less than 1€ a month" cta="Start free trial" >}}
+The clearest choice for regular reading: all features, one simple yearly payment, and no renewal surprise.
 {{< /pricing-plan >}}
 {{< pricing-plan id="heart" title="The ❤️ subscription" period="per year" cta="Support wallabag" >}}
-Same features as the other plans, but thanks to you ❤️ the service becomes better and more sustainable.
+Same features as the other plans, with extra support for the open-source project, hosting and professional maintenance behind wallabag.it.
 {{< /pricing-plan >}}
 {{< /pricing-plans >}}
 
 <p class="text-center text-body-secondary mt-4">14-day free trial with no limitation · no credit card required · export your data anytime</p>
+<p class="text-center text-body-secondary">Your subscription directly funds wallabag development and keeps the service ad-free.</p>
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="light" %}}
+
+## What you get after sign-up
+{.text-center}
+
+Save an article from the browser, keep a clean reading list, then read on mobile when you are offline or away from your desk.
+
+{{< product-proof >}}
 
 {{% /blocks/section %}}
 
@@ -132,7 +144,7 @@ Want the full story? Read our article: [Which alternative to Pocket should I cho
 
 <p class="lead text-center">Create your account now and enjoy a 14-day free trial with no limitation.<br />No credit card required.</p>
 <div class="text-center">
-<a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/">
+<a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-bottom-trial">
   Create an account <i class="fa fa-user-plus ms-2"></i>
 </a>
 </div>

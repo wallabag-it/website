@@ -1,0 +1,74 @@
+{{/* Conversion tracking and internal UTM decoration for trial CTAs. */ -}}
+<script>
+  window._paq = window._paq || [];
+
+  (function () {
+    var conversionCampaign = 'trial_conversion';
+
+    function slugify(value) {
+      return (value || '')
+        .toString()
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '_')
+        .replace(/^_+|_+$/g, '')
+        .slice(0, 80);
+    }
+
+    function pageLabel() {
+      var path = window.location.pathname.replace(/^\/|\/$/g, '') || 'home';
+      return slugify(path.replace(/\//g, '_'));
+    }
+
+    function ctaLabel(link) {
+      return slugify(link.getAttribute('data-cta') || link.textContent || pageLabel());
+    }
+
+    function decorateRegisterLink(link) {
+      try {
+        var url = new URL(link.href);
+
+        if (url.hostname !== 'app.wallabag.it' || !url.pathname.match(/^\/register\/?$/)) {
+          return;
+        }
+
+        if (!url.searchParams.has('utm_source')) {
+          url.searchParams.set('utm_source', 'wallabag_site');
+        }
+        if (!url.searchParams.has('utm_medium')) {
+          url.searchParams.set('utm_medium', 'referral');
+        }
+        if (!url.searchParams.has('utm_campaign')) {
+          url.searchParams.set('utm_campaign', conversionCampaign);
+        }
+        if (!url.searchParams.has('utm_content')) {
+          url.searchParams.set('utm_content', pageLabel() + '__' + ctaLabel(link));
+        }
+
+        link.href = url.toString();
+      } catch (error) {
+        // Ignore malformed URLs and let the original link work.
+      }
+    }
+
+    function trackEvent(action, name) {
+      window._paq.push(['trackEvent', 'Conversion', action, name]);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var registerLinks = document.querySelectorAll('a[href*="app.wallabag.it/register"]');
+
+      registerLinks.forEach(function (link) {
+        decorateRegisterLink(link);
+
+        link.addEventListener('click', function () {
+          trackEvent('register_click', pageLabel() + '__' + ctaLabel(link));
+        });
+      });
+
+      if (window.location.pathname.match(/\/(pricing|tarifs)\/?$/)) {
+        trackEvent('pricing_view', pageLabel());
+      }
+    });
+  })();
+</script>
