@@ -2,8 +2,10 @@
 
 {{ $fr := eq .Site.Language.Lang "fr" -}}
 {{ with .Site.Params.privacy_policy -}}
-{{/* These pages only exist in French; on other languages we keep the links but translate the labels. */ -}}
-<p class="td-footer__about mt-2"><a href="{{ . }}">{{ if $fr }}Mentions légales{{ else }}Legal notice{{ end }}</a> - <a href="https://wallabag.it/fr/cgv">{{ if $fr }}Conditions Générales de Vente{{ else }}Terms of sale{{ end }}</a></p>
+{{ $legalPath := cond $fr "/fr/mentions-legales/" "/en/legal-notice/" -}}
+{{ $privacyPath := cond $fr "/fr/confidentialite/" "/en/privacy/" -}}
+{{ $termsPath := cond $fr "/fr/cgv/" "/en/terms/" -}}
+<p class="td-footer__about mt-2"><a href="{{ $legalPath }}">{{ if $fr }}Mentions légales{{ else }}Legal notice{{ end }}</a> - <a href="{{ $privacyPath }}">{{ if $fr }}Confidentialité{{ else }}Privacy notice{{ end }}</a> - <a href="{{ $termsPath }}">{{ if $fr }}Conditions Générales de Vente{{ else }}Terms of sale{{ end }}</a></p>
 {{- end -}}
 
 <script src="https://helpdesk.wallabag.it/assets/chat/chat-no-jquery.min.js"></script>

@@ -9,80 +9,161 @@ linkTitle: CGV
 
 {{% blocks/section color="white" %}}
 
-Le Vendeur est éditeur de produits et de services de wallabag.it exclusivement à destination de consommateurs, commercialisés par l’intermédiaire de ses sites Internet (https://www.wallabag.it). La liste et le descriptif des biens et services proposés par la Société peuvent être consultés sur les sites susmentionnés.
+Dernière mise à jour : 28 juin 2026
+
+Les présentes Conditions Générales de Vente s'appliquent aux abonnements au service wallabag.it, service hébergé de lecture différée édité par Nicolas Lœuillet, entrepreneur individuel.
 
 ## Article 1 : Objet
 
-Les présentes Conditions Générales de Vente déterminent les droits et obligations des parties dans le cadre de la vente en ligne de Produits proposés par le Vendeur.
+wallabag.it est un service numérique permettant de sauvegarder des pages web, de les lire plus tard, de les organiser et de les exporter depuis un compte utilisateur.
 
-## Article 2 : Dispositions générales
+Les présentes Conditions Générales de Vente déterminent les droits et obligations applicables à la souscription d'un abonnement wallabag.it.
 
-Les présentes Conditions Générales de Vente (CGV) s’appliquent à toutes les ventes de Produits, effectuées au travers des sites Internet de la Société qui sont partie intégrante du Contrat entre l’Acheteur et le Vendeur. Le Vendeur se réserve la possibilité de modifier les présentes, à tout moment par la publication d’une nouvelle version sur son site Internet. Les CGV applicables alors sont celles étant en vigueur à la date du paiement (ou du premier paiement en cas de paiements multiples) de la commande. Ces CGV sont consultables sur le site Internet de la Société à l'adresse suivante : https://wallabag.it/fr/cgv. La Société s’assure également que leur acceptation soit claire et sans réserve en mettant en place une case à cocher et un clic de validation. Le Client déclare avoir pris connaissance de l’ensemble des présentes Conditions Générales de Vente, et le cas échéant des Conditions Particulières de Vente liées à un produit ou à un service, et les accepter sans restriction ni réserve. Le Client reconnaît qu’il a bénéficié des conseils et informations nécessaires afin de s’assurer de l’adéquation de l’offre à ses besoins. Le Client déclare être en mesure de contracter légalement en vertu des lois françaises ou valablement représenter la personne physique ou morale pour laquelle il s’engage. Sauf preuve contraire les informations enregistrées par la Société constituent la preuve de l’ensemble des transactions.
+## Article 2 : Vendeur
 
-## Article 3 : Prix
+Le service wallabag.it est édité par Nicolas Lœuillet, entrepreneur individuel.
 
-Les prix des produits vendus au travers des sites Internet sont indiqués en Euros hors taxes et précisément déterminés sur les pages de descriptifs des Produits. Ils sont également indiqués en euros toutes taxes comprises (TVA + autres taxes éventuelles) sur la page de commande des produits.
+SIRET : 823 678 560 00025
 
-La Société se réserve la possibilité de modifier ses prix à tout moment pour l’avenir. Les frais de télécommunication nécessaires à l’accès aux sites Internet de la Société sont à la charge du Client.L'abonnement au service est valable pour une durée d'un an (ou 3 mois selon l'abonnement choisi) et devra donc être renouvelé suite à cette période.
+Adresse :
 
-## Article 4 : Conclusion du contrat en ligne
+```
+wallabag.it
+chez Nicolas Lœuillet
+30 bis rue des sapins
+62720 Rinxent
+France
+```
 
-Le Client devra suivre une série d’étapes spécifiques à chaque Produit offert par le Vendeur pour pouvoir réaliser sa commande. Toutefois, les étapes décrites ci-après sont systématiques :
+Contact : [nicolas@wallabag.it](mailto:nicolas@wallabag.it)
 
-    Information sur les caractéristiques essentielles du Produit ;
-    Choix du Produit, le cas échéant de ses options et indication des données essentielles du Client (identification, adresse…) ;
-    Acceptation des présentes Conditions Générales de Vente ;
-    Vérification des éléments de la commande et, le cas échéant, correction des erreurs ;
-    Suivi des instructions pour le paiement, et paiement des produits ;
+## Article 3 : Acceptation des CGV
 
-Le Client recevra alors confirmation par courrier électronique du paiement de la commande, ainsi qu’un accusé de réception de la commande la confirmant. Aux fins de bonne réalisation de la commande, et conformément à l’article 1316-1 du Code civil, le Client s’engage à fournir ses éléments d’identification véridiques. Le Vendeur se réserve la possibilité de refuser la commande, par exemple pour toute demande anormale, réalisée de mauvaise foi ou pour tout motif légitime.
+Le Client déclare avoir pris connaissance des présentes Conditions Générales de Vente avant la validation de sa commande et les accepter sans restriction ni réserve.
 
-## Article 5 : Produits et services
+Les CGV applicables sont celles en vigueur à la date de la commande. wallabag.it peut modifier les présentes CGV à tout moment pour l'avenir, en publiant une nouvelle version sur le site.
 
-Les caractéristiques essentielles des biens, des services et leurs prix respectifs sont mis à disposition de l’acheteur sur les sites Internet de la société. Le client atteste avoir reçu les modalités de paiement et d’exécution du contrat. Le Vendeur s’engage à honorer la commande du Client dans la limite des stocks de Produits disponibles uniquement. A défaut, le Vendeur en informe le Client. Ces informations contractuelles sont présentées en détail et en langue française. Conformément à la loi française, elles font l’objet d’un récapitulatif et d’une confirmation lors de la validation de la commande. Les parties conviennent que les illustrations ou photos des produits offerts à la vente n’ont pas de valeur contractuelle. La durée de validité de l’offre des Produits ainsi que leurs prix est précisée sur les sites Internet de la Société, ainsi que la durée minimale des contrats proposés lorsque ceux-ci portent sur une fourniture continue ou périodique de produits ou services. Sauf conditions particulières, les droits concédés au titre des présentes le sont uniquement à la personne physique signataire de la commande (ou la personne titulaire de l’adresse email communiqué). Conformément aux dispositions légales en matière de conformité et de vices cachés, le Vendeur rembourse ou échange les produits défectueux ou ne correspondant pas à la commande. Le remboursement peut être demandé de la manière suivante : nicolas@wallabag.it (décrire la procédure de remboursement, et comment le produit doit être retourné).
+## Article 4 : Description du service
 
-## Article 6 : Clause de réserve de propriété
+wallabag.it donne accès à une instance hébergée du logiciel libre wallabag, avec les fonctionnalités proposées sur le site : sauvegarde d'articles, lecture différée, classement, recherche, import, export et synchronisation avec les applications compatibles.
 
-Les produits demeurent la propriété de la Société.
+Le service est fourni en ligne. Le Client est responsable de son accès à Internet, de ses équipements et de la compatibilité de ses logiciels ou applications.
 
-## Article 7 : Disponibilité et présentation
+## Article 5 : Essai gratuit
 
-Les commandes seront traitées dans la limite de nos stocks disponibles ou sous réserve des stocks disponibles chez nos fournisseurs. En cas d’indisponibilité d’un article pour une période supérieure à 5 jours ouvrables, vous serez immédiatement prévenu des délais prévisibles de livraison et la commande de cet article pourra être annulée sur simple demande. Le Client pourra alors demander un avoir pour le montant de l’article ou son remboursement.
+wallabag.it peut proposer une période d'essai gratuite, sans carte bancaire, dont la durée et les éventuelles limitations sont indiquées sur le site.
 
-## Article 8 : Paiement
+À la fin de la période d'essai, aucun paiement automatique n'est effectué. Pour continuer à utiliser le service, le Client doit choisir et payer un abonnement.
 
-Le paiement est exigible immédiatement à la commande. Le Client effectue le règlement par carte de paiement. Le paiement sécurisé en ligne par carte bancaire est réalisé par nos prestataires de paiement : PayPal, Payplug et Stripe. Les informations transmises sont chiffrées dans les règles de l’art et ne peuvent être lues au cours du transport sur le réseau HTTPs. Une fois le paiement lancé par le Client, la transaction est immédiatement débitée après vérification des informations. Conformément à l’article L. 132-2 du Code monétaire et financier, l’engagement de payer donné par carte est irrévocable. En communiquant ses informations bancaires lors de la vente, le Client autorise le Vendeur à débiter sa carte du montant relatif au prix indiqué. Le Client confirme qu’il est bien le titulaire légal de la carte à débiter et qu’il est légalement en droit d’en faire usage. En cas d’erreur, ou d’impossibilité de débiter la carte, la Vente est immédiatement résolue de plein droit et la commande annulée.
+## Article 6 : Abonnements, durée et renouvellement
 
-## Article 9 : Délai de rétractation
+Les abonnements disponibles, leurs durées et leurs prix sont indiqués sur la page de tarification du site.
 
-Conformément à l’article L. 121-20 du Code de la consommation, « le consommateur dispose d’un délai de quatorze jours francs pour exercer son droit de rétractation sans avoir à justifier de motifs ni à payer de pénalités, à l’exception, le cas échéant, des frais de retour ». « Le délai mentionné à l’alinéa précédent court à compter de la réception pour les biens ou de l’acceptation de l’offre pour les prestations de services ». Le droit de rétractation peut être exercé en contactant la Société par email à nicolas@wallabag.it. En cas d’exercice du droit de rétractation dans le délai susmentionné, seul le prix du ou des produits achetés et les frais d’envoi seront remboursés, les frais de retour restent à la charge du Client.
+Sauf mention contraire au moment de la commande, les abonnements wallabag.it ne sont pas renouvelés automatiquement. Le Client doit renouveler son abonnement à l'issue de la période choisie s'il souhaite continuer à utiliser le service.
 
-## Article 10 : Réclamations
+## Article 7 : Prix
 
-Le cas échéant, l’Acheteur peut présenter toute réclamation en contactant la société par email à nicolas@wallabag.it.
+Les prix sont indiqués en euros sur le site au moment de la commande.
 
-## Article 11 : Droits de propriété intellectuelle
+wallabag.it se réserve le droit de modifier ses prix à tout moment pour l'avenir. Les modifications de prix ne s'appliquent pas aux abonnements déjà payés pour leur période en cours.
 
-Les marques, noms de domaines, produits, logiciels, images, vidéos, textes ou plus généralement toute information objet de droits de propriété intellectuelle sont et restent la propriété exclusive du vendeur. Aucune cession de droits de propriété intellectuelle n’est réalisée au travers des présentes CGV. Toute reproduction totale ou partielle, modification ou utilisation de ces biens pour quelque motif que ce soit est strictement interdite.
+Les frais de télécommunication nécessaires à l'accès au site et au service restent à la charge du Client.
 
-## Article 12 : Force majeure
+## Article 8 : Commande
 
-L’exécution des obligations du vendeur au terme des présentes est suspendue en cas de survenance d’un cas fortuit ou de force majeure qui en empêcherait l’exécution. Le vendeur avisera le client de la survenance d’un tel évènement dès que possible.
+Pour souscrire un abonnement, le Client choisit l'offre souhaitée, vérifie les informations de commande, accepte les présentes CGV et procède au paiement.
 
-## Article 13 : Nullité et modification du contrat
+Le Client s'engage à fournir des informations exactes et à jour. wallabag.it peut refuser ou annuler une commande en cas de demande anormale, frauduleuse, réalisée de mauvaise foi ou pour tout motif légitime.
 
-Si l’une des stipulations du présent contrat était annulée, cette nullité n’entraînerait pas la nullité des autres stipulations qui demeureront en vigueur entre les parties. Toute modification contractuelle n’est valable qu’après un accord écrit et signé des parties.
+## Article 9 : Paiement
 
-## Article 14 : Protection des données personnelles
+Le paiement est exigible au moment de la commande.
 
-Conformément à la Loi Informatique et Libertés du 6 janvier 1978, vous disposez des droits d’interrogation, d’accès, de modification, d’opposition et de rectification sur les données personnelles vous concernant. En adhérant à ces conditions générales de vente, vous consentez à ce que nous collections et utilisions ces données pour la réalisation du présent contrat. En saisissant votre adresse email sur l’un des sites de notre réseau, vous recevrez des emails contenant des informations et des offres promotionnelles concernant des produits édités par la Société et de ses partenaires. Vous pouvez vous désinscrire à tout instant. Il vous suffit pour cela de cliquer sur le lien présent à la fin de nos emails ou de contacter le responsable du traitement (la Société) par lettre RAR.
+Le paiement en ligne est traité par les prestataires de paiement proposés au moment de la commande, notamment Stripe, Payplug ou PayPal.
 
-## Article 15 : Clause limitative de responsabilité
+wallabag.it ne voit pas et ne stocke pas les données complètes de carte bancaire. Les transactions sont traitées directement par les prestataires de paiement.
 
-Il est stipulé une clause limitative de responsabilité du Vendeur pour la réalisation de la prestation à la valeur du produit.
+En cas d'échec ou d'annulation du paiement, l'abonnement n'est pas activé ou peut être suspendu.
 
-## Article 16 : Droit applicable
+## Article 10 : Accès au service
 
-Toutes les clauses figurant dans les présentes conditions générales de vente, ainsi que toutes les opérations d’achat et de vente qui y sont visées, seront soumises au droit français.
+L'abonnement donne accès au service pendant la durée choisie, sous réserve du respect des présentes CGV.
+
+wallabag.it met en œuvre des moyens raisonnables pour assurer la disponibilité du service. Le service peut toutefois être temporairement interrompu pour maintenance, mise à jour, incident technique, sécurité ou cas de force majeure.
+
+## Article 11 : Utilisation du service
+
+Le Client s'engage à utiliser wallabag.it conformément à la loi, aux présentes CGV et à la destination normale du service.
+
+Il est notamment interdit d'utiliser le service pour :
+
+- tenter de porter atteinte à la sécurité ou au fonctionnement du service ;
+- automatiser des usages abusifs ou disproportionnés ;
+- stocker ou diffuser des contenus manifestement illicites ;
+- porter atteinte aux droits de tiers.
+
+En cas d'utilisation abusive, frauduleuse ou illicite, wallabag.it peut suspendre ou fermer le compte concerné, après information du Client lorsque cela est possible, sans préjudice des actions légales disponibles.
+
+## Article 12 : Droit de rétractation
+
+Conformément au droit de la consommation, le Client consommateur dispose d'un délai de 14 jours à compter de la souscription de l'abonnement pour exercer son droit de rétractation, sans avoir à motiver sa décision.
+
+Le droit de rétractation peut être exercé en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it), en indiquant l'adresse email du compte concerné et la volonté claire de se rétracter.
+
+En cas de rétractation valable, wallabag.it rembourse les sommes payées dans un délai de 14 jours à compter de la réception de la demande.
+
+Si le Client demande expressément l'accès immédiat au service avant la fin du délai de rétractation, un montant proportionnel à la période effectivement utilisée pourra être retenu lorsque la loi le permet.
+
+## Article 13 : Remboursements et réclamations
+
+Toute demande de remboursement ou réclamation peut être adressée à [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
+
+La demande doit indiquer l'adresse email du compte concerné, l'abonnement concerné et le motif de la demande.
+
+## Article 14 : Données personnelles
+
+Les données personnelles traitées dans le cadre de la commande, de l'abonnement et de l'utilisation du service wallabag.it sont décrites dans la [Politique de confidentialité](/fr/confidentialite/).
+
+Les données bancaires complètes ne sont pas stockées par wallabag.it. Elles sont traitées directement par les prestataires de paiement utilisés pour la transaction.
+
+## Article 15 : Export et suppression du compte
+
+Le Client peut exporter ses données depuis le service dans les formats proposés par wallabag.it.
+
+Le Client peut demander la suppression de son compte en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it). Les modalités de suppression, y compris la gestion des sauvegardes techniques, sont décrites dans la [Politique de confidentialité](/fr/confidentialite/).
+
+## Article 16 : Propriété intellectuelle
+
+Les marques, noms de domaine, textes, images, éléments graphiques et, plus généralement, les contenus édités par wallabag.it restent la propriété de leur titulaire.
+
+Le logiciel wallabag est un logiciel libre soumis à sa licence propre. Les présentes CGV ne transfèrent aucun droit de propriété intellectuelle au Client, en dehors du droit personnel d'utiliser le service pendant la durée de l'abonnement.
+
+## Article 17 : Garantie légale de conformité
+
+Le Client consommateur bénéficie de la garantie légale de conformité applicable aux services numériques, dans les conditions prévues par le Code de la consommation.
+
+En cas de défaut de conformité, le Client peut contacter wallabag.it à [nicolas@wallabag.it](mailto:nicolas@wallabag.it) afin de demander la mise en conformité du service ou toute autre solution prévue par la loi.
+
+## Article 18 : Responsabilité
+
+wallabag.it est responsable de la bonne exécution de ses obligations contractuelles dans les conditions prévues par la loi.
+
+wallabag.it ne peut toutefois être tenu responsable des dommages résultant d'une mauvaise utilisation du service par le Client, d'un fait imprévisible et insurmontable d'un tiers, d'un cas de force majeure, d'une indisponibilité du réseau Internet ou d'un service tiers utilisé par le Client.
+
+## Article 19 : Force majeure
+
+L'exécution des obligations de wallabag.it peut être suspendue en cas de force majeure au sens du droit français. wallabag.it informera le Client de la survenance d'un tel événement dans les meilleurs délais lorsque cela est possible.
+
+## Article 20 : Médiation de la consommation
+
+Conformément au Code de la consommation, le Client consommateur peut recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable d'un litige qui l'opposerait à wallabag.it, après avoir préalablement adressé une réclamation écrite à wallabag.it.
+
+Les coordonnées du médiateur compétent seront communiquées sur demande ou ajoutées aux présentes CGV dès désignation du service de médiation applicable.
+
+## Article 21 : Droit applicable et juridiction compétente
+
+Les présentes CGV sont soumises au droit français.
+
+En cas de litige, les parties rechercheront d'abord une solution amiable. À défaut, le litige sera porté devant les juridictions compétentes dans les conditions du droit commun.
 
 {{% /blocks/section %}}
