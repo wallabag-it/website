@@ -40,6 +40,57 @@
   }
 
   .zammad-chat {
+    left: auto !important;
+    right: .75rem !important;
+    width: 3.25rem !important;
+    max-width: 3.25rem !important;
+  }
+
+  .zammad-chat:not(.zammad-chat-is-open) {
+    height: 3.25rem !important;
+  }
+
+  .zammad-chat:not(.zammad-chat-is-open) .zammad-chat-header {
+    width: 3.25rem !important;
+    height: 3.25rem !important;
+    min-height: 3.25rem !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border-radius: 999px !important;
+  }
+
+  .zammad-chat:not(.zammad-chat-is-open) .zammad-chat-welcome {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 3.25rem !important;
+    height: 3.25rem !important;
+    padding: 0 !important;
+  }
+
+  .zammad-chat:not(.zammad-chat-is-open) .zammad-chat-icon {
+    position: static !important;
+    margin: 0 !important;
+  }
+
+  .zammad-chat:not(.zammad-chat-is-open) .zammad-chat-welcome-text {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  .zammad-chat:not(.zammad-chat-is-open) .zammad-chat-header-controls,
+  .zammad-chat:not(.zammad-chat-is-open) .zammad-chat-header-icon {
+    display: none !important;
+  }
+
+  .zammad-chat.zammad-chat-is-open {
     left: .75rem !important;
     right: .75rem !important;
     width: auto !important;
