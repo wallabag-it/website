@@ -8,13 +8,13 @@ menu: {main: {weight: 27}}
 {{% blocks/cover title="Alternatives to read-it-later tools" color="primary" height="auto" %}}
 {{% /blocks/cover %}}
 
-{{% blocks/lead %}}
+{{% blocks/lead color="white" %}}
 
 Using a read-it-later app or bookmark manager and thinking about switching? These guides compare wallabag.it with the most common alternatives.
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="white" %}}
+{{% blocks/section color="light" %}}
 
 ## Why choose wallabag.it?
 {.text-center}
@@ -34,6 +34,7 @@ wallabag.it is the hosted version of an open-source read-it-later app: full arti
 ## Not convinced yet?
 {.text-center}
 
+<p class="lead text-center">Try wallabag.it free for 14 days and compare it with your current reading workflow.</p>
 <div class="text-center">
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="alternatives-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>

@@ -13,7 +13,7 @@ Keep your saved articles everywhere you are.
 
 {{% /blocks/cover %}}
 
-{{% blocks/lead %}}
+{{% blocks/lead color="white" %}}
 
 wallabag.it works wherever you read: native mobile apps, browser add-ons and even e-reader applications.
 
@@ -21,7 +21,7 @@ Save an article from any device, then read it anywhere — **including offline**
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="white" type="row" %}}
+{{% blocks/section color="light" type="row" %}}
 
 {{% blocks/feature icon="fa-brands fa-android" title="Android" %}}
 Save and read your articles offline, wherever you are.
@@ -65,7 +65,7 @@ Community apps and integrations for many other platforms
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="white" %}}
 
 ## Mobile apps for offline reading
 {.text-center}
@@ -86,7 +86,7 @@ Frigoligo is an alternative wallabag client for people who prefer a different mo
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="white" %}}
+{{% blocks/section color="light" %}}
 
 ## Browser add-ons and e-reader apps
 {.text-center}
@@ -105,9 +105,18 @@ If you prefer long reading sessions on an e-ink screen, community apps can bring
 
 The wallabag ecosystem also includes desktop and Linux mobile clients, plus community integrations for other workflows. You can start with the web app and add the tools that fit your own reading habits.
 
-<div class="text-center mt-4">
-<a class="btn btn-secondary me-2 mb-2" href="https://app.wallabag.it/register/" data-cta="applications-bottom-trial">Start with a 14-day free trial <i class="fa fa-user-plus ms-2"></i></a>
-<a class="btn btn-outline-primary mb-2" href="/en/features/">See every wallabag.it feature</a>
+{{% /blocks/section %}}
+
+{{% blocks/section color="primary" %}}
+
+## Ready to read everywhere?
+{.text-center}
+
+<p class="lead text-center">Create your wallabag.it account, then add the apps that fit your own reading habits.</p>
+<div class="text-center">
+<a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="applications-bottom-trial">
+  Start your free trial <i class="fa fa-user-plus ms-2"></i>
+</a>
 </div>
 
 {{% /blocks/section %}}

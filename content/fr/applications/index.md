@@ -13,7 +13,7 @@ Conservez et consultez vos articles où que vous soyez.
 
 {{% /blocks/cover %}}
 
-{{% blocks/lead %}}
+{{% blocks/lead color="white" %}}
 
 wallabag.it vous suit partout où vous lisez : applications mobiles natives, extensions pour navigateurs et même applications pour liseuses.
 
@@ -21,7 +21,7 @@ Archivez un article depuis n'importe quel appareil, puis lisez-le où vous voule
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="white" type="row" %}}
+{{% blocks/section color="light" type="row" %}}
 
 {{% blocks/feature icon="fa-brands fa-android" title="Android" %}}
 Archivez et lisez vos articles hors connexion, où que vous soyez.
@@ -65,7 +65,7 @@ Des applications et intégrations communautaires pour de nombreuses autres plate
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="white" %}}
 
 ## Applications mobiles avec lecture hors-ligne
 {.text-center}
@@ -86,7 +86,7 @@ Frigoligo est un client wallabag alternatif pour celles et ceux qui préfèrent 
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="white" %}}
+{{% blocks/section color="light" %}}
 
 ## Extensions navigateur et applications pour liseuses
 {.text-center}
@@ -105,9 +105,18 @@ Si vous aimez lire longtemps sur un écran e-ink, des applications communautaire
 
 L'écosystème wallabag comprend aussi des clients pour ordinateur et mobile Linux, ainsi que des intégrations communautaires pour d'autres usages. Vous pouvez commencer avec l'application web et ajouter les outils qui correspondent à vos habitudes de lecture.
 
-<div class="text-center mt-4">
-<a class="btn btn-secondary me-2 mb-2" href="https://app.wallabag.it/register/" data-cta="applications-bottom-trial">Commencer par 14 jours d'essai gratuit <i class="fa fa-user-plus ms-2"></i></a>
-<a class="btn btn-outline-primary mb-2" href="/fr/features/">Voir toutes les fonctionnalités wallabag.it</a>
+{{% /blocks/section %}}
+
+{{% blocks/section color="primary" %}}
+
+## Prêt à lire partout ?
+{.text-center}
+
+<p class="lead text-center">Créez votre compte wallabag.it, puis ajoutez les applications qui correspondent à vos habitudes de lecture.</p>
+<div class="text-center">
+<a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="applications-bottom-trial">
+  Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
+</a>
 </div>
 
 {{% /blocks/section %}}

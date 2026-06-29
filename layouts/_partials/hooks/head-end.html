@@ -17,6 +17,37 @@
 {{/* JSON-LD structured data (Organization + SoftwareApplication) */ -}}
 {{ partial "structured-data.html" . -}}
 
+<style>
+@media (max-width: 767.98px) {
+  .td-cover-block {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .td-cover-block .display-1 {
+    font-size: 2.75rem;
+    line-height: 1.08;
+    padding-bottom: 1rem !important;
+  }
+
+  .td-cover-block .lead {
+    font-size: 1.1rem;
+    margin-top: 1.5rem !important;
+  }
+
+  .td-cover-block .btn-link.text-white {
+    display: none;
+  }
+
+  .zammad-chat {
+    left: .75rem !important;
+    right: .75rem !important;
+    width: auto !important;
+    max-width: calc(100vw - 1.5rem) !important;
+  }
+}
+</style>
+
 <script>
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */

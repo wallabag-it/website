@@ -14,14 +14,14 @@
 {{ $posts = where $posts "Date" "le" now -}}
 {{ with index ($posts.ByDate.Reverse) 0 -}}
   {{ $description := .Description | default (.Summary | plainify | strings.TrimSpace) -}}
-<div class="latest-blog-post mx-auto text-start" style="max-width: 760px;">
-<p class="text-center text-uppercase text-body-secondary small fw-semibold mb-2">{{ $title }}</p>
-<h2 class="text-center mb-3">{{ .Title }}</h2>
-<p class="text-center text-body-secondary mb-3">{{ .Date.Format $dateFormat }}</p>
-{{ with $description }}<p class="lead text-center">{{ . }}</p>{{ end }}
-<div class="text-center mt-4">
-<a class="btn btn-secondary me-2 mb-2" href="{{ .RelPermalink }}">{{ $readMore }} <i class="fa fa-arrow-right ms-2"></i></a>
-<a class="btn btn-outline-primary mb-2" href="{{ (site.GetPage "section" "blog").RelPermalink }}">{{ $allPosts }}</a>
-</div>
-</div>
+	<div class="latest-blog-post mx-auto text-center" style="max-width: 680px;">
+	<p class="text-uppercase text-body-secondary small fw-semibold mb-2">{{ $title }}</p>
+	<h2 class="h4 mb-2">{{ .Title }}</h2>
+	<p class="small text-body-secondary mb-3">{{ .Date.Format $dateFormat }}</p>
+	{{ with $description }}<p class="text-body-secondary mb-3">{{ . }}</p>{{ end }}
+	<div class="mt-3">
+	<a class="btn btn-sm btn-outline-primary me-2 mb-2" href="{{ .RelPermalink }}">{{ $readMore }} <i class="fa fa-arrow-right ms-2"></i></a>
+	<a class="btn btn-sm btn-link mb-2" href="{{ (site.GetPage "section" "blog").RelPermalink }}">{{ $allPosts }}</a>
+	</div>
+	</div>
 {{ end -}}

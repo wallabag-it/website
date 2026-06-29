@@ -11,12 +11,16 @@ $secondary: #c0e0de;
 }
 
 /* Mise en avant du CTA d'essai gratuit dans le menu. */
+.td-navbar .nav-link[data-cta="nav-trial"],
+.td-navbar .nav-link[href="https://app.wallabag.it"] {
+  border-radius: .25rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
 .td-navbar .nav-link[data-cta="nav-trial"] {
   background-color: #f97316;
   color: #fff !important;
-  border-radius: 2rem;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
 
   &:hover,
   &:focus {
@@ -28,9 +32,6 @@ $secondary: #c0e0de;
 .td-navbar .nav-link[href="https://app.wallabag.it"] {
   background-color: $secondary;
   color: $primary !important;
-  border-radius: 2rem;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
 
   &:hover,
   &:focus {
@@ -69,4 +70,33 @@ $secondary: #c0e0de;
 .product-glimpse-list li,
 .pricing-plan-highlights li {
   margin-bottom: .4rem;
+}
+
+.feature-screenshot {
+  max-width: 720px;
+}
+
+.feature-screenshot-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(31, 41, 55, .14);
+  border-radius: .5rem;
+  box-shadow: 0 .75rem 2rem rgba(31, 41, 55, .12);
+}
+
+.feature-screenshot-caption {
+  margin-top: .65rem;
+  color: rgba(31, 41, 55, .72);
+  font-size: .875rem;
+  text-align: center;
+}
+
+.td-box--dark .feature-screenshot-img {
+  border-color: rgba(255, 255, 255, .18);
+  box-shadow: 0 .75rem 2rem rgba(0, 0, 0, .25);
+}
+
+.td-box--dark .feature-screenshot-caption {
+  color: rgba(255, 255, 255, .72);
 }
