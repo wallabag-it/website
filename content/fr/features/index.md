@@ -10,13 +10,13 @@ menu: {main: {weight: 10}}
 
 {{% /blocks/cover %}}
 
-{{% blocks/lead %}}
+{{% blocks/lead color="white" %}}
 
 Sauvegardez vos articles, lisez-les hors connexion, organisez votre bibliothèque et gardez la maîtrise de vos données avec wallabag.it.
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="white" %}}
+{{% blocks/section color="light" %}}
 ## Lecture confortable, sans distraction
 
 wallabag extrait le contenu des articles (et uniquement, le contenu : bye bye la publicité !) et vous l'affiche dans une vue plus confortable. De plus, vous pouvez afficher vos articles sur smartphone ou votre tablette.
@@ -55,5 +55,19 @@ Langue, vitesse de lecture, RSS : vous pouvez ajuster beaucoup de paramètres po
 ### Conservez vos données pour toujours
 
 Vos données vous appartiennent. C'est pourquoi vous pouvez télécharger les articles en plusieurs formats : PDF, ePUB, .mobi, JSON, CSV, txt ou HTML.
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="primary" %}}
+
+## Prêt à sauvegarder votre prochain article ?
+{.text-center}
+
+<p class="lead text-center">Créez votre compte wallabag.it et testez toutes les fonctionnalités pendant 14 jours, sans carte bancaire.</p>
+<div class="text-center">
+<a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="features-bottom-trial">
+  Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
+</a>
+</div>
 
 {{% /blocks/section %}}

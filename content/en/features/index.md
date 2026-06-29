@@ -10,13 +10,13 @@ menu: {main: {weight: 10}}
 
 {{% /blocks/cover %}}
 
-{{% blocks/lead %}}
+{{% blocks/lead color="white" %}}
 
 Save articles, read them offline, organize your library and keep your data under control with wallabag.it.
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="white" %}}
+{{% blocks/section color="light" %}}
 ## Comfortable, distraction-free reading
 
 wallabag extracts the article's content (and only its content!) and displays it in a comfortable view. Moreover, wallabag is responsive: you can read your articles on your smartphone or your tablet.
@@ -56,5 +56,19 @@ Language, reading speed, RSS: you can tune lots of parameters to make your walla
 ### Keep your data forever
 
 All your data belongs to you. You can download all your articles in many formats: PDF, ePUB, .mobi, JSON, CSV, txt or HTML.
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="primary" %}}
+
+## Ready to save your next article?
+{.text-center}
+
+<p class="lead text-center">Create your wallabag.it account and try every feature for 14 days, no credit card required.</p>
+<div class="text-center">
+<a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="features-bottom-trial">
+  Start your free trial <i class="fa fa-user-plus ms-2"></i>
+</a>
+</div>
 
 {{% /blocks/section %}}

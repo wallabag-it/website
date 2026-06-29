@@ -1,10 +1,12 @@
 {{ $lang := site.Language.Lang -}}
 {{ $items := index site.Data.alternatives $lang | default (index site.Data.alternatives "en") -}}
-{{ $btnLabel := "Compare wallabag.it with" -}}
+{{ $btnLabel := "Compare with" -}}
+{{ $btnAriaLabel := "Compare wallabag.it with" -}}
 {{ $shutdownLabel := "Shut down" -}}
 {{ $uncertainLabel := "Uncertain future" -}}
 {{ if eq $lang "fr" -}}
-{{ $btnLabel = "Comparer wallabag.it avec" -}}
+{{ $btnLabel = "Comparer avec" -}}
+{{ $btnAriaLabel = "Comparer wallabag.it avec" -}}
 {{ $shutdownLabel = "Fermé" -}}
 {{ $uncertainLabel = "Avenir incertain" -}}
 {{ end -}}
@@ -18,7 +20,7 @@
 {{ if eq .status "shutdown" }}<span class="badge bg-danger">{{ $shutdownLabel }}</span>{{ else if eq .status "uncertain" }}<span class="badge bg-warning text-dark">{{ $uncertainLabel }}</span>{{ end }}
 </div>
 <p class="card-text text-muted flex-grow-1">{{ .description }}</p>
-<a href="{{ .slug }}/" class="btn btn-sm btn-outline-primary mt-3 align-self-start">{{ $btnLabel }} {{ .name }} <i class="fa fa-arrow-right ms-1"></i></a>
+<a href="{{ .slug }}/" class="btn btn-sm btn-outline-primary mt-3 align-self-start" aria-label="{{ $btnAriaLabel }} {{ .name }}">{{ $btnLabel }} {{ .name }} <i class="fa fa-arrow-right ms-1"></i></a>
 </div>
 </div>
 </div>
