@@ -39,6 +39,26 @@ $secondary: #c0e0de;
   }
 }
 
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible,
+.navbar-brand:focus-visible,
+.card a:focus-visible {
+  outline: 3px solid #f97316;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 .2rem rgba(249, 115, 22, .25);
+}
+
+.td-navbar .nav-link:focus-visible,
+.td-navbar .navbar-brand:focus-visible,
+.td-cover-block .btn:focus-visible,
+.td-box--primary .btn:focus-visible,
+.td-box--dark .btn:focus-visible {
+  outline-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(249, 115, 22, .55);
+}
+
 /* Le plan mis en avant sur la page Tarifs est légèrement agrandi sur desktop. */
 @media (min-width: 768px) {
   .pricing-card-featured {
@@ -49,6 +69,15 @@ $secondary: #c0e0de;
 .zammad-chat {
   left: 30px !important;
   right: 0 !important;
+}
+
+.td-box--dark code {
+  color: #f8fafc;
+  background-color: rgba(255, 255, 255, .14);
+}
+
+.testimonial-context {
+  color: #475569;
 }
 
 .product-proof-img {

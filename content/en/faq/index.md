@@ -11,7 +11,7 @@ faq_schema: true
 
 {{% blocks/section color="white" %}}
 
-{{< faq >}}
+{{< faq heading_level="2" >}}
 
 <p class="text-center text-body-secondary mt-5">Didn't find your answer? Browse the <a href="https://helpdesk.wallabag.it/help/en-gb">knowledge base</a> or write to <a href="mailto:helpdesk@wallabag.it">helpdesk@wallabag.it</a>.</p>
 

@@ -16,6 +16,9 @@ menu: {main: {weight: 25}}
 
 {{% blocks/section color="white" %}}
 
+## Choose your wallabag.it subscription
+{.visually-hidden}
+
 {{< pricing-plans >}}
 {{< pricing-plan id="3m" title="3 months" period="for 3 months" cta="Start free trial" highlights="Full service included|No credit card required|Export anytime" >}}
 Try the full service with no long-term commitment. Leave whenever you want — and take your data with you.

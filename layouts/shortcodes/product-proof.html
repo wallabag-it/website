@@ -12,14 +12,33 @@
   )
 -}}
 {{ $items := index $copy $lang | default (index $copy "en") -}}
+{{ $featurePage := site.GetPage "/features" -}}
+{{ $dimensions := dict
+  "firefox.png" (dict "width" 1100 "height" 839)
+  "homepage.png" (dict "width" 1100 "height" 739)
+  "ios.png" (dict "width" 461 "height" 800)
+-}}
 <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 product-proof">
 {{ range $items }}
+{{ $item := . -}}
 <div class="col">
 <div class="card h-100 shadow-sm overflow-hidden">
-<img class="card-img-top product-proof-img" src="{{ .image }}" alt="{{ .alt }}" loading="lazy">
+{{ $resourceName := path.Base $item.image -}}
+{{ $dim := index $dimensions $resourceName -}}
+{{ $image := and $featurePage ($featurePage.Resources.GetMatch $resourceName) -}}
+{{ with $image -}}
+{{ $fallback := .Resize "720x" -}}
+{{ $webp := .Resize "720x webp q82" -}}
+<picture>
+<source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+<img class="card-img-top product-proof-img" src="{{ $fallback.RelPermalink }}" alt="{{ $item.alt }}" loading="lazy" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}">
+</picture>
+{{ else -}}
+<img class="card-img-top product-proof-img" src="{{ $item.image }}" alt="{{ $item.alt }}" loading="lazy"{{ with $dim }} width="{{ .width }}" height="{{ .height }}"{{ end }}>
+{{ end -}}
 <div class="card-body">
-<h3 class="h5 card-title">{{ .title }}</h3>
-<p class="card-text">{{ .text }}</p>
+<h3 class="h5 card-title">{{ $item.title }}</h3>
+<p class="card-text">{{ $item.text }}</p>
 </div>
 </div>
 </div>

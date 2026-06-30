@@ -1,4 +1,16 @@
+{{ $src := .Get "src" -}}
+{{ $alt := .Get "alt" -}}
+{{ $image := .Page.Resources.GetMatch $src -}}
 <figure class="feature-screenshot mx-auto my-4" style="max-width: 720px;">
-<img class="feature-screenshot-img" src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy" style="display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; border: 1px solid rgba(31, 41, 55, .14); border-radius: .5rem; box-shadow: 0 .75rem 2rem rgba(31, 41, 55, .12);">
-<figcaption class="feature-screenshot-caption text-center small mt-2">{{ .Get "alt" }}</figcaption>
+{{ with $image -}}
+{{ $fallback := .Resize "720x" -}}
+{{ $webp := .Resize "720x webp q82" -}}
+<picture>
+<source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+<img class="feature-screenshot-img" src="{{ $fallback.RelPermalink }}" alt="{{ $alt }}" loading="lazy" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}" style="display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; border: 1px solid rgba(31, 41, 55, .14); border-radius: .5rem; box-shadow: 0 .75rem 2rem rgba(31, 41, 55, .12);">
+</picture>
+{{ else -}}
+<img class="feature-screenshot-img" src="{{ $src }}" alt="{{ $alt }}" loading="lazy" style="display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; border: 1px solid rgba(31, 41, 55, .14); border-radius: .5rem; box-shadow: 0 .75rem 2rem rgba(31, 41, 55, .12);">
+{{ end -}}
+<figcaption class="feature-screenshot-caption text-center small mt-2">{{ $alt }}</figcaption>
 </figure>

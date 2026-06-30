@@ -20,6 +20,11 @@
   )
 -}}
 {{ $item := index $copy $lang | default (index $copy "en") -}}
+{{ $featurePage := site.GetPage "/features" -}}
+{{ $resourceName := path.Base $item.image -}}
+{{ $dimensions := dict "homepage.png" (dict "width" 1100 "height" 739) -}}
+{{ $dim := index $dimensions $resourceName -}}
+{{ $image := and $featurePage ($featurePage.Resources.GetMatch $resourceName) -}}
 <div class="row align-items-center g-4 product-glimpse">
 <div class="col-lg-5">
 <p class="text-uppercase text-body-secondary fw-semibold small mb-2">{{ $item.eyebrow }}</p>
@@ -33,6 +38,15 @@
 <a class="btn btn-secondary mt-2" href="https://app.wallabag.it/register/" data-cta="home-product-glimpse-trial">{{ $item.cta }} <i class="fa fa-user-plus ms-2"></i></a>
 </div>
 <div class="col-lg-7">
-<img class="img-fluid product-glimpse-img" src="{{ $item.image }}" alt="{{ $item.alt }}" loading="lazy">
+{{ with $image -}}
+{{ $fallback := .Resize "720x" -}}
+{{ $webp := .Resize "720x webp q82" -}}
+<picture>
+<source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+<img class="img-fluid product-glimpse-img" src="{{ $fallback.RelPermalink }}" alt="{{ $item.alt }}" loading="lazy" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}">
+</picture>
+{{ else -}}
+<img class="img-fluid product-glimpse-img" src="{{ $item.image }}" alt="{{ $item.alt }}" loading="lazy"{{ with $dim }} width="{{ .width }}" height="{{ .height }}"{{ end }}>
+{{ end -}}
 </div>
 </div>

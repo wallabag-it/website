@@ -23,16 +23,19 @@ Archivez un article depuis n'importe quel appareil, puis lisez-le où vous voule
 
 {{% blocks/section color="light" type="row" %}}
 
+## Applications et intégrations disponibles
+{.visually-hidden}
+
 {{% blocks/feature icon="fa-brands fa-android" title="Android" %}}
 Archivez et lisez vos articles hors connexion, où que vous soyez.
 
-<a href="https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche"><img src="/images/badges/google-play-fr.png" alt="Disponible sur Google Play" height="56" loading="lazy" /></a>
+<a href="https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche"><img src="/images/badges/google-play-fr.png" alt="Disponible sur Google Play" width="145" height="56" loading="lazy" /></a>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-brands fa-apple" title="iOS" %}}
 L'application wallabag pour iPhone et iPad, avec lecture hors-ligne.
 
-<a href="https://apps.apple.com/app/wallabag-2-officiel/id1170800946"><img src="/images/badges/app-store-fr.svg" alt="Télécharger dans l'App Store" height="56" loading="lazy" /></a>
+<a href="https://apps.apple.com/app/wallabag-2-officiel/id1170800946"><img src="/images/badges/app-store-fr.svg" alt="Télécharger dans l'App Store" width="177" height="56" loading="lazy" /></a>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-solid fa-mobile-screen-button" title="Frigoligo" url="https://github.com/casimir/frigoligo" url_text="Télécharger l'application Frigoligo" %}}

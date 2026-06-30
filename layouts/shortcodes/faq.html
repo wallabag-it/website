@@ -5,13 +5,20 @@
 {{ with .Get "ids" -}}
   {{ $items = where $items "id" "in" (split . ",") -}}
 {{ end -}}
+{{ $headingLevel := .Get "heading_level" | default "3" -}}
 {{ $uid := printf "faq-accordion-%d" .Ordinal -}}
 <div class="accordion mx-auto text-start" id="{{ $uid }}" style="max-width: 800px;">
 {{ range $i, $item := $items }}
 <div class="accordion-item">
+{{ if eq $headingLevel "2" -}}
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ $uid }}-{{ $i }}" aria-expanded="false" aria-controls="{{ $uid }}-{{ $i }}">{{ $item.q }}</button>
+</h2>
+{{ else -}}
 <h3 class="accordion-header">
 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ $uid }}-{{ $i }}" aria-expanded="false" aria-controls="{{ $uid }}-{{ $i }}">{{ $item.q }}</button>
 </h3>
+{{ end -}}
 <div id="{{ $uid }}-{{ $i }}" class="accordion-collapse collapse" data-bs-parent="#{{ $uid }}">
 <div class="accordion-body">{{ $item.a | markdownify }}</div>
 </div>

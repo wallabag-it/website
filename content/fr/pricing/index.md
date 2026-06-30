@@ -17,6 +17,9 @@ menu: {main: {weight: 35}}
 
 {{% blocks/section color="white" %}}
 
+## Choisir votre abonnement wallabag.it
+{.visually-hidden}
+
 {{< pricing-plans >}}
 {{< pricing-plan id="3m" title="3 mois" period="pour 3 mois" cta="Essayer gratuitement" highlights="Service complet inclus|Sans carte bancaire|Export à tout moment" >}}
 Testez le service complet sans engagement. Partez quand vous voulez — en emportant vos données.

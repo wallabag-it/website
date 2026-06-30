@@ -5,7 +5,7 @@
 <div class="card h-100 shadow-sm">
 <div class="card-body d-flex flex-column p-4">
 <i class="fas fa-quote-left fa-lg text-secondary mb-3" aria-hidden="true"></i>
-{{ with .context }}<p class="small text-uppercase fw-bold text-secondary mb-2">{{ . }}</p>{{ end }}
+{{ with .context }}<p class="small text-uppercase fw-bold testimonial-context mb-2">{{ . }}</p>{{ end }}
 <blockquote class="blockquote flex-grow-1"><p class="fs-6 fst-italic">{{ .quote }}</p></blockquote>
 <footer class="blockquote-footer mt-auto mb-0">{{ .author }}{{ with .role }}, {{ . }}{{ end }}{{ with .since }} — {{ . }}{{ end }}</footer>
 </div>

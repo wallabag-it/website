@@ -23,16 +23,19 @@ Save an article from any device, then read it anywhere — **including offline**
 
 {{% blocks/section color="light" type="row" %}}
 
+## Available apps and integrations
+{.visually-hidden}
+
 {{% blocks/feature icon="fa-brands fa-android" title="Android" %}}
 Save and read your articles offline, wherever you are.
 
-<a href="https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche"><img src="/images/badges/google-play-en.png" alt="Get it on Google Play" height="56" loading="lazy" /></a>
+<a href="https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche"><img src="/images/badges/google-play-en.png" alt="Get it on Google Play" width="145" height="56" loading="lazy" /></a>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-brands fa-apple" title="iOS" %}}
 The wallabag app for iPhone and iPad, with offline reading.
 
-<a href="https://apps.apple.com/app/wallabag-2-officiel/id1170800946"><img src="/images/badges/app-store-en.svg" alt="Download on the App Store" height="56" loading="lazy" /></a>
+<a href="https://apps.apple.com/app/wallabag-2-officiel/id1170800946"><img src="/images/badges/app-store-en.svg" alt="Download on the App Store" width="168" height="56" loading="lazy" /></a>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-solid fa-mobile-screen-button" title="Frigoligo" url="https://github.com/casimir/frigoligo" url_text="Get the Frigoligo app" %}}
