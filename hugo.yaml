@@ -86,7 +86,7 @@ languages:
             desc: Suivez ce site pour connaître l'état de santé de wallabag.it
         developer:
           - name: Comparer les alternatives
-            url: ../alternatives/
+            url: /fr/alternatives/
             desc: Comparez wallabag.it avec Pocket, Instapaper, Readwise Reader et d'autres services de lecture différée.
           - name: Documentation
             url: https://helpdesk.wallabag.it/help/
@@ -248,7 +248,7 @@ params:
     # # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: Compare alternatives
-        url: ../alternatives/
+        url: /en/alternatives/
         desc: Compare wallabag.it with Pocket, Instapaper, Readwise Reader and other read-it-later services.
       - name: Documentation
         url: https://helpdesk.wallabag.it/help/en-gb
