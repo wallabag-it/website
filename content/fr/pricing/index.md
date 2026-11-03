@@ -8,7 +8,7 @@ menu: {main: {weight: 35}}
 ---
 
 {{% blocks/cover title="Des tarifs simples, sans surprise" color="primary" height="auto" %}}
-<p class="lead mt-3 mb-4">Tous les abonnements incluent toutes les fonctionnalités — choisissez simplement la durée qui vous convient.<br />Commencez par un <strong>essai gratuit de 14 jours</strong>, sans carte bancaire.</p>
+<p class="lead mt-3 mb-4">Tous les abonnements incluent toutes les fonctionnalités, premium comprises — choisissez simplement la durée qui vous convient.<br />Commencez par un <strong>essai gratuit de 14 jours</strong>, sans carte bancaire.</p>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-hero-trial">
   Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
 </a>
@@ -29,7 +29,7 @@ Les mêmes fonctionnalités que les autres abonnements, avec un soutien plus for
 {{< /pricing-plan >}}
 {{< /pricing-plans >}}
 
-<p class="text-center text-body-secondary mt-4">Essai gratuit de 14 jours sans limitation · aucune carte bancaire demandée · exportez vos données à tout moment</p>
+<p class="text-center text-body-secondary mt-4">Essai gratuit de 14 jours · aucune carte bancaire demandée · fonctionnalités premium débloquées à l'abonnement · exportez vos données à tout moment</p>
 <p class="text-center text-body-secondary">Votre abonnement finance directement le développement de wallabag et garde le service sans publicité.</p>
 
 {{% /blocks/section %}}
@@ -68,18 +68,20 @@ wallabag existe depuis 2013 et wallabag.it depuis 2016. Votre abonnement aide à
 {{% blocks/section color="dark" type="row" %}}
 
 ## Des fonctionnalités premium incluses dans chaque abonnement
-{.text-center .mb-5}
+{.text-center .mb-2}
+
+<p class="text-center col-12 mb-5">Réservées aux abonnés, elles ne font pas partie de l'essai gratuit. <a class="text-white" href="/fr/blog/2026/06/08/des-restrictions-pour-les-comptes-d-essai/">Pourquoi ?</a></p>
 
 {{% blocks/feature icon="fa-envelope" title="Sauvegarde par email" %}}
-Recevez votre adresse privée `save+USER+TOKEN@wallabag.it` : transférez n'importe quel lien par email, il est sauvegardé automatiquement. Idéal pour les newsletters et les liens partagés par vos proches.
+Recevez votre adresse privée `save+USER+TOKEN@wallabag.it` : envoyez ou transférez un email contenant des liens, ils sont sauvegardés automatiquement. Idéal pour les liens partagés par vos proches.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-cloud-download" title="Import depuis un autre service" %}}
-Rapatriez votre liste de lecture depuis Pocket, Instapaper, Pinboard, Omnivore, Shaarli, un autre wallabag ou n'importe quel flux RSS/Atom — tags et statuts lu/favori sont conservés.
+Rapatriez votre liste de lecture depuis Pocket, Instapaper, Pinboard, Omnivore, Shaarli ou un autre wallabag — tags et statuts lu/favori sont conservés.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-rss" title="Flux RSS & Atom" %}}
-Publiez vos articles sauvegardés sous forme de flux privés — non lus, favoris, archivés ou par tag — et lisez-les dans votre lecteur RSS préféré.
+{{% blocks/feature icon="fa-rss" title="Suivre des flux RSS et Atom" %}}
+Collez l'adresse d'un site : wallabag.it trouve son flux et sauvegarde les nouveaux articles dans votre compte, automatiquement si vous le souhaitez.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
@@ -152,7 +154,7 @@ Pour aller plus loin, lisez notre article : [Quelle alternative à Pocket choisi
 ## Questions fréquentes sur l'abonnement
 {.text-center .mb-5}
 
-{{< faq ids="trial-end,renewal,payment,refund" >}}
+{{< faq ids="trial-end,trial-limits,renewal,payment,refund" >}}
 
 [Consulter toutes les questions fréquentes →](/fr/faq/)
 {.text-center .mt-4}
@@ -164,7 +166,7 @@ Pour aller plus loin, lisez notre article : [Quelle alternative à Pocket choisi
 ## Prêt à archiver votre premier article ?
 {.text-center}
 
-<p class="lead text-center">Créez votre compte dès maintenant et profitez de 14 jours d'essai gratuit, sans aucune limitation.<br />Aucune carte bancaire demandée.</p>
+<p class="lead text-center">Créez votre compte dès maintenant et profitez de 14 jours d'essai gratuit.<br />Aucune carte bancaire demandée.</p>
 <div class="text-center">
 <a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-bottom-trial">
   Se créer un compte <i class="fa fa-user-plus ms-2"></i>
