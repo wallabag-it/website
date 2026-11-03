@@ -13,7 +13,7 @@ images: [/images/social-card.png]
 <a class="btn btn-lg btn-outline-light mb-4" href="/fr/tarifs/">
   Voir les offres dès 11 €/an
 </a>
-<p class="lead mt-5">14 jours d'essai gratuit, sans limitation et sans carte bancaire.</p>
+<p class="lead mt-5">14 jours d'essai gratuit, sans carte bancaire.</p>
 <p class="small text-white mb-0">Open source depuis 2013 · wallabag.it existe depuis 2016 · hébergé en Europe · export de vos données à tout moment</p>
 {{< blocks/link-down color="white" >}}
 {{< /blocks/cover >}}
@@ -64,6 +64,32 @@ Tags, recherche, favoris, annotations et exports gardent votre bibliothèque uti
 <div class="col-12 text-center mt-4">
 <a class="btn btn-secondary me-2 mb-2" href="https://app.wallabag.it/register/" data-cta="home-core-trial">Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i></a>
 <a class="btn btn-outline-primary mb-2" href="/fr/features/">Voir toutes les fonctionnalités</a>
+</div>
+
+{{% /blocks/section %}}
+
+{{% blocks/section color="dark" type="row" %}}
+
+## Les fonctionnalités premium des abonnés
+{.text-center .mb-2}
+
+<p class="lead text-center col-12 mb-5">Incluses dans chaque abonnement, dès 11 € par an.</p>
+
+{{% blocks/feature icon="fa-envelope" title="Sauvegarde par email" %}}
+Envoyez un lien à votre adresse wallabag.it privée, il arrive dans votre liste de lecture. Depuis n'importe quel logiciel de messagerie, et pour les liens qu'on vous envoie.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-rss" title="Suivre des flux RSS et Atom" %}}
+Collez l'adresse d'un site : wallabag.it trouve son flux et peut sauvegarder automatiquement les nouveaux articles dans votre compte.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-cloud-download" title="Import depuis d'autres services" %}}
+Rapatriez votre liste de lecture depuis Pocket, Instapaper, Pinboard, Omnivore, Shaarli ou un autre wallabag. Tags et statuts lu/favori sont conservés.
+{{% /blocks/feature %}}
+
+<div class="col-12 text-center mt-4">
+<a class="btn btn-secondary mb-2" href="/fr/tarifs/" data-cta="home-premium-pricing">Voir les abonnements <i class="fa fa-arrow-right ms-2"></i></a>
+<p class="small mt-3 mb-0">Ces fonctionnalités sont débloquées avec un abonnement, elles ne font pas partie de l'essai gratuit. <a class="text-white" href="/fr/blog/2026/06/08/des-restrictions-pour-les-comptes-d-essai/">Pourquoi ?</a></p>
 </div>
 
 {{% /blocks/section %}}

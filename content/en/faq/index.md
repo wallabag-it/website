@@ -22,7 +22,7 @@ faq_schema: true
 ## Ready to try it yourself?
 {.text-center}
 
-<p class="lead text-center">Create your account now and enjoy a 14-day free trial with no limitation.<br />No credit card required.</p>
+<p class="lead text-center">Create your account now and enjoy a 14-day free trial.<br />No credit card required.</p>
 <div class="text-center">
 <a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="faq-bottom-trial">
   Create an account <i class="fa fa-user-plus ms-2"></i>

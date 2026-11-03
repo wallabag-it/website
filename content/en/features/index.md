@@ -40,6 +40,24 @@ Save new articles with one click thanks to our Chrome and Firefox addons.
 
 {{% /blocks/section %}}
 
+{{% blocks/section color="light" %}}
+## Premium features for subscribers
+
+These features come with every subscription. They are not part of the free trial: [we explained why on the blog](/en/blog/2026/06/08/some-restrictions-for-trial-accounts-on-wallabag.it/).
+
+### Save articles by email
+Enable it in your settings and you get a private address, like `save+your-username+token@wallabag.it`. Send it an email with one or several links: each of them is saved in your account. Handy from a computer where the browser add-on is not installed, or to forward the links people send you.
+
+### Follow RSS & Atom feeds
+Add the websites you follow, no need to find the exact feed address: paste the website, wallabag.it finds the feed. Pick the articles you want to keep, or let wallabag.it save every new article automatically. You can see when each feed was last fetched, and you are warned when one stops working.
+
+### Import your reading list from another service
+Moving from Pocket, Instapaper, Pinboard, Omnivore, Shaarli, Delicious, Firefox or Chrome bookmarks or another wallabag? Import your articles in a few clicks, with their tags and read/favourite status. [Step-by-step guides](https://helpdesk.wallabag.it/help/en-gb/2-import) are in our knowledge base.
+
+[See the plans, from 11€ a year →](/en/pricing/)
+
+{{% /blocks/section %}}
+
 {{% blocks/section color="white" %}}
 ## And even more wallabag.it features
 
@@ -64,7 +82,7 @@ All your data belongs to you. You can download all your articles in many formats
 ## Ready to save your next article?
 {.text-center}
 
-<p class="lead text-center">Create your wallabag.it account and try every feature for 14 days, no credit card required.</p>
+<p class="lead text-center">Create your wallabag.it account and try it free for 14 days, no credit card required. Subscribe to unlock the premium features.</p>
 <div class="text-center">
 <a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="features-bottom-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>

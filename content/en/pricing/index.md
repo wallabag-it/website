@@ -7,7 +7,7 @@ menu: {main: {weight: 25}}
 ---
 
 {{% blocks/cover title="Simple pricing. Read the web on your terms." color="primary" height="auto" %}}
-<p class="lead mt-3 mb-4">Every plan includes all features — pick the duration that suits you.<br />Start with a <strong>14-day free trial</strong>, no credit card required.</p>
+<p class="lead mt-3 mb-4">Every plan includes all features, premium ones too — pick the duration that suits you.<br />Start with a <strong>14-day free trial</strong>, no credit card required.</p>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-hero-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>
 </a>
@@ -28,7 +28,7 @@ Same features as the other plans, with extra support for the open-source project
 {{< /pricing-plan >}}
 {{< /pricing-plans >}}
 
-<p class="text-center text-body-secondary mt-4">14-day free trial with no limitation · no credit card required · export your data anytime</p>
+<p class="text-center text-body-secondary mt-4">14-day free trial · no credit card required · premium features unlocked when you subscribe · export your data anytime</p>
 <p class="text-center text-body-secondary">Your subscription directly funds wallabag development and keeps the service ad-free.</p>
 
 {{% /blocks/section %}}
@@ -67,18 +67,20 @@ wallabag has existed since 2013 and wallabag.it since 2016. Your subscription he
 {{% blocks/section color="dark" type="row" %}}
 
 ## Premium features included with every subscription
-{.text-center .mb-5}
+{.text-center .mb-2}
+
+<p class="text-center col-12 mb-5">Reserved for subscribers, they are not part of the free trial. <a class="text-white" href="/en/blog/2026/06/08/some-restrictions-for-trial-accounts-on-wallabag.it/">Why?</a></p>
 
 {{% blocks/feature icon="fa-envelope" title="Save by email" %}}
-Get your private `save+USER+TOKEN@wallabag.it` address: forward any link by email and it's saved automatically. Perfect for newsletters and links shared by friends.
+Get your private `save+USER+TOKEN@wallabag.it` address: send or forward an email with links, and they are saved automatically. Perfect for links shared by friends.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-cloud-download" title="Import from another service" %}}
-Bring your reading list from Pocket, Instapaper, Pinboard, Omnivore, Shaarli, another wallabag or any RSS/Atom feed — tags and read/favourite status are preserved.
+Bring your reading list from Pocket, Instapaper, Pinboard, Omnivore, Shaarli or another wallabag — tags and read/favourite status are preserved.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-rss" title="RSS & Atom feeds" %}}
-Publish your saved articles as private feeds — unread, starred, archived or by tag — and read them in your favourite feed reader.
+{{% blocks/feature icon="fa-rss" title="Follow RSS & Atom feeds" %}}
+Paste the address of a website: wallabag.it finds its feed and saves the new articles in your account, automatically if you want.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
@@ -151,7 +153,7 @@ Want the full story? Read our article: [Which alternative to Pocket should I cho
 ## Frequently asked questions about subscriptions
 {.text-center .mb-5}
 
-{{< faq ids="trial-end,renewal,payment,refund" >}}
+{{< faq ids="trial-end,trial-limits,renewal,payment,refund" >}}
 
 [See all frequently asked questions →](/en/faq/)
 {.text-center .mt-4}
@@ -163,7 +165,7 @@ Want the full story? Read our article: [Which alternative to Pocket should I cho
 ## Ready to save your first article?
 {.text-center}
 
-<p class="lead text-center">Create your account now and enjoy a 14-day free trial with no limitation.<br />No credit card required.</p>
+<p class="lead text-center">Create your account now and enjoy a 14-day free trial.<br />No credit card required.</p>
 <div class="text-center">
 <a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-bottom-trial">
   Create an account <i class="fa fa-user-plus ms-2"></i>
