@@ -11,7 +11,7 @@ description: "wallabag.it privacy notice: processed data, legal bases, retention
 
 {{% blocks/section color="white" %}}
 
-Last updated: June 28, 2026
+Last updated: November 5, 2026
 
 wallabag.it is a read-it-later service that lets you save web pages, URLs, articles, tags, annotations and reading preferences.
 
@@ -99,9 +99,9 @@ wallabag.it uses technical providers that are strictly necessary for operating t
 | Provider | Role | Location |
 |---|---|---|
 | Hetzner Online GmbH | Server hosting | Germany / European Union |
-| Stripe | Card payments | European Union; possible transfers outside the EU under their terms |
-| Payplug | Card payments | France / European Union |
-| PayPal | Payments | European Union; possible transfers outside the EU under their terms |
+| Stripe | Card payments (only payment provider since November 2026) | European Union; possible transfers outside the EU under their terms |
+| Payplug | Former card payment provider: no new payments, only the records of past payments | France / European Union |
+| PayPal | Former payment provider: no new payments, only the records of past payments | European Union; possible transfers outside the EU under their terms |
 | Matomo | Website analytics | wallabag.it infrastructure / European Union |
 | Zammad / helpdesk.wallabag.it | User support and support chat | wallabag.it infrastructure / European Union |
 | PHPList | Email and newsletter sending | wallabag.it infrastructure / European Union |
