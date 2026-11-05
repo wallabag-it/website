@@ -17,6 +17,13 @@ Si vous voyez ce User-Agent dans vos logs, c'est nous :
 Mozilla/5.0 (compatible; wallabag; +https://wallabag.it)
 ```
 
+Les requêtes viennent de ces adresses IP :
+
+```
+2a01:4f8:172:25b0::2
+138.201.122.115
+```
+
 ## Ce qu'il fait
 
 wallabag.it est un service de lecture différée. Quand un de nos utilisateurs enregistre un lien, notre serveur récupère la page et garde le texte de l'article, pour qu'il puisse le lire plus tard, sur n'importe quel appareil.
