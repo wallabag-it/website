@@ -1,6 +1,6 @@
 ---
 title: "Which alternative to Raindrop.io should I choose?"
-description: "Raindrop.io is a bookmark manager, not a reading app. wallabag.it is built for reading: full article, offline access, no ads, hosted in Europe."
+description: "Raindrop.io organises links. wallabag.it is made for reading: the whole article, offline reading, no ads, hosted in Europe, 11 € a year."
 date: 2026-06-13
 ---
 
@@ -9,73 +9,50 @@ date: 2026-06-13
 
 {{% blocks/section color="white" %}}
 
-## Raindrop.io: a great tool, but for what exactly?
+## Raindrop.io
 
-Raindrop.io has established itself as one of the best bookmark management apps. Its clean interface, visual collections and wide range of integrations have made it a favourite among developers, designers and curious web users.
+Raindrop.io is one of the best bookmark managers: nice collections and lots of integrations.
 
-But Raindrop.io is first and foremost a link organiser, not a read-it-later app. Its Reader view exists but remains limited: it does not always retrieve the full article content and is only available with a Pro subscription.
+But it's made to organise links. The reader view is limited, needs Pro, and doesn't always get the whole article.
 
-If what you are after is actually reading your articles later in good conditions, Raindrop.io may not be the right tool.
+It's really two different needs:
 
-## Two different use cases
+- **Organising links** (keeping, sorting, sharing): Raindrop.io is great at that.
+- **Reading articles later** (the whole text, no distractions, offline): that's what wallabag.it is for.
 
-It helps to distinguish between two related but distinct needs:
+## The other options for reading
 
-- Organising links: you want to keep references, find them easily, share them or sort them by topic. Raindrop.io is excellent at this.
-- Reading articles later: you want access to the full content of an article, distraction-free, offline if needed, on all your devices. This is where Raindrop.io shows its limits.
+- **Instapaper**: a nice reading app, but the best features need Premium, around 55 € a year.
+- **Readwise Reader**: very complete (RSS, highlights, notes), but around 96 € a year.
 
-If you are in the second camp, here are some options.
+## What wallabag.it does
 
-## Some reading-focused alternatives
+- It saves the whole article, not just the link. If the page disappears, you still have it.
+- You read on the web, on Android, on iOS, and on Kobo or PocketBook e-readers. Offline too.
+- Tags, search, highlights and annotations.
+- You can export everything whenever you want: PDF, ePUB, mobi, JSON, CSV…
+- It's hosted in Europe. No ads, no tracking: it's paid for by subscriptions.
+- It's the open-source wallabag, the project I started in 2013. If you'd rather host it yourself, you can.
 
-- Instapaper offers a polished reading experience, but its best features are locked behind an expensive subscription.
-- Readwise Reader is powerful (RSS, highlights, notes) but its pricing, around €96/year, makes it a tool for the most dedicated users.
-- wallabag.it is an open-source alternative, hosted in Europe, built specifically for read-it-later use.
+## Prices
 
-## Meet wallabag.it
+| Service | Per year | Notes |
+|---|---|---|
+| **wallabag.it** | **11 €** | Open source, hosted in Europe |
+| Raindrop.io Pro | ~26 € | Bookmarks first, search and annotations in Pro |
+| Instapaper Premium | ~55 € | Highlights, notes, text-to-speech |
+| Readwise Reader | ~96 € | Highlights sync, RSS, AI features, hosted in the US |
+{.td-initial .table .table-striped .align-middle .w-auto}
 
-wallabag.it is the hosted version of wallabag, an open-source read-it-later app. Its goal is to fetch the full article content, format it for comfortable reading, and make it accessible everywhere, even offline.
+wallabag.it costs 11 € a year. There's also 4 € for 3 months, or 30 € a year if you want to support the project a bit more. You can try it free for 14 days, no credit card needed.
 
-### Full article storage
-
-wallabag fetches the full text of the page, cleaned up and ad-free. Even if the original website disappears, your copy stays intact.
-
-### Privacy by design
-
-wallabag does not track you and does not sell your data. It is open-source software, run by people who believe in user freedom.
-
-### Hosted in Europe
-
-All data is stored on servers in Europe, protected by strict EU privacy laws and fully GDPR-compliant.
-
-### Offline reading
-
-Sync your articles across all your devices (phones, tablets and Kobo e-readers) and read them without a connection.
-
-### Tags, annotations and search
-
-Organise your articles with tags, take notes and find past reads with full-text search. All these features are included in the base subscription.
-
-## Pricing comparison
-
-| Service            | Yearly cost   | Notes                                                              |
-| ------------------ | ------------- | ------------------------------------------------------------------ |
-| **wallabag.it**    | **€11/year**  | All features included, open source, hosted in Europe               |
-| Raindrop.io Pro    | €26/year      | Full-text search, annotations, reminders, backups                  |
-| Instapaper Premium | €55/year      | Full-text search, unlimited highlights, text-to-speech             |
-| Readwise Reader    | €96/year      | RSS, notes, highlights, very complete but very expensive           |
-
-For a use case focused on reading articles later, wallabag.it gives you everything you need for €11/year. You can also support development with the supporter plan at €30/year, or try the service for €4 over 3 months.
-
-## Final thoughts
-
-If you use Raindrop.io mainly to save articles for later reading, wallabag.it does that job better and for less. If you need both (organising links and reading articles), the two tools can perfectly coexist.
+You can also use both: Raindrop.io for your links, wallabag.it for your reading.
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="primary" %}}
 
-## wallabag.it is powerful, private, hosted in Europe and affordable.
+## Try it free for 14 days
 {.text-center}
 
 <div class="text-center">

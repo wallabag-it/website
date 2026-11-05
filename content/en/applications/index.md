@@ -8,16 +8,16 @@ menu: {main: {weight: 20}}
 
 {{% blocks/cover title="Read your saved articles on every device" color="primary" image_anchor="bottom" height="auto" %}}
 
-Keep your saved articles everywhere you are.
+Web, mobile, browser and e-reader.
 {.mt-5}
 
 {{% /blocks/cover %}}
 
 {{% blocks/lead color="white" %}}
 
-wallabag.it works wherever you read: native mobile apps, browser add-ons and even e-reader applications.
+There are apps for Android and iOS, add-ons for Firefox and Chrome, and even apps for e-readers.
 
-Save an article from any device, then read it anywhere — **including offline** on your phone, tablet or e-reader. Start by [creating your wallabag.it account](https://app.wallabag.it/register/) before installing one of these applications.
+Save an article on one device and read it on another, **offline too** on your phone, tablet or e-reader. Start by [creating your wallabag.it account](https://app.wallabag.it/register/) before installing one of these applications.
 
 {{% /blocks/lead %}}
 

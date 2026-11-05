@@ -1,6 +1,6 @@
 ---
 title: wallabag.it
-description: "Enregistrez vos articles web et lisez-les plus tard sur votre téléphone, tablette ou liseuse. wallabag.it est le service open-source de lecture différée, respectueux de la vie privée et hébergé en Europe — une alternative à Pocket, Instapaper et Pinboard. Essai gratuit de 14 jours, sans carte bancaire."
+description: "Enregistrez vos articles web et lisez-les plus tard sur votre téléphone, tablette ou liseuse. wallabag.it est un service open source de lecture différée hébergé en Europe, une alternative à Pocket, Instapaper et Pinboard. Essai gratuit de 14 jours, sans carte bancaire."
 # Without this, the hero background (featured-background.jpg) would be picked
 # as the og:image instead of the branded social card.
 images: [/images/social-card.png]
@@ -35,10 +35,10 @@ wallabag existe depuis 2013 et wallabag.it depuis 2016. Le service vit des abonn
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-server" title="Hébergé en Europe" %}}
-Vos articles sont hébergés sur une infrastructure européenne, avec les mises à jour et le support professionnel inclus.
+Vos articles sont stockés sur des serveurs en Europe. Les mises à jour et le support sont inclus.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-cloud-download" title="Vos données restent à vous" %}}
+{{% blocks/feature icon="fa-cloud-download" title="Import et export" %}}
 Importez votre liste de lecture depuis d'autres services et exportez vos articles, tags et annotations quand vous le souhaitez.
 {{% /blocks/feature %}}
 
@@ -46,7 +46,7 @@ Importez votre liste de lecture depuis d'autres services et exportez vos article
 
 {{% blocks/section color="white" type="row" %}}
 
-## L'essentiel pour lire plus tard
+## Comment ça marche
 {.text-center .mb-5}
 
 {{% blocks/feature icon="fa-bookmark" title="Sauvegarder l'article complet" %}}
@@ -57,8 +57,8 @@ wallabag.it conserve le texte lisible de vos articles, pas seulement un lien qui
 Retrouvez vos articles sur le web, Android, iPhone, tablette et liseuse, avec la lecture hors-ligne.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-tags" title="Organiser et retrouver" %}}
-Tags, recherche, favoris, annotations et exports gardent votre bibliothèque utile au fil du temps.
+{{% blocks/feature icon="fa-tags" title="Retrouver vos articles" %}}
+Tags, recherche, favoris et annotations vous aident à retrouver un article des mois plus tard.
 {{% /blocks/feature %}}
 
 <div class="col-12 text-center mt-4">

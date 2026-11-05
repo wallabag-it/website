@@ -1,6 +1,6 @@
 ---
 title: "Which alternative to Pinboard should I choose?"
-description: "Pinboard saves URLs but has no reading view. wallabag.it fetches the full article, strips ads and lets you read offline — for €11/year."
+description: "Pinboard saves links, not articles. wallabag.it saves the whole article so you can read it later, offline too, for 11 € a year."
 date: 2026-06-13
 ---
 
@@ -9,68 +9,49 @@ date: 2026-06-13
 
 {{% blocks/section color="white" %}}
 
-## Pinboard: minimalist archiving
+## Pinboard
 
-Pinboard built a solid reputation by doing one thing well: archiving links. No frills, no ads, a deliberately bare interface. For developers and users who left Delicious, it long represented the dependable choice for online bookmarking.
+Pinboard does one thing and does it well: keeping your links. No ads, a bare interface. Lots of former Delicious users went there.
 
-But Pinboard is primarily a link archiving tool, not a read-it-later app. It offers no reader view, no content extraction, no offline access to article text. It saves the URL, not the article.
+But Pinboard is made to keep links, not to read articles: there's no reading view and no offline reading.
 
-If you want not just to keep your links but also to read their content in good conditions, Pinboard quickly shows its limits.
+## The other options
 
-## Some alternatives
+- **Raindrop.io**: more modern bookmarks, with a reader view in Pro.
+- **Instapaper**: made for reading, but the best features need Premium, around 55 € a year.
 
-- Raindrop.io offers more modern bookmark management with an optional reader view, but its core remains the visual organisation of links.
-- Instapaper is focused on read-it-later, but its best features are locked behind an expensive subscription.
-- wallabag.it is an open-source alternative, hosted in Europe, built specifically to fetch and read the full content of articles.
+## Moving from Pinboard
 
-## Meet wallabag.it
+wallabag.it imports your Pinboard bookmarks. [Here's the step-by-step guide](https://helpdesk.wallabag.it/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it). Imports are part of the subscription, not of the free trial.
 
-wallabag.it is the hosted version of wallabag, an open-source read-it-later app. It was built around one simple idea: **your reading list should belong to you**.
+## What wallabag.it does
 
-### Full article storage
+- It saves the whole article, not just the link. If the page disappears, you still have it.
+- You read on the web, on Android, on iOS, and on Kobo or PocketBook e-readers. Offline too.
+- Tags, search, highlights and annotations.
+- You can export everything whenever you want: PDF, ePUB, mobi, JSON, CSV…
+- It's hosted in Europe. No ads, no tracking: it's paid for by subscriptions.
+- It's the open-source wallabag, the project I started in 2013. If you'd rather host it yourself, you can.
 
-Unlike Pinboard, which only saves the link, wallabag fetches the full text of the page, cleaned up and ad-free. Even if the original website disappears, your copy stays intact.
+## Prices
 
-### Privacy by design
+| Service | Per year | Notes |
+|---|---|---|
+| **wallabag.it** | **11 €** | Open source, hosted in Europe |
+| Pinboard | ~22 € | Bookmarks only, no reading view |
+| Raindrop.io Pro | ~26 € | Bookmarks first, search and annotations in Pro |
+| Instapaper Premium | ~55 € | Highlights, notes, text-to-speech |
+{.td-initial .table .table-striped .align-middle .w-auto}
 
-wallabag does not track you, sell your data or clutter your reading with ads. It is open-source software, run by people who believe in user freedom.
+wallabag.it costs 11 € a year. There's also 4 € for 3 months, or 30 € a year if you want to support the project a bit more. You can try it free for 14 days, no credit card needed.
 
-### Hosted in Europe
-
-All data on wallabag.it is stored on servers located in Europe, protected by strict EU privacy laws and fully GDPR-compliant.
-
-### Offline reading
-
-Sync your saved articles across all your devices (phones, tablets and even e-readers like Kobo) and read them without a connection.
-
-### Tags, annotations and search
-
-Organise your articles with tags, take notes and quickly find past reads with full-text search. All these features are included in the base subscription.
-
-### Easy migration from Pinboard
-
-[Leaving Pinboard is straightforward](https://helpdesk.wallabag.it/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it): wallabag.it provides an import tool that preserves your bookmarks and their metadata.
-
-## Pricing comparison
-
-| Service            | Yearly cost   | Notes                                                              |
-| ------------------ | ------------- | ------------------------------------------------------------------ |
-| **wallabag.it**    | **€11/year**  | All features included, open source, hosted in Europe               |
-| Pinboard           | €22/year      | Link archiving only, no reader mode, no offline access             |
-| Raindrop.io Pro    | €26/year      | Full-text search, annotations, but focused on bookmarking          |
-| Instapaper Premium | €55/year      | Full-text search, unlimited highlights, text-to-speech             |
-
-wallabag.it is cheaper than Pinboard and does considerably more: where Pinboard saves a link, wallabag saves the article.
-
-## Final thoughts
-
-If you use Pinboard to track articles you have read or want to read, wallabag.it serves that need better, storing the content rather than just the URL. If you need minimalist link archiving with no reading ambitions, Pinboard remains a reliable tool in its own right.
+If you use Pinboard to keep articles you want to read, wallabag.it does that better. If you just archive links, Pinboard is still a good tool.
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="primary" %}}
 
-## wallabag.it is powerful, private, hosted in Europe and affordable.
+## Try it free for 14 days
 {.text-center}
 
 <div class="text-center">

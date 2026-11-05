@@ -8,16 +8,16 @@ menu: {main: {weight: 20}}
 
 {{% blocks/cover title="Lisez vos articles sauvegardés sur tous vos appareils" color="primary" image_anchor="bottom" height="auto" %}}
 
-Conservez et consultez vos articles où que vous soyez.
+Web, mobile, navigateur et liseuse.
 {.mt-5}
 
 {{% /blocks/cover %}}
 
 {{% blocks/lead color="white" %}}
 
-wallabag.it vous suit partout où vous lisez : applications mobiles natives, extensions pour navigateurs et même applications pour liseuses.
+Il y a des applis pour Android et iOS, des extensions pour Firefox et Chrome, et même des applis pour liseuses.
 
-Archivez un article depuis n'importe quel appareil, puis lisez-le où vous voulez — **y compris hors connexion** sur votre téléphone, votre tablette ou votre liseuse. Commencez par [créer votre compte wallabag.it](https://app.wallabag.it/register/) avant d'installer l'une de ces applications.
+Sauvegardez un article sur un appareil et lisez-le sur un autre, **hors connexion aussi** sur votre téléphone, votre tablette ou votre liseuse. Commencez par [créer votre compte wallabag.it](https://app.wallabag.it/register/) avant d'installer l'une de ces applications.
 
 {{% /blocks/lead %}}
 

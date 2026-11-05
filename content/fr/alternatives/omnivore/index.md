@@ -1,6 +1,6 @@
 ---
 title: "Quelle alternative à Omnivore choisir ?"
-description: "Omnivore a fermé. Découvrez pourquoi wallabag.it est la meilleure alternative open source pour continuer à sauvegarder et lire vos articles."
+description: "Omnivore a fermé. wallabag.it est open source lui aussi, existe depuis 2016, importe votre export Omnivore et coûte 11 € par an."
 date: 2026-06-15
 ---
 
@@ -9,74 +9,50 @@ date: 2026-06-15
 
 {{% blocks/section color="white" %}}
 
-## Omnivore a fermé : que faire maintenant ?
+## Omnivore a fermé
 
-Omnivore était une application open source de lecture différée qui s'était constitué une communauté fidèle grâce à son interface soignée, ses surlignages et ses intégrations avec des outils comme Obsidian ou Logseq. En octobre 2024, l'équipe fondatrice a été recrutée par ElevenLabs, une startup spécialisée dans les voix générées par IA, et le service hébergé a été arrêté.
+Omnivore était une chouette appli de lecture différée open source, avec du surlignage et des intégrations Obsidian ou Logseq. Fin 2024, son équipe a rejoint ElevenLabs et le service hébergé a fermé.
 
-Pour de nombreux utilisateurs, Omnivore n'était pas seulement un outil, c'était une philosophie : open source, communautaire, gratuit. Si vous cherchez un service qui perpétue ces valeurs, et qui dure dans le temps, voici ce qui existe.
+Si vous aimiez Omnivore parce qu'il était open source, wallabag est le même genre de projet. La différence, c'est que wallabag.it est payant, et c'est aussi pour ça qu'il est toujours là.
 
-## Quelques alternatives
+## Les autres options
 
-Plusieurs services accueillent aujourd'hui les anciens utilisateurs d'Omnivore :
+- **Readwise Reader** : très complet (surlignage, notes, RSS, fonctions IA), mais environ 96 € par an, propriétaire et hébergé aux États-Unis.
+- **Instapaper** : une bonne appli de lecture. Les meilleures fonctions demandent Premium, environ 55 € par an.
+- **Raindrop.io** : un gestionnaire de marque-pages plus qu'une appli de lecture.
 
-- Readwise Reader propose un environnement de lecture complet, avec surlignages, notes et fonctionnalités assistées par IA. Il est puissant, mais à 96 €/an il est nettement plus cher, et c'est un service propriétaire hébergé aux États-Unis.
-- Instapaper offre une expérience de lecture soignée avec surlignages et notes. Ses meilleures fonctionnalités restent réservées à un abonnement coûteux, et l'avenir du service est incertain.
-- Raindrop.io est davantage un outil de marque-pages visuel qu'une vraie application de lecture. Il dispose bien d'une vue lecture, mais son coeur de métier reste l'organisation de liens et de sites.
+## Quitter Omnivore
 
-Si ce qui vous plaisait dans Omnivore, c'était l'esprit open source, le respect de la vie privée et le fait de vraiment lire vos articles, une alternative se distingue.
+wallabag.it importe votre export Omnivore, en une fois. Les imports font partie de l'abonnement, pas de l'essai gratuit.
 
-## Voici wallabag.it
+## Ce que fait wallabag.it
 
-wallabag.it est la version hébergée de wallabag, une application open source de lecture différée qui existe depuis 2013. Elle a été conçue autour d'une idée simple : **votre liste de lecture doit vous appartenir**.
+- Il garde l'article entier, pas seulement le lien. Si la page disparaît, vous l'avez toujours.
+- Vous lisez sur le web, sur Android, sur iOS et sur les liseuses Kobo ou PocketBook. Hors connexion aussi.
+- Tags, recherche, surlignage et annotations.
+- Vous pouvez tout exporter quand vous voulez : PDF, ePUB, mobi, JSON, CSV…
+- C'est hébergé en Europe. Pas de pub, pas de pistage : ce sont les abonnements qui paient.
+- C'est le wallabag open source, le projet que j'ai lancé en 2013. Si vous préférez l'héberger vous-même, c'est possible.
 
-Voici pourquoi c'est une alternative solide à Omnivore :
+## Les prix
 
-### L'article complet est sauvegardé
+| Service | Par an | Remarques |
+|---|---|---|
+| **wallabag.it** | **11 €** | Open source, hébergé en Europe |
+| Readwise Reader | ~96 € | Synchro des surlignages, RSS, fonctions IA, hébergé aux États-Unis |
+| Instapaper Premium | ~55 € | Surlignage, notes, synthèse vocale |
+| Raindrop.io Pro | ~26 € | D'abord des marque-pages, recherche et annotations en Pro |
+{.td-initial .table .table-striped .align-middle .w-auto}
 
-wallabag récupère le texte intégral de chaque page que vous sauvegardez, nettoyé et sans publicité. Même si le site d'origine disparaît, votre copie reste intacte.
+wallabag.it coûte 11 € par an. Il y a aussi 4 € pour 3 mois, ou 30 € par an si vous voulez soutenir un peu plus le projet. Vous pouvez l'essayer gratuitement pendant 14 jours, sans carte bancaire.
 
-### La vie privée par conception
-
-wallabag ne vous piste pas, ne vend pas vos données et n'encombre pas votre lecture de publicités. C'est un logiciel open source, géré par des personnes qui croient en la liberté des utilisateurs, pas en leur exploitation.
-
-### Hébergé en Europe
-
-Toutes les données de wallabag.it sont stockées sur des serveurs situés en Europe, protégées par les lois européennes strictes sur la vie privée et conformes au RGPD. Un vrai gage de sérénité pour qui se méfie des pratiques américaines en matière de données.
-
-### Lecture hors ligne
-
-Synchronisez vos articles sauvegardés sur tous vos appareils (téléphones, tablettes et même liseuses comme Kobo) et lisez-les hors connexion.
-
-### Tags, annotations et recherche
-
-Organisez vos articles avec des tags, prenez des notes et retrouvez rapidement vos anciennes lectures grâce à la recherche full text.
-
-### Une migration facile depuis Omnivore
-
-wallabag.it intègre un outil d'import qui prend en charge les exports Omnivore : vos articles arrivent en une seule étape, avec leurs métadonnées.
-
-## Comparaison des tarifs
-
-Voici comment wallabag.it se positionne face aux autres services populaires :
-
-| Service         | Coût annuel   | Remarques                                                                    |
-| --------------- | ------------- | ---------------------------------------------------------------------------- |
-| **wallabag.it** | **11 €/an**   | Toutes les fonctionnalités incluses, respect de la vie privée, open source   |
-| Readwise Reader | 96 €/an       | Synchronisation des surlignages, fonctionnalités IA, service propriétaire    |
-| Instapaper      | 55 €/an       | Surlignages, notes, synthèse vocale                                          |
-| Raindrop.io     | 26 €/an       | Orienté marque-pages, vue lecture limitée                                    |
-
-wallabag.it offre clairement le meilleur rapport qualité/prix : une expérience de lecture complète et sans distraction pour seulement 11 €/an, sans publicité ni vente forcée. Vous pouvez aussi soutenir le développement plus généreusement avec l'abonnement soutien à 30 €/an, ou essayer le service pour 4 € pendant 3 mois.
-
-## En conclusion
-
-La fermeture d'Omnivore rappelle que les services gratuits construits sur le capital-risque sont fragiles. wallabag.it existe depuis 2013, financé par des abonnés qui croient en ce qu'il fait. Si vous cherchez une alternative durable, open source et respectueuse de la vie privée, wallabag.it est une suite naturelle.
+wallabag.it est financé par celles et ceux qui l'utilisent, pas par des investisseurs. C'est pour ça qu'il tourne depuis 2016.
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="primary" %}}
 
-## wallabag.it est puissant, privé, hébergé en Europe et abordable.
+## Essayez gratuitement pendant 14 jours
 {.text-center}
 
 <div class="text-center">

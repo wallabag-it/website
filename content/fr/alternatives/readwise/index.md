@@ -1,6 +1,6 @@
 ---
 title: "Quelle alternative à Readwise Reader choisir ?"
-description: "Readwise Reader coûte 96 €/an et stocke vos données aux États-Unis. wallabag.it propose la même expérience de lecture différée pour 11 €/an, open source et hébergé en Europe."
+description: "Readwise Reader coûte environ 96 € par an et est hébergé aux États-Unis. wallabag.it fait de la lecture différée pour 11 € par an, open source et hébergé en Europe."
 date: 2026-06-15
 ---
 
@@ -9,68 +9,45 @@ date: 2026-06-15
 
 {{% blocks/section color="white" %}}
 
-## Readwise Reader : puissant, mais à quel prix ?
+## Readwise Reader
 
-Readwise Reader a été lancé en 2022 et s'est rapidement imposé comme l'outil de référence pour les lecteurs qui veulent tout regrouper au même endroit : articles, PDF, newsletters, surlignages et notes, synchronisés avec leur base de connaissance. Si vous utilisez Obsidian, Notion ou Roam, il est réellement utile.
+Readwise Reader est sorti en 2022. Il fait beaucoup de choses : articles, PDF, newsletters, surlignage, notes, et synchro avec Obsidian, Notion ou Roam. Si vous utilisez ces outils, c'est vraiment pratique.
 
-Cela dit, Readwise Reader coûte environ 96 €/an, soit près de neuf fois le prix de wallabag.it. C'est un service propriétaire hébergé aux États-Unis, et sa proposition de valeur est fortement liée à son écosystème de synchronisation des surlignages. Si vous ne faites pas partie de cet écosystème, vous payez pour des fonctionnalités que vous n'utiliserez jamais.
+Mais il coûte environ 96 € par an, il est propriétaire et hébergé aux États-Unis. Si vous n'avez pas besoin de la synchro des surlignages, vous payez pour beaucoup de choses dont vous ne vous servirez pas.
 
-## Quelques alternatives
+## Les autres options
 
-- Instapaper est une application de lecture différée simple, à 55 €/an. Soignée mais chère, avec une propriété incertaine sur le long terme.
-- Omnivore était une alternative open source, mais son équipe a été rachetée et le service a fermé en 2024.
-- wallabag.it est l'option open source hébergée en Europe qui couvre le besoin essentiel de lecture différée, sans la complexité ni le prix.
+- **Instapaper** : une appli de lecture avec surlignage et notes. Premium coûte environ 55 € par an.
+- **Omnivore** : c'était une bonne option open source, mais il a fermé en 2024.
 
-## Voici wallabag.it
+## Ce que fait wallabag.it
 
-wallabag.it est la version hébergée de wallabag, une application open source de lecture différée qui fonctionne depuis 2013. Elle a été conçue autour d'une idée simple : **votre liste de lecture doit vous appartenir**.
+- Il garde l'article entier, pas seulement le lien. Si la page disparaît, vous l'avez toujours.
+- Vous lisez sur le web, sur Android, sur iOS et sur les liseuses Kobo ou PocketBook. Hors connexion aussi.
+- Tags, recherche, surlignage et annotations.
+- Vous pouvez tout exporter quand vous voulez : PDF, ePUB, mobi, JSON, CSV…
+- C'est hébergé en Europe. Pas de pub, pas de pistage : ce sont les abonnements qui paient.
+- C'est le wallabag open source, le projet que j'ai lancé en 2013. Si vous préférez l'héberger vous-même, c'est possible.
 
-### L'article complet est sauvegardé
+## Les prix
 
-wallabag récupère le texte intégral de chaque page que vous sauvegardez, nettoyé et sans publicité. Même si le site d'origine disparaît, votre copie reste intacte.
+| Service | Par an | Remarques |
+|---|---|---|
+| **wallabag.it** | **11 €** | Open source, hébergé en Europe |
+| Readwise Reader | ~96 € | Synchro des surlignages, RSS, fonctions IA, hébergé aux États-Unis |
+| Instapaper Premium | ~55 € | Surlignage, notes, synthèse vocale |
+| Raindrop.io Pro | ~26 € | D'abord des marque-pages, recherche et annotations en Pro |
+{.td-initial .table .table-striped .align-middle .w-auto}
 
-### La vie privée par conception
+wallabag.it coûte 11 € par an. Il y a aussi 4 € pour 3 mois, ou 30 € par an si vous voulez soutenir un peu plus le projet. Vous pouvez l'essayer gratuitement pendant 14 jours, sans carte bancaire.
 
-wallabag ne vous piste pas, ne vend pas vos données et n'encombre pas votre lecture de publicités. C'est un logiciel open source, géré par des personnes qui croient en la liberté des utilisateurs.
-
-### Hébergé en Europe
-
-Toutes les données de wallabag.it sont stockées sur des serveurs situés en Europe, protégées par les lois européennes strictes sur la vie privée et conformes au RGPD — une différence importante pour qui se méfie des pratiques américaines en matière de données.
-
-### Lecture hors ligne
-
-Synchronisez vos articles sauvegardés sur tous vos appareils (téléphones, tablettes et même liseuses comme Kobo) et lisez-les hors connexion.
-
-### Tags, annotations et recherche
-
-Organisez vos articles avec des tags, prenez des notes et retrouvez rapidement vos anciennes lectures grâce à la recherche full text. Toutes ces fonctionnalités sont incluses dans l'abonnement de base.
-
-### Exportez vos données
-
-Exportez vos articles et annotations en PDF, ePUB, mobi, CSV ou JSON quand vous le souhaitez. Vos données restent les vôtres, toujours.
-
-## Comparaison des tarifs
-
-| Service          | Coût annuel   | Remarques                                                                    |
-| ---------------- | ------------- | ---------------------------------------------------------------------------- |
-| **wallabag.it**  | **11 €/an**   | Toutes les fonctionnalités incluses, respect de la vie privée, open source   |
-| Readwise Reader  | 96 €/an       | Sync des surlignages, RSS, IA, hébergé aux États-Unis, propriétaire          |
-| Instapaper       | 55 €/an       | Surlignages, notes, synthèse vocale                                          |
-| Raindrop.io      | 26 €/an       | Orienté marque-pages, vue lecture limitée                                    |
-
-wallabag.it offre clairement le meilleur rapport qualité/prix : une expérience de lecture complète et sans distraction pour seulement 11 €/an, sans publicité ni vente forcée. Vous pouvez aussi soutenir le développement avec l'abonnement soutien à 30 €/an, ou essayer le service pour 4 € pendant 3 mois.
-
-## En conclusion
-
-Readwise Reader est un outil puissant pour un type de lecteur bien précis — celui qui est profondément investi dans la synchronisation des surlignages et la gestion des connaissances personnelles. Si ce n'est pas votre cas, vous payez 96 €/an pour des fonctionnalités que vous n'utiliserez jamais.
-
-wallabag.it couvre le besoin essentiel — sauvegarder un article, le lire plus tard, hors ligne si nécessaire — pour 11 €/an, open source et hébergé en Europe. Si la simplicité et le prix comptent, le choix est clair.
+Si vous vivez dans votre appli de notes, Readwise Reader est fait pour vous. Si vous voulez sauvegarder des articles et les lire, wallabag.it le fait pour 11 € par an.
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="primary" %}}
 
-## wallabag.it est puissant, privé, hébergé en Europe et abordable.
+## Essayez gratuitement pendant 14 jours
 {.text-center}
 
 <div class="text-center">

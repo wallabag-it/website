@@ -2,13 +2,13 @@
 {{ $copy := dict
   "en" (slice
     (dict "image" "/en/features/firefox.png" "alt" "wallabag browser extension saving an article in one click." "title" "Save in one click" "text" "Send articles to wallabag.it from your browser instead of keeping another tab open.")
-    (dict "image" "/en/features/homepage.png" "alt" "wallabag.it reading list with saved articles." "title" "Build a real reading list" "text" "The full article is stored in your account, cleaned up for focused reading and search.")
-    (dict "image" "/en/features/ios.png" "alt" "wallabag iOS application with offline reading." "title" "Read later, even offline" "text" "Open your saved articles on mobile or tablet when you finally have time to read.")
+    (dict "image" "/en/features/homepage.png" "alt" "wallabag.it reading list with saved articles." "title" "A real reading list" "text" "The whole article is stored in your account, cleaned up so it's easy to read and to search.")
+    (dict "image" "/en/features/ios.png" "alt" "wallabag iOS application with offline reading." "title" "Read later, even offline" "text" "Open your saved articles on your phone or tablet when you have time.")
   )
   "fr" (slice
     (dict "image" "/fr/features/firefox.png" "alt" "Extension navigateur wallabag sauvegardant un article en un clic." "title" "Sauvegarder en un clic" "text" "Envoyez les articles vers wallabag.it depuis votre navigateur au lieu de garder un nouvel onglet ouvert.")
-    (dict "image" "/fr/features/homepage.png" "alt" "Liste de lecture wallabag.it avec des articles sauvegardés." "title" "Créer une vraie liste de lecture" "text" "L'article complet est stocké dans votre compte, nettoyé pour une lecture confortable et retrouvable.")
-    (dict "image" "/fr/features/ios.png" "alt" "Application iOS wallabag avec lecture hors-ligne." "title" "Lire plus tard, même hors connexion" "text" "Retrouvez vos articles sauvegardés sur mobile ou tablette quand vous avez enfin le temps de lire.")
+    (dict "image" "/fr/features/homepage.png" "alt" "Liste de lecture wallabag.it avec des articles sauvegardés." "title" "Une vraie liste de lecture" "text" "L'article entier est stocké dans votre compte, nettoyé pour être facile à lire et à retrouver.")
+    (dict "image" "/fr/features/ios.png" "alt" "Application iOS wallabag avec lecture hors-ligne." "title" "Lire plus tard, même hors connexion" "text" "Retrouvez vos articles sur votre téléphone ou votre tablette quand vous avez le temps.")
   )
 -}}
 {{ $items := index $copy $lang | default (index $copy "en") -}}

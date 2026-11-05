@@ -1,6 +1,6 @@
 ---
 title: "Quelle alternative à Readeck choisir ?"
-description: "Readeck est une bonne application auto-hébergée de lecture différée. wallabag.it est l'alternative européenne hébergée pour sauvegarder des articles sans maintenance serveur."
+description: "Readeck est une bonne appli de lecture différée auto-hébergée. wallabag.it est hébergé en Europe, pour celles et ceux qui ne veulent pas maintenir de serveur."
 date: 2026-06-18
 ---
 
@@ -9,60 +9,48 @@ date: 2026-06-18
 
 {{% blocks/section color="white" %}}
 
-## Readeck : un bon choix si vous voulez auto-héberger
+## Readeck
 
-Readeck fait partie des projets de lecture différée les plus intéressants apparus ces dernières années. Il est open source, moderne, et pensé pour les personnes qui veulent faire tourner leur propre service.
+Readeck est l'un des projets de lecture différée les plus sympas de ces dernières années. Il est open source, moderne, et fait pour être auto-hébergé.
 
-Si vous aimez maintenir un serveur, gérer les sauvegardes, les mises à jour et la supervision, Readeck peut être une très bonne option.
+Si vous aimez faire tourner votre propre serveur (sauvegardes, mises à jour, supervision), c'est une bonne option.
 
-Mais tout le monde n'a pas envie d'administrer un service de plus.
+## Auto-hébergé ou hébergé ?
 
-## La vraie question : auto-hébergement ou service hébergé ?
+Le choix porte surtout sur qui maintient le serveur :
 
-Pour beaucoup de personnes qui quittent Pocket ou Omnivore, le choix ne se fait pas seulement entre deux applications. Il se fait entre deux responsabilités :
+- **l'auto-hébergement** : vous contrôlez tout, et vous faites la maintenance ;
+- **un service hébergé** : vous payez un petit abonnement et quelqu'un d'autre le fait tourner.
 
-- l'auto-hébergement, où vous contrôlez le serveur et vous le maintenez ;
-- le service hébergé, où vous payez un petit abonnement et quelqu'un d'autre s'occupe de le faire tourner.
+wallabag.it, c'est le deuxième cas. Et comme wallabag est aussi open source, vous pourrez l'héberger vous-même un jour si vous voulez.
 
-wallabag.it répond au deuxième cas. Vous gardez les avantages d'un outil de lecture différée open source, sans gérer l'infrastructure vous-même.
+## Ce que fait wallabag.it
 
-## Où se place wallabag.it ?
+- Il garde l'article entier, pas seulement le lien. Si la page disparaît, vous l'avez toujours.
+- Vous lisez sur le web, sur Android, sur iOS et sur les liseuses Kobo ou PocketBook. Hors connexion aussi.
+- Tags, recherche, surlignage et annotations.
+- Vous pouvez tout exporter quand vous voulez : PDF, ePUB, mobi, JSON, CSV…
+- C'est hébergé en Europe. Pas de pub, pas de pistage : ce sont les abonnements qui paient.
+- C'est le wallabag open source, le projet que j'ai lancé en 2013. Si vous préférez l'héberger vous-même, c'est possible.
 
-wallabag.it est la version hébergée de wallabag. Le service repose sur la même idée simple que le projet open source : sauvegarder des articles, les nettoyer, les lire plus tard, et garder le contrôle de votre liste de lecture.
+## Les prix
 
-### Hébergé en Europe
+| Service | Pour qui | Mais |
+|---|---|---|
+| **wallabag.it** | Un service hébergé en Europe | Payant, dès 11 € par an |
+| Readeck | Auto-héberger une appli moderne | Vous maintenez le serveur |
+| wallabag auto-hébergé | Tout contrôler avec wallabag | Vous maintenez le serveur |
+{.td-initial .table .table-striped .align-middle .w-auto}
 
-Votre compte wallabag.it est hébergé en Europe et opéré par l'équipe wallabag. Vous n'avez pas besoin de configurer Docker, les mises à jour, les sauvegardes ou l'envoi d'emails.
+wallabag.it coûte 11 € par an. Il y a aussi 4 € pour 3 mois, ou 30 € par an si vous voulez soutenir un peu plus le projet. Vous pouvez l'essayer gratuitement pendant 14 jours, sans carte bancaire.
 
-### Open source, sans maintenance serveur
-
-Vous pouvez auto-héberger wallabag si vous voulez contrôler toute l'infrastructure. Ou utiliser wallabag.it si vous voulez que le service soit maintenu pour vous.
-
-### Lecture sur tous vos appareils
-
-Sauvegardez depuis votre navigateur, lisez sur mobile, exportez, cherchez, taguez, annotez, et continuez à lire hors connexion. wallabag.it fonctionne aussi très bien avec des liseuses comme Kobo.
-
-### Un prix soutenable
-
-wallabag.it commence à 11 €/an. L'abonnement finance le service hébergé et la maintenance continue du projet.
-
-## Comparaison rapide
-
-| Service              | Idéal pour                                      | Principal compromis                           |
-| -------------------- | ----------------------------------------------- | --------------------------------------------- |
-| Readeck              | Les personnes qui veulent auto-héberger une app moderne | Vous maintenez le serveur vous-même           |
-| wallabag auto-hébergé | Les personnes qui veulent tout contrôler avec wallabag | Vous maintenez le serveur vous-même           |
-| **wallabag.it**      | Les personnes qui veulent un service hébergé en Europe | Abonnement payant, dès 11 €/an                |
-
-## En résumé
-
-Si votre priorité est de faire tourner votre propre stack, Readeck mérite le détour. Si votre priorité est de lire plus tard sans maintenir un service de plus, wallabag.it est le choix le plus simple.
+Si vous voulez faire tourner votre propre serveur, jetez un œil à Readeck. Si vous voulez lire sans maintenir de serveur, wallabag.it est plus simple.
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="primary" %}}
 
-## wallabag.it est open source, hébergé en Europe et maintenu pour vous.
+## Essayez gratuitement pendant 14 jours
 {.text-center}
 
 <div class="text-center">

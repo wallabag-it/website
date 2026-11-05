@@ -80,7 +80,7 @@ The Customer undertakes to provide accurate and up-to-date information. wallabag
 
 Payment is due at the time of order.
 
-Online payment is processed by the payment providers offered at the time of order, including Stripe, Payplug or PayPal.
+Online payment is processed by Stripe.
 
 wallabag.it does not see or store full payment card details. Transactions are processed directly by payment providers.
 
