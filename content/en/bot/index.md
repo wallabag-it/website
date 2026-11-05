@@ -17,6 +17,13 @@ If you see this user agent in your logs, it's us:
 Mozilla/5.0 (compatible; wallabag; +https://wallabag.it)
 ```
 
+Requests come from these IP addresses:
+
+```
+2a01:4f8:172:25b0::2
+138.201.122.115
+```
+
 ## What it does
 
 wallabag.it is a read-it-later service. When one of our users saves a link, our server fetches the page and keeps the article text, so they can read it later, on any device.
