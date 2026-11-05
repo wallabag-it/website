@@ -14,3 +14,14 @@ command = "npm run build:production"
 [[redirects]]
   from = "/en/news.rss"
   to = "/en/blog/announcements/index.xml"
+
+[[redirects]]
+  from = "/bot"
+  to = "/fr/bot/"
+  status = 302
+  conditions = {Language = ["fr"]}
+
+[[redirects]]
+  from = "/bot"
+  to = "/en/bot/"
+  status = 302
