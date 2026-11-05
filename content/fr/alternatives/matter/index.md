@@ -1,6 +1,6 @@
 ---
 title: "Quelle alternative à Matter choisir ?"
-description: "Matter est une application de lecture iOS-first au design soigné. Si vous avez besoin d'Android, d'open source et d'un hébergement européen, voici pourquoi wallabag.it vaut le coup."
+description: "Matter est une jolie appli de lecture, pensée d'abord pour l'iPhone. wallabag.it fonctionne sur Android, iOS et liseuses, est open source et hébergé en Europe, pour 11 € par an."
 date: 2026-06-15
 ---
 
@@ -9,61 +9,44 @@ date: 2026-06-15
 
 {{% blocks/section color="white" %}}
 
-## Matter : une application bien conçue, mais au périmètre précis
+## Matter
 
-Matter s'est constitué une communauté fidèle grâce à son expérience de lecture épurée et à sa gestion des newsletters aux côtés des articles. Il est particulièrement apprécié des utilisateurs iOS qui cherchent un environnement de lecture sans distraction.
+Matter est une appli de lecture soignée, appréciée sur iPhone, qui gère aussi les newsletters.
 
-Cela dit, Matter a de vraies limites si vos besoins dépassent ce cas d'usage spécifique : il est conçu pour iOS en priorité, hébergé aux États-Unis et propriétaire. Si vous utilisez Android, possédez une liseuse Kobo ou faites attention à l'endroit où sont stockées vos données, vous allez rapidement vous heurter à ces contraintes.
+Elle est pensée d'abord pour l'iPhone, elle est propriétaire et hébergée aux États-Unis. Si vous lisez sur Android ou sur une Kobo, ou si vous tenez à savoir où sont vos données, il vous faudra autre chose.
 
-## Quelques alternatives
+## Les autres options
 
-- Readwise Reader est l'option la plus complète du marché — RSS, surlignages, IA, notes — mais à 96 €/an et hébergé aux États-Unis, c'est un engagement important.
-- Instapaper est une application de lecture différée de longue date à 55 €/an, avec surlignages et notes, bien que son histoire de propriété soit incertaine.
-- wallabag.it est l'alternative open source hébergée en Europe qui couvre le besoin essentiel de lecture sur toutes les plateformes, pour 11 €/an.
+- **Readwise Reader** : très complet (RSS, surlignage, notes, fonctions IA), mais environ 96 € par an et hébergé aux États-Unis.
+- **Instapaper** : une appli de lecture différée historique, avec surlignage et notes. Premium coûte environ 55 € par an.
 
-## Voici wallabag.it
+## Ce que fait wallabag.it
 
-wallabag.it est la version hébergée de wallabag, une application open source de lecture différée qui fonctionne depuis 2013. Elle a été conçue autour d'une idée simple : **votre liste de lecture doit vous appartenir**.
+- Il garde l'article entier, pas seulement le lien. Si la page disparaît, vous l'avez toujours.
+- Vous lisez sur le web, sur Android, sur iOS et sur les liseuses Kobo ou PocketBook. Hors connexion aussi.
+- Tags, recherche, surlignage et annotations.
+- Vous pouvez tout exporter quand vous voulez : PDF, ePUB, mobi, JSON, CSV…
+- C'est hébergé en Europe. Pas de pub, pas de pistage : ce sont les abonnements qui paient.
+- C'est le wallabag open source, le projet que j'ai lancé en 2013. Si vous préférez l'héberger vous-même, c'est possible.
 
-### L'article complet est sauvegardé
+## Les prix
 
-wallabag récupère le texte intégral de chaque page que vous sauvegardez, nettoyé et sans publicité. Même si le site d'origine disparaît, votre copie reste intacte.
+| Service | Par an | Remarques |
+|---|---|---|
+| **wallabag.it** | **11 €** | Open source, hébergé en Europe |
+| Readwise Reader | ~96 € | Synchro des surlignages, RSS, fonctions IA, hébergé aux États-Unis |
+| Instapaper Premium | ~55 € | Surlignage, notes, synthèse vocale |
+{.td-initial .table .table-striped .align-middle .w-auto}
 
-### La vie privée par conception
+wallabag.it coûte 11 € par an. Il y a aussi 4 € pour 3 mois, ou 30 € par an si vous voulez soutenir un peu plus le projet. Vous pouvez l'essayer gratuitement pendant 14 jours, sans carte bancaire.
 
-wallabag ne vous piste pas, ne vend pas vos données et n'encombre pas votre lecture de publicités. C'est un logiciel open source, géré par des personnes qui croient en la liberté des utilisateurs.
-
-### Hébergé en Europe
-
-Toutes les données de wallabag.it sont stockées sur des serveurs situés en Europe, protégées par les lois européennes strictes sur la vie privée et conformes au RGPD — une différence importante par rapport aux services hébergés aux États-Unis.
-
-### Android, iOS et liseuses
-
-wallabag dispose d'applications natives complètes pour Android et iOS avec lecture hors ligne. Il se connecte aussi directement aux liseuses Kobo. Votre liste de lecture vous suit partout, quel que soit votre appareil.
-
-### Tags, annotations et recherche
-
-Organisez vos articles avec des tags, prenez des notes et retrouvez rapidement vos anciennes lectures grâce à la recherche full text. Toutes ces fonctionnalités sont incluses dans l'abonnement de base.
-
-## Comparaison des tarifs
-
-| Service          | Coût annuel   | Remarques                                                                    |
-| ---------------- | ------------- | ---------------------------------------------------------------------------- |
-| **wallabag.it**  | **11 €/an**   | Toutes les fonctionnalités incluses, respect de la vie privée, open source   |
-| Readwise Reader  | 96 €/an       | Sync des surlignages, IA, hébergé aux États-Unis, propriétaire               |
-| Instapaper       | 55 €/an       | Surlignages, notes, synthèse vocale                                          |
-
-wallabag.it offre clairement le meilleur rapport qualité/prix : une expérience de lecture complète et sans distraction pour seulement 11 €/an, sans publicité ni vente forcée. Vous pouvez aussi soutenir le développement avec l'abonnement soutien à 30 €/an, ou essayer le service pour 4 € pendant 3 mois.
-
-## En conclusion
-
-Matter est un bon choix si vous êtes principalement utilisateur iOS et centré sur les newsletters. Si vous avez besoin de quelque chose de multi-plateforme, open source et hébergé en Europe — ou simplement plus abordable — wallabag.it est une suite naturelle.
+Si vous êtes sur iPhone et lisez surtout des newsletters, Matter est une bonne appli. Si vous passez d'un appareil à l'autre, wallabag.it vous suit partout.
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="primary" %}}
 
-## wallabag.it est puissant, privé, hébergé en Europe et abordable.
+## Essayez gratuitement pendant 14 jours
 {.text-center}
 
 <div class="text-center">

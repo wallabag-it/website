@@ -1,6 +1,6 @@
 ---
 title: "Which alternative to Readwise Reader should I choose?"
-description: "Readwise Reader costs €96/year and stores your data in the US. wallabag.it offers the same read-it-later experience for €11/year, open source and hosted in Europe."
+description: "Readwise Reader costs around 96 € a year and is hosted in the US. wallabag.it does read-it-later for 11 € a year, open source and hosted in Europe."
 date: 2026-06-15
 ---
 
@@ -9,68 +9,45 @@ date: 2026-06-15
 
 {{% blocks/section color="white" %}}
 
-## Readwise Reader: powerful, but at a price
+## Readwise Reader
 
-Readwise Reader launched in 2022 and quickly became the tool of choice for readers who want everything in one place: articles, PDFs, newsletters, highlights and notes, all synced to a knowledge base. If you use Obsidian, Notion or Roam, it is genuinely useful.
+Readwise Reader came out in 2022. It does a lot: articles, PDFs, newsletters, highlights, notes, and sync with Obsidian, Notion or Roam. If you use those tools, it's really useful.
 
-That said, Readwise Reader costs around €96/year — roughly nine times the price of wallabag.it. It is a proprietary service hosted in the United States, and its value proposition is strongly tied to its highlight-sync ecosystem. If you are not part of that ecosystem, you are paying for features you will never use.
+But it costs around 96 € a year, it's proprietary and hosted in the US. If you don't need the highlight sync, you pay for a lot of things you won't use.
 
-## Some alternatives
+## The other options
 
-- Instapaper is a focused read-it-later app at €55/year. Polished but expensive, with an uncertain long-term ownership history.
-- Omnivore was an open-source alternative, but its team was acquired and the service shut down in 2024.
-- wallabag.it is the open-source, EU-hosted option that covers the core read-it-later use case without the complexity or the cost.
+- **Instapaper**: a reading app with highlights and notes. Premium costs around 55 € a year.
+- **Omnivore**: it was a good open-source option, but it closed in 2024.
 
-## Meet wallabag.it
+## What wallabag.it does
 
-wallabag.it is the hosted version of wallabag, an open-source read-it-later app running since 2013. It was built around one idea: **your reading list should belong to you**.
+- It saves the whole article, not just the link. If the page disappears, you still have it.
+- You read on the web, on Android, on iOS, and on Kobo or PocketBook e-readers. Offline too.
+- Tags, search, highlights and annotations.
+- You can export everything whenever you want: PDF, ePUB, mobi, JSON, CSV…
+- It's hosted in Europe. No ads, no tracking: it's paid for by subscriptions.
+- It's the open-source wallabag, the project I started in 2013. If you'd rather host it yourself, you can.
 
-### Full article storage
+## Prices
 
-wallabag fetches the full text of every page you save, cleaned up and ad-free. Even if the original website disappears, your copy stays intact.
+| Service | Per year | Notes |
+|---|---|---|
+| **wallabag.it** | **11 €** | Open source, hosted in Europe |
+| Readwise Reader | ~96 € | Highlights sync, RSS, AI features, hosted in the US |
+| Instapaper Premium | ~55 € | Highlights, notes, text-to-speech |
+| Raindrop.io Pro | ~26 € | Bookmarks first, search and annotations in Pro |
+{.td-initial .table .table-striped .align-middle .w-auto}
 
-### Privacy by design
+wallabag.it costs 11 € a year. There's also 4 € for 3 months, or 30 € a year if you want to support the project a bit more. You can try it free for 14 days, no credit card needed.
 
-wallabag does not track you, sell your data or show you ads. It is open-source software, run by people who believe in user freedom rather than exploitation.
-
-### Hosted in Europe
-
-All data on wallabag.it is stored on servers located in Europe, protected by strict EU privacy laws and fully GDPR-compliant — a meaningful difference for anyone wary of US data practices.
-
-### Offline reading
-
-Sync your saved articles across all your devices — phones, tablets and even e-readers like Kobo — and read them without a connection.
-
-### Tags, annotations and search
-
-Organise your articles with tags, take notes, and find past reads quickly with full-text search. Every feature is included in the base subscription, at no extra cost.
-
-### Export your data
-
-Export your articles and annotations to PDF, ePUB, mobi, CSV or JSON whenever you want. Your data stays with you, always.
-
-## Pricing comparison
-
-| Service          | Yearly cost   | Notes                                                              |
-| ---------------- | ------------- | ------------------------------------------------------------------ |
-| **wallabag.it**  | **€11/year**  | All features included, privacy-focused, open source                |
-| Readwise Reader  | €96/year      | Highlights sync, RSS, AI features, US-hosted, proprietary          |
-| Instapaper       | €55/year      | Highlights, notes, text-to-speech                                  |
-| Raindrop.io      | €26/year      | Bookmark-focused, limited reader view                              |
-
-wallabag.it offers the best value: a complete, distraction-free reading experience for just €11/year, with no ads or upsells. You can also support development more generously with the supporter plan at €30/year, or try the service for €4 over 3 months.
-
-## Final thoughts
-
-Readwise Reader is a powerful tool for a specific type of reader — one who is deeply invested in highlight sync and personal knowledge management. If that is not you, you are paying €96/year for features you will never use.
-
-wallabag.it covers the core need — save an article, read it later, offline if needed — for €11/year, open source and hosted in Europe. If simplicity and price matter, the choice is straightforward.
+If you live in your notes app, Readwise Reader is made for you. If you want to save articles and read them, wallabag.it does that for 11 € a year.
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="primary" %}}
 
-## wallabag.it is powerful, private, hosted in Europe and affordable.
+## Try it free for 14 days
 {.text-center}
 
 <div class="text-center">

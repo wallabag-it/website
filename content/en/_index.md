@@ -1,6 +1,6 @@
 ---
 title: wallabag.it
-description: "Save web articles and read them later on your phone, tablet or e-reader. wallabag.it is the open-source, privacy-first read-it-later service hosted in Europe — a simple alternative to Pocket, Instapaper and Pinboard. Start a 14-day free trial, no credit card required."
+description: "Save web articles and read them later on your phone, tablet or e-reader. wallabag.it is an open-source read-it-later service hosted in Europe, an alternative to Pocket, Instapaper and Pinboard. Start a 14-day free trial, no credit card required."
 # Without this, the hero background (featured-background.jpg) would be picked
 # as the og:image instead of the branded social card.
 images: [/images/social-card.png]
@@ -35,10 +35,10 @@ wallabag has existed since 2013 and wallabag.it since 2016. The service is funde
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-server" title="Hosted in Europe" %}}
-Your articles are hosted on European infrastructure, with updates and professional support included.
+Your articles are stored on servers in Europe. Updates and support are included.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-cloud-download" title="Your data stays yours" %}}
+{{% blocks/feature icon="fa-cloud-download" title="Import and export" %}}
 Import your reading list from other services and export your articles, tags and annotations whenever you want.
 {{% /blocks/feature %}}
 
@@ -46,7 +46,7 @@ Import your reading list from other services and export your articles, tags and 
 
 {{% blocks/section color="white" type="row" %}}
 
-## The essentials for reading later
+## How it works
 {.text-center .mb-5}
 
 {{% blocks/feature icon="fa-bookmark" title="Save the full article" %}}
@@ -57,8 +57,8 @@ wallabag.it keeps the readable text of your articles, not just a link that can c
 Find your articles on the web, Android, iPhone, tablet and e-reader, with offline reading.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-tags" title="Organize and find again" %}}
-Tags, search, favourites, annotations and exports keep your library useful over time.
+{{% blocks/feature icon="fa-tags" title="Find your articles" %}}
+Tags, search, favourites and annotations help you find an article months later.
 {{% /blocks/feature %}}
 
 <div class="col-12 text-center mt-4">

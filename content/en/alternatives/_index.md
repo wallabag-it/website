@@ -1,7 +1,7 @@
 ---
 title: "Alternatives to read-it-later tools"
 linkTitle: Alternatives
-description: "Looking for an alternative to Pocket, Instapaper or Raindrop.io? Compare your options and find out why wallabag.it is a solid choice."
+description: "Looking for an alternative to Pocket, Instapaper or Raindrop.io? Here is how wallabag.it compares."
 menu: {main: {weight: 27}}
 ---
 
@@ -10,7 +10,7 @@ menu: {main: {weight: 27}}
 
 {{% blocks/lead color="white" %}}
 
-Using a read-it-later app or bookmark manager and thinking about switching? These guides compare wallabag.it with the most common alternatives.
+Thinking about leaving your read-it-later app or bookmark manager? Here is how wallabag.it compares with the usual ones.
 
 {{% /blocks/lead %}}
 
@@ -19,9 +19,9 @@ Using a read-it-later app or bookmark manager and thinking about switching? Thes
 ## Why choose wallabag.it?
 {.text-center}
 
-Pocket has shut down. Omnivore has shut down. Some tools are proprietary, some are expensive, and some require you to maintain your own server.
+Pocket and Omnivore have shut down. Other tools are proprietary, expensive, or need you to run your own server.
 
-wallabag.it is the hosted version of an open-source read-it-later app: full article saving, offline reading, European hosting, export whenever you want, and no infrastructure to run yourself.
+wallabag.it is the hosted version of wallabag, the open-source read-it-later app. It saves the whole article, works offline, is hosted in Europe, and you can export everything whenever you want.
 
 {{% /blocks/section %}}
 
@@ -31,10 +31,10 @@ wallabag.it is the hosted version of an open-source read-it-later app: full arti
 
 {{% blocks/section color="primary" %}}
 
-## Not convinced yet?
+## Try it for yourself
 {.text-center}
 
-<p class="lead text-center">Try wallabag.it free for 14 days and compare it with your current reading workflow.</p>
+<p class="lead text-center">Try wallabag.it free for 14 days and see if it suits you.</p>
 <div class="text-center">
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="alternatives-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>

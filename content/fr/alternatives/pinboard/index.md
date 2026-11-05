@@ -1,6 +1,6 @@
 ---
 title: "Quelle alternative à Pinboard choisir ?"
-description: "Pinboard sauvegarde des URL mais n'a pas de vue lecture. wallabag.it récupère l'article complet, supprime les publicités et permet la lecture hors ligne — pour 11 €/an."
+description: "Pinboard garde des liens, pas des articles. wallabag.it garde l'article entier pour le lire plus tard, hors connexion aussi, pour 11 € par an."
 date: 2026-06-13
 ---
 
@@ -9,68 +9,49 @@ date: 2026-06-13
 
 {{% blocks/section color="white" %}}
 
-## Pinboard, l'archivage minimaliste
+## Pinboard
 
-Pinboard s'est construit une réputation solide en faisant une seule chose bien : archiver des liens. Pas de fioritures, pas de publicité, une interface volontairement dépouillée. Pour les développeurs et les utilisateurs qui avaient quitté Delicious, il a longtemps représenté la valeur sûre du marque-pages en ligne.
+Pinboard fait une chose et la fait bien : garder vos liens. Pas de pub, une interface dépouillée. Beaucoup d'anciens de Delicious y sont allés.
 
-Mais Pinboard est avant tout un outil d'archivage de liens, pas une application de lecture différée. Il n'offre pas de vue lecture, pas de nettoyage du contenu, pas d'accès hors ligne au texte des articles. Il enregistre l'URL, pas l'article.
+Mais Pinboard est fait pour garder des liens, pas pour lire des articles : pas de vue lecture, pas de lecture hors connexion.
 
-Si vous souhaitez non seulement conserver vos liens mais aussi lire leur contenu dans de bonnes conditions, Pinboard atteint vite ses limites.
+## Les autres options
 
-## Quelques alternatives
+- **Raindrop.io** : des marque-pages plus modernes, avec une vue lecture en Pro.
+- **Instapaper** : fait pour lire, mais les meilleures fonctions demandent Premium, environ 55 € par an.
 
-- Raindrop.io propose une gestion de marque-pages plus moderne, avec une vue lecture en option, mais son coeur de métier reste l'organisation visuelle de liens.
-- Instapaper est centré sur la lecture différée, mais ses meilleures fonctionnalités sont réservées à un abonnement coûteux.
-- wallabag.it est une alternative open source, hébergée en Europe, conçue spécifiquement pour récupérer et lire le contenu complet des articles.
+## Quitter Pinboard
 
-## Voici wallabag.it
+wallabag.it importe vos marque-pages Pinboard. [Le guide pas à pas est ici](https://helpdesk.wallabag.it/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it). Les imports font partie de l'abonnement, pas de l'essai gratuit.
 
-wallabag.it est la version hébergée de wallabag, une application open source de lecture différée. Elle a été construite autour d'une idée simple : **votre liste de lecture doit vous appartenir**.
+## Ce que fait wallabag.it
 
-### L'article complet est sauvegardé
+- Il garde l'article entier, pas seulement le lien. Si la page disparaît, vous l'avez toujours.
+- Vous lisez sur le web, sur Android, sur iOS et sur les liseuses Kobo ou PocketBook. Hors connexion aussi.
+- Tags, recherche, surlignage et annotations.
+- Vous pouvez tout exporter quand vous voulez : PDF, ePUB, mobi, JSON, CSV…
+- C'est hébergé en Europe. Pas de pub, pas de pistage : ce sont les abonnements qui paient.
+- C'est le wallabag open source, le projet que j'ai lancé en 2013. Si vous préférez l'héberger vous-même, c'est possible.
 
-Contrairement à Pinboard qui n'enregistre que le lien, wallabag récupère le texte intégral de la page, nettoyé et sans publicité. Même si le site d'origine disparaît, votre copie reste intacte.
+## Les prix
 
-### La vie privée par conception
+| Service | Par an | Remarques |
+|---|---|---|
+| **wallabag.it** | **11 €** | Open source, hébergé en Europe |
+| Pinboard | ~22 € | Marque-pages uniquement, pas de vue lecture |
+| Raindrop.io Pro | ~26 € | D'abord des marque-pages, recherche et annotations en Pro |
+| Instapaper Premium | ~55 € | Surlignage, notes, synthèse vocale |
+{.td-initial .table .table-striped .align-middle .w-auto}
 
-wallabag ne vous piste pas, ne vend pas vos données et n'encombre pas votre lecture de publicités. C'est un logiciel open source, géré par des personnes qui croient en la liberté des utilisateurs.
+wallabag.it coûte 11 € par an. Il y a aussi 4 € pour 3 mois, ou 30 € par an si vous voulez soutenir un peu plus le projet. Vous pouvez l'essayer gratuitement pendant 14 jours, sans carte bancaire.
 
-### Hébergé en Europe
-
-Toutes les données de wallabag.it sont stockées sur des serveurs situés en Europe, protégées par les lois européennes strictes sur la vie privée et conformes au RGPD.
-
-### Lecture hors ligne
-
-Synchronisez vos articles sauvegardés sur tous vos appareils (téléphones, tablettes et même liseuses comme Kobo) et lisez-les hors connexion.
-
-### Tags, annotations et recherche
-
-Organisez vos articles avec des tags, prenez des notes et retrouvez rapidement vos anciennes lectures grâce à la recherche full text. Toutes ces fonctionnalités sont incluses dans l'abonnement de base.
-
-### Une migration facile depuis Pinboard
-
-[Quitter Pinboard est simple](https://helpdesk.wallabag.it/help/en-gb/2-import/13-how-to-migrate-from-pinboard-to-wallabag-it) : wallabag.it propose un outil d'import qui préserve vos marque-pages et leurs métadonnées.
-
-## Comparaison des tarifs
-
-| Service            | Coût annuel   | Remarques                                                          |
-| ------------------ | ------------- | ------------------------------------------------------------------ |
-| **wallabag.it**    | **11 €/an**   | Toutes les fonctionnalités incluses, open source, hébergé en Europe |
-| Pinboard           | 22 €/an       | Archivage de liens uniquement, pas de mode lecture, pas de hors ligne |
-| Raindrop.io Pro    | 26 €/an       | Recherche full text, annotations, mais centré sur les marque-pages |
-| Instapaper Premium | 55 €/an       | Recherche full text, surlignage illimité, synthèse vocale          |
-
-wallabag.it est moins cher que Pinboard et fait bien davantage : là où Pinboard conserve un lien, wallabag conserve l'article.
-
-## En conclusion
-
-Si vous utilisez Pinboard pour retrouver des articles que vous avez lus ou souhaitez lire, wallabag.it répond mieux à ce besoin, en stockant le contenu plutôt que la seule URL. Si vous avez besoin d'un archivage de liens minimaliste sans velléité de lecture, Pinboard reste un outil fiable dans son registre.
+Si vous utilisez Pinboard pour garder des articles à lire, wallabag.it le fait mieux. Si vous archivez seulement des liens, Pinboard reste un bon outil.
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="primary" %}}
 
-## wallabag.it est puissant, privé, hébergé en Europe et abordable.
+## Essayez gratuitement pendant 14 jours
 {.text-center}
 
 <div class="text-center">

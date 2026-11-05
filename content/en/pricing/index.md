@@ -1,13 +1,13 @@
 ---
-title: Pricing — save & read your articles from 11€ a year
+title: Pricing, from 11€ a year
 linkTitle: Pricing
 description: "wallabag.it plans: 3 months for 4€, one year for 11€ or the supporter plan for 30€. Premium features included: save by email, imports, RSS feeds. 14-day free trial, no credit card required."
 software_schema: true
 menu: {main: {weight: 25}}
 ---
 
-{{% blocks/cover title="Simple pricing. Read the web on your terms." color="primary" height="auto" %}}
-<p class="lead mt-3 mb-4">Every plan includes all features, premium ones too — pick the duration that suits you.<br />Start with a <strong>14-day free trial</strong>, no credit card required.</p>
+{{% blocks/cover title="From 11€ a year" color="primary" height="auto" %}}
+<p class="lead mt-3 mb-4">Every plan includes all the features, premium ones too. Just pick a duration.<br />Start with a <strong>14-day free trial</strong>, no credit card required.</p>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-hero-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>
 </a>
@@ -18,18 +18,18 @@ menu: {main: {weight: 25}}
 
 {{< pricing-plans >}}
 {{< pricing-plan id="3m" title="3 months" period="for 3 months" cta="Start free trial" highlights="Full service included|No credit card required|Export anytime" >}}
-Try the full service with no long-term commitment. Leave whenever you want — and take your data with you.
+To try it without committing. You can export your articles at any time.
 {{< /pricing-plan >}}
-{{< pricing-plan id="1y" featured="true" badge="Most popular" title="1 year" period="less than 1€ a month" cta="Start free trial" highlights="Best value|No renewal surprise|All features included" >}}
-The clearest choice for regular reading: all features, one simple yearly payment, and no renewal surprise.
+{{< pricing-plan id="1y" featured="true" badge="Most popular" title="1 year" period="less than 1€ a month" cta="Start free trial" highlights="The cheapest over a year|No automatic renewal|All features included" >}}
+The cheapest over a year. One payment, no automatic renewal.
 {{< /pricing-plan >}}
-{{< pricing-plan id="heart" title="The ❤️ subscription" period="per year" cta="Support wallabag" highlights="Extra support for the project|Same complete service|Funds professional maintenance" >}}
-Same features as the other plans, with extra support for the open-source project, hosting and professional maintenance behind wallabag.it.
+{{< pricing-plan id="heart" title="The ❤️ subscription" period="per year" cta="Support wallabag" highlights="Same features|Helps wallabag a bit more|Thank you!" >}}
+Same features as the annual plan. You pay a bit more to help wallabag, thank you ❤️
 {{< /pricing-plan >}}
 {{< /pricing-plans >}}
 
 <p class="text-center text-body-secondary mt-4">14-day free trial · no credit card required · premium features unlocked when you subscribe · export your data anytime</p>
-<p class="text-center text-body-secondary">Your subscription directly funds wallabag development and keeps the service ad-free.</p>
+<p class="text-center text-body-secondary">Your subscription pays for wallabag development and keeps the service ad-free.</p>
 
 {{% /blocks/section %}}
 
@@ -50,15 +50,15 @@ Save an article from the browser, keep a clean reading list, then read on mobile
 {.text-center .mb-5}
 
 {{% blocks/feature icon="fa-user-secret" title="No ads, no data resale" %}}
-Your reading list can reveal a lot about you. wallabag.it is funded by subscriptions, not by tracking, advertising or selling data.
+wallabag.it lives on subscriptions. No ads, no tracking, and your data is never sold.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-server" title="Hosted and maintained in Europe" %}}
-The subscription pays for European hosting, backups, updates, monitoring and the support work that keeps the hosted service reliable.
+{{% blocks/feature icon="fa-server" title="Hosted in Europe" %}}
+The subscription pays for the servers in Europe, backups, updates and support.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-heart" title="It funds the open-source wallabag project" %}}
-wallabag has existed since 2013 and wallabag.it since 2016. Your subscription helps maintain the hosted service and the open-source project behind it.
+wallabag has existed since 2013 and wallabag.it since 2016. Your subscription pays for the hosted service and for the open-source project behind it.
 [See wallabag on GitHub](https://github.com/wallabag/wallabag).
 {{% /blocks/feature %}}
 
@@ -76,7 +76,7 @@ Get your private `save+USER+TOKEN@wallabag.it` address: send or forward an email
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-cloud-download" title="Import from another service" %}}
-Bring your reading list from Pocket, Instapaper, Pinboard, Omnivore, Shaarli or another wallabag — tags and read/favourite status are preserved.
+Bring your reading list from Pocket, Instapaper, Pinboard, Omnivore, Shaarli or another wallabag. Tags and read/favourite status are kept.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-rss" title="Follow RSS & Atom feeds" %}}
@@ -87,7 +87,7 @@ Paste the address of a website: wallabag.it finds its feed and saves the new art
 
 {{% blocks/section color="light" %}}
 
-## And everything else you'd expect
+## And everything else
 {.text-center}
 
 <div class="row justify-content-center mt-4">
@@ -135,7 +135,7 @@ Paste the address of a website: wallabag.it finds its feed and saves the new art
 | Price per year | **11 €** | ~55 € | ~26 € | ~22 € |
 | Full article saved, not just the link | ✅ | ✅ | ❌ bookmark-oriented | ❌ no reading view |
 | Open source | ✅ | ❌ | ❌ | ❌ |
-| Ad-free & privacy-first | ✅ | ❌ | ❌ | ✅ |
+| No ads, no tracking | ✅ | ❌ | ❌ | ✅ |
 | Hosted in Europe | ✅ | ❌ | ❌ | ❌ |
 | Offline reading apps | ✅ | ✅ | partial | ❌ |
 | Easy import from Pocket | ✅ | ✅ | ✅ | ❌ |
@@ -143,7 +143,7 @@ Paste the address of a website: wallabag.it finds its feed and saves the new art
 
 </div>
 
-Want the full story? Read our article: [Which alternative to Pocket should I choose?](/en/alternatives/pocket/)
+More details in [Which alternative to Pocket should I choose?](/en/alternatives/pocket/)
 {.text-center .mt-3}
 
 {{% /blocks/section %}}
@@ -165,7 +165,7 @@ Want the full story? Read our article: [Which alternative to Pocket should I cho
 ## Ready to save your first article?
 {.text-center}
 
-<p class="lead text-center">Create your account now and enjoy a 14-day free trial.<br />No credit card required.</p>
+<p class="lead text-center">Create your account and try it free for 14 days.<br />No credit card required.</p>
 <div class="text-center">
 <a class="btn btn-lg btn-secondary mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-bottom-trial">
   Create an account <i class="fa fa-user-plus ms-2"></i>
