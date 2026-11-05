@@ -16,7 +16,13 @@ en:
   - id: payment
     q: "Which payment methods do you accept?"
     a: |
-      Credit card and PayPal. Online payments are processed securely by our payment providers (Stripe, Payplug and PayPal) — we never see or store your card details.
+      Credit card and PayPal, both through Stripe's secure payment page — we never see or store your card details.
+      You don't need a Stripe account to pay by card: just enter your card details on the payment page.
+  - id: paid-no-access
+    q: "I paid but my subscription doesn't show up. What should I do?"
+    a: |
+      Your subscription is activated automatically a few seconds after the payment. Check the [Subscription page](https://app.wallabag.it/subscription/) of your account: it shows the end date of your current subscription.
+      If it still says you have no active subscription after a few minutes, please don't pay again: write to [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it) with the email address of your wallabag.it account and the date of the payment, and we'll fix it.
   - id: renewal
     q: "Does my subscription renew automatically?"
     a: |
@@ -35,6 +41,19 @@ en:
     q: "Can I export my data and leave whenever I want?"
     a: |
       Yes, at any time. You can download your articles in PDF, ePUB, mobi, JSON, CSV, txt or HTML. Your reading list belongs to you.
+  - id: empty-article
+    q: "An article is empty or incomplete. Why?"
+    a: |
+      wallabag.it fetches the page from its own servers, and some websites block it: anti-bot checks (Cloudflare, Anubis…), paywalls or pages that only load their text in the browser.
+      The easiest fix is to save the article with the [Firefox or Chrome extension](/en/applications/): it sends the page as you see it in your browser, so it works even on these websites.
+      For a website that requires a login, you can add your credentials in the **Site credentials** menu (it only works for some websites).
+      If a website never works, send the link to [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it): we can sometimes add a specific configuration for it.
+  - id: missing-articles
+    q: "Some of my articles have disappeared. What happened?"
+    a: |
+      First check the **Archive** list: once marked as read, an article leaves the unread list but stays in your account. The search and the **All entries** list show everything.
+      wallabag.it never deletes articles on its own. But a deletion made in any app or extension connected to your account (Android, iOS, e-reader, third-party app) is synchronised and permanent.
+      Also check that you're logged in with the right account if you have several. To be on the safe side, you can [export your articles](https://app.wallabag.it/subscription/) regularly.
   - id: selfhosted
     q: "What's the difference with self-hosting wallabag?"
     a: |
@@ -68,7 +87,13 @@ fr:
   - id: payment
     q: "Quels moyens de paiement acceptez-vous ?"
     a: |
-      Carte bancaire et PayPal. Les paiements en ligne sont traités de façon sécurisée par nos prestataires (Stripe, Payplug et PayPal) — nous ne voyons ni ne stockons jamais vos données bancaires.
+      Carte bancaire et PayPal, via la page de paiement sécurisée de Stripe — nous ne voyons ni ne stockons jamais vos données bancaires.
+      Pas besoin de compte Stripe pour payer par carte : il suffit de saisir votre carte sur la page de paiement.
+  - id: paid-no-access
+    q: "J'ai payé mais mon abonnement n'apparaît pas. Que faire ?"
+    a: |
+      Votre abonnement est activé automatiquement quelques secondes après le paiement. Consultez la page [Abonnement](https://app.wallabag.it/subscription/) de votre compte : elle affiche la date de fin de votre abonnement en cours.
+      Si elle indique toujours que vous n'avez pas d'abonnement actif après quelques minutes, ne payez pas une deuxième fois : écrivez à [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it) en indiquant l'adresse email de votre compte wallabag.it et la date du paiement, et nous corrigerons ça.
   - id: renewal
     q: "Mon abonnement est-il renouvelé automatiquement ?"
     a: |
@@ -87,6 +112,19 @@ fr:
     q: "Puis-je exporter mes données et partir quand je veux ?"
     a: |
       Oui, à tout moment. Vous pouvez télécharger vos articles en PDF, ePUB, mobi, JSON, CSV, txt ou HTML. Votre liste de lecture vous appartient.
+  - id: empty-article
+    q: "Un article est vide ou incomplet. Pourquoi ?"
+    a: |
+      wallabag.it récupère la page depuis ses propres serveurs, et certains sites le bloquent : contrôles anti-robots (Cloudflare, Anubis…), paywalls ou pages qui ne chargent leur texte que dans le navigateur.
+      Le plus simple est d'enregistrer l'article avec l'[extension Firefox ou Chrome](/fr/applications/) : elle envoie la page telle que vous la voyez dans votre navigateur, ça fonctionne donc même sur ces sites.
+      Pour un site qui demande une connexion, vous pouvez ajouter vos identifiants dans le menu **Accès aux sites** (ça ne fonctionne que pour certains sites).
+      Si un site ne fonctionne jamais, envoyez le lien à [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it) : nous pouvons parfois ajouter une configuration spécifique.
+  - id: missing-articles
+    q: "Des articles ont disparu de mon compte. Que s'est-il passé ?"
+    a: |
+      Vérifiez d'abord la liste **Lus** : un article marqué comme lu quitte la liste « Non lus » mais reste dans votre compte. La recherche et la liste **Tous les articles** affichent tout.
+      wallabag.it ne supprime jamais d'articles de lui-même. En revanche, une suppression faite depuis une application ou une extension connectée à votre compte (Android, iOS, liseuse, application tierce) est synchronisée et définitive.
+      Vérifiez aussi que vous êtes connecté au bon compte si vous en avez plusieurs. Par précaution, vous pouvez [exporter vos articles](https://app.wallabag.it/subscription/) régulièrement.
   - id: selfhosted
     q: "Quelle différence avec un wallabag auto-hébergé ?"
     a: |
