@@ -10,7 +10,7 @@ description: "Politique de confidentialité de wallabag.it : données traitées,
 
 {{% blocks/section color="white" %}}
 
-Dernière mise à jour : 28 juin 2026
+Dernière mise à jour : 5 novembre 2026
 
 wallabag.it est un service de lecture différée qui permet de sauvegarder des pages web, des URLs, des articles, des tags, des annotations et des préférences de lecture.
 
@@ -98,9 +98,9 @@ wallabag.it fait appel à des prestataires techniques strictement nécessaires a
 | Prestataire | Rôle | Localisation |
 |---|---|---|
 | Hetzner Online GmbH | Hébergement des serveurs | Allemagne / Union européenne |
-| Stripe | Paiement par carte | Union européenne ; transferts possibles hors UE selon leurs conditions |
-| Payplug | Paiement par carte | France / Union européenne |
-| PayPal | Paiement | Union européenne ; transferts possibles hors UE selon leurs conditions |
+| Stripe | Paiement par carte (seul prestataire de paiement depuis novembre 2026) | Union européenne ; transferts possibles hors UE selon leurs conditions |
+| Payplug | Ancien prestataire de paiement par carte : plus de nouveaux paiements, seulement les traces des paiements passés | France / Union européenne |
+| PayPal | Ancien prestataire de paiement : plus de nouveaux paiements, seulement les traces des paiements passés | Union européenne ; transferts possibles hors UE selon leurs conditions |
 | Matomo | Mesure d'audience du site vitrine | Infrastructure wallabag.it / Union européenne |
 | Zammad / helpdesk.wallabag.it | Support utilisateur et chat de support | Infrastructure wallabag.it / Union européenne |
 | PHPList | Envoi d'emails et de newsletters | Infrastructure wallabag.it / Union européenne |
