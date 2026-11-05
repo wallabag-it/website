@@ -24,7 +24,7 @@ wallabag.it is a read-it-later service. When one of our users saves a link, our 
 - It only fetches pages that a user asked to save. It doesn't crawl your site and doesn't follow links.
 - A user can reload an article: the page is then fetched again.
 - If a user follows one of your RSS feeds in wallabag.it, the feed is checked at most once an hour.
-- The article is only shown to the user who saved it. We don't republish it and we don't sell it.
+- The article is only shown to the user who saved it. We don't republish it, we don't sell it, and we don't use it to train AI models.
 
 Every fetch is started by a person, like opening the page in a browser. That's why the bot doesn't read `robots.txt`.
 

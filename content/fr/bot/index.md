@@ -24,7 +24,7 @@ wallabag.it est un service de lecture différée. Quand un de nos utilisateurs e
 - Il ne récupère que les pages qu'un utilisateur a demandé d'enregistrer. Il ne parcourt pas votre site et ne suit pas les liens.
 - Un utilisateur peut recharger un article : la page est alors récupérée à nouveau.
 - Si un utilisateur suit un de vos flux RSS dans wallabag.it, le flux est consulté au plus une fois par heure.
-- L'article n'est visible que par l'utilisateur qui l'a enregistré. Nous ne le republions pas et nous ne le revendons pas.
+- L'article n'est visible que par l'utilisateur qui l'a enregistré. Nous ne le republions pas, nous ne le revendons pas et nous ne l'utilisons pas pour entraîner des modèles d'IA.
 
 Chaque récupération est lancée par une personne, comme quand on ouvre la page dans un navigateur. C'est pour ça que le robot ne lit pas le `robots.txt`.
 
