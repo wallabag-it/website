@@ -24,6 +24,8 @@ Les requêtes viennent de ces adresses IP :
 138.201.122.115
 ```
 
+La même liste en JSON : [wallabag.it/bot/ips.json](https://wallabag.it/bot/ips.json).
+
 ## Ce qu'il fait
 
 wallabag.it est un service de lecture différée. Quand un de nos utilisateurs enregistre un lien, notre serveur récupère la page et garde le texte de l'article, pour qu'il puisse le lire plus tard, sur n'importe quel appareil.
