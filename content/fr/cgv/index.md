@@ -79,7 +79,7 @@ Le Client s'engage à fournir des informations exactes et à jour. wallabag.it p
 
 Le paiement est exigible au moment de la commande.
 
-Le paiement en ligne est traité par les prestataires de paiement proposés au moment de la commande, notamment Stripe, Payplug ou PayPal.
+Le paiement en ligne est traité par Stripe.
 
 wallabag.it ne voit pas et ne stocke pas les données complètes de carte bancaire. Les transactions sont traitées directement par les prestataires de paiement.
 
