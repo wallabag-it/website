@@ -81,7 +81,7 @@ languages:
             icon: fab fa-mastodon
             desc: Suivez nous sur Mastodon pour les dernières nouvelles de wallabag.it
           - name: État du service
-            url: https://status.wallabag.org
+            url: https://status.wallabag.it
             icon: fa fa-laptop-medical
             desc: Suivez ce site pour connaître l'état de santé de wallabag.it
         developer:
@@ -242,7 +242,7 @@ params:
         icon: fab fa-mastodon
         desc: Follow us on Mastodon to get the latest news of wallabag.it
       - name: Status website
-        url: https://status.wallabag.org
+        url: https://status.wallabag.it
         icon: fa fa-laptop-medical
         desc: Follow this website to have some news about wallabag.it healthcheck
     # # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
