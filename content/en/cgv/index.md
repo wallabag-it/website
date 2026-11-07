@@ -1,10 +1,10 @@
 ---
-title: Terms of sale
+title: Terms of use and sale
 linkTitle: Terms
 slug: terms
 ---
 
-{{% blocks/cover title="Terms of sale" color="primary" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Terms of use and sale" color="primary" image_anchor="bottom" height="auto" %}}
 
 {{% /blocks/cover %}}
 
@@ -12,15 +12,22 @@ slug: terms
 
 Last updated: November 7, 2026
 
-These Terms of Sale apply to subscriptions to wallabag.it, a hosted read-it-later service published by Nicolas Lœuillet, sole proprietor.
+These Terms of use and sale apply to wallabag.it, a hosted read-it-later service published by Nicolas Lœuillet, sole proprietor.
+
+They include:
+
+- **terms of use**, which apply to every wallabag.it account, including during the free trial: articles 1 to 5, 10, 11, 14 to 16 and 18 to 21;
+- **terms of sale**, which also apply when a subscription is purchased: articles 6 to 9, 12, 13 and 17.
+
+In these Terms, the "Customer" means anyone who holds a wallabag.it account, subscribed or not.
 
 ## Article 1: Purpose
 
 wallabag.it is a digital service that lets users save web pages, read them later, organize them and export them from a user account.
 
-These Terms of Sale define the rights and obligations applicable to the subscription to wallabag.it.
+These Terms define the rights and obligations applicable to the use of the service and to the subscription to wallabag.it.
 
-## Article 2: Seller
+## Article 2: Publisher and seller
 
 The wallabag.it service is published by Nicolas Lœuillet, sole proprietor (entrepreneur individuel, EI).
 
@@ -44,9 +51,9 @@ Phone: +33 (0)6 85 87 88 73
 
 ## Article 3: Acceptance of the Terms
 
-The Customer declares that they have read these Terms of Sale before confirming their order and accepts them without restriction or reservation.
+By creating an account, the Customer accepts the terms of use. By purchasing a subscription, they declare that they have read all of these Terms before confirming their order and accept them without restriction or reservation.
 
-The applicable Terms are those in force on the date of the order. wallabag.it may amend these Terms at any time for the future by publishing a new version on the website.
+The applicable Terms are those in force on the date the account was created or the order was placed. wallabag.it may amend these Terms at any time for the future by publishing a new version on the website.
 
 ## Article 4: Service description
 

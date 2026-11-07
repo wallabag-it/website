@@ -1,9 +1,9 @@
 ---
-title: Conditions Générales de Vente
-linkTitle: CGV
+title: Conditions générales d'utilisation et de vente
+linkTitle: CGU / CGV
 ---
 
-{{% blocks/cover title="Conditions Générales de Vente" color="primary" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Conditions générales d'utilisation et de vente" color="primary" image_anchor="bottom" height="auto" %}}
 
 {{% /blocks/cover %}}
 
@@ -11,15 +11,22 @@ linkTitle: CGV
 
 Dernière mise à jour : 7 novembre 2026
 
-Les présentes Conditions Générales de Vente s'appliquent aux abonnements au service wallabag.it, service hébergé de lecture différée édité par Nicolas Lœuillet, entrepreneur individuel (EI).
+Les présentes conditions générales d'utilisation et de vente s'appliquent au service wallabag.it, service hébergé de lecture différée édité par Nicolas Lœuillet, entrepreneur individuel (EI).
+
+Elles comprennent :
+
+- des **conditions d'utilisation**, qui s'appliquent à tous les comptes wallabag.it, y compris pendant l'essai gratuit : articles 1 à 5, 10, 11, 14 à 16 et 18 à 21 ;
+- des **conditions de vente**, qui s'appliquent en plus à la souscription d'un abonnement : articles 6 à 9, 12, 13 et 17.
+
+Dans les présentes conditions, le « Client » désigne toute personne titulaire d'un compte wallabag.it, abonnée ou non.
 
 ## Article 1 : Objet
 
 wallabag.it est un service numérique permettant de sauvegarder des pages web, de les lire plus tard, de les organiser et de les exporter depuis un compte utilisateur.
 
-Les présentes Conditions Générales de Vente déterminent les droits et obligations applicables à la souscription d'un abonnement wallabag.it.
+Les présentes conditions déterminent les droits et obligations applicables à l'utilisation du service et à la souscription d'un abonnement wallabag.it.
 
-## Article 2 : Vendeur
+## Article 2 : Éditeur et vendeur
 
 Le service wallabag.it est édité par Nicolas Lœuillet, entrepreneur individuel (EI).
 
@@ -41,11 +48,11 @@ Email : [nicolas@wallabag.it](mailto:nicolas@wallabag.it)
 
 Téléphone : +33 (0)6 85 87 88 73
 
-## Article 3 : Acceptation des CGV
+## Article 3 : Acceptation des conditions
 
-Le Client déclare avoir pris connaissance des présentes Conditions Générales de Vente avant la validation de sa commande et les accepter sans restriction ni réserve.
+En créant un compte, le Client accepte les conditions d'utilisation. En souscrivant un abonnement, il déclare avoir pris connaissance de l'ensemble des présentes conditions avant la validation de sa commande et les accepter sans restriction ni réserve.
 
-Les CGV applicables sont celles en vigueur à la date de la commande. wallabag.it peut modifier les présentes CGV à tout moment pour l'avenir, en publiant une nouvelle version sur le site.
+Les conditions applicables sont celles en vigueur à la date de la création du compte ou de la commande. wallabag.it peut modifier les présentes conditions à tout moment pour l'avenir, en publiant une nouvelle version sur le site.
 
 ## Article 4 : Description du service
 
@@ -77,7 +84,7 @@ Les frais de télécommunication nécessaires à l'accès au site et au service 
 
 ## Article 8 : Commande
 
-Pour souscrire un abonnement, le Client choisit l'offre souhaitée, vérifie les informations de commande, accepte les présentes CGV et procède au paiement.
+Pour souscrire un abonnement, le Client choisit l'offre souhaitée, vérifie les informations de commande, accepte les présentes conditions et procède au paiement.
 
 Le Client s'engage à fournir des informations exactes et à jour. wallabag.it peut refuser ou annuler une commande en cas de demande anormale, frauduleuse, réalisée de mauvaise foi ou pour tout motif légitime.
 
@@ -93,13 +100,13 @@ En cas d'échec ou d'annulation du paiement, l'abonnement n'est pas activé ou p
 
 ## Article 10 : Accès au service
 
-L'abonnement donne accès au service pendant la durée choisie, sous réserve du respect des présentes CGV.
+L'abonnement donne accès au service pendant la durée choisie, sous réserve du respect des présentes conditions.
 
 wallabag.it met en œuvre des moyens raisonnables pour assurer la disponibilité du service. Le service peut toutefois être temporairement interrompu pour maintenance, mise à jour, incident technique, sécurité ou cas de force majeure.
 
 ## Article 11 : Utilisation du service, contenus et signalements
 
-Le Client s'engage à utiliser wallabag.it conformément à la loi, aux présentes CGV et à la destination normale du service.
+Le Client s'engage à utiliser wallabag.it conformément à la loi, aux présentes conditions et à la destination normale du service.
 
 Il est notamment interdit d'utiliser le service pour :
 
@@ -129,7 +136,7 @@ wallabag.it accuse réception du signalement, l'examine de manière objective et
 
 ### Décisions et recours
 
-Si wallabag.it retire un partage public, supprime un contenu, ou suspend ou ferme un compte, le Client en est informé par email avec les motifs de la décision : les faits pris en compte, la règle des présentes CGV ou la disposition légale concernée, et les voies de recours.
+Si wallabag.it retire un partage public, supprime un contenu, ou suspend ou ferme un compte, le Client en est informé par email avec les motifs de la décision : les faits pris en compte, la règle des présentes conditions ou la disposition légale concernée, et les voies de recours.
 
 Le Client, comme l'auteur d'un signalement, peut contester une décision en répondant à cet email ou en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it). La décision est alors réexaminée. Le Client peut aussi saisir le médiateur de la consommation (article 20) ou les juridictions compétentes.
 
@@ -182,7 +189,7 @@ Le Client peut supprimer son compte depuis la page Configuration de son compte, 
 
 Les marques, noms de domaine, textes, images, éléments graphiques et, plus généralement, les contenus édités par wallabag.it restent la propriété de leur titulaire.
 
-Le logiciel wallabag est un logiciel libre soumis à sa licence propre. Les présentes CGV ne transfèrent aucun droit de propriété intellectuelle au Client, en dehors du droit personnel d'utiliser le service pendant la durée de l'abonnement.
+Le logiciel wallabag est un logiciel libre soumis à sa licence propre. Les présentes conditions ne transfèrent aucun droit de propriété intellectuelle au Client, en dehors du droit personnel d'utiliser le service pendant la durée de l'abonnement.
 
 ## Article 17 : Garantie légale de conformité
 
@@ -222,7 +229,7 @@ Email : [litiges@cm2c.net](mailto:litiges@cm2c.net)
 
 ## Article 21 : Droit applicable et juridiction compétente
 
-Les présentes CGV sont soumises au droit français.
+Les présentes conditions sont soumises au droit français.
 
 En cas de litige, les parties rechercheront d'abord une solution amiable. À défaut, le litige sera porté devant les juridictions compétentes dans les conditions du droit commun.
 

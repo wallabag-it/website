@@ -60,7 +60,7 @@ Tél. : +49 (0)9831 505-0
 
 ## Signaler un contenu
 
-Pour signaler un contenu illicite accessible par un lien de partage public, ou pour contacter wallabag.it en tant qu'autorité, voir l'article 11 des [Conditions Générales de Vente](/fr/cgv/). Point de contact : [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
+Pour signaler un contenu illicite accessible par un lien de partage public, ou pour contacter wallabag.it en tant qu'autorité, voir l'article 11 des [Conditions générales d'utilisation et de vente](/fr/cgv/). Point de contact : [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
 
 ## Données personnelles
 
@@ -68,7 +68,7 @@ Les traitements de données personnelles réalisés dans le cadre du site et du 
 
 ## Conditions commerciales
 
-Les conditions applicables aux abonnements wallabag.it sont disponibles dans les [Conditions Générales de Vente](/fr/cgv/).
+Les conditions d'utilisation du service et de vente des abonnements wallabag.it sont disponibles dans les [Conditions générales d'utilisation et de vente](/fr/cgv/).
 
 ## Propriété intellectuelle
 
