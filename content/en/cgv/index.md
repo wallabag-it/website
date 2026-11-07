@@ -10,7 +10,7 @@ slug: terms
 
 {{% blocks/section color="white" %}}
 
-Last updated: June 28, 2026
+Last updated: November 7, 2026
 
 These Terms of Sale apply to subscriptions to wallabag.it, a hosted read-it-later service published by Nicolas Lœuillet, sole proprietor.
 
@@ -22,9 +22,11 @@ These Terms of Sale define the rights and obligations applicable to the subscrip
 
 ## Article 2: Seller
 
-The wallabag.it service is published by Nicolas Lœuillet, sole proprietor.
+The wallabag.it service is published by Nicolas Lœuillet, sole proprietor (entrepreneur individuel, EI).
 
 SIRET: 823 678 560 00025
+
+VAT not applicable, article 293 B of the French General Tax Code.
 
 Address:
 
@@ -36,7 +38,9 @@ chez Nicolas Lœuillet
 France
 ```
 
-Contact: [nicolas@wallabag.it](mailto:nicolas@wallabag.it)
+Email: [nicolas@wallabag.it](mailto:nicolas@wallabag.it)
+
+Phone: +33 (0)6 85 87 88 73
 
 ## Article 3: Acceptance of the Terms
 
@@ -64,7 +68,7 @@ Unless otherwise stated at the time of order, wallabag.it subscriptions do not r
 
 ## Article 7: Prices
 
-Prices are shown in euros on the website at the time of order.
+Prices are shown in euros on the website at the time of order. They are net prices: wallabag.it does not charge VAT (VAT not applicable, article 293 B of the French General Tax Code).
 
 wallabag.it reserves the right to change its prices at any time for the future. Price changes do not apply to subscriptions already paid for their current period.
 
@@ -92,7 +96,7 @@ The subscription grants access to the service for the chosen duration, subject t
 
 wallabag.it uses reasonable efforts to ensure service availability. The service may nevertheless be temporarily interrupted for maintenance, update, technical incident, security or force majeure.
 
-## Article 11: Use of the service
+## Article 11: Use of the service, content and notices
 
 The Customer undertakes to use wallabag.it in accordance with the law, these Terms and the normal purpose of the service.
 
@@ -105,6 +109,33 @@ In particular, it is prohibited to use the service to:
 
 In the event of abusive, fraudulent or unlawful use, wallabag.it may suspend or close the relevant account, after informing the Customer where possible, without prejudice to available legal action.
 
+### Content and public sharing
+
+Articles saved in wallabag.it are private. They only become accessible to other people if the Customer turns on public sharing for an article: it is then visible to anyone who has the link. The Customer remains responsible for the content they share.
+
+wallabag.it does not monitor its users' content and does not use automated moderation tools. Content is only reviewed following a notice or a request from an authority.
+
+### Reporting illegal content
+
+Anyone can report content available through a public sharing link that they consider illegal, by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it). The notice includes:
+
+- the reasons why the content is considered illegal;
+- the exact address (URL) of the content;
+- the name and email address of the person sending the notice, except for offences related to child sexual abuse;
+- a statement confirming that the person sending the notice believes in good faith that the information provided is accurate and complete.
+
+wallabag.it acknowledges receipt of the notice, reviews it objectively and diligently, and informs its author of the decision taken.
+
+### Decisions and appeals
+
+If wallabag.it removes a public share, deletes content, or suspends or closes an account, the Customer is informed by email of the reasons for the decision: the facts taken into account, the rule of these Terms or the legal provision concerned, and the available remedies.
+
+The Customer, as well as the author of a notice, can contest a decision by replying to that email or by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it). The decision is then reviewed again. The Customer can also refer the matter to the consumer mediator (article 20) or to the competent courts.
+
+### Point of contact
+
+The single point of contact of wallabag.it for users and for authorities, within the meaning of Regulation (EU) 2022/2065 (Digital Services Act), is [nicolas@wallabag.it](mailto:nicolas@wallabag.it). Communication can take place in French or English.
+
 ## Article 12: Right of withdrawal
 
 In accordance with consumer law, a consumer Customer has 14 days from subscription to exercise the right of withdrawal, without having to give any reason.
@@ -114,6 +145,19 @@ The right of withdrawal may be exercised by writing to [nicolas@wallabag.it](mai
 In the event of a valid withdrawal, wallabag.it refunds the amounts paid within 14 days of receiving the request.
 
 If the Customer expressly requests immediate access to the service before the end of the withdrawal period, an amount proportional to the period actually used may be retained where permitted by law.
+
+The Customer may use the model withdrawal form below, but is not required to:
+
+> To Nicolas Lœuillet (wallabag.it), 30 bis rue des sapins, 62720 Rinxent, France, [nicolas@wallabag.it](mailto:nicolas@wallabag.it):
+>
+> I hereby give notice that I withdraw from my contract for the provision of the following service:
+>
+> - wallabag.it subscription ordered on:
+> - Email address of the account:
+> - Name of consumer:
+> - Address of consumer:
+> - Date:
+> - Signature of consumer (only if this form is notified on paper):
 
 ## Article 13: Refunds and complaints
 
@@ -131,7 +175,7 @@ Full payment card details are not stored by wallabag.it. They are processed dire
 
 The Customer can export their data from the service in the formats provided by wallabag.it.
 
-The Customer can request deletion of their account by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it). Deletion terms, including handling of technical backups, are described in the [Privacy notice](/en/privacy/).
+The Customer can delete their account from the Config page of their account, or by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it). Deletion terms, including handling of technical backups, are described in the [Privacy notice](/en/privacy/).
 
 ## Article 16: Intellectual property
 
@@ -159,7 +203,21 @@ Performance of wallabag.it's obligations may be suspended in the event of force 
 
 In accordance with the French Consumer Code, a consumer Customer may use a consumer mediator free of charge to seek amicable resolution of a dispute with wallabag.it, after first sending a written complaint to wallabag.it.
 
-The contact details of the competent mediator will be provided on request or added to these Terms once the applicable mediation service has been designated.
+The prior written complaint must have been sent to [nicolas@wallabag.it](mailto:nicolas@wallabag.it). The mediator can be contacted within one year of that complaint.
+
+wallabag.it has joined the following consumer mediation service:
+
+```
+CM2C
+49 rue de Ponthieu
+75008 Paris
+France
+Phone: +33 1 89 47 00 14
+```
+
+Website: [https://www.cm2c.net/declarer-un-litige.php](https://www.cm2c.net/declarer-un-litige.php)
+
+Email: [litiges@cm2c.net](mailto:litiges@cm2c.net)
 
 ## Article 21: Applicable law and jurisdiction
 

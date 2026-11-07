@@ -1,0 +1,38 @@
+{{/* Opt-out of the Matomo audience measurement (CNIL condition for the consent exemption).
+     Uses the Matomo JS tracker loaded in head-end.html (optUserOut / forgetUserOptOut).
+     No blank line in the markup: it is rendered inside Markdown blocks. */ -}}
+{{ $fr := eq site.Language.Lang "fr" -}}
+<div class="matomo-optout border rounded p-3 my-3">
+  <p class="matomo-optout-status mb-2">{{ if $fr }}La mesure d'audience n'est pas active dans ce navigateur (bloqueur de contenu ou script indisponible).{{ else }}Audience measurement is not active in this browser (content blocker or script unavailable).{{ end }}</p>
+  <label class="matomo-optout-label d-none">
+    <input type="checkbox" class="matomo-optout-checkbox me-2">
+    {{ if $fr }}Mes visites sont comptées dans les statistiques. Décochez la case pour ne plus l'être.{{ else }}My visits are counted in the statistics. Untick the box to stop it.{{ end }}
+  </label>
+</div>
+<script>  (function () {
+    var box = document.currentScript.previousElementSibling;
+    var status = box.querySelector('.matomo-optout-status');
+    var label = box.querySelector('.matomo-optout-label');
+    var checkbox = box.querySelector('.matomo-optout-checkbox');
+    var texts = {{ if $fr }}{
+      in: 'Vos visites sont comptées, de façon anonyme, dans les statistiques du site.',
+      out: 'Vos visites ne sont plus comptées : un cookie mémorise ce choix dans ce navigateur.'
+    }{{ else }}{
+      in: 'Your visits are counted, anonymously, in the website statistics.',
+      out: 'Your visits are no longer counted: a cookie remembers this choice in this browser.'
+    }{{ end }};
+    function render(optedOut) {
+      checkbox.checked = !optedOut;
+      status.textContent = optedOut ? texts.out : texts.in;
+      label.classList.remove('d-none');
+    }
+    window._paq = window._paq || [];
+    window._paq.push([function () {
+      render(this.isUserOptedOut());
+    }]);
+    checkbox.addEventListener('change', function () {
+      window._paq.push([checkbox.checked ? 'forgetUserOptOut' : 'optUserOut']);
+      render(!checkbox.checked);
+    });
+  })();
+</script>

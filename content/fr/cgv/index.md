@@ -9,9 +9,9 @@ linkTitle: CGV
 
 {{% blocks/section color="white" %}}
 
-Dernière mise à jour : 28 juin 2026
+Dernière mise à jour : 7 novembre 2026
 
-Les présentes Conditions Générales de Vente s'appliquent aux abonnements au service wallabag.it, service hébergé de lecture différée édité par Nicolas Lœuillet, entrepreneur individuel.
+Les présentes Conditions Générales de Vente s'appliquent aux abonnements au service wallabag.it, service hébergé de lecture différée édité par Nicolas Lœuillet, entrepreneur individuel (EI).
 
 ## Article 1 : Objet
 
@@ -21,9 +21,11 @@ Les présentes Conditions Générales de Vente déterminent les droits et obliga
 
 ## Article 2 : Vendeur
 
-Le service wallabag.it est édité par Nicolas Lœuillet, entrepreneur individuel.
+Le service wallabag.it est édité par Nicolas Lœuillet, entrepreneur individuel (EI).
 
 SIRET : 823 678 560 00025
+
+TVA non applicable, article 293 B du Code général des impôts.
 
 Adresse :
 
@@ -35,7 +37,9 @@ chez Nicolas Lœuillet
 France
 ```
 
-Contact : [nicolas@wallabag.it](mailto:nicolas@wallabag.it)
+Email : [nicolas@wallabag.it](mailto:nicolas@wallabag.it)
+
+Téléphone : +33 (0)6 85 87 88 73
 
 ## Article 3 : Acceptation des CGV
 
@@ -63,7 +67,7 @@ Sauf mention contraire au moment de la commande, les abonnements wallabag.it ne 
 
 ## Article 7 : Prix
 
-Les prix sont indiqués en euros sur le site au moment de la commande.
+Les prix sont indiqués en euros sur le site au moment de la commande. Ce sont des prix nets : wallabag.it ne facture pas de TVA (TVA non applicable, article 293 B du Code général des impôts).
 
 wallabag.it se réserve le droit de modifier ses prix à tout moment pour l'avenir. Les modifications de prix ne s'appliquent pas aux abonnements déjà payés pour leur période en cours.
 
@@ -91,7 +95,7 @@ L'abonnement donne accès au service pendant la durée choisie, sous réserve du
 
 wallabag.it met en œuvre des moyens raisonnables pour assurer la disponibilité du service. Le service peut toutefois être temporairement interrompu pour maintenance, mise à jour, incident technique, sécurité ou cas de force majeure.
 
-## Article 11 : Utilisation du service
+## Article 11 : Utilisation du service, contenus et signalements
 
 Le Client s'engage à utiliser wallabag.it conformément à la loi, aux présentes CGV et à la destination normale du service.
 
@@ -104,6 +108,33 @@ Il est notamment interdit d'utiliser le service pour :
 
 En cas d'utilisation abusive, frauduleuse ou illicite, wallabag.it peut suspendre ou fermer le compte concerné, après information du Client lorsque cela est possible, sans préjudice des actions légales disponibles.
 
+### Contenus et partage public
+
+Les articles sauvegardés dans wallabag.it sont privés. Ils ne deviennent accessibles à d'autres personnes que si le Client active le partage public d'un article : celui-ci est alors visible par toute personne disposant du lien. Le Client reste responsable des contenus qu'il partage.
+
+wallabag.it ne surveille pas les contenus de ses utilisateurs et n'utilise pas d'outil de modération automatique. Les contenus sont examinés uniquement à la suite d'un signalement ou d'une demande d'une autorité.
+
+### Signaler un contenu illicite
+
+Toute personne peut signaler un contenu accessible par un lien de partage public qu'elle estime illicite, en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it). Le signalement indique :
+
+- les raisons pour lesquelles le contenu est considéré comme illicite ;
+- l'adresse exacte (URL) du contenu ;
+- le nom et l'adresse email de l'auteur du signalement, sauf pour les infractions liées aux abus sexuels sur mineurs ;
+- une déclaration confirmant que l'auteur du signalement pense de bonne foi que les informations fournies sont exactes et complètes.
+
+wallabag.it accuse réception du signalement, l'examine de manière objective et diligente, et informe son auteur de la décision prise.
+
+### Décisions et recours
+
+Si wallabag.it retire un partage public, supprime un contenu, ou suspend ou ferme un compte, le Client en est informé par email avec les motifs de la décision : les faits pris en compte, la règle des présentes CGV ou la disposition légale concernée, et les voies de recours.
+
+Le Client, comme l'auteur d'un signalement, peut contester une décision en répondant à cet email ou en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it). La décision est alors réexaminée. Le Client peut aussi saisir le médiateur de la consommation (article 20) ou les juridictions compétentes.
+
+### Point de contact
+
+Le point de contact unique de wallabag.it pour les utilisateurs et pour les autorités, au sens du règlement (UE) 2022/2065 sur les services numériques, est [nicolas@wallabag.it](mailto:nicolas@wallabag.it). Les échanges peuvent avoir lieu en français ou en anglais.
+
 ## Article 12 : Droit de rétractation
 
 Conformément au droit de la consommation, le Client consommateur dispose d'un délai de 14 jours à compter de la souscription de l'abonnement pour exercer son droit de rétractation, sans avoir à motiver sa décision.
@@ -113,6 +144,19 @@ Le droit de rétractation peut être exercé en écrivant à [nicolas@wallabag.i
 En cas de rétractation valable, wallabag.it rembourse les sommes payées dans un délai de 14 jours à compter de la réception de la demande.
 
 Si le Client demande expressément l'accès immédiat au service avant la fin du délai de rétractation, un montant proportionnel à la période effectivement utilisée pourra être retenu lorsque la loi le permet.
+
+Le Client peut utiliser le modèle de formulaire de rétractation ci-dessous, sans que ce soit obligatoire :
+
+> À l'attention de Nicolas Lœuillet (wallabag.it), 30 bis rue des sapins, 62720 Rinxent, France, [nicolas@wallabag.it](mailto:nicolas@wallabag.it) :
+>
+> Je vous notifie par la présente ma rétractation du contrat portant sur la prestation de services ci-dessous :
+>
+> - Abonnement wallabag.it commandé le :
+> - Adresse email du compte :
+> - Nom du consommateur :
+> - Adresse du consommateur :
+> - Date :
+> - Signature du consommateur (uniquement en cas de notification sur papier) :
 
 ## Article 13 : Remboursements et réclamations
 
@@ -130,7 +174,7 @@ Les données bancaires complètes ne sont pas stockées par wallabag.it. Elles s
 
 Le Client peut exporter ses données depuis le service dans les formats proposés par wallabag.it.
 
-Le Client peut demander la suppression de son compte en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it). Les modalités de suppression, y compris la gestion des sauvegardes techniques, sont décrites dans la [Politique de confidentialité](/fr/confidentialite/).
+Le Client peut supprimer son compte depuis la page Configuration de son compte, ou en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it). Les modalités de suppression, y compris la gestion des sauvegardes techniques, sont décrites dans la [Politique de confidentialité](/fr/confidentialite/).
 
 ## Article 16 : Propriété intellectuelle
 
@@ -158,7 +202,21 @@ L'exécution des obligations de wallabag.it peut être suspendue en cas de force
 
 Conformément au Code de la consommation, le Client consommateur peut recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable d'un litige qui l'opposerait à wallabag.it, après avoir préalablement adressé une réclamation écrite à wallabag.it.
 
-Les coordonnées du médiateur compétent seront communiquées sur demande ou ajoutées aux présentes CGV dès désignation du service de médiation applicable.
+La réclamation écrite préalable doit avoir été adressée à [nicolas@wallabag.it](mailto:nicolas@wallabag.it). Le médiateur peut être saisi dans un délai d'un an à compter de cette réclamation.
+
+wallabag.it adhère au service de médiation de la consommation suivant :
+
+```
+CM2C
+49 rue de Ponthieu
+75008 Paris
+France
+Tél. : 01 89 47 00 14
+```
+
+Site internet : [https://www.cm2c.net/declarer-un-litige.php](https://www.cm2c.net/declarer-un-litige.php)
+
+Email : [litiges@cm2c.net](mailto:litiges@cm2c.net)
 
 ## Article 21 : Droit applicable et juridiction compétente
 

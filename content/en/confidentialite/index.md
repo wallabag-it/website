@@ -11,7 +11,7 @@ description: "wallabag.it privacy notice: processed data, legal bases, retention
 
 {{% blocks/section color="white" %}}
 
-Last updated: November 5, 2026
+Last updated: November 7, 2026
 
 wallabag.it is a read-it-later service that lets you save web pages, URLs, articles, tags, annotations and reading preferences.
 
@@ -19,7 +19,7 @@ This notice explains how personal data is processed for the wallabag.it website 
 
 ## Data controller
 
-The data controller is Nicolas Lœuillet, sole proprietor and publisher of wallabag.it.
+The data controller is Nicolas Lœuillet, sole proprietor (entrepreneur individuel, EI) and publisher of wallabag.it.
 
 Contact: [nicolas@wallabag.it](mailto:nicolas@wallabag.it)
 
@@ -38,12 +38,15 @@ France
 Depending on how you use the service, wallabag.it may process the following categories of data:
 
 - account data: email address, hashed password, account preferences;
-- content data: saved URLs, titles, extracted article contents, tags, annotations, favourites, read/unread status, creation and update dates;
+- content data: saved URLs, titles, extracted article contents, tags, annotations, favourites, read/unread status, creation and update dates, public sharing links;
+- save by email: emails sent to your private saving address (sender address, subject, content and links);
+- RSS and Atom feeds: addresses of the websites and feeds you follow;
 - import and export data: files or data submitted when you import or export your articles;
 - subscription data: selected plan, payment status, invoices, transaction references;
 - support exchanges: messages sent to support, email address, information needed to handle the request;
 - technical data: IP address, user-agent, technical logs, security events;
-- website analytics data, when Matomo is used.
+- website analytics data (Matomo);
+- content notices: identity and email of the person sending the notice, reported content, exchanges and decision.
 
 wallabag.it does not collect full payment card details. Payments are processed directly by payment providers.
 
@@ -52,15 +55,17 @@ wallabag.it does not collect full payment card details. Payments are processed d
 | Purpose | Data concerned | Legal basis | Retention period |
 |---|---|---|---|
 | Account creation and management | Email, hashed password, preferences | Performance of the contract | 18 months |
-| Provision of the wallabag.it service | URLs, extracted contents, tags, annotations, favourites, reading statuses | Performance of the contract | For the lifetime of the account or until deletion by the user |
+| Provision of the wallabag.it service | URLs, extracted contents, tags, annotations, favourites, reading statuses, followed feeds | Performance of the contract | For the lifetime of the account or until deletion by the user |
+| Save by email | Emails received at the saving address | Performance of the contract | Long enough to save the links in the account, then the email is deleted |
 | Imports and exports | Imported data or data generated for export | Performance of the contract | For the time needed to perform the operation, then deletion or storage in the account depending on the requested action |
 | Payment and subscription management | Plan, payment status, transaction references | Performance of the contract | For the subscription period, then limited archiving for proof purposes |
 | Invoicing and accounting | Invoices, payment information needed for accounting | Legal obligation | 10 years from the end of the relevant accounting year |
 | User support | Messages, email, useful technical information | Performance of the contract and legitimate interest | For the time needed to handle the request, then archiving for up to 3 years |
 | Security, abuse prevention and maintenance | Logs, IP address, user-agent, technical events | Legitimate interest | Up to 12 months, unless longer retention is needed to handle an incident |
-| Website analytics | Anonymized or pseudonymized browsing data | Legitimate interest or consent depending on configuration | Matomo cookie up to 13 months; anonymized data up to 6 months |
+| Website analytics | Pages viewed, referrer, browser, truncated IP address | Legitimate interest (audience measurement exempt from consent under the CNIL conditions), with the right to object below | Matomo cookie up to 13 months; anonymized data up to 6 months |
 | Service emails | Email, account or subscription information | Performance of the contract | For the lifetime of the account |
 | Newsletter and commercial information | Email, subscription preferences | Consent or legitimate interest for existing customers | Until unsubscribe |
+| Notices of illegal content | Identity and email of the author, reported content, exchanges, decision | Legal obligation (Regulation (EU) 2022/2065, Digital Services Act) | 1 year after the decision, unless proceedings are ongoing |
 
 ## Access to saved URLs and article contents
 
@@ -80,7 +85,7 @@ Such access is restricted to authorized persons, limited to what is strictly nec
 
 ## Account deletion and backups
 
-You can request deletion of your account by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
+You can delete your account from the Config page of your account, or request its deletion by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
 
 After account deletion, active data associated with the account is deleted within a maximum of 30 days, unless a legal retention obligation applies or temporary retention is necessary for service security.
 
@@ -98,15 +103,30 @@ wallabag.it uses technical providers that are strictly necessary for operating t
 
 | Provider | Role | Location |
 |---|---|---|
-| Hetzner Online GmbH | Server hosting | Germany / European Union |
-| Stripe | Card payments (only payment provider since November 2026) | European Union; possible transfers outside the EU under their terms |
+| Hetzner Online GmbH | Hosting of the app.wallabag.it service servers | Germany / European Union |
+| Netlify, Inc. | Hosting of the wallabag.it website and the status.wallabag.it status page (visitors' IP addresses, technical logs) | United States; transfers covered by the EU-U.S. Data Privacy Framework |
+| Infomaniak Network SA | Email: messages sent to wallabag.it, to support and to the save-by-email address | Switzerland (adequacy decision of the European Commission) |
+| Stripe Payments Europe, Ltd. | Card payments (only payment provider since November 2026) | Ireland / European Union; possible transfers outside the EU under their terms |
+| Abby | Issuing and sending invoices | France / European Union |
 | Payplug | Former card payment provider: no new payments, only the records of past payments | France / European Union |
 | PayPal | Former payment provider: no new payments, only the records of past payments | European Union; possible transfers outside the EU under their terms |
-| Matomo | Website analytics | wallabag.it infrastructure / European Union |
-| Zammad / helpdesk.wallabag.it | User support and support chat | wallabag.it infrastructure / European Union |
-| PHPList | Email and newsletter sending | wallabag.it infrastructure / European Union |
+| Matomo (self-hosted) | Website analytics | wallabag.it infrastructure / European Union |
+| Zammad GmbH (helpdesk.wallabag.it) | User support and support chat | Germany / European Union |
+| phpList (self-hosted) | Email and newsletter sending | wallabag.it infrastructure / European Union |
 
 These providers process data only for the purposes required by their role. Where transfers outside the European Union are necessary, they must be covered by appropriate safeguards in accordance with the GDPR.
+
+## Cookies and trackers
+
+The app.wallabag.it service only uses cookies needed for it to work, which do not require consent: a session cookie (login), a "Remember me" cookie (up to 12 months, only if you tick the box when logging in) and a theme preference cookie (light or dark).
+
+The wallabag.it website uses Matomo, self-hosted, to measure its audience. Matomo is configured to be exempt from consent according to the CNIL recommendations: truncated IP address, data only used for anonymous statistics about the website, no combination with other processing and no transfer to third parties. It sets the `_pk_id` (13 months) and `_pk_ses` (30 minutes) cookies.
+
+You can object to this audience measurement:
+
+{{< matomo-optout >}}
+
+The support chat of the website (Zammad) stores the conversation identifier in your browser for the session, only if you open it.
 
 ## Recipients
 
@@ -124,7 +144,8 @@ Under the conditions provided by the GDPR, you have the following rights:
 - right to restriction of processing;
 - right to object, where processing is based on legitimate interest;
 - right to data portability, where processing is based on contract or consent;
-- right to withdraw consent at any time, where processing is based on consent.
+- right to withdraw consent at any time, where processing is based on consent;
+- right to set guidelines for what happens to your data after your death.
 
 To exercise your rights, contact [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
 

@@ -12,9 +12,11 @@ slug: legal-notice
 
 ## Website publisher
 
-The wallabag.it website and wallabag.it service are published by Nicolas Lœuillet, sole proprietor.
+The wallabag.it website and wallabag.it service are published by Nicolas Lœuillet, sole proprietor (entrepreneur individuel, EI).
 
 SIRET: 823 678 560 00025
+
+VAT not applicable, article 293 B of the French General Tax Code.
 
 ### Registered address
 
@@ -26,13 +28,28 @@ chez Nicolas Lœuillet
 France
 ```
 
-Contact: [nicolas@wallabag.it](mailto:nicolas@wallabag.it)
+Email: [nicolas@wallabag.it](mailto:nicolas@wallabag.it)
+
+Phone: +33 (0)6 85 87 88 73
 
 ### Publication director
 
 Nicolas Lœuillet
 
-## Hosting provider
+## Hosting providers
+
+### wallabag.it website and status.wallabag.it status page
+
+```
+Netlify, Inc.
+101 2nd Street
+San Francisco, CA 94105
+United States
+```
+
+Contact: [netlify.com/contact](https://www.netlify.com/contact/)
+
+### app.wallabag.it service
 
 ```
 Hetzner Online GmbH
@@ -41,6 +58,10 @@ Industriestr. 25
 Germany
 Phone: +49 (0)9831 505-0
 ```
+
+## Reporting content
+
+To report illegal content available through a public sharing link, or to contact wallabag.it as an authority, see article 11 of the [Terms of sale](/en/terms/). Point of contact: [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
 
 ## Personal data
 

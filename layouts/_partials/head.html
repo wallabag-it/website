@@ -1,6 +1,6 @@
 {{/* cSpell:ignore docsearch opengraph outputformat */ -}}
 {{/* NOTE: this is a copy of Docsy's _partials/head.html, kept in sync manually.
-     The ONLY local change is the <title> block, which honors a per-language
+     The local changes are jQuery, served by the site instead of a CDN, and the <title> block, which honors a per-language
      `params.homeTitle` so the homepage can have an SEO-rich title while
      subpages keep the clean "Page | wallabag.it" pattern. */ -}}
 <meta charset="utf-8">
@@ -30,10 +30,10 @@
 {{ partial "schema.html" . -}}
 {{ partial "twitter_cards.html" . -}}
 {{ partialCached "head-css.html" . "head-css-cache-key" -}}
+{{/* jQuery served by the site itself: no request to a third-party CDN (visitors' IP address) */ -}}
 <script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-  crossorigin="anonymous"></script>
+  src="{{ "js/jquery-3.7.1.min.js" | relURL }}"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="></script>
 {{ if .Site.Params.offlineSearch -}}
 <script defer
   src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
