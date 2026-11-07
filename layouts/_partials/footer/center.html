@@ -5,7 +5,7 @@
 {{ $legalPath := cond $fr "/fr/mentions-legales/" "/en/legal-notice/" -}}
 {{ $privacyPath := cond $fr "/fr/confidentialite/" "/en/privacy/" -}}
 {{ $termsPath := cond $fr "/fr/cgv/" "/en/terms/" -}}
-<p class="td-footer__about mt-2"><a href="{{ $legalPath }}">{{ if $fr }}Mentions légales{{ else }}Legal notice{{ end }}</a> - <a href="{{ $privacyPath }}">{{ if $fr }}Confidentialité{{ else }}Privacy notice{{ end }}</a> - <a href="{{ $termsPath }}">{{ if $fr }}Conditions Générales de Vente{{ else }}Terms of sale{{ end }}</a></p>
+<p class="td-footer__about mt-2"><a href="{{ $legalPath }}">{{ if $fr }}Mentions légales{{ else }}Legal notice{{ end }}</a> - <a href="{{ $privacyPath }}">{{ if $fr }}Confidentialité{{ else }}Privacy notice{{ end }}</a> - <a href="{{ $termsPath }}">{{ if $fr }}CGU / CGV{{ else }}Terms of use and sale{{ end }}</a></p>
 {{- end -}}
 
 <script src="https://helpdesk.wallabag.it/assets/chat/chat-no-jquery.min.js"></script>

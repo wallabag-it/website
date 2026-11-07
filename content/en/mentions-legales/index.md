@@ -61,7 +61,7 @@ Phone: +49 (0)9831 505-0
 
 ## Reporting content
 
-To report illegal content available through a public sharing link, or to contact wallabag.it as an authority, see article 11 of the [Terms of sale](/en/terms/). Point of contact: [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
+To report illegal content available through a public sharing link, or to contact wallabag.it as an authority, see article 11 of the [Terms of use and sale](/en/terms/). Point of contact: [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
 
 ## Personal data
 
@@ -69,7 +69,7 @@ Personal data processing carried out for the wallabag.it website and hosted serv
 
 ## Commercial terms
 
-The terms that apply to wallabag.it subscriptions are available in the [Terms of sale](/en/terms/).
+The terms of use of the service and of sale of wallabag.it subscriptions are available in the [Terms of use and sale](/en/terms/).
 
 ## Intellectual property
 
