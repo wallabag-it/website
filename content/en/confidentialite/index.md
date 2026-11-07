@@ -45,7 +45,7 @@ Depending on how you use the service, wallabag.it may process the following cate
 - subscription data: selected plan, payment status, invoices, transaction references;
 - support exchanges: messages sent to support, email address, information needed to handle the request;
 - technical data: IP address, user-agent, technical logs, security events;
-- website analytics data (Matomo);
+- website analytics data and service usage statistics (Matomo);
 - content notices: identity and email of the person sending the notice, reported content, exchanges and decision.
 
 wallabag.it does not collect full payment card details. Payments are processed directly by payment providers.
@@ -63,6 +63,7 @@ wallabag.it does not collect full payment card details. Payments are processed d
 | User support | Messages, email, useful technical information | Performance of the contract and legitimate interest | For the time needed to handle the request, then archiving for up to 3 years |
 | Security, abuse prevention and maintenance | Logs, IP address, user-agent, technical events | Legitimate interest | Up to 12 months, unless longer retention is needed to handle an incident |
 | Website analytics | Pages viewed, referrer, browser, truncated IP address | Legitimate interest (audience measurement exempt from consent under the CNIL conditions), with the right to object below | Matomo cookie up to 13 months; anonymized data up to 6 months |
+| Usage statistics of the app.wallabag.it service | Server logs: pages viewed (without URL parameters or tokens), browser, IP address truncated before analysis | Legitimate interest | Raw data up to 6 months, then anonymous statistics |
 | Service emails | Email, account or subscription information | Performance of the contract | For the lifetime of the account |
 | Newsletter and commercial information | Email, subscription preferences | Consent or legitimate interest for existing customers | Until unsubscribe |
 | Notices of illegal content | Identity and email of the author, reported content, exchanges, decision | Legal obligation (Regulation (EU) 2022/2065, Digital Services Act) | 1 year after the decision, unless proceedings are ongoing |
@@ -110,7 +111,7 @@ wallabag.it uses technical providers that are strictly necessary for operating t
 | Abby | Issuing and sending invoices | France / European Union |
 | Payplug | Former card payment provider: no new payments, only the records of past payments | France / European Union |
 | PayPal | Former payment provider: no new payments, only the records of past payments | European Union; possible transfers outside the EU under their terms |
-| Matomo (self-hosted) | Website analytics | wallabag.it infrastructure / European Union |
+| Matomo (self-hosted) | Website analytics and service usage statistics | wallabag.it infrastructure / European Union |
 | Zammad GmbH (helpdesk.wallabag.it) | User support and support chat | Germany / European Union |
 | phpList (self-hosted) | Email and newsletter sending | wallabag.it infrastructure / European Union |
 
@@ -125,6 +126,8 @@ The wallabag.it website uses Matomo, self-hosted, to measure its audience. Matom
 You can object to this audience measurement:
 
 {{< matomo-optout >}}
+
+The app.wallabag.it service does not set any audience measurement cookie. Its usage statistics are computed by Matomo from the server logs, with IP addresses truncated before analysis and without feed addresses, tokens or searches. To object, write to [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
 
 The support chat of the website (Zammad) stores the conversation identifier in your browser for the session, only if you open it.
 

@@ -44,7 +44,7 @@ Selon votre utilisation du service, wallabag.it peut traiter les catégories de 
 - données d'abonnement : offre choisie, statut de paiement, factures, références de transaction ;
 - échanges de support : messages envoyés au support, adresse email, informations nécessaires au traitement de la demande ;
 - données techniques : adresse IP, user-agent, journaux techniques, événements de sécurité ;
-- données de mesure d'audience du site vitrine (Matomo) ;
+- données de mesure d'audience du site vitrine et statistiques d'utilisation du service (Matomo) ;
 - signalements de contenus : identité et email de l'auteur du signalement, contenu signalé, échanges et décision.
 
 wallabag.it ne collecte pas de données bancaires complètes. Les paiements sont traités directement par les prestataires de paiement.
@@ -62,6 +62,7 @@ wallabag.it ne collecte pas de données bancaires complètes. Les paiements sont
 | Support utilisateur | Messages, email, informations techniques utiles | Exécution du contrat et intérêt légitime | Durée nécessaire au traitement, puis archivage jusqu'à 3 ans |
 | Sécurité, prévention des abus et maintenance | Logs, IP, user-agent, événements techniques | Intérêt légitime | Jusqu'à 12 mois, sauf conservation plus longue nécessaire à la gestion d'un incident |
 | Mesure d'audience du site vitrine | Pages vues, provenance, navigateur, adresse IP tronquée | Intérêt légitime (mesure d'audience exemptée de consentement selon les conditions de la CNIL), avec droit d'opposition ci-dessous | Cookie Matomo jusqu'à 13 mois ; données anonymisées jusqu'à 6 mois |
+| Statistiques d'utilisation du service app.wallabag.it | Journaux du serveur : pages vues (sans paramètres d'URL ni jetons), navigateur, adresse IP tronquée avant analyse | Intérêt légitime | Données brutes jusqu'à 6 mois, puis statistiques anonymes |
 | Emails de service | Email, informations liées au compte ou à l'abonnement | Exécution du contrat | Durée du compte |
 | Newsletter et informations commerciales | Email, préférences d'inscription | Consentement ou intérêt légitime pour les clients existants | Jusqu'au désabonnement |
 | Signalements de contenus illicites | Identité et email de l'auteur, contenu signalé, échanges, décision | Obligation légale (règlement (UE) 2022/2065 sur les services numériques) | 1 an après la décision, sauf procédure en cours |
@@ -109,7 +110,7 @@ wallabag.it fait appel à des prestataires techniques strictement nécessaires a
 | Abby | Émission et envoi des factures | France / Union européenne |
 | Payplug | Ancien prestataire de paiement par carte : plus de nouveaux paiements, seulement les traces des paiements passés | France / Union européenne |
 | PayPal | Ancien prestataire de paiement : plus de nouveaux paiements, seulement les traces des paiements passés | Union européenne ; transferts possibles hors UE selon leurs conditions |
-| Matomo (auto-hébergé) | Mesure d'audience du site vitrine | Infrastructure wallabag.it / Union européenne |
+| Matomo (auto-hébergé) | Mesure d'audience du site vitrine et statistiques d'utilisation du service | Infrastructure wallabag.it / Union européenne |
 | Zammad GmbH (helpdesk.wallabag.it) | Support utilisateur et chat de support | Allemagne / Union européenne |
 | phpList (auto-hébergé) | Envoi d'emails et de newsletters | Infrastructure wallabag.it / Union européenne |
 
@@ -124,6 +125,8 @@ Le site wallabag.it utilise Matomo, auto-hébergé, pour mesurer son audience. M
 Vous pouvez vous opposer à cette mesure d'audience :
 
 {{< matomo-optout >}}
+
+Le service app.wallabag.it ne dépose aucun cookie de mesure d'audience. Ses statistiques d'utilisation sont calculées par Matomo à partir des journaux du serveur, avec des adresses IP tronquées avant l'analyse et sans les adresses de flux, les jetons ni les recherches. Pour vous y opposer, écrivez à [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
 
 Le chat de support du site (Zammad) enregistre l'identifiant de la conversation dans votre navigateur le temps de la session, uniquement si vous l'ouvrez.
 
