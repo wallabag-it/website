@@ -54,7 +54,7 @@ wallabag.it does not collect full payment card details. Payments are processed d
 
 | Purpose | Data concerned | Legal basis | Retention period |
 |---|---|---|---|
-| Account creation and management | Email, hashed password, preferences | Performance of the contract | 18 months |
+| Account creation and management | Email, hashed password, preferences | Performance of the contract | For the lifetime of the account. An account that never had a subscription is deleted after 18 months without login |
 | Provision of the wallabag.it service | URLs, extracted contents, tags, annotations, favourites, reading statuses, followed feeds | Performance of the contract | For the lifetime of the account or until deletion by the user |
 | Save by email | Emails received at the saving address | Performance of the contract | Long enough to save the links in the account, then the email is deleted |
 | Imports and exports | Imported data or data generated for export | Performance of the contract | For the time needed to perform the operation, then deletion or storage in the account depending on the requested action |

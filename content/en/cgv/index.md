@@ -140,7 +140,7 @@ The single point of contact of wallabag.it for users and for authorities, within
 
 In accordance with consumer law, a consumer Customer has 14 days from subscription to exercise the right of withdrawal, without having to give any reason.
 
-The right of withdrawal may be exercised by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it), indicating the email address of the relevant account and a clear wish to withdraw.
+The right of withdrawal is exercised by email, by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it), indicating the email address of the relevant account and a clear wish to withdraw. wallabag.it acknowledges receipt of the request by email.
 
 In the event of a valid withdrawal, wallabag.it refunds the amounts paid within 14 days of receiving the request.
 

@@ -53,7 +53,7 @@ wallabag.it ne collecte pas de données bancaires complètes. Les paiements sont
 
 | Finalité | Données concernées | Base légale | Durée de conservation |
 |---|---|---|---|
-| Création et gestion du compte | Email, mot de passe haché, préférences | Exécution du contrat | 18 mois |
+| Création et gestion du compte | Email, mot de passe haché, préférences | Exécution du contrat | Durée du compte. Un compte qui n'a jamais eu d'abonnement est supprimé après 18 mois sans connexion |
 | Fourniture du service wallabag.it | URLs, contenus extraits, tags, annotations, favoris, statuts de lecture, flux suivis | Exécution du contrat | Durée du compte ou jusqu'à suppression par l'utilisateur |
 | Enregistrement par email | Emails reçus à l'adresse d'enregistrement | Exécution du contrat | Le temps d'enregistrer les liens dans le compte, puis suppression de l'email |
 | Imports et exports | Données importées ou générées pour l'export | Exécution du contrat | Durée nécessaire à l'opération, puis suppression ou conservation dans le compte selon l'action demandée |

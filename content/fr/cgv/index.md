@@ -139,7 +139,7 @@ Le point de contact unique de wallabag.it pour les utilisateurs et pour les auto
 
 Conformément au droit de la consommation, le Client consommateur dispose d'un délai de 14 jours à compter de la souscription de l'abonnement pour exercer son droit de rétractation, sans avoir à motiver sa décision.
 
-Le droit de rétractation peut être exercé en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it), en indiquant l'adresse email du compte concerné et la volonté claire de se rétracter.
+Le droit de rétractation s'exerce par email, en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it), en indiquant l'adresse email du compte concerné et la volonté claire de se rétracter. wallabag.it accuse réception de la demande par email.
 
 En cas de rétractation valable, wallabag.it rembourse les sommes payées dans un délai de 14 jours à compter de la réception de la demande.
 
