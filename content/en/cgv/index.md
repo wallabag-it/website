@@ -56,7 +56,9 @@ The service is provided online. The Customer is responsible for their Internet a
 
 ## Article 5: Free trial
 
-wallabag.it may offer a free trial period, without requiring a payment card, whose duration and possible limitations are indicated on the website.
+wallabag.it offers a 14-day free trial, without requiring a payment card.
+
+During the trial, the Customer can save and read articles on all their devices. Saving by email, importing RSS / Atom feeds and importing from other services are reserved for accounts with an active subscription.
 
 At the end of the free trial, no automatic payment is made. To continue using the service, the Customer must choose and pay for a subscription.
 

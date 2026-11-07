@@ -55,7 +55,9 @@ Le service est fourni en ligne. Le Client est responsable de son accès à Inter
 
 ## Article 5 : Essai gratuit
 
-wallabag.it peut proposer une période d'essai gratuite, sans carte bancaire, dont la durée et les éventuelles limitations sont indiquées sur le site.
+wallabag.it propose une période d'essai gratuite de 14 jours, sans carte bancaire.
+
+Pendant l'essai, le Client peut sauvegarder et lire des articles sur tous ses appareils. La sauvegarde par email, l'import de flux RSS / Atom et l'import depuis d'autres services sont réservés aux comptes disposant d'un abonnement actif.
 
 À la fin de la période d'essai, aucun paiement automatique n'est effectué. Pour continuer à utiliser le service, le Client doit choisir et payer un abonnement.
 
