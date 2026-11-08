@@ -10,7 +10,7 @@ slug: terms
 
 {{% blocks/section color="white" %}}
 
-Last updated: November 7, 2026
+Last updated: November 8, 2026
 
 These Terms of use and sale apply to wallabag.it, a hosted read-it-later service published by Nicolas Lœuillet, sole proprietor.
 
@@ -147,13 +147,15 @@ The single point of contact of wallabag.it for users and for authorities, within
 
 ## Article 12: Right of withdrawal
 
-In accordance with consumer law, a consumer Customer has 14 days from subscription to exercise the right of withdrawal, without having to give any reason.
+In accordance with consumer law, a consumer Customer has 14 days from subscription to exercise the right of withdrawal, without having to give any reason. Each payment, including a renewal, opens a new period.
 
-The right of withdrawal is exercised by email, by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it), indicating the email address of the relevant account and a clear wish to withdraw. wallabag.it acknowledges receipt of the request by email.
+At payment, by ticking the box provided for this purpose, the Customer expressly asks to access the service right after payment, without waiting for the end of the withdrawal period, and acknowledges that the right of withdrawal will be lost once the subscription has been fully performed.
 
-In the event of a valid withdrawal, wallabag.it refunds the amounts paid within 14 days of receiving the request.
+During this period, the Customer can withdraw online with the "Withdraw from contract here" link, displayed next to the relevant payment in the history on the Subscription page of the wallabag.it account. The Customer completes the statement, then submits it with the "Confirm withdrawal" button. wallabag.it sends an acknowledgement by email without delay, with the content of the statement and its date and time.
 
-If the Customer expressly requests immediate access to the service before the end of the withdrawal period, an amount proportional to the period actually used may be retained where permitted by law.
+The Customer can also withdraw by email, by writing to [nicolas@wallabag.it](mailto:nicolas@wallabag.it), indicating the email address of the relevant account and a clear wish to withdraw. wallabag.it acknowledges receipt of the request by email.
+
+In the event of a valid withdrawal, wallabag.it refunds the full amounts paid within 14 days of receiving the request, with no deduction for the period already used. The subscription then ends. The Customer keeps the account and can export their articles.
 
 The Customer may use the model withdrawal form below, but is not required to:
 
