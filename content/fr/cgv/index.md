@@ -9,7 +9,7 @@ linkTitle: CGU / CGV
 
 {{% blocks/section color="white" %}}
 
-Dernière mise à jour : 7 novembre 2026
+Dernière mise à jour : 8 novembre 2026
 
 Les présentes conditions générales d'utilisation et de vente s'appliquent au service wallabag.it, service hébergé de lecture différée édité par Nicolas Lœuillet, entrepreneur individuel (EI).
 
@@ -146,13 +146,15 @@ Le point de contact unique de wallabag.it pour les utilisateurs et pour les auto
 
 ## Article 12 : Droit de rétractation
 
-Conformément au droit de la consommation, le Client consommateur dispose d'un délai de 14 jours à compter de la souscription de l'abonnement pour exercer son droit de rétractation, sans avoir à motiver sa décision.
+Conformément au droit de la consommation, le Client consommateur dispose d'un délai de 14 jours à compter de la souscription de l'abonnement pour exercer son droit de rétractation, sans avoir à motiver sa décision. Chaque paiement, y compris un renouvellement, ouvre un nouveau délai.
 
-Le droit de rétractation s'exerce par email, en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it), en indiquant l'adresse email du compte concerné et la volonté claire de se rétracter. wallabag.it accuse réception de la demande par email.
+Lors du paiement, en cochant la case prévue à cet effet, le Client demande expressément à accéder au service dès le paiement, sans attendre la fin du délai de rétractation, et reconnaît qu'il perdra son droit de rétractation une fois l'abonnement entièrement exécuté.
 
-En cas de rétractation valable, wallabag.it rembourse les sommes payées dans un délai de 14 jours à compter de la réception de la demande.
+Pendant ce délai, le Client peut se rétracter en ligne avec le lien « Renoncer au contrat ici », affiché à côté du paiement concerné dans l'historique de la page Abonnement de son compte wallabag.it. Il complète sa déclaration, puis la valide avec le bouton « Confirmer la rétractation ». wallabag.it lui envoie sans délai un accusé de réception par email, avec le contenu de sa déclaration, sa date et son heure.
 
-Si le Client demande expressément l'accès immédiat au service avant la fin du délai de rétractation, un montant proportionnel à la période effectivement utilisée pourra être retenu lorsque la loi le permet.
+Le Client peut aussi se rétracter par email, en écrivant à [nicolas@wallabag.it](mailto:nicolas@wallabag.it), en indiquant l'adresse email du compte concerné et la volonté claire de se rétracter. wallabag.it accuse réception de la demande par email.
+
+En cas de rétractation valable, wallabag.it rembourse intégralement les sommes payées dans un délai de 14 jours à compter de la réception de la demande, sans retenue pour la période déjà utilisée. L'abonnement prend alors fin. Le Client conserve son compte et peut exporter ses articles.
 
 Le Client peut utiliser le modèle de formulaire de rétractation ci-dessous, sans que ce soit obligatoire :
 
