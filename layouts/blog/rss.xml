@@ -29,7 +29,8 @@
       <author>{{ . }}</author>
       {{- end }}
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+      {{- /* The whole post, with its links and images made absolute for the feed readers */ -}}
+      <description>{{ .Content | replaceRE `(href|src)="/` (printf "$1=\"%s/" (strings.TrimSuffix "/" site.BaseURL)) | transform.XMLEscape | safeHTML }}</description>
     </item>
     {{- end }}
   </channel>
