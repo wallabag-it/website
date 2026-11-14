@@ -4,6 +4,7 @@ linkTitle: Features
 description: "Discover every wallabag.it feature: distraction-free reading, Android & iOS apps, browser add-ons, tags & full-text search, highlights and annotations, and export to PDF, ePUB, mobi and more. Plus premium features for subscribers."
 software_schema: true
 menu: {main: {weight: 10}}
+images: [/images/social/features-en.png]
 ---
 
 {{% blocks/cover title="Everything wallabag.it does" color="primary" height="auto" cta="true" image="/en/features/homepage.png" image_alt="Homepage of a wallabag.it account." %}}

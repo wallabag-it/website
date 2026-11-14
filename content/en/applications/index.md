@@ -4,6 +4,7 @@ linkTitle: Applications
 description: "Read your saved articles everywhere with wallabag.it: native Android and iOS apps (offline reading), Firefox and Chrome browser add-ons, and support for Kobo and PocketBook e-readers."
 software_schema: true
 menu: {main: {weight: 20}}
+images: [/images/social/applications-en.png]
 ---
 
 {{% blocks/cover title="Read your saved articles on every device" color="primary" height="auto" cta="true" image="/images/hero/reader-mobile-{lang}.webp" image_frame="phone" image_alt="A saved article read on a phone with wallabag.it." %}}

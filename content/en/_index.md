@@ -3,7 +3,7 @@ title: wallabag.it
 description: "Save web articles and read them later on your phone, tablet or e-reader. wallabag.it is an open-source read-it-later service hosted in Europe, an alternative to Pocket, Instapaper and Pinboard. Start a 14-day free trial, no credit card required."
 # Without this, the hero background (featured-background.jpg) would be picked
 # as the og:image instead of the branded social card.
-images: [/images/social-card.png]
+images: [/images/social/home-en.png]
 ---
 
 {{< blocks/cover title="Close your tabs, forget nothing" image_anchor="top" height="auto" >}}
