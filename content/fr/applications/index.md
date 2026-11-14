@@ -4,6 +4,7 @@ linkTitle: Applications
 description: "Lisez vos articles enregistrés partout avec wallabag.it : applications natives Android et iOS (lecture hors-ligne), extensions Firefox et Chrome, et prise en charge des liseuses Kobo et PocketBook."
 software_schema: true
 menu: {main: {weight: 20}}
+images: [/images/social/applications-fr.png]
 ---
 
 {{% blocks/cover title="Lisez vos articles sauvegardés sur tous vos appareils" color="primary" height="auto" cta="true" image="/images/hero/reader-mobile-{lang}.webp" image_frame="phone" image_alt="Un article sauvegardé, lu sur un téléphone avec wallabag.it." %}}

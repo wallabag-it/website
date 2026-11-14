@@ -4,6 +4,7 @@ linkTitle: Pricing
 description: "wallabag.it plans: 3 months for 4€, one year for 11€ or the supporter plan for 30€. Premium features included: save by email, imports, RSS feeds. 14-day free trial, no credit card required."
 software_schema: true
 menu: {main: {weight: 25}}
+images: [/images/social/pricing-en.png]
 ---
 
 {{% blocks/cover title="From 11€ a year" color="primary" height="auto" compact="true" %}}

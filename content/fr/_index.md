@@ -3,7 +3,7 @@ title: wallabag.it
 description: "Enregistrez vos articles web et lisez-les plus tard sur votre téléphone, tablette ou liseuse. wallabag.it est un service open source de lecture différée hébergé en Europe, une alternative à Pocket, Instapaper et Pinboard. Essai gratuit de 14 jours, sans carte bancaire."
 # Without this, the hero background (featured-background.jpg) would be picked
 # as the og:image instead of the branded social card.
-images: [/images/social-card-fr.png]
+images: [/images/social/home-fr.png]
 ---
 
 {{< blocks/cover title="Fermez vos onglets, sans les oublier" image_anchor="top" height="auto" >}}
