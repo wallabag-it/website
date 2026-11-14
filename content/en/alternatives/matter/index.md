@@ -4,7 +4,7 @@ description: "Matter is a nice reading app, made for the iPhone first. wallabag.
 date: 2026-06-15
 ---
 
-{{% blocks/cover title="Which alternative to Matter should I choose?" color="primary" height="auto" %}}
+{{% blocks/cover title="Which alternative to Matter should I choose?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

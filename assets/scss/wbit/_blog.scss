@@ -1,0 +1,124 @@
+// Blog: sidebar, table of contents, list, pagination (Docsy docs/blog layout)
+
+.td-sidebar,
+.td-sidebar-toc {
+  border-color: var(--wb-line) !important;
+  background: transparent;
+}
+
+.td-sidebar-nav {
+  .td-sidebar-link {
+    display: block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    color: #4f4d47; // darker than --wb-muted: these titles are small
+    font-size: 0.9rem;
+    font-weight: 400; // Docsy uses a light weight, too pale at this size
+    line-height: 1.35;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background: var(--wb-hover);
+      color: var(--wb-ink);
+    }
+
+    &.active {
+      color: var(--wb-ink);
+      font-weight: 600;
+    }
+  }
+
+  .td-sidebar-link__section {
+    color: var(--wb-ink);
+    font-weight: 600;
+  }
+}
+
+// Table of contents and breadcrumb: quiet links
+.td-toc a,
+.td-sidebar-toc a,
+.td-main .breadcrumb a {
+  color: #4f4d47 !important;
+  font-weight: 400;
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    color: var(--wb-ink) !important;
+  }
+}
+
+.td-main .breadcrumb {
+  font-size: 0.9rem;
+}
+
+// Titles of the posts in the list: no underline
+.td-main :is(h1, h2, h3, h4, h5) a {
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    color: var(--wb-accent) !important;
+  }
+}
+
+.td-blog-posts-list__item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--wb-line);
+}
+
+.td-rss-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  height: 40px;
+  padding: 0 .9rem;
+  border: 1px solid var(--wb-line-strong) !important; // the theme grey, not the Bootstrap info colour that Docsy applies to links
+  border-radius: 8px;
+  background: var(--wb-surface-raised) !important;
+  color: var(--wb-ink) !important;
+  font: 500 .9rem/1 var(--wb-font);
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    background: var(--wb-hover) !important;
+  }
+}
+
+.pagination {
+  --bs-pagination-color: var(--wb-ink);
+  --bs-pagination-bg: var(--wb-surface-raised);
+  --bs-pagination-border-color: var(--wb-line-strong);
+  --bs-pagination-hover-color: var(--wb-ink);
+  --bs-pagination-hover-bg: var(--wb-hover);
+  --bs-pagination-hover-border-color: var(--wb-line-strong);
+  --bs-pagination-focus-box-shadow: 0 0 0 3px var(--wb-accent-soft);
+  --bs-pagination-active-color: var(--wb-primary-ink);
+  --bs-pagination-active-bg: var(--wb-primary-bg);
+  --bs-pagination-active-border-color: var(--wb-primary-bg);
+  --bs-pagination-disabled-color: var(--wb-muted);
+  --bs-pagination-disabled-bg: var(--wb-soft);
+  --bs-pagination-disabled-border-color: var(--wb-line);
+  --bs-pagination-border-radius: 10px;
+}
+
+.td-sidebar-nav .tree-root {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--wb-line);
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+// Images of the posts: same frame as the screenshots of the home page
+.td-blog .td-content img {
+  display: block;
+  height: auto;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(31, 41, 55, .12);
+  border-radius: .5rem;
+  box-shadow: 0 1rem 2.5rem rgba(31, 41, 55, .14);
+}

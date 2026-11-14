@@ -15,8 +15,8 @@ enableRobotsTXT: true
 # Will give values to .Lastmod etc.
 enableGitInfo: false
 
-# Comment out to disable taxonomies in Docsy
-# disableKinds: [taxonomy]
+# No tags or categories on this site: no empty taxonomy pages in the sitemap
+disableKinds: [taxonomy, term]
 
 pagination:
   pagerSize: 5
@@ -51,10 +51,13 @@ languages:
     languageName: English
     title: wallabag.it
     params:
-      homeTitle: "wallabag.it — Save & read your articles later · alternative to Pocket, Instapaper & Pinboard"
+      homeTitle: "wallabag.it: read-it-later app hosted in Europe"
       description: "Save web articles and read them later on any device. wallabag.it is the open-source, privacy-first read-it-later service hosted in Europe — a simple alternative to Pocket, Instapaper and Pinboard. 14-day free trial, no credit card."
     menu:
       main:
+        - name: Demo
+          weight: 50
+          url: /demo/
         - name: Free trial
           weight: 90
           url: 'https://app.wallabag.it/register/'
@@ -66,7 +69,8 @@ languages:
     title: wallabag.it
     contentDir: content/fr
     params:
-      homeTitle: "wallabag.it — Enregistrez et lisez vos articles · alternative à Pocket, Instapaper et Pinboard"
+      images: [images/social-card-fr.png]
+      homeTitle: "wallabag.it : lecture différée hébergée en Europe"
       description: "Enregistrez vos articles web et lisez-les plus tard sur tous vos appareils. wallabag.it est le service open-source de lecture différée, respectueux de la vie privée et hébergé en Europe — une alternative à Pocket, Instapaper et Pinboard. Essai gratuit de 14 jours, sans carte bancaire."
 
       # Footer links, French version (overrides the site-wide params.links on /fr pages).
@@ -99,7 +103,10 @@ languages:
       main:
         - name: Blog
           weight: 44
-          url: ../fr/blog
+          pageRef: /blog
+        - name: Démo
+          weight: 50
+          url: /demo/
         - name: Essai gratuit
           weight: 90
           url: 'https://app.wallabag.it/register/'

@@ -1,18 +1,18 @@
 // Hamburger menu on small screens.
 //
 // .td-navbar extends Bootstrap's .navbar-expand (always expanded, no collapse).
-// We override this below md to restore the standard hamburger/collapse behavior.
+// We override this below xl to restore the standard hamburger/collapse behavior.
 // _styles_project.scss is loaded last in Docsy's main.scss, after Bootstrap and
 // Docsy rules, so !important overrides work as expected.
 
-// On md and above, always show the nav (Bootstrap's .collapse hides it globally).
-@include media-breakpoint-up(md) {
+// On xl and above, always show the nav (Bootstrap's .collapse hides it globally).
+@include media-breakpoint-up(xl) {
   .td-navbar #main_navbar {
     display: flex !important;
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(xl) {
   .td-navbar {
     flex-wrap: wrap !important;
 
@@ -43,3 +43,17 @@
     }
   }
 }
+
+// wallabag.it design (same tokens as the app)
+@import "wbit/tokens";
+@import "wbit/base";
+@import "wbit/navbar";
+@import "wbit/hero";
+@import "wbit/sections";
+@import "wbit/footer";
+@import "wbit/home";
+@import "wbit/blog";
+@import "wbit/blog-list";
+@import "wbit/article";
+@import "wbit/compare";
+@import "wbit/chat";

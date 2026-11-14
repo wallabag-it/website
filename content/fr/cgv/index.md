@@ -3,13 +3,11 @@ title: Conditions générales d'utilisation et de vente
 linkTitle: CGU / CGV
 ---
 
-{{% blocks/cover title="Conditions générales d'utilisation et de vente" color="primary" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Conditions générales d'utilisation et de vente" subtitle="Dernière mise à jour : 8 novembre 2026" color="primary" image_anchor="bottom" height="auto" %}}
 
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}
-
-Dernière mise à jour : 8 novembre 2026
 
 Les présentes conditions générales d'utilisation et de vente s'appliquent au service wallabag.it, service hébergé de lecture différée édité par Nicolas Lœuillet, entrepreneur individuel (EI).
 

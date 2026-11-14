@@ -1,0 +1,39 @@
+{{/* wallabag.it design: light hero instead of Docsy's photo cover (assets/scss/wbit/_hero.scss).
+     Same parameters and content as Docsy's blocks/cover; the background image is not used.
+     Optional parameters for the inner pages:
+       cta="true"    the free trial and pricing buttons of the home page, under the text;
+       compact="true" less space around the hero, so that what follows is visible at once;
+       image="…"     a screenshot beside the text ("{lang}" is replaced by the page language),
+                     with image_alt="…" and image_frame="window" (default) or "phone".
+     The output has no indentation and no blank line: called with {{% %}}, it goes through
+     Markdown, where an indented line would become a code block. */ -}}
+{{ $blockID := printf "td-cover-block-%d" .Ordinal -}}
+{{ $col_id := .Get "color" | default "dark" -}}
+{{ $lang := .Page.Language.Lang -}}
+{{ $image := replace (.Get "image" | default "") "{lang}" $lang -}}
+{{ $frame := .Get "image_frame" | default "window" -}}
+{{ $inner := "" -}}
+{{ if eq .Page.File.Ext "md" }}{{ $inner = .Inner | markdownify }}{{ else }}{{ $inner = .Inner | htmlUnescape | safeHTML }}{{ end -}}
+{{ $ctaCopy := dict
+  "en" (dict "trial" "Start your free trial" "pricing" "See plans from 11€ a year" "pricingURL" "/en/pricing/")
+  "fr" (dict "trial" "Commencer l'essai gratuit" "pricing" "Voir les offres dès 11 €/an" "pricingURL" "/fr/tarifs/")
+-}}
+{{ $cta := index $ctaCopy $lang | default (index $ctaCopy "en") -}}
+<section id="{{ $blockID }}" class="row wbit-hero wbit-hero--{{ $col_id }}{{ if .Page.IsHome }} wbit-hero--home{{ end }}{{ with $image }} wbit-hero--split{{ end }}{{ if eq (.Get "compact") "true" }} wbit-hero--compact{{ end }}">
+<div class="col-12">
+<div class="container">
+<div class="wbit-hero__inner">
+<div class="wbit-hero__text">
+{{ with .Get "title" }}<h1 class="wbit-hero__title">{{ . | html }}</h1>{{ end }}
+{{ with .Get "subtitle" }}<p class="wbit-hero__subtitle">{{ . | html }}</p>{{ end }}
+<div class="wbit-hero__body">
+{{ $inner }}
+</div>
+{{ if eq (.Get "cta") "true" }}<div class="wbit-hero__actions"><a class="btn btn-lg btn-secondary" href="https://app.wallabag.it/register/" data-cta="{{ .Page.Section | default "page" }}-hero-trial">{{ $cta.trial }} <i class="fa fa-user-plus ms-2"></i></a><a class="btn btn-lg btn-outline-primary" href="{{ $cta.pricingURL }}">{{ $cta.pricing }}</a></div>{{ end }}
+</div>
+{{ with $image }}<div class="wbit-hero__media wbit-hero__media--{{ $frame }}"><img src="{{ . }}" alt="{{ $.Get "image_alt" }}" fetchpriority="high"></div>{{ end }}
+</div>
+</div>
+</div>
+</section>
+{{/**/ -}}

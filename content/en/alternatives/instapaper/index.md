@@ -4,7 +4,7 @@ description: "Instapaper Premium costs around 55 € a year. wallabag.it costs 1
 date: 2026-06-13
 ---
 
-{{% blocks/cover title="Which alternative to Instapaper should I choose?" color="primary" height="auto" %}}
+{{% blocks/cover title="Which alternative to Instapaper should I choose?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

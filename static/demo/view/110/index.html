@@ -1,0 +1,319 @@
+<!doctype html>
+<html class="" lang="en"><head><script src="/demo/demo.js"></script>
+                    <meta name="viewport" content="initial-scale=1.0">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="referrer" content="strict-origin-when-cross-origin">
+            <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=10">
+            <![endif]-->
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+
+            <link rel="shortcut icon" type="image/x-icon" href="/demo/favicon.ico">
+
+            
+
+                                
+            <link rel="stylesheet" href="/demo/wallassets/wallabagit.css">
+    
+    <script>
+    (function () {
+        var root = document.documentElement;
+        var settings = {};
+        try {
+            settings = JSON.parse(localStorage.getItem('wbit-reader') || '{}') || {};
+        } catch (e) {}
+        if (settings.sepia && !root.classList.contains('dark-theme')) {
+            root.classList.add('wbit-sepia');
+        }
+        root.setAttribute('data-wbit-font', settings.font || 'serif');
+        root.setAttribute('data-wbit-size', typeof settings.size === 'number' ? settings.size : 2);
+        root.setAttribute('data-wbit-width', typeof settings.width === 'number' ? settings.width : 1);
+    })();
+</script>
+
+                                        <script src="/demo/bundles/fosjsrouting/js/router.js"></script>
+            <script src="/demo/js/routing.js"></script>
+            
+    <script src="/demo/wallassets/wallabagit.js"></script>
+
+            <title>Of Gardens (gutenberg.org) – wallabag</title>
+            <meta name="robots" content="noindex"><link rel="stylesheet" href="/demo/demo.css"></head>
+
+    <body class="entry wbit wbit-reader">
+            <div id="incident-banner" class="incident-banner" role="status" hidden=""></div>
+<style>
+    .incident-banner { position: relative; z-index: 1000; padding: 10px 44px 10px 16px; background: #fff7ed; border-bottom: 1px solid #fdba74; color: #1f2937; font-size: 15px; line-height: 1.4; }
+    .incident-banner.incident-banner--down { background: #fef2f2; border-color: #fca5a5; }
+    .incident-banner.incident-banner--notice { background: #eff6ff; border-color: #93c5fd; }
+    .incident-banner p { margin: 0; }
+    .incident-banner p + p { margin-top: 4px; }
+    .incident-banner a { color: #1f2937; font-weight: bold; text-decoration: underline; }
+    .incident-banner button { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 22px; line-height: 1; padding: 4px 8px; color: #6b7280; cursor: pointer; }
+    html.dark-theme .incident-banner { background: #3b2a1a; border-color: #9a3412; color: #f3f4f6; }
+    html.dark-theme .incident-banner.incident-banner--down { background: #3f1d1d; border-color: #991b1b; }
+    html.dark-theme .incident-banner.incident-banner--notice { background: #1e293b; border-color: #1e40af; }
+    html.dark-theme .incident-banner a { color: #f3f4f6; }
+    @media only screen and (min-width: 993px) { body:not(.login) .incident-banner { margin-left: 240px; } }
+</style>
+
+
+
+        <div id="main">
+                
+<div class="progress wbit-progress" aria-hidden="true">
+    <div class="determinate"></div>
+</div>
+
+<aside class="wbit-rail" aria-label="wallabag.it">
+    <a class="wbit-rail-brand" href="/demo/unread/list" title="Back to unread articles">
+            <img class="wbit-logo wbit-logo--light" src="/demo/img/logo-square.svg" alt="wallabag" width="36" height="36">
+    <img class="wbit-logo wbit-logo--dark" src="/demo/img/wallabagit/logo-square-white.svg" alt="wallabag" width="36" height="36">
+    </a>
+    <a class="wbit-rail-link" href="/demo/unread/list" title="Unread" aria-label="Unread"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16l-6-4-6 4z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/starred/list" title="Starred" aria-label="Starred"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/archive/list" title="Archive" aria-label="Archive"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/all/list" title="All entries" aria-label="All entries"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h6l2 2h10v11H3z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/tag/list" title="Tags" aria-label="Tags"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+</aside>
+
+
+    
+<header class="wbit-reader-bar left-bar">
+    <a class="wbit-btn wbit-reader-back" href="/demo/">
+        <svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span class="wbit-reader-back-label">Back</span>
+    </a>
+
+    <div class="wbit-reader-actions">
+        <form action="/demo/star/110?redirect=/view/110" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn favorite" data-wbit-action="star" title="Toggle starred (f)" aria-pressed="false">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg><span class="wbit-sr">Toggle starred</span>
+            </button>
+        </form>
+
+        <a href="#" class="wbit-icon-btn" data-wbit-tag-form-toggle="" title="Add a tag" aria-label="Add a tag"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+
+        <a class="wbit-icon-btn original" data-wbit-action="original" href="https://www.gutenberg.org/ebooks/575#of-gardens" target="_blank" rel="noopener" title="Original article (o)" aria-label="Original article"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5H5V6h5"></path></svg></a>
+
+                    <details class="wbit-popover">
+                <summary class="wbit-icon-btn" title="Share" aria-label="Share"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5M5 13v7h14v-7"></path></svg></summary>
+                <ul class="wbit-menu wbit-popover-panel">
+                                            <li>
+                            <form action="/demo/share/110" method="post">
+                                <input type="hidden" name="token">
+                                <button type="submit" formtarget="_blank" class="wbit-menu-link"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg> public link</button>
+                            </form>
+                        </li>
+                                                                                        <li><a class="wbit-menu-link" href="mailto:?subject=Of%20Gardens&amp;body=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F575%23of-gardens%20via%20@wallabagapp"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg> Email</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://myshaarli.com/index.php?post=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F575%23of-gardens&amp;title=Of%20Gardens&amp;tags=Essays%2CNature" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Shaarli</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://diasporapod.com/bookmarklet?url=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F575%23of-gardens&amp;title=Of%20Gardens&amp;notes=&amp;v=1&amp;noui=1&amp;jump=doclose" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> diaspora*</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://unmark.it/mark/add?url=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F575%23of-gardens&amp;title=Of%20Gardens&amp;v=6" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> unmark.it</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://twitter.com/share?text=Of%20Gardens%20https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F575%23of-gardens%20via%20@wallabagapp" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Twitter</a></li>
+                                    </ul>
+            </details>
+        
+        <details class="wbit-popover">
+            <summary class="wbit-icon-btn" title="More actions" aria-label="More actions"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.4" fill="currentColor"></circle><circle cx="12" cy="12" r="1.4" fill="currentColor"></circle><circle cx="19" cy="12" r="1.4" fill="currentColor"></circle></svg></summary>
+            <ul class="wbit-menu wbit-popover-panel">
+                <li>
+                    <form action="/demo/reload/110" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020reload\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.6-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.6 4.5L20 16M20 20v-4h-4"></path></svg> Re-fetch content</button>
+                    </form>
+                </li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg> Edit title</a></li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a></li>
+                                    <li><a class="wbit-menu-link" href="javascript: window.print();"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V4h10v5M7 17H4v-7h16v7h-3M7 14h10v6H7z"></path></svg> Print</a></li>
+                                <li class="wbit-menu-divider" role="separator"></li>
+                <li class="wbit-menu-title"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg> Export</li>
+                <li class="wbit-menu-formats">
+                    <a href="#" data-demo-disabled="">EPUB</a>                    <a href="#" data-demo-disabled="">PDF</a>                                        <a href="#" data-demo-disabled="">TXT</a>                    <a href="#" data-demo-disabled="">CSV</a>                    <a href="#" data-demo-disabled="">JSON</a>                    <a href="#" data-demo-disabled="">XML</a>                </li>
+                <li class="wbit-menu-divider" role="separator"></li>
+                                <li></li>
+                <li>
+                    <form action="/demo/delete/110?redirect=/view/110" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link wbit-menu-link--danger delete" data-wbit-action="delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg> Delete</button>
+                    </form>
+                </li>
+            </ul>
+        </details>
+
+        <span class="wbit-reader-sep" aria-hidden="true"></span>
+
+        <details class="wbit-popover wbit-reading-settings">
+    <summary class="wbit-btn wbit-btn--ghost wbit-aa" title="Reading settings" aria-label="Reading settings">Aa</summary>
+    <div class="wbit-popover-panel wbit-settings-panel">
+        <p class="wbit-settings-label">Theme</p>
+        <div class="wbit-settings-themes">
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--light js-theme-toggle" data-theme="light" data-wbit-theme="light">Light</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--sepia" data-wbit-theme="sepia">Sepia</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--dark js-theme-toggle" data-theme="dark" data-wbit-theme="dark">Dark</button>
+        </div>
+
+        <p class="wbit-settings-label">Font</p>
+        <div class="wbit-settings-fonts">
+            <button type="button" class="wbit-font-choice wbit-font-choice--serif" data-wbit-font="serif">Serif</button>
+            <button type="button" class="wbit-font-choice wbit-font-choice--sans" data-wbit-font="sans">Sans serif</button>
+        </div>
+
+        <p class="wbit-settings-label">Text size</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="-1" aria-label="Smaller text"><span class="wbit-step-small">A</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="size" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="1" aria-label="Larger text"><span class="wbit-step-big">A</span></button>
+        </div>
+
+        <p class="wbit-settings-label">Line width</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="-1" aria-label="Narrower lines"><span class="wbit-step-small">−</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="width" aria-hidden="true"><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="1" aria-label="Wider lines"><span class="wbit-step-big">+</span></button>
+        </div>
+    </div>
+</details>
+
+
+        <form action="/demo/archive/110?redirect=/view/110" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn markasread" data-wbit-action="archive" title="Mark as read (a)">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"></path></svg><span class="wbit-sr">Mark as read</span>
+            </button>
+        </form>
+    </div>
+</header>
+
+
+            <main>
+                
+                    
+                <div id="content" dir="auto">
+                            <div id="article" class="article wbit-article" data-wbit-annotations-annotate="Annotate" data-wbit-annotations-placeholder="Your note…" data-wbit-annotations-save="Save" data-wbit-annotations-cancel="Cancel" data-wbit-annotations-edit="Edit" data-wbit-annotations-delete="Delete" data-wbit-annotations-no-comment="No note">
+        
+<header class="wbit-article-header">
+    <p class="wbit-article-kicker">
+        <a href="https://www.gutenberg.org/ebooks/575#of-gardens" target="_blank" rel="noopener" title="original : Of Gardens">gutenberg.org</a>
+        <span aria-hidden="true">·</span>
+                    <span>11 min</span>
+            </p>
+
+    <h1><span lang="en">Of Gardens</span></h1>
+
+    <div class="tools entry-tools wbit-article-meta" dir="auto">
+        <ul class="stats wbit-stats">
+            <li title="Creation date"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg> 2026-10-28 16:00</li>
+                                                        </ul>
+
+        <div class="wbit-article-tags">
+                <ul class="tags">
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/essays">Essays</a>
+                                                        <form action="/demo/remove-tag/110/31?redirect=/view/110" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/nature">Nature</a>
+                                                        <form action="/demo/remove-tag/110/33?redirect=/view/110" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+            </ul>
+            <button type="button" class="wbit-tag-add" data-wbit-tag-form-toggle="">+ add a tag</button>
+        </div>
+    </div>
+
+    <div class="input-field nav-panel-add-tag" style="display: none" data-wbit-tag-form="">
+        <form class="tags-add-form" name="tag" method="post" action="/demo/new-tag/110">
+    
+    
+    <input type="text" id="tag_label" name="tag[label]" required="required" placeholder="You can add several tags, separated by a comma." max_length="40" autocomplete="off">
+
+    <button type="submit" id="tag_add" name="tag[add]" class="btn waves-effect waves-light tags-add-form-submit">Add</button>
+    <input type="hidden" id="tag__token" name="tag[_token]">
+</form>
+
+    </div>
+</header>
+
+
+        <article lang="en">
+            <p>GOD Almighty first planted a garden. And indeed it is the purest of human pleasures. It is the greatest refreshment to the spirits of man; without which, buildings and palaces are but gross handiworks; and a man shall ever see, that when ages grow to civility and elegancy, men come to build stately sooner than to garden finely; as if gardening were the greater perfection. I do hold it, in the royal ordering of gardens, there ought to be gardens, for all the months in the year; in which severally things of beauty may be then in season. For December, and January, and the latter part of November, you must take such things as are green all winter: holly; ivy; bays; juniper; cypress-trees; yew; pine-apple-trees; fir-trees; rosemary; lavender; periwinkle, the white, the purple, and the blue; germander; flags; orange-trees; lemon-trees; and myrtles, if they be stoved; and sweet marjoram, warm set. There followeth, for the latter part of January and February, the mezereon-tree, which then blossoms; crocus vernus, both the yellow and the grey; primroses, anemones; the early tulippa; hyacinthus orientalis; chamairis; fritellaria. For March, there come violets, specially the single blue, which are the earliest; the yellow daffodil; the daisy; the almond-tree in blossom; the peach-tree in blossom; the cornelian-tree in blossom; sweet-briar. In April follow the double white violet; the wallflower; the stock-gilliflower; the cowslip; flowerdelices, and lilies of all natures; rosemary-flowers; the tulippa; the double peony; the pale daffodil; the French honeysuckle; the cherry-tree in blossom; the damson and plum-trees in blossom; the white thorn in leaf; the lilac-tree. In May and June come pinks of all sorts, specially the blushpink; roses of all kinds, except the musk, which comes later; honeysuckles; strawberries; bugloss; columbine; the French marigold, flos Africanus; cherry-tree in fruit; ribes; figs in fruit; rasps; vineflowers; lavender in flowers; the sweet satyrian, with the white flower; herba muscaria; lilium convallium; the apple-tree in blossom. In July come gilliflowers of all varieties; musk-roses; the lime-tree in blossom; early pears and plums in fruit; jennetings, codlins. In August come plums of all sorts in fruit; pears; apricocks; berberries; filberds; musk-melons; monks-hoods, of all colors. In September come grapes; apples; poppies of all colors; peaches; melocotones; nectarines; cornelians; wardens; quinces. In October and the beginning of November come services; medlars; bullaces; roses cut or removed to come late; hollyhocks; and such like. These particulars are for the climate of London; but my meaning is perceived, that you may have ver perpetuum, as the place affords.</p>
+<p>And because the breath of flowers is far sweeter in the air (where it comes and goes like the warbling of music) than in the hand, therefore nothing is more fit for that delight, than to know what be the flowers and plants that do best perfume the air. Roses, damask and red, are fast flowers of their smells; so that you may walk by a whole row of them, and find nothing of their sweetness; yea though it be in a morning's dew. Bays likewise yield no smell as they grow. Rosemary little; nor sweet marjoram. That which above all others yields the sweetest smell in the air is the violet, specially the white double violet, which comes twice a year; about the middle of April, and about Bartholomew-tide. Next to that is the musk-rose. Then the strawberry-leaves dying, which yield a most excellent cordial smell. Then the flower of vines; it is a little dust, like the dust of a bent, which grows upon the cluster in the first coming forth. Then sweet-briar. Then wall-flowers, which are very delightful to be set under a parlor or lower chamber window. Then pinks and gilliflowers, especially the matted pink and clove gilliflower. Then the flowers of the lime-tree. Then the honeysuckles, so they be somewhat afar off. Of beanflowers I speak not, because they are field flowers. But those which perfume the air most delightfully, not passed by as the rest, but being trodden upon and crushed, are three; that is, burnet, wildthyme, and watermints. Therefore you are to set whole alleys of them, to have the pleasure when you walk or tread.</p>
+<p>For gardens (speaking of those which are indeed princelike, as we have done of buildings), the contents ought not well to be under thirty acres of ground; and to be divided into three parts; a green in the entrance; a heath or desert in the going forth; and the main garden in the midst; besides alleys on both sides. And I like well that four acres of ground be assigned to the green; six to the heath; four and four to either side; and twelve to the main garden. The green hath two pleasures: the one, because nothing is more pleasant to the eye than green grass kept finely shorn; the other, because it will give you a fair alley in the midst, by which you may go in front upon a stately hedge, which is to enclose the garden. But because the alley will be long, and, in great heat of the year or day, you ought not to buy the shade in the garden, by going in the sun through the green, therefore you are, of either side the green, to plant a covert alley upon carpenter's work, about twelve foot in height, by which you may go in shade into the garden. As for the making of knots or figures, with divers colored earths, that they may lie under the windows of the house on that side which the garden stands, they be but toys; you may see as good sights, many times, in tarts. The garden is best to be square, encompassed on all the four sides with a stately arched hedge. The arches to be upon pillars of carpenter's work, of some ten foot high, and six foot broad; and the spaces between of the same dimension with the breadth of the arch. Over the arches let there be an entire hedge of some four foot high, framed also upon carpenter's work; and upon the upper hedge, over every arch, a little turret, with a belly, enough to receive a cage of birds: and over every space between the arches some other little figure, with broad plates of round colored glass gilt, for the sun to play upon. But this hedge I intend to be raised upon a bank, not steep, but gently slope, of some six foot, set all with flowers. Also I understand, that this square of the garden, should not be the whole breadth of the ground, but to leave on either side, ground enough for diversity of side alleys; unto which the two covert alleys of the green, may deliver you. But there must be no alleys with hedges, at either end of this great enclosure; not at the hither end, for letting your prospect upon this fair hedge from the green; nor at the further end, for letting your prospect from the hedge, through the arches upon the heath.</p>
+<p>For the ordering of the ground, within the great hedge, I leave it to variety of device; advising nevertheless, that whatsoever form you cast it into, first, it be not too busy, or full of work. Wherein I, for my part, do not like images cut out in juniper or other garden stuff; they be for children. Little low hedges, round, like welts, with some pretty pyramids, I like well; and in some places, fair columns upon frames of carpenter's work. I would also have the alleys, spacious and fair. You may have closer alleys, upon the side grounds, but none in the main garden. I wish also, in the very middle, a fair mount, with three ascents, and alleys, enough for four to walk abreast; which I would have to be perfect circles, without any bulwarks or embossments; and the whole mount to be thirty foot high; and some fine banqueting-house, with some chimneys neatly cast, and without too much glass.</p>
+<p>For fountains, they are a great beauty and refreshment; but pools mar all, and make the garden unwholesome, and full of flies and frogs. Fountains I intend to be of two natures: the one that sprinkleth or spouteth water; the other a fair receipt of water, of some thirty or forty foot square, but without fish, or slime, or mud. For the first, the ornaments of images gilt, or of marble, which are in use, do well: but the main matter is so to convey the water, as it never stay, either in the bowls or in the cistern; that the water be never by rest discolored, green or red or the like; or gather any mossiness or putrefaction. Besides that, it is to be cleansed every day by the hand. Also some steps up to it, and some fine pavement about it, doth well. As for the other kind of fountain, which we may call a bathing pool, it may admit much curiosity and beauty; wherewith we will not trouble ourselves: as, that the bottom be finely paved, and with images; the sides likewise; and withal embellished with colored glass, and such things of lustre; encompassed also with fine rails of low statuas. But the main point is the same which we mentioned in the former kind of fountain; which is, that the water be in perpetual motion, fed by a water higher than the pool, and delivered into it by fair spouts, and then discharged away under ground, by some equality of bores, that it stay little. And for fine devices, of arching water without spilling, and making it rise in several forms (of feathers, drinking glasses, canopies, and the like), they be pretty things to look on, but nothing to health and sweetness.</p>
+<p>For the heath, which was the third part of our plot, I wish it to be framed, as much as may be, to a natural wildness. Trees I would have none in it, but some thickets made only of sweet-briar and honeysuckle, and some wild vine amongst; and the ground set with violets, strawberries, and primroses. For these are sweet, and prosper in the shade. And these to be in the heath, here and there, not in any order. I like also little heaps, in the nature of mole-hills (such as are in wild heaths), to be set, some with wild thyme; some with pinks; some with germander, that gives a good flower to the eye; some with periwinkle; some with violets; some with strawberries; some with cowslips; some with daisies; some with red roses; some with lilium convallium; some with sweet-williams red; some with bear's-foot: and the like low flowers, being withal sweet and sightly. Part of which heaps, are to be with standards of little bushes pricked upon their top, and part without. The standards to be roses; juniper; holly; berberries (but here and there, because of the smell of their blossoms); red currants; gooseberries; rosemary; bays; sweetbriar; and such like. But these standards to be kept with cutting, that they grow not out of course.</p>
+<p>For the side grounds, you are to fill them with variety of alleys, private, to give a full shade, some of them, wheresoever the sun be. You are to frame some of them, likewise, for shelter, that when the wind blows sharp you may walk as in a gallery. And those alleys must be likewise hedged at both ends, to keep out the wind; and these closer alleys must be ever finely gravelled, and no grass, because of going wet. In many of these alleys, likewise, you are to set fruit-trees of all sorts; as well upon the walls, as in ranges. And this would be generally observed, that the borders wherein you plant your fruit-trees, be fair and large, and low, and not steep; and set with fine flowers, but thin and sparingly, lest they deceive the trees. At the end of both the side grounds, I would have a mount of some pretty height, leaving the wall of the enclosure breast high, to look abroad into the fields.</p>
+<p>For the main garden, I do not deny, but there should be some fair alleys ranged on both sides, with fruit-trees; and some pretty tufts of fruit-trees, and arbors with seats, set in some decent order; but these to be by no means set too thick; but to leave the main garden so as it be not close, but the air open and free. For as for shade, I would have you rest upon the alleys of the side grounds, there to walk, if you be disposed, in the heat of the year or day; but to make account, that the main garden is for the more temperate parts of the year; and in the heat of summer, for the morning and the evening, or overcast days.</p>
+<p>For aviaries, I like them not, except they be of that largeness as they may be turfed, and have living plants and bushes set in them; that the birds may have more scope, and natural nesting, and that no foulness appear in the floor of the aviary. So I have made a platform of a princely garden, partly by precept, partly by drawing, not a model, but some general lines of it; and in this I have spared for no cost. But it is nothing for great princes, that for the most part taking advice with workmen, with no less cost set their things together; and sometimes add statuas and such things for state and magnificence, but nothing to the true pleasure of a garden.</p>
+<p><em>Public domain text: Francis Bacon, <cite>Essays</cite> (1625).</em></p>
+
+        </article>
+
+        
+<footer class="wbit-article-end">
+    <span>Finished reading?</span>
+    <form action="/demo/archive/110?redirect=/view/110" method="post">
+        <input type="hidden" name="token">
+        <button type="submit" class="wbit-btn wbit-btn--primary"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"></path></svg> Mark as read</button>
+    </form>
+    <a class="wbit-article-end-random" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a>
+</footer>
+
+    </div>
+
+    
+
+
+<script id="annotationroutes" type="application/json">
+{
+    "prefix": "/demo",
+    "urls": {
+        "create": "/annotations/110",
+        "update": "/annotations/idAnnotation",
+        "destroy": "/annotations/idAnnotation",
+        "search": "/annotations/110"
+    },
+    "entryId": "110"
+}</script>
+
+                </div>
+            </main>
+        </div>
+
+        
+            
+
+</body></html>

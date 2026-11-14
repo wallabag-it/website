@@ -4,7 +4,7 @@ description: "Raindrop.io range des liens. wallabag.it est fait pour lire : l'ar
 date: 2026-06-13
 ---
 
-{{% blocks/cover title="Quelle alternative à Raindrop.io choisir ?" color="primary" height="auto" %}}
+{{% blocks/cover title="Quelle alternative à Raindrop.io choisir ?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

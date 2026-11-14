@@ -1,0 +1,33 @@
+// Footer (Docsy's .td-footer extends .td-box--dark: hence the doubled class and !important)
+
+.td-footer.td-footer {
+  min-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2.5rem 1rem 2rem;
+  border-top: 1px solid var(--wb-line);
+  background: var(--wb-surface);
+  color: var(--wb-muted);
+  font-size: 0.875rem;
+
+  a,
+  a:not(.btn) {
+    color: var(--wb-muted) !important;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--wb-ink) !important;
+      text-decoration: underline;
+    }
+  }
+
+  > .container-fluid {
+    max-width: calc(var(--wb-max) + 2rem);
+  }
+
+  .td-footer__links-item {
+    margin-right: 0.75rem;
+    font-size: 1.15rem;
+  }
+}

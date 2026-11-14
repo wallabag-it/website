@@ -1,0 +1,18 @@
+{{/* wallabag.it design: a feature is a card (assets/scss/wbit/_sections.scss).
+     Same parameters as Docsy's blocks/feature. */ -}}
+{{ $icon := .Get "icon" | default "fa-lightbulb" -}}
+{{ $col := .Get "col" | default "col-md-6 col-lg-4" -}}
+<div class="{{ $col }} wbit-feature">
+<div class="wbit-feature__card">
+<div class="wbit-feature__icon" aria-hidden="true">
+  <i class="{{ if not (or (hasPrefix $icon "fas ") (hasPrefix $icon "fab ")) }}fas {{ end }}{{ $icon }}"></i>
+</div>
+<h3 class="wbit-feature__title">
+  {{- .Get "title" | markdownify -}}
+</h3>
+<div class="wbit-feature__text">
+{{ .Inner }}
+</div>
+{{ with .Get "url" }}<p class="wbit-feature__more"><a href="{{ . }}">{{ with $.Get "url_text" }}{{ . }}{{ else }}{{ T "ui_read_more" }}{{ end }} →</a></p>{{ end }}
+</div>
+</div>

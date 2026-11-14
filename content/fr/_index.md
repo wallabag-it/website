@@ -3,18 +3,18 @@ title: wallabag.it
 description: "Enregistrez vos articles web et lisez-les plus tard sur votre téléphone, tablette ou liseuse. wallabag.it est un service open source de lecture différée hébergé en Europe, une alternative à Pocket, Instapaper et Pinboard. Essai gratuit de 14 jours, sans carte bancaire."
 # Without this, the hero background (featured-background.jpg) would be picked
 # as the og:image instead of the branded social card.
-images: [/images/social-card.png]
+images: [/images/social-card-fr.png]
 ---
 
-{{< blocks/cover title="Enregistrez vos articles et lisez-les plus tard, partout" image_anchor="top" height="auto" >}}
+{{< blocks/cover title="Fermez vos onglets, sans les oublier" image_anchor="top" height="auto" >}}
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="home-hero-trial">
   Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
 </a>
 <a class="btn btn-lg btn-outline-light mb-4" href="/fr/tarifs/">
   Voir les offres dès 11 €/an
 </a>
-<p class="lead mt-5">14 jours d'essai gratuit, sans carte bancaire.</p>
-<p class="small text-white mb-0">Open source depuis 2013 · wallabag.it existe depuis 2016 · hébergé en Europe · export de vos données à tout moment</p>
+<p class="lead mt-5">Mettez un article de côté en un clic et lisez-le plus tard, même si le site disparaît.</p>
+<p class="small text-white mb-0">Existe depuis 2016 · plus de 18 millions d'articles sauvegardés · sans pub ni pistage · hébergé en Europe</p>
 {{< blocks/link-down color="white" >}}
 {{< /blocks/cover >}}
 
@@ -28,10 +28,12 @@ images: [/images/social-card.png]
 {{% blocks/section color="light" type="row" %}}
 
 ## Pourquoi wallabag.it ?
-{.text-center .mb-5}
+{.text-center .mb-3}
 
-{{% blocks/feature icon="fa-user-secret" title="Open source, sans publicité" %}}
-wallabag existe depuis 2013 et wallabag.it depuis 2016. Le service vit des abonnements, pas du suivi publicitaire ni de la revente de données.
+<p class="text-center col-12 mx-auto mb-5" style="max-width: 760px;">wallabag est une application open source de lecture différée, créée en 2013 : elle enregistre le texte complet des articles du web, sans publicité ni éléments superflus, pour les lire plus tard sur ordinateur, téléphone, tablette ou liseuse. wallabag.it est la version hébergée de wallabag, proposée depuis 2016 par son créateur : rien à installer, vos données restent en Europe et une partie de votre abonnement finance le projet open source.</p>
+
+{{% blocks/feature icon="fa-user-secret" title="Sans publicité ni pistage" %}}
+Le service vit des abonnements, pas du suivi publicitaire ni de la revente de données, et [une partie finance le développement de wallabag](/fr/blog/2026/06/30/wallabag-it-finance-developpements-open-source/).
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-server" title="Hébergé en Europe" %}}
@@ -49,15 +51,15 @@ Importez votre liste de lecture depuis d'autres services et exportez vos article
 ## Comment ça marche
 {.text-center .mb-5}
 
-{{% blocks/feature icon="fa-bookmark" title="Sauvegarder l'article complet" %}}
+{{% blocks/feature icon="fa-bookmark" title="Sauvegardez l'article complet" %}}
 wallabag.it conserve le texte lisible de vos articles, pas seulement un lien qui peut changer ou disparaître.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-mobile-alt" title="Lire partout, même hors connexion" %}}
+{{% blocks/feature icon="fa-mobile-alt" title="Lisez partout, même hors connexion" %}}
 Retrouvez vos articles sur le web, Android, iPhone, tablette et liseuse, avec la lecture hors-ligne.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-tags" title="Retrouver vos articles" %}}
+{{% blocks/feature icon="fa-tags" title="Retrouvez vos articles" %}}
 Tags, recherche, favoris et annotations vous aident à retrouver un article des mois plus tard.
 {{% /blocks/feature %}}
 
@@ -70,10 +72,10 @@ Tags, recherche, favoris et annotations vous aident à retrouver un article des 
 
 {{% blocks/section color="dark" type="row" %}}
 
-## Les fonctionnalités premium des abonnés
+## Ce que l'abonnement ajoute
 {.text-center .mb-2}
 
-<p class="lead text-center col-12 mb-5">Incluses dans chaque abonnement, dès 11 € par an.</p>
+<p class="lead text-center col-12 mb-5">Inclus dans chaque abonnement, dès 11 € par an.</p>
 
 {{% blocks/feature icon="fa-envelope" title="Sauvegarde par email" %}}
 Envoyez un lien à votre adresse wallabag.it privée, il arrive dans votre liste de lecture. Depuis n'importe quel logiciel de messagerie, et pour les liens qu'on vous envoie.
@@ -89,7 +91,6 @@ Rapatriez votre liste de lecture depuis Pocket, Instapaper, Pinboard, Omnivore, 
 
 <div class="col-12 text-center mt-4">
 <a class="btn btn-secondary mb-2" href="/fr/tarifs/" data-cta="home-premium-pricing">Voir les abonnements <i class="fa fa-arrow-right ms-2"></i></a>
-<p class="small mt-3 mb-0">Ces fonctionnalités sont débloquées avec un abonnement, elles ne font pas partie de l'essai gratuit. <a class="text-white" href="/fr/blog/2026/06/08/des-restrictions-pour-les-comptes-d-essai/">Pourquoi ?</a></p>
 </div>
 
 {{% /blocks/section %}}

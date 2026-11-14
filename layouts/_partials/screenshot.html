@@ -1,0 +1,16 @@
+{{/* A screenshot of a page bundle in the sizes the browser needs: the capture is 2200 px wide,
+     and browsers render text badly when they shrink an image that much.
+     Parameters: page, name (file in the bundle), alt, sizes, class, loading, style. */ -}}
+{{ $img := .page.Resources.GetMatch .name -}}
+{{ if not $img }}{{ errorf "screenshot: %q not found in %s" .name .page.Path }}{{ end -}}
+{{ $srcset := slice -}}
+{{ $default := "" -}}
+{{ range slice 480 640 800 1140 1440 -}}
+  {{ if le . $img.Width -}}
+    {{ $r := $img.Resize (printf "%dx webp q90 lanczos" .) -}}
+    {{ $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink .) -}}
+    {{ if eq . 1140 }}{{ $default = $r.RelPermalink }}{{ end -}}
+  {{ end -}}
+{{ end -}}
+<img{{ with .class }} class="{{ . }}"{{ end }} src="{{ $default | default $img.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ .sizes }}" alt="{{ .alt }}" width="{{ $img.Width }}" height="{{ $img.Height }}"{{ with .loading }} loading="{{ . }}"{{ end }}{{ with .style }} style="{{ . | safeCSS }}"{{ end }}>
+{{- /**/ -}}

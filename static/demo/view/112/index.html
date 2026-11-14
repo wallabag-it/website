@@ -1,0 +1,316 @@
+<!doctype html>
+<html class="" lang="en"><head><script src="/demo/demo.js"></script>
+                    <meta name="viewport" content="initial-scale=1.0">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="referrer" content="strict-origin-when-cross-origin">
+            <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=10">
+            <![endif]-->
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+
+            <link rel="shortcut icon" type="image/x-icon" href="/demo/favicon.ico">
+
+            
+
+                                
+            <link rel="stylesheet" href="/demo/wallassets/wallabagit.css">
+    
+    <script>
+    (function () {
+        var root = document.documentElement;
+        var settings = {};
+        try {
+            settings = JSON.parse(localStorage.getItem('wbit-reader') || '{}') || {};
+        } catch (e) {}
+        if (settings.sepia && !root.classList.contains('dark-theme')) {
+            root.classList.add('wbit-sepia');
+        }
+        root.setAttribute('data-wbit-font', settings.font || 'serif');
+        root.setAttribute('data-wbit-size', typeof settings.size === 'number' ? settings.size : 2);
+        root.setAttribute('data-wbit-width', typeof settings.width === 'number' ? settings.width : 1);
+    })();
+</script>
+
+                                        <script src="/demo/bundles/fosjsrouting/js/router.js"></script>
+            <script src="/demo/js/routing.js"></script>
+            
+    <script src="/demo/wallassets/wallabagit.js"></script>
+
+            <title>The Extraordinary Cabman (gutenberg.org) – wallabag</title>
+            <meta name="robots" content="noindex"><link rel="stylesheet" href="/demo/demo.css"></head>
+
+    <body class="entry wbit wbit-reader">
+            <div id="incident-banner" class="incident-banner" role="status" hidden=""></div>
+<style>
+    .incident-banner { position: relative; z-index: 1000; padding: 10px 44px 10px 16px; background: #fff7ed; border-bottom: 1px solid #fdba74; color: #1f2937; font-size: 15px; line-height: 1.4; }
+    .incident-banner.incident-banner--down { background: #fef2f2; border-color: #fca5a5; }
+    .incident-banner.incident-banner--notice { background: #eff6ff; border-color: #93c5fd; }
+    .incident-banner p { margin: 0; }
+    .incident-banner p + p { margin-top: 4px; }
+    .incident-banner a { color: #1f2937; font-weight: bold; text-decoration: underline; }
+    .incident-banner button { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 22px; line-height: 1; padding: 4px 8px; color: #6b7280; cursor: pointer; }
+    html.dark-theme .incident-banner { background: #3b2a1a; border-color: #9a3412; color: #f3f4f6; }
+    html.dark-theme .incident-banner.incident-banner--down { background: #3f1d1d; border-color: #991b1b; }
+    html.dark-theme .incident-banner.incident-banner--notice { background: #1e293b; border-color: #1e40af; }
+    html.dark-theme .incident-banner a { color: #f3f4f6; }
+    @media only screen and (min-width: 993px) { body:not(.login) .incident-banner { margin-left: 240px; } }
+</style>
+
+
+
+        <div id="main">
+                
+<div class="progress wbit-progress" aria-hidden="true">
+    <div class="determinate"></div>
+</div>
+
+<aside class="wbit-rail" aria-label="wallabag.it">
+    <a class="wbit-rail-brand" href="/demo/unread/list" title="Back to unread articles">
+            <img class="wbit-logo wbit-logo--light" src="/demo/img/logo-square.svg" alt="wallabag" width="36" height="36">
+    <img class="wbit-logo wbit-logo--dark" src="/demo/img/wallabagit/logo-square-white.svg" alt="wallabag" width="36" height="36">
+    </a>
+    <a class="wbit-rail-link" href="/demo/unread/list" title="Unread" aria-label="Unread"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16l-6-4-6 4z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/starred/list" title="Starred" aria-label="Starred"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/archive/list" title="Archive" aria-label="Archive"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/all/list" title="All entries" aria-label="All entries"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h6l2 2h10v11H3z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/tag/list" title="Tags" aria-label="Tags"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+</aside>
+
+
+    
+<header class="wbit-reader-bar left-bar">
+    <a class="wbit-btn wbit-reader-back" href="/demo/">
+        <svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span class="wbit-reader-back-label">Back</span>
+    </a>
+
+    <div class="wbit-reader-actions">
+        <form action="/demo/star/112?redirect=/view/112" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn favorite" data-wbit-action="star" title="Toggle starred (f)" aria-pressed="false">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg><span class="wbit-sr">Toggle starred</span>
+            </button>
+        </form>
+
+        <a href="#" class="wbit-icon-btn" data-wbit-tag-form-toggle="" title="Add a tag" aria-label="Add a tag"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+
+        <a class="wbit-icon-btn original" data-wbit-action="original" href="https://www.gutenberg.org/ebooks/8092#the-extraordinary-cabman" target="_blank" rel="noopener" title="Original article (o)" aria-label="Original article"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5H5V6h5"></path></svg></a>
+
+                    <details class="wbit-popover">
+                <summary class="wbit-icon-btn" title="Share" aria-label="Share"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5M5 13v7h14v-7"></path></svg></summary>
+                <ul class="wbit-menu wbit-popover-panel">
+                                            <li>
+                            <form action="/demo/share/112" method="post">
+                                <input type="hidden" name="token">
+                                <button type="submit" formtarget="_blank" class="wbit-menu-link"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg> public link</button>
+                            </form>
+                        </li>
+                                                                                        <li><a class="wbit-menu-link" href="mailto:?subject=The%20Extraordinary%20Cabman&amp;body=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F8092%23the-extraordinary-cabman%20via%20@wallabagapp"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg> Email</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://myshaarli.com/index.php?post=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F8092%23the-extraordinary-cabman&amp;title=The%20Extraordinary%20Cabman&amp;tags=Essays%2CTravel" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Shaarli</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://diasporapod.com/bookmarklet?url=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F8092%23the-extraordinary-cabman&amp;title=The%20Extraordinary%20Cabman&amp;notes=&amp;v=1&amp;noui=1&amp;jump=doclose" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> diaspora*</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://unmark.it/mark/add?url=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F8092%23the-extraordinary-cabman&amp;title=The%20Extraordinary%20Cabman&amp;v=6" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> unmark.it</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://twitter.com/share?text=The%20Extraordinary%20Cabman%20https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F8092%23the-extraordinary-cabman%20via%20@wallabagapp" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Twitter</a></li>
+                                    </ul>
+            </details>
+        
+        <details class="wbit-popover">
+            <summary class="wbit-icon-btn" title="More actions" aria-label="More actions"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.4" fill="currentColor"></circle><circle cx="12" cy="12" r="1.4" fill="currentColor"></circle><circle cx="19" cy="12" r="1.4" fill="currentColor"></circle></svg></summary>
+            <ul class="wbit-menu wbit-popover-panel">
+                <li>
+                    <form action="/demo/reload/112" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020reload\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.6-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.6 4.5L20 16M20 20v-4h-4"></path></svg> Re-fetch content</button>
+                    </form>
+                </li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg> Edit title</a></li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a></li>
+                                    <li><a class="wbit-menu-link" href="javascript: window.print();"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V4h10v5M7 17H4v-7h16v7h-3M7 14h10v6H7z"></path></svg> Print</a></li>
+                                <li class="wbit-menu-divider" role="separator"></li>
+                <li class="wbit-menu-title"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg> Export</li>
+                <li class="wbit-menu-formats">
+                    <a href="#" data-demo-disabled="">EPUB</a>                    <a href="#" data-demo-disabled="">PDF</a>                                        <a href="#" data-demo-disabled="">TXT</a>                    <a href="#" data-demo-disabled="">CSV</a>                    <a href="#" data-demo-disabled="">JSON</a>                    <a href="#" data-demo-disabled="">XML</a>                </li>
+                <li class="wbit-menu-divider" role="separator"></li>
+                                <li></li>
+                <li>
+                    <form action="/demo/delete/112?redirect=/view/112" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link wbit-menu-link--danger delete" data-wbit-action="delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg> Delete</button>
+                    </form>
+                </li>
+            </ul>
+        </details>
+
+        <span class="wbit-reader-sep" aria-hidden="true"></span>
+
+        <details class="wbit-popover wbit-reading-settings">
+    <summary class="wbit-btn wbit-btn--ghost wbit-aa" title="Reading settings" aria-label="Reading settings">Aa</summary>
+    <div class="wbit-popover-panel wbit-settings-panel">
+        <p class="wbit-settings-label">Theme</p>
+        <div class="wbit-settings-themes">
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--light js-theme-toggle" data-theme="light" data-wbit-theme="light">Light</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--sepia" data-wbit-theme="sepia">Sepia</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--dark js-theme-toggle" data-theme="dark" data-wbit-theme="dark">Dark</button>
+        </div>
+
+        <p class="wbit-settings-label">Font</p>
+        <div class="wbit-settings-fonts">
+            <button type="button" class="wbit-font-choice wbit-font-choice--serif" data-wbit-font="serif">Serif</button>
+            <button type="button" class="wbit-font-choice wbit-font-choice--sans" data-wbit-font="sans">Sans serif</button>
+        </div>
+
+        <p class="wbit-settings-label">Text size</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="-1" aria-label="Smaller text"><span class="wbit-step-small">A</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="size" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="1" aria-label="Larger text"><span class="wbit-step-big">A</span></button>
+        </div>
+
+        <p class="wbit-settings-label">Line width</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="-1" aria-label="Narrower lines"><span class="wbit-step-small">−</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="width" aria-hidden="true"><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="1" aria-label="Wider lines"><span class="wbit-step-big">+</span></button>
+        </div>
+    </div>
+</details>
+
+
+        <form action="/demo/archive/112?redirect=/view/112" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn markasread" data-wbit-action="archive" title="Mark as unread (a)">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M12 18v-6M9.5 14.5 12 12l2.5 2.5"></path></svg><span class="wbit-sr">Mark as unread</span>
+            </button>
+        </form>
+    </div>
+</header>
+
+
+            <main>
+                
+                    
+                <div id="content" dir="auto">
+                            <div id="article" class="article wbit-article" data-wbit-annotations-annotate="Annotate" data-wbit-annotations-placeholder="Your note…" data-wbit-annotations-save="Save" data-wbit-annotations-cancel="Cancel" data-wbit-annotations-edit="Edit" data-wbit-annotations-delete="Delete" data-wbit-annotations-no-comment="No note">
+        
+<header class="wbit-article-header">
+    <p class="wbit-article-kicker">
+        <a href="https://www.gutenberg.org/ebooks/8092#the-extraordinary-cabman" target="_blank" rel="noopener" title="original : The Extraordinary Cabman">gutenberg.org</a>
+        <span aria-hidden="true">·</span>
+                    <span>5 min</span>
+            </p>
+
+    <h1><span lang="en">The Extraordinary Cabman</span></h1>
+
+    <div class="tools entry-tools wbit-article-meta" dir="auto">
+        <ul class="stats wbit-stats">
+            <li title="Creation date"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg> 2026-10-26 16:00</li>
+                                                        </ul>
+
+        <div class="wbit-article-tags">
+                <ul class="tags">
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/essays">Essays</a>
+                                                        <form action="/demo/remove-tag/112/31?redirect=/view/112" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/travel">Travel</a>
+                                                        <form action="/demo/remove-tag/112/32?redirect=/view/112" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+            </ul>
+            <button type="button" class="wbit-tag-add" data-wbit-tag-form-toggle="">+ add a tag</button>
+        </div>
+    </div>
+
+    <div class="input-field nav-panel-add-tag" style="display: none" data-wbit-tag-form="">
+        <form class="tags-add-form" name="tag" method="post" action="/demo/new-tag/112">
+    
+    
+    <input type="text" id="tag_label" name="tag[label]" required="required" placeholder="You can add several tags, separated by a comma." max_length="40" autocomplete="off">
+
+    <button type="submit" id="tag_add" name="tag[add]" class="btn waves-effect waves-light tags-add-form-submit">Add</button>
+    <input type="hidden" id="tag__token" name="tag[_token]">
+</form>
+
+    </div>
+</header>
+
+
+        <article lang="en">
+            <p>From time to time I have introduced into this newspaper column the narration of incidents that have really occurred. I do not mean to insinuate that in this respect it stands alone among newspaper columns. I mean only that I have found that my meaning was better expressed by some practical parable out of daily life than by any other method; therefore I propose to narrate the incident of the extraordinary cabman, which occurred to me only three days ago, and which, slight as it apparently is, aroused in me a moment of genuine emotion bordering upon despair.</p>
+<figure><img src="/demo/demo-img/cc010cc9881307ce.jpg" alt="Norbert Goeneutte, The Pont de l’Europe and Gare Saint-Lazare."><figcaption>Norbert Goeneutte, The Pont de l’Europe and Gare Saint-Lazare.<br><small>Source: Norbert Goeneutte, <a href="https://commons.wikimedia.org/wiki/File:Norbert_G%C5%93neutte_-The_Pont_de_l%27Europe_and_Gare_Saint-Lazare.jpg">Wikimedia Commons</a>, Public domain.</small></figcaption></figure>
+<p>On the day that I met the strange cabman I had been lunching in a little restaurant in Soho in company with three or four of my best friends. My best friends are all either bottomless sceptics or quite uncontrollable believers, so our discussion at luncheon turned upon the most ultimate and terrible ideas. And the whole argument worked out ultimately to this: that the question is whether a man can be certain of anything at all. I think he can be certain, for if (as I said to my friend, furiously brandishing an empty bottle) it is impossible intellectually to entertain certainty, what is this certainty which it is impossible to entertain? If I have never experienced such a thing as certainty I cannot even say that a thing is not certain. Similarly, if I have never experienced such a thing as green I cannot even say that my nose is not green. It may be as green as possible for all I know, if I have really no experience of greenness. So we shouted at each other and shook the room; because metaphysics is the only thoroughly emotional thing. And the difference between us was very deep, because it was a difference as to the object of the whole thing called broad-mindedness or the opening of the intellect. For my friend said that he opened his intellect as the sun opens the fans of a palm tree, opening for opening’s sake, opening infinitely for ever. But I said that I opened my intellect as I opened my mouth, in order to shut it again on something solid. I was doing it at the moment. And as I truly pointed out, it would look uncommonly silly if I went on opening my mouth infinitely, for ever and ever.</p>
+<p>Now when this argument was over, or at least when it was cut short (for it will never be over), I went away with one of my companions, who in the confusion and comparative insanity of a General Election had somehow become a member of Parliament, and I drove with him in a cab from the corner of Leicester-square to the members’ entrance of the House of Commons, where the police received me with a quite unusual tolerance. Whether they thought that he was my keeper or that I was his keeper is a discussion between us which still continues.</p>
+<p>It is necessary in this narrative to preserve the utmost exactitude of detail. After leaving my friend at the House I took the cab on a few hundred yards to an office in Victoria-street which I had to visit. I then got out and offered him more than his fare. He looked at it, but not with the surly doubt and general disposition to try it on which is not unknown among normal cabmen. But this was no normal, perhaps, no human, cabman. He looked at it with a dull and infantile astonishment, clearly quite genuine. “Do you know, sir,” he said, “you’ve only given me 1s.8d?” I remarked, with some surprise, that I did know it. “Now you know, sir,” said he in a kindly, appealing, reasonable way, “you know that ain’t the fare from Euston.” “Euston,” I repeated vaguely, for the phrase at that moment sounded to me like China or Arabia. “What on earth has Euston got to do with it?” “You hailed me just outside Euston Station,” began the man with astonishing precision, “and then you said----” “What in the name of Tartarus are you talking about?” I said with Christian forbearance; “I took you at the south-west corner of Leicester-square.” “Leicester-square,” he exclaimed, loosening a kind of cataract of scorn, “why we ain’t been near Leicester-square to-day. You hailed me outside Euston Station, and you said----” “Are you mad, or am I?” I asked with scientific calm.</p>
+<p>I looked at the man. No ordinary dishonest cabman would think of creating so solid and colossal and creative a lie. And this man was not a dishonest cabman. If ever a human face was heavy and simple and humble, and with great big blue eyes protruding like a frog’s, if ever (in short) a human face was all that a human face should be, it was the face of that resentful and respectful cabman. I looked up and down the street; an unusually dark twilight seemed to be coming on. And for one second the old nightmare of the sceptic put its finger on my nerve. What was certainty? Was anybody certain of anything? Heavens! to think of the dull rut of the sceptics who go on asking whether we possess a future life. The exciting question for real scepticism is whether we possess a past life. What is a minute ago, rationalistically considered, except a tradition and a picture? The darkness grew deeper from the road. The cabman calmly gave me the most elaborate details of the gesture, the words, the complex but consistent course of action which I had adopted since that remarkable occasion when I had hailed him outside Euston Station. How did I know (my sceptical friends would say) that I had not hailed him outside Euston. I was firm about my assertion; he was quite equally firm about his. He was obviously quite as honest a man as I, and a member of a much more respectable profession. In that moment the universe and the stars swung just a hair’s breadth from their balance, and the foundations of the earth were moved. But for the same reason that I believe in Democracy, for the same reason that I believe in free will, for the same reason that I believe in fixed character of virtue, the reason that could only be expressed by saying that I do not choose to be a lunatic, I continued to believe that this honest cabman was wrong, and I repeated to him that I had really taken him at the corner of Leicester-square.</p>
+<p><em>Public domain text: G. K. Chesterton, <cite>Tremendous Trifles</cite> (1909). Excerpt.</em></p>
+
+        </article>
+
+        
+<footer class="wbit-article-end">
+    <span>Finished reading?</span>
+    <form action="/demo/archive/112?redirect=/view/112" method="post">
+        <input type="hidden" name="token">
+        <button type="submit" class="wbit-btn wbit-btn--primary"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M12 18v-6M9.5 14.5 12 12l2.5 2.5"></path></svg> Mark as unread</button>
+    </form>
+    <a class="wbit-article-end-random" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a>
+</footer>
+
+    </div>
+
+    
+
+
+<script id="annotationroutes" type="application/json">
+{
+    "prefix": "/demo",
+    "urls": {
+        "create": "/annotations/112",
+        "update": "/annotations/idAnnotation",
+        "destroy": "/annotations/idAnnotation",
+        "search": "/annotations/112"
+    },
+    "entryId": "112"
+}</script>
+
+                </div>
+            </main>
+        </div>
+
+        
+            
+
+</body></html>

@@ -4,7 +4,7 @@ description: "Pinboard garde des liens, pas des articles. wallabag.it garde l'ar
 date: 2026-06-13
 ---
 
-{{% blocks/cover title="Quelle alternative à Pinboard choisir ?" color="primary" height="auto" %}}
+{{% blocks/cover title="Quelle alternative à Pinboard choisir ?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

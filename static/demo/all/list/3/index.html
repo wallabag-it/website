@@ -1,0 +1,740 @@
+<!doctype html>
+<html class="" lang="en"><head><script src="/demo/demo.js"></script>
+                        <meta name="viewport" content="initial-scale=1.0">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="referrer" content="strict-origin-when-cross-origin">
+            <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=10">
+            <![endif]-->
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+
+            <link rel="shortcut icon" type="image/x-icon" href="/demo/favicon.ico">
+
+            
+
+                            
+            <link rel="stylesheet" href="/demo/wallassets/wallabagit.css">
+                                            <script src="/demo/bundles/fosjsrouting/js/router.js"></script>
+            <script src="/demo/js/routing.js"></script>
+            
+    <script src="/demo/wallassets/wallabagit.js"></script>
+
+            <title>                
+    All entries
+ – wallabag</title>
+        
+        <meta name="robots" content="noindex"><link rel="stylesheet" href="/demo/demo.css"></head>
+
+    <body class="index wbit">
+            <div id="incident-banner" class="incident-banner" role="status" hidden=""></div>
+<style>
+    .incident-banner { position: relative; z-index: 1000; padding: 10px 44px 10px 16px; background: #fff7ed; border-bottom: 1px solid #fdba74; color: #1f2937; font-size: 15px; line-height: 1.4; }
+    .incident-banner.incident-banner--down { background: #fef2f2; border-color: #fca5a5; }
+    .incident-banner.incident-banner--notice { background: #eff6ff; border-color: #93c5fd; }
+    .incident-banner p { margin: 0; }
+    .incident-banner p + p { margin-top: 4px; }
+    .incident-banner a { color: #1f2937; font-weight: bold; text-decoration: underline; }
+    .incident-banner button { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 22px; line-height: 1; padding: 4px 8px; color: #6b7280; cursor: pointer; }
+    html.dark-theme .incident-banner { background: #3b2a1a; border-color: #9a3412; color: #f3f4f6; }
+    html.dark-theme .incident-banner.incident-banner--down { background: #3f1d1d; border-color: #991b1b; }
+    html.dark-theme .incident-banner.incident-banner--notice { background: #1e293b; border-color: #1e40af; }
+    html.dark-theme .incident-banner a { color: #f3f4f6; }
+    @media only screen and (min-width: 993px) { body:not(.login) .incident-banner { margin-left: 240px; } }
+</style>
+
+
+
+        <div id="main">
+                    
+                    
+    
+<aside class="wbit-sidebar" id="wbit-sidebar" aria-label="wallabag.it" data-wbit-drawer="">
+    <a class="wbit-brand" title="Back to unread articles" href="/demo/unread/list">
+                <img class="wbit-logo wbit-logo--light" src="/demo/img/logo-square.svg" alt="" width="36" height="36">
+    <img class="wbit-logo wbit-logo--dark" src="/demo/img/wallabagit/logo-square-white.svg" alt="" width="36" height="36">
+            <span>wallabag<span class="wbit-brand-it">.it</span></span>
+    </a>
+
+    <div class="wbit-sidebar-actions">
+        <button type="button" class="wbit-btn wbit-btn--primary wbit-btn--block" data-wbit-dialog="add">
+            <svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg><span class="wbit-nav-label">Add an article</span>
+        </button>
+        <button type="button" class="wbit-nav-link" data-wbit-dialog="search">
+            <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg><span class="wbit-nav-label">Search</span><kbd class="wbit-kbd">s</kbd>
+        </button>
+    </div>
+
+    <ul class="wbit-nav">
+        <li>
+            <a class="wbit-nav-link" href="/demo/unread/list">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16l-6-4-6 4z"></path></svg><span class="wbit-nav-label">Unread</span><span class="wbit-count">25</span>
+            </a>
+        </li>
+        <li>
+            <a class="wbit-nav-link" href="/demo/starred/list">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg><span class="wbit-nav-label">Starred</span><span class="wbit-count">6</span>
+            </a>
+        </li>
+        <li>
+            <a class="wbit-nav-link" href="/demo/annotated/list">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m9 15 6-6 3 3-6 6H9z"></path><path d="M4 20h7"></path></svg><span class="wbit-nav-label">With annotations</span><span class="wbit-count">2</span>
+            </a>
+        </li>
+        <li>
+            <a class="wbit-nav-link" href="/demo/archive/list">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg><span class="wbit-nav-label">Archive</span><span class="wbit-count">5</span>
+            </a>
+        </li>
+        <li>
+            <a class="wbit-nav-link is-active" href="/demo/all/list" aria-current="page">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h6l2 2h10v11H3z"></path></svg><span class="wbit-nav-label">All entries</span><span class="wbit-count">30</span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="wbit-nav">
+        <li>
+            <a class="wbit-nav-link" href="/demo/tag/list">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg><span class="wbit-nav-label">Tags</span><span class="wbit-count">13</span>
+            </a>
+        </li>
+        <li>
+                        <a class="wbit-nav-link" href="#" data-demo-disabled="">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5a14 14 0 0 1 14 14M5 11a8 8 0 0 1 8 8"></path><circle cx="6" cy="18" r="1.2"></circle></svg><span class="wbit-nav-label">Feeds</span><span class="wbit-count">0</span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="wbit-nav">
+        
+<li>
+    <a class="wbit-nav-link" href="/demo/subscription"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 10h18M7 15h3"></path></svg><span class="wbit-nav-label">Subscription</span></a>
+</li>
+<li>
+    <a class="wbit-nav-link" href="https://helpdesk.wallabag.it/help/en-gb"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 21V5M8 7h7"></path></svg><span class="wbit-nav-label">Documentation</span></a>
+</li>
+
+
+    </ul>
+
+    <details class="wbit-account">
+        <summary class="wbit-account-summary">
+            <span class="wbit-avatar" aria-hidden="true">D</span>
+            <span class="wbit-account-text">
+                <span class="wbit-account-name">demo</span>
+                                                    <span class="wbit-account-sub">Settings</span>
+                            </span>
+            <svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6-6 6 6"></path></svg>
+        </summary>
+        <ul class="wbit-menu">
+                        <li class="wbit-menu-group" role="presentation">Settings</li>
+            <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"></path><circle cx="16" cy="7" r="2"></circle><circle cx="10" cy="17" r="2"></circle></svg> Config</a></li>
+            <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 15v5h16v-5"></path></svg> Import</a></li>
+            <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"></rect><path d="M11 18h2"></path></svg> API clients management</a></li>
+                                    <li class="wbit-menu-group" role="presentation">Help</li>
+            <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4h11l-1.5 4L16 12H5"></path></svg> Quickstart</a></li>
+            <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"></path></svg> Howto</a></li>
+            <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"></path><path d="M4 21V5M8 7h7"></path></svg> About</a></li>
+            <li class="wbit-menu-divider" role="separator"></li>
+            <li class="wbit-theme-switch">
+                <a href="#" class="js-theme-toggle" data-theme="light" title="Light theme" aria-label="Light theme"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></a>
+                <a href="#" class="js-theme-toggle" data-theme="dark" title="Dark theme" aria-label="Dark theme"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"></path></svg></a>
+                <a href="#" class="js-theme-toggle" data-theme="auto" title="Automatic theme" aria-label="Automatic theme"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18a9 9 0 0 0 0-18z" fill="currentColor"></path></svg></a>
+            </li>
+            <li class="wbit-menu-divider" role="separator"></li>
+            <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"></path></svg> Logout</a></li>
+        </ul>
+    </details>
+</aside>
+
+
+    
+<header class="wbit-topbar nav-panels">
+    <div class="nav-panel-actions nav-panel-item">
+        <button type="button" class="wbit-icon-btn wbit-menu-toggle" aria-label="Menu" aria-controls="wbit-sidebar" aria-expanded="false" data-wbit-drawer-toggle=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+        <h1 class="wbit-page-title">                
+    All entries
+</h1>
+        <ul class="wbit-toolbar">
+            <li>
+                <button type="button" class="wbit-icon-btn" id="nav-btn-search" data-wbit-dialog="search" title="Search" aria-label="Search"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></button>
+            </li>
+                            <li id="button_random">
+                    <a class="wbit-icon-btn js-random-action" href="#" title="Jump to a random entry from that list" aria-label="Jump to a random entry from that list" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg></a>
+                </li>
+                        <li id="button_filters" class="button-filters">
+                <a class="wbit-icon-btn button-collapse-right js-filters-action" href="#" data-activates="filters" title="Filter entries" aria-label="Filter entries"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M7 12h10M10 18h4"></path></svg></a>
+            </li>
+            <li id="button_export" class="button-export">
+                <a class="wbit-icon-btn button-collapse-right js-export-action" href="#" data-activates="export" title="Export" aria-label="Export"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg></a>
+            </li>
+            <li class="toggle-add-url-container">
+                <button type="button" class="wbit-btn wbit-btn--primary toggle-add-url" id="nav-btn-add" data-wbit-dialog="add" title="Add a new entry" aria-label="Add a new entry"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg></button>
+            </li>
+        </ul>
+    </div>
+    <form class="input-field nav-panel-item nav-panel-search" style="display: none" name="search" method="GET" action="/demo/search">
+        <button type="submit" class="nav-form-button" aria-label="search"><i class="material-icons search" aria-hidden="true"></i></button>
+
+    
+    <input type="hidden" name="currentRoute" value="all">
+
+    <input type="text" id="search_entry_term" name="search_entry[term]" required="required" autocomplete="off" placeholder="What are you looking for?">
+    <i class="material-icons close" aria-label="clear" role="button"></i>
+
+    
+</form>
+
+    <form class="input-field nav-panel-item nav-panel-add" style="display: none" name="entry" method="post" action="/demo/new-entry">
+        <button type="submit" class="nav-form-button" aria-label="add"><i class="material-icons add" aria-hidden="true"></i></button>
+
+    
+    <input type="url" id="entry_url" name="entry[url]" required="required" autocomplete="off" placeholder="http://website.com">
+    <i class="material-icons close" aria-label="clear" role="button"></i>
+
+    <input type="hidden" id="entry__token" name="entry[_token]">
+</form>
+
+</header>
+
+
+    
+
+
+            <main>
+                
+                    
+                <div id="content" dir="auto">
+                                            <form id="form_mass_action" name="form_mass_action" action="/demo/mass?redirect=/all/list/3" method="post">
+        <input type="hidden" name="token">
+    </form>
+
+    
+<section class="wbit-list-card">
+    <div class="results nb-results wbit-list-head">
+        <span class="wbit-list-count">There are 30 entries.</span>
+
+        
+        <span class="wbit-list-tools">
+                                        <label for="mass-action-inputs-displayed" class="mass-action-toggle wbit-icon-btn" title="Toggle mass action" aria-label="Toggle mass action"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"></rect><path d="m8.5 12 2.5 2.5 4.5-5"></path></svg></label>
+
+                <form action="/demo/config/view-mode?redirect=/all/list/3" method="post" class="wbit-inline-form">
+                    <input type="hidden" name="token">
+
+                                        <span class="wbit-segmented" role="group">
+                                                    <span class="wbit-segmented-item is-active" title="config.form_settings.list_mode_label"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></span>
+                            <button type="submit" name="view_module" class="wbit-segmented-item" aria-label="view_module"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1"></rect><rect x="13" y="4" width="7" height="7" rx="1"></rect><rect x="4" y="13" width="7" height="7" rx="1"></rect><rect x="13" y="13" width="7" height="7" rx="1"></rect></svg></button>
+                                            </span>
+                </form>
+                    </span>
+    </div>
+
+            <input id="mass-action-inputs-displayed" class="toggle-checkbox" type="checkbox">
+        <div class="mass-action wbit-mass-action">
+            <div class="mass-action-group">
+                <input type="checkbox" form="form_mass_action" class="entry-checkbox-input" data-toggle="[data-js='entry-checkbox']" data-js="checkboxes-toggle" aria-label="Toggle mass action">
+                <button class="mass-action-button wbit-btn wbit-btn--ghost wbit-btn--small" type="submit" form="form_mass_action" name="toggle-read" title="Toggle mark as read"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"></path></svg></button>
+                <button class="mass-action-button wbit-btn wbit-btn--ghost wbit-btn--small" type="submit" form="form_mass_action" name="toggle-star" title="Toggle starred"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></button>
+                <button class="mass-action-button wbit-btn wbit-btn--ghost wbit-btn--small" type="submit" form="form_mass_action" name="delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020these\u0020articles\u003F')" title="Delete"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg></button>
+            </div>
+
+            <div class="mass-action-tags">
+                <input type="text" form="form_mass_action" class="mass-action-tags-input" name="tags" placeholder="tag1, tag2, tag3">
+                <button class="mass-action-button mass-action-button--tags wbit-btn wbit-btn--ghost wbit-btn--small" type="submit" form="form_mass_action" name="tag" title="Add tags"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></button>
+            </div>
+        </div>
+
+                <ol class="entries wbit-entries collection wbit-entries--list">
+                            <li id="entry-118" class="wbit-entries-item" data-entry-id="118" data-test="entry">
+                    
+<div class="card wbit-card archived">
+    <label class="entry-checkbox">
+    <input type="checkbox" form="form_mass_action" class="entry-checkbox-input" data-js="entry-checkbox" name="entry-checkbox[]" value="118">
+</label>
+
+            <a class="wbit-card-thumb card-preview" href="/demo/view/118" tabindex="-1" aria-hidden="true">
+            <span class="preview">
+                                    <img src="/demo/demo-img/15f9d12d2938af8a.jpg" alt="" loading="lazy" referrerpolicy="no-referrer">
+                            </span>
+        </a>
+    
+    <div class="wbit-card-body">
+        <h2 class="card-title wbit-card-title">
+            <a href="/demo/view/118" title="Walking Tours">Walking Tours</a>
+        </h2>
+        <p class="wbit-card-meta">
+            <a href="https://www.gutenberg.org/ebooks/386#walking-tours" target="_blank" rel="noopener" title="https://www.gutenberg.org/ebooks/386#walking-tours">gutenberg.org</a>
+            <span aria-hidden="true">·</span>
+                            <span>5 min</span>
+                    </p>
+                    <ul class="wbit-tags">
+                                    <li><a class="wbit-tag" href="/demo/tag/list/essays">Essays</a></li>
+                                    <li><a class="wbit-tag" href="/demo/tag/list/travel">Travel</a></li>
+                                    <li><a class="wbit-tag" href="/demo/tag/list/nature">Nature</a></li>
+                                            </ul>
+            </div>
+
+    <ul class="tools wbit-card-actions">
+        <li>
+            <form action="/demo/star/118?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle starred" aria-label="Toggle starred" aria-pressed="false"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></button>
+            </form>
+        </li>
+        <li>
+            <form action="/demo/archive/118?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle mark as read" aria-label="Toggle mark as read"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M12 18v-6M9.5 14.5 12 12l2.5 2.5"></path></svg></button>
+            </form>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <a class="wbit-icon-btn" href="#" data-action="same_domain" data-entry-id="118" title="Show articles with the same domain" aria-label="Show articles with the same domain" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"></path></svg></a>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <form action="/demo/delete/118?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" name="delete" class="wbit-icon-btn wbit-icon-btn--danger" title="Delete" aria-label="Delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg></button>
+            </form>
+        </li>
+    </ul>
+</div>
+                </li>
+                            <li id="entry-119" class="wbit-entries-item" data-entry-id="119" data-test="entry">
+                    
+<div class="card wbit-card">
+    <label class="entry-checkbox">
+    <input type="checkbox" form="form_mass_action" class="entry-checkbox-input" data-js="entry-checkbox" name="entry-checkbox[]" value="119">
+</label>
+
+            <a class="wbit-card-thumb card-preview" href="/demo/view/119" tabindex="-1" aria-hidden="true">
+            <span class="preview">
+                                    <img src="/demo/demo-img/153486d6d67b6d21.jpg" alt="" loading="lazy" referrerpolicy="no-referrer">
+                            </span>
+        </a>
+    
+    <div class="wbit-card-body">
+        <h2 class="card-title wbit-card-title">
+            <a href="/demo/view/119" title="Annotate what you read to remember it better">Annotate what you read to remember it better</a>
+        </h2>
+        <p class="wbit-card-meta">
+            <a href="https://example.com/annotate-to-remember" target="_blank" rel="noopener" title="https://example.com/annotate-to-remember">example.com</a>
+            <span aria-hidden="true">·</span>
+                            <span>4 min</span>
+                    </p>
+                    <ul class="wbit-tags">
+                                    <li><a class="wbit-tag" href="/demo/tag/list/science">Science</a></li>
+                                    <li><a class="wbit-tag" href="/demo/tag/list/reading">Reading</a></li>
+                                            </ul>
+            </div>
+
+    <ul class="tools wbit-card-actions">
+        <li>
+            <form action="/demo/star/119?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle starred" aria-label="Toggle starred" aria-pressed="false"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></button>
+            </form>
+        </li>
+        <li>
+            <form action="/demo/archive/119?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle mark as read" aria-label="Toggle mark as read"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></button>
+            </form>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <a class="wbit-icon-btn" href="#" data-action="same_domain" data-entry-id="119" title="Show articles with the same domain" aria-label="Show articles with the same domain" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"></path></svg></a>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <form action="/demo/delete/119?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" name="delete" class="wbit-icon-btn wbit-icon-btn--danger" title="Delete" aria-label="Delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg></button>
+            </form>
+        </li>
+    </ul>
+</div>
+                </li>
+                            <li id="entry-120" class="wbit-entries-item" data-entry-id="120" data-test="entry">
+                    
+<div class="card wbit-card">
+    <label class="entry-checkbox">
+    <input type="checkbox" form="form_mass_action" class="entry-checkbox-input" data-js="entry-checkbox" name="entry-checkbox[]" value="120">
+</label>
+
+            <a class="wbit-card-thumb card-preview" href="/demo/view/120" tabindex="-1" aria-hidden="true">
+            <span class="preview">
+                                    <img src="/demo/demo-img/54e085673f1ab630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer">
+                            </span>
+        </a>
+    
+    <div class="wbit-card-body">
+        <h2 class="card-title wbit-card-title">
+            <a href="/demo/view/120" title="A Piece of Chalk">A Piece of Chalk</a>
+        </h2>
+        <p class="wbit-card-meta">
+            <a href="https://www.gutenberg.org/ebooks/8092#a-piece-of-chalk" target="_blank" rel="noopener" title="https://www.gutenberg.org/ebooks/8092#a-piece-of-chalk">gutenberg.org</a>
+            <span aria-hidden="true">·</span>
+                            <span>5 min</span>
+                    </p>
+                    <ul class="wbit-tags">
+                                    <li><a class="wbit-tag" href="/demo/tag/list/essays">Essays</a></li>
+                                    <li><a class="wbit-tag" href="/demo/tag/list/nature">Nature</a></li>
+                                            </ul>
+            </div>
+
+    <ul class="tools wbit-card-actions">
+        <li>
+            <form action="/demo/star/120?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn is-starred" title="Toggle starred" aria-label="Toggle starred" aria-pressed="true"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></button>
+            </form>
+        </li>
+        <li>
+            <form action="/demo/archive/120?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle mark as read" aria-label="Toggle mark as read"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></button>
+            </form>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <a class="wbit-icon-btn" href="#" data-action="same_domain" data-entry-id="120" title="Show articles with the same domain" aria-label="Show articles with the same domain" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"></path></svg></a>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <form action="/demo/delete/120?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" name="delete" class="wbit-icon-btn wbit-icon-btn--danger" title="Delete" aria-label="Delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg></button>
+            </form>
+        </li>
+    </ul>
+</div>
+                </li>
+                            <li id="entry-121" class="wbit-entries-item" data-entry-id="121" data-test="entry">
+                    
+<div class="card wbit-card">
+    <label class="entry-checkbox">
+    <input type="checkbox" form="form_mass_action" class="entry-checkbox-input" data-js="entry-checkbox" name="entry-checkbox[]" value="121">
+</label>
+
+            <a class="wbit-card-thumb card-preview" href="/demo/view/121" tabindex="-1" aria-hidden="true">
+            <span class="preview">
+                                    <img src="/demo/demo-img/e0b84029e1197963.jpg" alt="" loading="lazy" referrerpolicy="no-referrer">
+                            </span>
+        </a>
+    
+    <div class="wbit-card-body">
+        <h2 class="card-title wbit-card-title">
+            <a href="/demo/view/121" title="The Perfect Game">The Perfect Game</a>
+        </h2>
+        <p class="wbit-card-meta">
+            <a href="https://www.gutenberg.org/ebooks/8092#the-perfect-game" target="_blank" rel="noopener" title="https://www.gutenberg.org/ebooks/8092#the-perfect-game">gutenberg.org</a>
+            <span aria-hidden="true">·</span>
+                            <span>5 min</span>
+                    </p>
+                    <ul class="wbit-tags">
+                                    <li><a class="wbit-tag" href="/demo/tag/list/essays">Essays</a></li>
+                                            </ul>
+            </div>
+
+    <ul class="tools wbit-card-actions">
+        <li>
+            <form action="/demo/star/121?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle starred" aria-label="Toggle starred" aria-pressed="false"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></button>
+            </form>
+        </li>
+        <li>
+            <form action="/demo/archive/121?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle mark as read" aria-label="Toggle mark as read"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></button>
+            </form>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <a class="wbit-icon-btn" href="#" data-action="same_domain" data-entry-id="121" title="Show articles with the same domain" aria-label="Show articles with the same domain" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"></path></svg></a>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <form action="/demo/delete/121?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" name="delete" class="wbit-icon-btn wbit-icon-btn--danger" title="Delete" aria-label="Delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg></button>
+            </form>
+        </li>
+    </ul>
+</div>
+                </li>
+                            <li id="entry-122" class="wbit-entries-item" data-entry-id="122" data-test="entry">
+                    
+<div class="card wbit-card">
+    <label class="entry-checkbox">
+    <input type="checkbox" form="form_mass_action" class="entry-checkbox-input" data-js="entry-checkbox" name="entry-checkbox[]" value="122">
+</label>
+
+            <a class="wbit-card-thumb card-preview" href="/demo/view/122" tabindex="-1" aria-hidden="true">
+            <span class="preview">
+                                    <img src="/demo/demo-img/bf72f50c453a694a.jpg" alt="" loading="lazy" referrerpolicy="no-referrer">
+                            </span>
+        </a>
+    
+    <div class="wbit-card-body">
+        <h2 class="card-title wbit-card-title">
+            <a href="/demo/view/122" title="Tremendous Trifles">Tremendous Trifles</a>
+        </h2>
+        <p class="wbit-card-meta">
+            <a href="https://www.gutenberg.org/ebooks/8092#tremendous-trifles" target="_blank" rel="noopener" title="https://www.gutenberg.org/ebooks/8092#tremendous-trifles">gutenberg.org</a>
+            <span aria-hidden="true">·</span>
+                            <span>5 min</span>
+                    </p>
+                    <ul class="wbit-tags">
+                                    <li><a class="wbit-tag" href="/demo/tag/list/essays">Essays</a></li>
+                                            </ul>
+            </div>
+
+    <ul class="tools wbit-card-actions">
+        <li>
+            <form action="/demo/star/122?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle starred" aria-label="Toggle starred" aria-pressed="false"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></button>
+            </form>
+        </li>
+        <li>
+            <form action="/demo/archive/122?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle mark as read" aria-label="Toggle mark as read"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></button>
+            </form>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <a class="wbit-icon-btn" href="#" data-action="same_domain" data-entry-id="122" title="Show articles with the same domain" aria-label="Show articles with the same domain" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"></path></svg></a>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <form action="/demo/delete/122?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" name="delete" class="wbit-icon-btn wbit-icon-btn--danger" title="Delete" aria-label="Delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg></button>
+            </form>
+        </li>
+    </ul>
+</div>
+                </li>
+                            <li id="entry-123" class="wbit-entries-item" data-entry-id="123" data-test="entry">
+                    
+<div class="card wbit-card">
+    <label class="entry-checkbox">
+    <input type="checkbox" form="form_mass_action" class="entry-checkbox-input" data-js="entry-checkbox" name="entry-checkbox[]" value="123">
+</label>
+
+            <a class="wbit-card-thumb card-preview" href="/demo/view/123" tabindex="-1" aria-hidden="true">
+            <span class="preview">
+                                    <img src="/demo/demo-img/410f3d393436adc5.jpg" alt="" loading="lazy" referrerpolicy="no-referrer">
+                            </span>
+        </a>
+    
+    <div class="wbit-card-body">
+        <h2 class="card-title wbit-card-title">
+            <a href="/demo/view/123" title="On Lying in Bed">On Lying in Bed</a>
+        </h2>
+        <p class="wbit-card-meta">
+            <a href="https://www.gutenberg.org/ebooks/8092#on-lying-in-bed" target="_blank" rel="noopener" title="https://www.gutenberg.org/ebooks/8092#on-lying-in-bed">gutenberg.org</a>
+            <span aria-hidden="true">·</span>
+                            <span>5 min</span>
+                    </p>
+                    <ul class="wbit-tags">
+                                    <li><a class="wbit-tag" href="/demo/tag/list/essays">Essays</a></li>
+                                    <li><a class="wbit-tag" href="/demo/tag/list/humor">Humor</a></li>
+                                            </ul>
+            </div>
+
+    <ul class="tools wbit-card-actions">
+        <li>
+            <form action="/demo/star/123?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn is-starred" title="Toggle starred" aria-label="Toggle starred" aria-pressed="true"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></button>
+            </form>
+        </li>
+        <li>
+            <form action="/demo/archive/123?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" class="wbit-icon-btn" title="Toggle mark as read" aria-label="Toggle mark as read"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></button>
+            </form>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <a class="wbit-icon-btn" href="#" data-action="same_domain" data-entry-id="123" title="Show articles with the same domain" aria-label="Show articles with the same domain" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"></path></svg></a>
+        </li>
+        <li class="wbit-card-actions-secondary">
+            <form action="/demo/delete/123?redirect=/all/list/3" method="post">
+                <input type="hidden" name="token">
+                <button type="submit" name="delete" class="wbit-icon-btn wbit-icon-btn--danger" title="Delete" aria-label="Delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg></button>
+            </form>
+        </li>
+    </ul>
+</div>
+                </li>
+                    </ol>
+    
+            <div class="results wbit-pagination">
+            <div class="pagination"><ul><li class=""><a href="/demo/all/list/2" rel="prev">&lt;</a></li><li class=""><a href="/demo/all/list">1</a></li><li class=""><a href="/demo/all/list/2">2</a></li><li class="active"><span>3</span></li><li class="disabled"><span>&gt;</span></li></ul></div>
+        </div>
+    </section>
+
+
+    <!-- Export -->
+    <div id="export" class="side-nav right-aligned">
+                                            <h4 class="center">Export</h4>
+        <ul>
+            <li class="bold"><a class="waves-effect" href="#" data-demo-disabled="">EPUB</a></li>                        <li class="bold"><a class="waves-effect" href="#" data-demo-disabled="">PDF</a></li>            <li class="bold"><a class="waves-effect" href="#" data-demo-disabled="">JSON</a></li>            <li class="bold"><a class="waves-effect" href="#" data-demo-disabled="">CSV</a></li>            <li class="bold"><a class="waves-effect" href="#" data-demo-disabled="">TXT</a></li>            <li class="bold"><a class="waves-effect" href="#" data-demo-disabled="">XML</a></li>        </ul>
+    </div>
+
+    <!-- Filters -->
+        <div id="filters" class="side-nav right-aligned">
+        <form action="/demo/all/list">
+
+            <h4 class="center">Filters</h4>
+
+            <div class="row">
+                                    <div class="col s12 center-align">
+                        <a href="#" data-demo-disabled="">See untagged entries</a>
+                    </div>
+                
+                <div class="col s12">
+                    <label>Status</label>
+                </div>
+
+                <div class="input-field col s6 with-checkbox">
+                    <input type="checkbox" id="entry_filter_isArchived" name="entry_filter[isArchived]" value="1">
+                    <label for="entry_filter_isArchived">Archived</label>
+                </div>
+
+                <div class="input-field col s6 with-checkbox">
+                    <input type="checkbox" id="entry_filter_isStarred" name="entry_filter[isStarred]" value="1">
+                    <label for="entry_filter_isStarred">Starred</label>
+                </div>
+
+                <div class="input-field col s6 with-checkbox">
+                    <input type="checkbox" id="entry_filter_isUnread" name="entry_filter[isUnread]" value="1">
+                    <label for="entry_filter_isUnread">Unread</label>
+                </div>
+
+                <div class="input-field col s12 with-checkbox">
+                    <input type="checkbox" id="entry_filter_isAnnotated" name="entry_filter[isAnnotated]" value="1">
+                    <label for="entry_filter_isAnnotated">Annotated</label>
+                </div>
+
+                <div class="col s12">
+                    <label>Creation date</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input type="date" id="entry_filter_createdAt_left_date" name="entry_filter[createdAt][left_date]" placeholder="yyyy-mm-dd" class="datepicker" data-value="">
+                    <label for="entry_filter_createdAt_left_date" class="active">from</label>
+                </div>
+                <div class="input-field col s6">
+                    <input type="date" id="entry_filter_createdAt_right_date" name="entry_filter[createdAt][right_date]" placeholder="yyyy-mm-dd" class="datepicker" data-value="">
+                    <label for="entry_filter_createdAt_right_date" class="active">to</label>
+                </div>
+
+                                                <details class="col s12 wbit-filters-more">
+                    <summary>More filters</summary>
+                    <div class="row">
+                        <div class="col s12">
+                            <label>Preview picture</label>
+                        </div>
+
+                        <div class="input-field col s12 with-checkbox">
+                            <input type="checkbox" id="entry_filter_previewPicture" name="entry_filter[previewPicture]" value="1">
+                            <label for="entry_filter_previewPicture">Has a preview picture</label>
+                        </div>
+
+                        <div class="col s12">
+                            <label>Public link</label>
+                        </div>
+
+                        <div class="input-field col s12 with-checkbox">
+                            <input type="checkbox" id="entry_filter_isPublic" name="entry_filter[isPublic]" value="1">
+                            <label for="entry_filter_isPublic">Has a public link</label>
+                        </div>
+
+                        <div class="col s12">
+                            <label for="entry_filter_language">Language</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <select id="entry_filter_language" name="entry_filter[language]"><option value=""></option><option value="en">en</option></select>
+                        </div>
+
+                        <div class="col s12">
+                            <label for="entry_filter_httpStatus">HTTP status</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                                        <input type="number" id="entry_filter_httpStatus" name="entry_filter[httpStatus]" min="100" max="527">
+    
+                        </div>
+
+                        <div class="col s12">
+                            <label>Reading time in minutes</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                                        <input type="number" id="entry_filter_readingTime_left_number" name="entry_filter[readingTime][left_number]" min="0">
+    
+                            <label for="entry_filter_readingTime_left_number">from</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                                        <input type="number" id="entry_filter_readingTime_right_number" name="entry_filter[readingTime][right_number]" min="0">
+    
+                            <label for="entry_filter_readingTime_right_number">to</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                                        <input type="text" id="entry_filter_domainName" name="entry_filter[domainName]" autocapitalize="off" placeholder="website.com">
+    
+                            <label for="entry_filter_domainName">Domain name</label>
+                        </div>
+                    </div>
+                </details>
+
+                <div class="col s6">
+                    <a href="#!" class="center waves-effect waves-green btn-flat" id="clear_form_filters">Clear</a>
+                </div>
+
+                <div class="col s6">
+                    <button class="btn waves-effect waves-light" type="submit" id="submit-filter" value="filter">Filter</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    
+                </div>
+            </main>
+        </div>
+
+            <footer class="wbit-footer">
+    
+    <p>
+        powered by <a target="_blank" rel="noopener" href="https://wallabag.org">wallabag</a> ·
+        <a href="#" data-demo-disabled="">about</a>
+    </p>
+</footer>
+
+
+            
+
+</body></html>

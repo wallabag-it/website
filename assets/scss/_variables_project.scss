@@ -1,42 +1,27 @@
 /*
 
 Add styles or override variables from the theme here.
+The wallabag.it design (same colors as the app) is in assets/scss/wbit/,
+imported by _styles_project.scss.
 
 */
-$primary: #1f2937;
-$secondary: #c0e0de;
+$primary: #1c1b19;
+$secondary: #1c1b19;
+$light: #f5f4f0;
+$dark: #1c1b19;
+$link-color: #8a4b14;
+
+// System fonts, like the app (no Google Fonts request)
+$td-enable-google-fonts: false;
+
+$border-radius: 10px;
+$border-radius-sm: 8px;
+$border-radius-lg: 14px;
+$enable-gradients: false;
+$enable-shadows: false;
 
 .td-navbar .navbar-brand__name {
   display: none;
-}
-
-/* Mise en avant du CTA d'essai gratuit dans le menu. */
-.td-navbar .nav-link[data-cta="nav-trial"],
-.td-navbar .nav-link[href="https://app.wallabag.it"] {
-  border-radius: .25rem;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-}
-
-.td-navbar .nav-link[data-cta="nav-trial"] {
-  background-color: #f97316;
-  color: #fff !important;
-
-  &:hover,
-  &:focus {
-    background-color: #ea580c;
-  }
-}
-
-/* Bouton "Mon compte" / "My account" dans le menu : couleur secondaire (même que btn-secondary). */
-.td-navbar .nav-link[href="https://app.wallabag.it"] {
-  background-color: $secondary;
-  color: $primary !important;
-
-  &:hover,
-  &:focus {
-    background-color: darken($secondary, 10%);
-  }
 }
 
 /* Le plan mis en avant sur la page Tarifs est légèrement agrandi sur desktop. */
@@ -46,12 +31,8 @@ $secondary: #c0e0de;
   }
 }
 
-.zammad-chat {
-  left: 30px !important;
-  right: 0 !important;
-}
-
 .product-proof-img {
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: top center;

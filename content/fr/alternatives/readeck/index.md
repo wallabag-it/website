@@ -4,7 +4,7 @@ description: "Readeck est une bonne appli de lecture différée auto-hébergée.
 date: 2026-06-18
 ---
 
-{{% blocks/cover title="Quelle alternative à Readeck choisir ?" color="primary" height="auto" %}}
+{{% blocks/cover title="Quelle alternative à Readeck choisir ?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

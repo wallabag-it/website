@@ -1,0 +1,36 @@
+{{/* Copy of Docsy's blog/baseof.html (v0.12.0). wallabag.it: no sidebar, no table of contents and no breadcrumb:
+     the list and the posts are single centred columns; the list keeps the RSS button. */ -}}
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage"
+    {{- with .Site.Language.LanguageDirection }} dir="{{ . }}" {{- end -}}
+    {{ with .Site.Language.Lang }} lang="{{ . }}" {{- end }} {{/**/ -}}
+    class="no-js">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="td-{{ .Kind }} td-blog {{- with .Page.Params.body_class }} {{ . }}{{ end }}">
+    <header>
+      {{ partial "navbar.html" . }}
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 wbit-blog-main" role="main">
+            {{ if not .IsPage -}}
+            {{ $fr := eq .Site.Language.Lang "fr" -}}
+            {{ with .CurrentSection.OutputFormats.Get "rss" -}}
+            <a class="td-rss-button" title="{{ if $fr }}Flux RSS{{ else }}RSS feed{{ end }}" href="{{ .RelPermalink | safeURL }}" target="_blank" rel="noopener">
+              <i class="fa-solid fa-rss" aria-hidden="true"></i>
+              <span>{{ if $fr }}Flux RSS{{ else }}RSS feed{{ end }}</span>
+            </a>
+            {{ end -}}
+            {{ end -}}
+            {{ block "main" . }}{{ end }}
+          </main>
+        </div>
+      </div>
+      {{ partial "footer.html" . }}
+    </div>
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

@@ -5,7 +5,7 @@ description: "Answers to common questions about wallabag.it: free trial, payment
 faq_schema: true
 ---
 
-{{% blocks/cover title="Frequently asked questions" color="primary" height="auto" %}}
+{{% blocks/cover title="Frequently asked questions" color="primary" height="auto" cta="true" %}}
 <p class="lead mt-3 mb-4">Everything you want to know before saving your first article.</p>
 {{% /blocks/cover %}}
 

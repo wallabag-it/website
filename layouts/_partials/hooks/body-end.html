@@ -3,13 +3,18 @@
 {{ $statusURL := site.Params.statusPageURL | default "https://status.wallabag.it" -}}
 <div id="status-banner" class="status-banner" role="status" hidden></div>
 <style>
-  .status-banner { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 1050; max-width: 640px; margin: 0 auto; padding: 12px 44px 12px 16px; border-radius: 8px; border: 1px solid #fdba74; background: #fff7ed; color: #1f2937; font-size: 15px; line-height: 1.4; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); }
-  .status-banner--down { background: #fef2f2; border-color: #fca5a5; }
-  .status-banner--notice { background: #eff6ff; border-color: #93c5fd; }
-  .status-banner p { margin: 0; }
-  .status-banner p + p { margin-top: 4px; }
-  .status-banner a { color: #1f2937; font-weight: bold; text-decoration: underline; }
-  .status-banner button { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 22px; line-height: 1; padding: 4px 8px; color: #6b7280; cursor: pointer; }
+  /* Same tokens as the rest of the site (assets/scss/wbit/_tokens.scss). The colored bar and dot
+     give the level: orange = disrupted, red = down, blue = notice (maintenance). */
+  .status-banner { --status-color: #c2410c; position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 1050; max-width: 600px; margin: 0 auto; padding: 14px 48px 14px 20px; border: 1px solid var(--wb-line, #e8e6e0); border-left: 4px solid var(--status-color); border-radius: 14px; background: var(--wb-surface-raised, #fff); color: var(--wb-ink, #1c1b19); font-size: 15px; line-height: 1.45; box-shadow: 0 24px 60px -18px rgba(28, 27, 25, 0.35), 0 2px 6px rgba(28, 27, 25, 0.06); }
+  .status-banner--down { --status-color: #b42318; }
+  .status-banner--notice { --status-color: #2f5bd3; }
+  .status-banner p { position: relative; margin: 0; padding-left: 18px; }
+  .status-banner p::before { content: ""; position: absolute; left: 0; top: 0.5em; width: 8px; height: 8px; border-radius: 50%; background: var(--status-color); box-shadow: 0 0 0 3px color-mix(in srgb, var(--status-color) 18%, transparent); }
+  .status-banner p + p { margin-top: 6px; }
+  .status-banner a { color: inherit; font-weight: 600; text-decoration: underline; text-decoration-color: var(--wb-line-strong, #d9d6ce); text-underline-offset: 0.18em; }
+  .status-banner a:hover, .status-banner a:focus { text-decoration-color: currentColor; }
+  .status-banner button { position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; border: 0; border-radius: 8px; background: none; font-size: 20px; line-height: 1; padding: 0; color: var(--wb-muted, #67655e); cursor: pointer; }
+  .status-banner button:hover, .status-banner button:focus { background: var(--wb-hover, #eae8e2); color: var(--wb-ink, #1c1b19); }
 </style>
 <script>
   (function () {

@@ -4,7 +4,7 @@ description: "Obsidian Web Clipper enregistre des pages dans votre coffre Obsidi
 date: 2026-06-16
 ---
 
-{{% blocks/cover title="Quelle alternative à Obsidian Web Clipper choisir ?" color="primary" height="auto" %}}
+{{% blocks/cover title="Quelle alternative à Obsidian Web Clipper choisir ?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

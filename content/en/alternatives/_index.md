@@ -5,16 +5,11 @@ description: "Looking for an alternative to Pocket, Instapaper or Raindrop.io? H
 menu: {main: {weight: 27}}
 ---
 
-{{% blocks/cover title="Alternatives to read-it-later tools" color="primary" height="auto" %}}
+{{% blocks/cover title="Alternatives to read-it-later tools" color="primary" height="auto" cta="true" image="/{lang}/features/homepage.png" image_alt="wallabag.it reading list showing saved articles." %}}
+<p class="lead">Thinking about leaving your read-it-later app or bookmark manager? Here is how wallabag.it compares with the usual ones.</p>
 {{% /blocks/cover %}}
 
-{{% blocks/lead color="white" %}}
-
-Thinking about leaving your read-it-later app or bookmark manager? Here is how wallabag.it compares with the usual ones.
-
-{{% /blocks/lead %}}
-
-{{% blocks/section color="light" %}}
+{{% blocks/section color="white" %}}
 
 ## Why choose wallabag.it?
 {.text-center}
@@ -25,7 +20,7 @@ wallabag.it is the hosted version of wallabag, the open-source read-it-later app
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="white" %}}
+{{% blocks/section color="light" %}}
 {{< alternatives-grid >}}
 {{% /blocks/section %}}
 

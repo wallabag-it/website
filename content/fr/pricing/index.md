@@ -7,12 +7,11 @@ software_schema: true
 menu: {main: {weight: 35}}
 ---
 
-{{% blocks/cover title="Dès 11€ par an" color="primary" height="auto" %}}
-<p class="lead mt-3 mb-4">Tous les abonnements incluent toutes les fonctionnalités, premium comprises. Choisissez juste la durée.<br />Commencez par un <strong>essai gratuit de 14 jours</strong>, sans carte bancaire.</p>
+{{% blocks/cover title="Dès 11€ par an" color="primary" height="auto" compact="true" %}}
+<p class="lead mt-3 mb-4">Tous les abonnements donnent accès à tout. Choisissez juste la durée.<br />Commencez par un <strong>essai gratuit de 14 jours</strong>, sans carte bancaire.</p>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-hero-trial">
   Commencer l'essai gratuit <i class="fa fa-user-plus ms-2"></i>
 </a>
-<p class="small text-white mb-0">Open source depuis 2013 · wallabag.it existe depuis 2016 · hébergé en Europe · export de vos données à tout moment</p>
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}
@@ -29,7 +28,7 @@ Les mêmes fonctionnalités que l'abonnement annuel. Vous payez un peu plus pour
 {{< /pricing-plan >}}
 {{< /pricing-plans >}}
 
-<p class="text-center text-body-secondary mt-4">Essai gratuit de 14 jours · aucune carte bancaire demandée · fonctionnalités premium débloquées à l'abonnement · exportez vos données à tout moment</p>
+<p class="text-center text-body-secondary mt-4">Essai gratuit de 14 jours · aucune carte bancaire demandée · sauvegarde par email, flux et imports avec l'abonnement · exportez vos données à tout moment</p>
 <p class="text-center text-body-secondary">Votre abonnement paie le développement de wallabag et garde le service sans publicité.</p>
 
 {{% /blocks/section %}}
@@ -39,7 +38,7 @@ Les mêmes fonctionnalités que l'abonnement annuel. Vous payez un peu plus pour
 ## Ce que vous obtenez après l'inscription
 {.text-center}
 
-Sauvegardez un article depuis le navigateur, gardez une liste de lecture propre, puis lisez sur mobile quand vous êtes hors ligne ou loin de votre ordinateur.
+Vous sauvegardez depuis le navigateur, vous retrouvez tout dans votre liste, vous lisez sur votre téléphone. Même sans réseau.
 
 {{< product-proof >}}
 
@@ -60,20 +59,18 @@ L'abonnement paie les serveurs en Europe, les sauvegardes, les mises à jour et 
 
 {{% blocks/feature icon="fa-heart" title="Il finance le projet open source wallabag" %}}
 wallabag existe depuis 2013 et wallabag.it depuis 2016. Votre abonnement paie le service hébergé et le projet open source derrière.
-[Voir wallabag sur GitHub](https://github.com/wallabag/wallabag).
+[Ce que ça finance](/fr/blog/2026/06/30/wallabag-it-finance-developpements-open-source/) · [Voir wallabag sur GitHub](https://github.com/wallabag/wallabag).
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="dark" type="row" %}}
 
-## Des fonctionnalités premium incluses dans chaque abonnement
-{.text-center .mb-2}
-
-<p class="text-center col-12 mb-5">Réservées aux abonnés, elles ne font pas partie de l'essai gratuit. <a class="text-white" href="/fr/blog/2026/06/08/des-restrictions-pour-les-comptes-d-essai/">Pourquoi ?</a></p>
+## Ce que l'abonnement ajoute
+{.text-center .mb-5}
 
 {{% blocks/feature icon="fa-envelope" title="Sauvegarde par email" %}}
-Recevez votre adresse privée `save+USER+TOKEN@wallabag.it` : envoyez ou transférez un email contenant des liens, ils sont sauvegardés automatiquement. Idéal pour les liens partagés par vos proches.
+Recevez votre adresse privée `save+USER+TOKEN@wallabag.it` : envoyez ou transférez un email contenant des liens, ils sont sauvegardés automatiquement. Pratique pour les liens que vos proches vous envoient.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-cloud-download" title="Import depuis un autre service" %}}
@@ -104,7 +101,7 @@ Collez l'adresse d'un site : wallabag.it trouve son flux et sauvegarde les nouve
 <ul class="list-unstyled fs-5">
 <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Surlignage et annotations</li>
 <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Export en PDF, ePUB, mobi et plus</li>
-<li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Support professionnel</li>
+<li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Support inclus</li>
 <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Hébergé en Europe, conforme RGPD</li>
 </ul>
 </div>
@@ -126,7 +123,7 @@ Collez l'adresse d'un site : wallabag.it trouve son flux et sauvegarde les nouve
 
 {{% blocks/section color="light" %}}
 
-## wallabag.it face à la concurrence
+## wallabag.it et les autres
 {.text-center}
 
 <div class="table-responsive mt-4">
@@ -163,7 +160,7 @@ Plus de détails dans [Quelle alternative à Pocket choisir ?](/fr/alternatives/
 
 {{% blocks/section color="primary" %}}
 
-## Prêt à archiver votre premier article ?
+## Essayez avec votre premier article
 {.text-center}
 
 <p class="lead text-center">Créez votre compte et essayez gratuitement pendant 14 jours.<br />Aucune carte bancaire demandée.</p>

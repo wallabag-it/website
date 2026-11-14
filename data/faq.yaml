@@ -2,6 +2,10 @@
 # the pricing-page subset (via the `faq` shortcode `ids` param) and the
 # FAQPage JSON-LD emitted by layouts/_partials/structured-data.html.
 en:
+  - id: what
+    q: "What is wallabag.it?"
+    a: |
+      wallabag is an open-source read-it-later app, created in 2013: it saves the full text of web articles, without ads or clutter, so you can read them later on your computer, phone, tablet or e-reader. wallabag.it is the hosted version of [wallabag](https://github.com/wallabag/wallabag), run since 2016 by its creator: nothing to install, your data stays in Europe and part of your subscription funds the open-source project.
   - id: trial-end
     q: "What happens at the end of the 14-day free trial?"
     a: |
@@ -73,6 +77,10 @@ en:
     a: |
       Write to [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it), browse the [knowledge base](https://helpdesk.wallabag.it/help/en-gb) or use the chat at the bottom of this site (when it's enabled), Nicolas answers.
 fr:
+  - id: what
+    q: "Qu'est-ce que wallabag.it ?"
+    a: |
+      wallabag est une application open source de lecture différée, créée en 2013 : elle enregistre le texte complet des articles du web, sans publicité ni éléments superflus, pour les lire plus tard sur ordinateur, téléphone, tablette ou liseuse. wallabag.it est la version hébergée de [wallabag](https://github.com/wallabag/wallabag), proposée depuis 2016 par son créateur : rien à installer, vos données restent en Europe et une partie de votre abonnement finance le projet open source.
   - id: trial-end
     q: "Que se passe-t-il à la fin des 14 jours d'essai gratuit ?"
     a: |

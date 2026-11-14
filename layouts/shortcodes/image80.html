@@ -1,4 +1,4 @@
 <figure class="feature-screenshot mx-auto my-4" style="max-width: 720px;">
-<img class="feature-screenshot-img" src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy" style="display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; border: 1px solid rgba(31, 41, 55, .14); border-radius: .5rem; box-shadow: 0 .75rem 2rem rgba(31, 41, 55, .12);">
+{{ partial "screenshot.html" (dict "page" .Page "name" (.Get "src") "alt" (.Get "alt") "class" "feature-screenshot-img" "loading" "lazy" "sizes" "(min-width: 768px) 720px, 100vw" "style" "display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; border: 1px solid rgba(31, 41, 55, .14); border-radius: .5rem; box-shadow: 0 .75rem 2rem rgba(31, 41, 55, .12);") }}
 <figcaption class="feature-screenshot-caption text-center small mt-2">{{ .Get "alt" }}</figcaption>
 </figure>

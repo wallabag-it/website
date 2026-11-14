@@ -4,7 +4,7 @@ description: "Pocket has shut down. wallabag.it saves your articles, imports you
 date: 2026-06-13
 ---
 
-{{% blocks/cover title="Which alternative to Pocket should I choose?" color="primary" height="auto" %}}
+{{% blocks/cover title="Which alternative to Pocket should I choose?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

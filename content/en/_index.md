@@ -6,15 +6,15 @@ description: "Save web articles and read them later on your phone, tablet or e-r
 images: [/images/social-card.png]
 ---
 
-{{< blocks/cover title="Save articles now, read them later on every device" image_anchor="top" height="auto" >}}
+{{< blocks/cover title="Close your tabs, forget nothing" image_anchor="top" height="auto" >}}
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="home-hero-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>
 </a>
 <a class="btn btn-lg btn-outline-light mb-4" href="/en/pricing/">
   See plans from 11€ a year
 </a>
-<p class="lead mt-5">14-day free trial, no credit card required.</p>
-<p class="small text-white mb-0">Open source since 2013 · wallabag.it has existed since 2016 · hosted in Europe · export your data anytime</p>
+<p class="lead mt-5">Put an article aside in one click and read it later, even if the website goes away.</p>
+<p class="small text-white mb-0">Around since 2016 · over 18 million articles saved · no ads, no tracking · hosted in Europe</p>
 {{< blocks/link-down color="white" >}}
 {{< /blocks/cover >}}
 
@@ -28,10 +28,12 @@ images: [/images/social-card.png]
 {{% blocks/section color="light" type="row" %}}
 
 ## Why wallabag.it?
-{.text-center .mb-5}
+{.text-center .mb-3}
 
-{{% blocks/feature icon="fa-user-secret" title="Open source, ad-free" %}}
-wallabag has existed since 2013 and wallabag.it since 2016. The service is funded by subscriptions, not by ads, tracking or data resale.
+<p class="text-center col-12 mx-auto mb-5" style="max-width: 760px;">wallabag is an open-source read-it-later app, created in 2013: it saves the full text of web articles, without ads or clutter, so you can read them later on your computer, phone, tablet or e-reader. wallabag.it is the hosted version of wallabag, run since 2016 by its creator: nothing to install, your data stays in Europe and part of your subscription funds the open-source project.</p>
+
+{{% blocks/feature icon="fa-user-secret" title="No ads, no tracking" %}}
+The service is funded by subscriptions, not by ads, tracking or data resale, and [part of them funds the development of wallabag](/en/blog/2026/06/30/wallabag-it-funds-open-source-development/).
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-server" title="Hosted in Europe" %}}
@@ -70,7 +72,7 @@ Tags, search, favourites and annotations help you find an article months later.
 
 {{% blocks/section color="dark" type="row" %}}
 
-## Premium features for subscribers
+## What a subscription adds
 {.text-center .mb-2}
 
 <p class="lead text-center col-12 mb-5">Included in every plan, from 11€ a year.</p>
@@ -89,7 +91,6 @@ Bring your reading list from Pocket, Instapaper, Pinboard, Omnivore, Shaarli or 
 
 <div class="col-12 text-center mt-4">
 <a class="btn btn-secondary mb-2" href="/en/pricing/" data-cta="home-premium-pricing">See the plans <i class="fa fa-arrow-right ms-2"></i></a>
-<p class="small mt-3 mb-0">These features are unlocked with a subscription, they are not part of the free trial. <a class="text-white" href="/en/blog/2026/06/08/some-restrictions-for-trial-accounts-on-wallabag.it/">Why?</a></p>
 </div>
 
 {{% /blocks/section %}}

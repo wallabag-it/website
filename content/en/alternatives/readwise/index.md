@@ -4,7 +4,7 @@ description: "Readwise Reader costs around 96 € a year and is hosted in the US
 date: 2026-06-15
 ---
 
-{{% blocks/cover title="Which alternative to Readwise Reader should I choose?" color="primary" height="auto" %}}
+{{% blocks/cover title="Which alternative to Readwise Reader should I choose?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

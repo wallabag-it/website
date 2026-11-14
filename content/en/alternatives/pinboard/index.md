@@ -4,7 +4,7 @@ description: "Pinboard saves links, not articles. wallabag.it saves the whole ar
 date: 2026-06-13
 ---
 
-{{% blocks/cover title="Which alternative to Pinboard should I choose?" color="primary" height="auto" %}}
+{{% blocks/cover title="Which alternative to Pinboard should I choose?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

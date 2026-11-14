@@ -3,12 +3,12 @@
   "en" (slice
     (dict "image" "/en/features/firefox.png" "alt" "wallabag browser extension saving an article in one click." "title" "Save in one click" "text" "Send articles to wallabag.it from your browser instead of keeping another tab open.")
     (dict "image" "/en/features/homepage.png" "alt" "wallabag.it reading list with saved articles." "title" "A real reading list" "text" "The whole article is stored in your account, cleaned up so it's easy to read and to search.")
-    (dict "image" "/en/features/ios.png" "alt" "wallabag iOS application with offline reading." "title" "Read later, even offline" "text" "Open your saved articles on your phone or tablet when you have time.")
+    (dict "image" "/images/hero/reader-mobile-en.webp" "alt" "A saved article read on a phone with wallabag.it." "title" "Read later, even offline" "text" "Open your saved articles on your phone or tablet when you have time.")
   )
   "fr" (slice
     (dict "image" "/fr/features/firefox.png" "alt" "Extension navigateur wallabag sauvegardant un article en un clic." "title" "Sauvegarder en un clic" "text" "Envoyez les articles vers wallabag.it depuis votre navigateur au lieu de garder un nouvel onglet ouvert.")
     (dict "image" "/fr/features/homepage.png" "alt" "Liste de lecture wallabag.it avec des articles sauvegardés." "title" "Une vraie liste de lecture" "text" "L'article entier est stocké dans votre compte, nettoyé pour être facile à lire et à retrouver.")
-    (dict "image" "/fr/features/ios.png" "alt" "Application iOS wallabag avec lecture hors-ligne." "title" "Lire plus tard, même hors connexion" "text" "Retrouvez vos articles sur votre téléphone ou votre tablette quand vous avez le temps.")
+    (dict "image" "/images/hero/reader-mobile-fr.webp" "alt" "Un article sauvegardé, lu sur un téléphone avec wallabag.it." "title" "Lire plus tard, même hors connexion" "text" "Retrouvez vos articles sur votre téléphone ou votre tablette quand vous avez le temps.")
   )
 -}}
 {{ $items := index $copy $lang | default (index $copy "en") -}}
@@ -16,7 +16,7 @@
 {{ range $items }}
 <div class="col">
 <div class="card h-100 shadow-sm overflow-hidden">
-<img class="card-img-top product-proof-img" src="{{ .image }}" alt="{{ .alt }}" loading="lazy">
+{{ if hasPrefix .image "/images/" }}<img class="card-img-top product-proof-img" src="{{ .image }}" alt="{{ .alt }}" loading="lazy">{{ else }}{{ partial "screenshot.html" (dict "page" (site.GetPage "/features") "name" (path.Base .image) "alt" .alt "class" "card-img-top product-proof-img" "loading" "lazy" "sizes" "(min-width: 768px) 33vw, 100vw") }}{{ end }}
 <div class="card-body">
 <h3 class="h5 card-title">{{ .title }}</h3>
 <p class="card-text">{{ .text }}</p>

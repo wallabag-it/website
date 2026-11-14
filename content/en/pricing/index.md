@@ -6,12 +6,11 @@ software_schema: true
 menu: {main: {weight: 25}}
 ---
 
-{{% blocks/cover title="From 11€ a year" color="primary" height="auto" %}}
-<p class="lead mt-3 mb-4">Every plan includes all the features, premium ones too. Just pick a duration.<br />Start with a <strong>14-day free trial</strong>, no credit card required.</p>
+{{% blocks/cover title="From 11€ a year" color="primary" height="auto" compact="true" %}}
+<p class="lead mt-3 mb-4">Every plan includes everything. Just pick a duration.<br />Start with a <strong>14-day free trial</strong>, no credit card required.</p>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://app.wallabag.it/register/" data-cta="pricing-hero-trial">
   Start your free trial <i class="fa fa-user-plus ms-2"></i>
 </a>
-<p class="small text-white mb-0">Open source since 2013 · wallabag.it has existed since 2016 · hosted in Europe · export your data anytime</p>
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}
@@ -28,7 +27,7 @@ Same features as the annual plan. You pay a bit more to help wallabag, thank you
 {{< /pricing-plan >}}
 {{< /pricing-plans >}}
 
-<p class="text-center text-body-secondary mt-4">14-day free trial · no credit card required · premium features unlocked when you subscribe · export your data anytime</p>
+<p class="text-center text-body-secondary mt-4">14-day free trial · no credit card required · saving by email, feeds and imports with a subscription · export your data anytime</p>
 <p class="text-center text-body-secondary">Your subscription pays for wallabag development and keeps the service ad-free.</p>
 
 {{% /blocks/section %}}
@@ -38,7 +37,7 @@ Same features as the annual plan. You pay a bit more to help wallabag, thank you
 ## What you get after sign-up
 {.text-center}
 
-Save an article from the browser, keep a clean reading list, then read on mobile when you are offline or away from your desk.
+You save from your browser, find everything in your list, and read on your phone. Even with no network.
 
 {{< product-proof >}}
 
@@ -59,20 +58,18 @@ The subscription pays for the servers in Europe, backups, updates and support.
 
 {{% blocks/feature icon="fa-heart" title="It funds the open-source wallabag project" %}}
 wallabag has existed since 2013 and wallabag.it since 2016. Your subscription pays for the hosted service and for the open-source project behind it.
-[See wallabag on GitHub](https://github.com/wallabag/wallabag).
+[What it funds](/en/blog/2026/06/30/wallabag-it-funds-open-source-development/) · [See wallabag on GitHub](https://github.com/wallabag/wallabag).
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
 {{% blocks/section color="dark" type="row" %}}
 
-## Premium features included with every subscription
-{.text-center .mb-2}
-
-<p class="text-center col-12 mb-5">Reserved for subscribers, they are not part of the free trial. <a class="text-white" href="/en/blog/2026/06/08/some-restrictions-for-trial-accounts-on-wallabag.it/">Why?</a></p>
+## What a subscription adds
+{.text-center .mb-5}
 
 {{% blocks/feature icon="fa-envelope" title="Save by email" %}}
-Get your private `save+USER+TOKEN@wallabag.it` address: send or forward an email with links, and they are saved automatically. Perfect for links shared by friends.
+Get your private address `save+USER+TOKEN@wallabag.it`: send or forward an email containing links and they are saved automatically. Handy for the links your friends and family send you.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-cloud-download" title="Import from another service" %}}
@@ -103,7 +100,7 @@ Paste the address of a website: wallabag.it finds its feed and saves the new art
 <ul class="list-unstyled fs-5">
 <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Highlights &amp; annotations</li>
 <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Export to PDF, ePUB, mobi and more</li>
-<li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Professional support</li>
+<li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Support included</li>
 <li class="mb-2"><i class="fa fa-check text-secondary me-2"></i>Hosted in Europe, GDPR compliant</li>
 </ul>
 </div>
@@ -162,7 +159,7 @@ More details in [Which alternative to Pocket should I choose?](/en/alternatives/
 
 {{% blocks/section color="primary" %}}
 
-## Ready to save your first article?
+## Try it with your first article
 {.text-center}
 
 <p class="lead text-center">Create your account and try it free for 14 days.<br />No credit card required.</p>

@@ -1,0 +1,48 @@
+{{/* Blog list: text cards; the latest post on the first page, with its image when it has one (Params.preview). */ -}}
+{{ define "main" -}}
+<div class="wbit-blog">
+  <header class="wbit-blog__head">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="wbit-blog__intro">{{ . }}</div>{{ end }}
+  </header>
+
+  {{ $pager := .Paginate .Pages -}}
+  {{ $posts := $pager.Pages -}}
+
+  {{ if and (eq $pager.PageNumber 1) $posts -}}
+  {{ with index $posts 0 -}}
+  {{ $link := .RelPermalink -}}
+  <article class="wbit-lead{{ with .Params.preview }} wbit-lead--image{{ end }}">
+    {{ with .Params.preview -}}
+    <a class="wbit-lead__img" href="{{ $link }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ . }}" width="1200" height="630" alt="" loading="eager">
+    </a>
+    {{- end }}
+    <div class="wbit-lead__body">
+      <p class="wbit-bpost__meta">{{ .Date | time.Format ":date_full" }}</p>
+      <h2 class="wbit-lead__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="wbit-bpost__desc">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}</p>
+      <a class="wbit-bpost__more" href="{{ .RelPermalink }}">{{ T "ui_read_more" }} →</a>
+    </div>
+  </article>
+  {{ end -}}
+  {{ $posts = after 1 $posts -}}
+  {{ end -}}
+
+  <div class="wbit-blog__grid">
+    {{ range $posts -}}
+    <article class="wbit-bpost">
+      <div class="wbit-bpost__body">
+        <p class="wbit-bpost__meta">{{ .Date | time.Format ":date_full" }}</p>
+        <h2 class="wbit-bpost__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p class="wbit-bpost__desc">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}</p>
+      </div>
+    </article>
+    {{ end -}}
+  </div>
+
+  <div class="td-blog-posts__pagination">
+    {{ partial "pagination.html" . -}}
+  </div>
+</div>
+{{- end }}
