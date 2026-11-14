@@ -1,0 +1,222 @@
+// Hero (blocks/cover, see layouts/shortcodes/blocks/cover.html)
+
+.wbit-hero {
+  position: relative;
+  overflow: hidden;
+  // The navigation bar and the prize band are above the hero in the page flow: less space is needed
+  padding: 3.5rem 0 4.5rem;
+  background:
+    // Same sepia tint as the prize draw band (see _home.scss)
+    radial-gradient(60rem 26rem at 50% -6rem, #f1e6d0, transparent 70%),
+    var(--wb-bg);
+  text-align: center;
+
+  &__inner {
+    max-width: 52rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 0 0 1.25rem;
+    font-size: clamp(2.1rem, 4.6vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.06;
+    text-wrap: balance;
+  }
+
+  &__subtitle {
+    margin: 0 0 1rem;
+    color: var(--wb-muted);
+    font-size: 1.15rem;
+  }
+
+  &__body {
+    margin-top: 2rem;
+    color: var(--wb-muted);
+    font-size: 1.1rem;
+
+    > p:last-child {
+      margin-bottom: 0;
+    }
+
+    // Texts written for the former dark photo background
+    .text-white {
+      color: var(--wb-muted) !important;
+    }
+
+    .lead {
+      max-width: 44rem;
+      margin: 0.75rem auto 1rem !important;
+      text-wrap: balance;
+      color: var(--wb-ink);
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .btn-link.text-white {
+      display: none;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  // Inner pages with a screenshot: text on the left, image on the right
+  &--split {
+    padding: 6.5rem 0 4.5rem;
+    text-align: left;
+
+    .wbit-hero__inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 3rem;
+      align-items: center;
+      max-width: none;
+    }
+
+    .wbit-hero__title {
+      font-size: clamp(2rem, 3.6vw, 3.1rem);
+    }
+
+    .wbit-hero__body .lead {
+      margin-left: 0 !important;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--wb-muted);
+    }
+
+    .wbit-hero__actions {
+      justify-content: flex-start;
+
+      .btn-lg {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+    }
+  }
+
+  &__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__media--window img {
+    border: 1px solid var(--wb-line-strong);
+    border-radius: var(--wb-radius);
+    box-shadow: var(--wb-shadow-lg);
+  }
+
+  &__media--phone {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 17rem;
+      border: 10px solid var(--wb-ink);
+      border-radius: 2.6rem;
+      box-shadow: var(--wb-shadow-lg);
+    }
+  }
+
+  // On wide screens, the screenshot goes beyond the text column
+  @include media-breakpoint-up(xl) {
+    &__media--window img {
+      width: calc(100% + 6rem);
+      max-width: none;
+    }
+  }
+
+  &--compact {
+    padding: 6rem 0 1.5rem;
+
+    .wbit-hero__title {
+      margin-bottom: 0.5rem;
+    }
+
+    .wbit-hero__body {
+      margin-top: 0.75rem;
+    }
+
+    .btn-lg {
+      margin-right: 0 !important;
+      margin-bottom: 1rem !important;
+    }
+
+    .small {
+      text-wrap: balance;
+    }
+
+    + .td-box {
+      padding-top: 2rem;
+    }
+  }
+
+  &--home {
+    padding: 6.5rem 0 3.5rem;
+
+    .wbit-hero__title {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .wbit-hero {
+    padding: 6rem 0 3rem;
+
+    &--home {
+      padding: 5.5rem 0 3rem;
+    }
+
+    &--split {
+      padding: 6rem 0 3rem;
+      text-align: center;
+
+      .wbit-hero__inner {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.5rem;
+      }
+
+      .wbit-hero__body .lead {
+        margin-left: auto !important;
+      }
+
+      .wbit-hero__actions {
+        justify-content: center;
+      }
+    }
+
+    &__actions {
+      gap: 0;
+    }
+
+    .btn-lg {
+      width: 100%;
+      margin-right: 0 !important;
+      margin-bottom: 0.75rem !important;
+    }
+  }
+}
+
+// Docsy adds 8rem above the first section of each page on wide screens, to clear the fixed
+// navigation bar (76px from 768px, 68px from 1200px). The hero needs that space itself: the prize
+// band is only built between 1 and 10 December, so outside those dates nothing else clears the bar.
+@media (min-width: 768px) {
+  .td-default main > section.wbit-hero:first-of-type {
+    padding-top: 7rem;
+  }
+}
+
+// With the prize band above the hero, the band already clears the navigation bar
+@media (min-width: 768px) {
+  body:has(.wbit-prize-band) .td-default main > section.wbit-hero:first-of-type {
+    padding-top: 3.5rem;
+  }
+}

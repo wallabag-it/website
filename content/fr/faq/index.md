@@ -5,7 +5,7 @@ description: "Les réponses aux questions fréquentes sur wallabag.it : essai gr
 faq_schema: true
 ---
 
-{{% blocks/cover title="Questions fréquentes" color="primary" height="auto" %}}
+{{% blocks/cover title="Questions fréquentes" color="primary" height="auto" cta="true" %}}
 <p class="lead mt-3 mb-4">Tout ce que vous voulez savoir avant d'archiver votre premier article.</p>
 {{% /blocks/cover %}}
 

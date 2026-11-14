@@ -1,0 +1,342 @@
+<!doctype html>
+<html class="" lang="en"><head><script src="/demo/demo.js"></script>
+                    <meta name="viewport" content="initial-scale=1.0">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="referrer" content="strict-origin-when-cross-origin">
+            <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=10">
+            <![endif]-->
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+
+            <link rel="shortcut icon" type="image/x-icon" href="/demo/favicon.ico">
+
+            
+
+                                
+            <link rel="stylesheet" href="/demo/wallassets/wallabagit.css">
+    
+    <script>
+    (function () {
+        var root = document.documentElement;
+        var settings = {};
+        try {
+            settings = JSON.parse(localStorage.getItem('wbit-reader') || '{}') || {};
+        } catch (e) {}
+        if (settings.sepia && !root.classList.contains('dark-theme')) {
+            root.classList.add('wbit-sepia');
+        }
+        root.setAttribute('data-wbit-font', settings.font || 'serif');
+        root.setAttribute('data-wbit-size', typeof settings.size === 'number' ? settings.size : 2);
+        root.setAttribute('data-wbit-width', typeof settings.width === 'number' ? settings.width : 1);
+    })();
+</script>
+
+                                        <script src="/demo/bundles/fosjsrouting/js/router.js"></script>
+            <script src="/demo/js/routing.js"></script>
+            
+    <script src="/demo/wallassets/wallabagit.js"></script>
+
+            <title>Typography on screen: the rules that really matter (example.org) – wallabag</title>
+            <meta name="robots" content="noindex"><link rel="stylesheet" href="/demo/demo.css"></head>
+
+    <body class="entry wbit wbit-reader">
+            <div id="incident-banner" class="incident-banner" role="status" hidden=""></div>
+<style>
+    .incident-banner { position: relative; z-index: 1000; padding: 10px 44px 10px 16px; background: #fff7ed; border-bottom: 1px solid #fdba74; color: #1f2937; font-size: 15px; line-height: 1.4; }
+    .incident-banner.incident-banner--down { background: #fef2f2; border-color: #fca5a5; }
+    .incident-banner.incident-banner--notice { background: #eff6ff; border-color: #93c5fd; }
+    .incident-banner p { margin: 0; }
+    .incident-banner p + p { margin-top: 4px; }
+    .incident-banner a { color: #1f2937; font-weight: bold; text-decoration: underline; }
+    .incident-banner button { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 22px; line-height: 1; padding: 4px 8px; color: #6b7280; cursor: pointer; }
+    html.dark-theme .incident-banner { background: #3b2a1a; border-color: #9a3412; color: #f3f4f6; }
+    html.dark-theme .incident-banner.incident-banner--down { background: #3f1d1d; border-color: #991b1b; }
+    html.dark-theme .incident-banner.incident-banner--notice { background: #1e293b; border-color: #1e40af; }
+    html.dark-theme .incident-banner a { color: #f3f4f6; }
+    @media only screen and (min-width: 993px) { body:not(.login) .incident-banner { margin-left: 240px; } }
+</style>
+
+
+
+        <div id="main">
+                
+<div class="progress wbit-progress" aria-hidden="true">
+    <div class="determinate"></div>
+</div>
+
+<aside class="wbit-rail" aria-label="wallabag.it">
+    <a class="wbit-rail-brand" href="/demo/unread/list" title="Back to unread articles">
+            <img class="wbit-logo wbit-logo--light" src="/demo/img/logo-square.svg" alt="wallabag" width="36" height="36">
+    <img class="wbit-logo wbit-logo--dark" src="/demo/img/wallabagit/logo-square-white.svg" alt="wallabag" width="36" height="36">
+    </a>
+    <a class="wbit-rail-link" href="/demo/unread/list" title="Unread" aria-label="Unread"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16l-6-4-6 4z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/starred/list" title="Starred" aria-label="Starred"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/archive/list" title="Archive" aria-label="Archive"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/all/list" title="All entries" aria-label="All entries"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h6l2 2h10v11H3z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/tag/list" title="Tags" aria-label="Tags"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+</aside>
+
+
+    
+<header class="wbit-reader-bar left-bar">
+    <a class="wbit-btn wbit-reader-back" href="/demo/">
+        <svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span class="wbit-reader-back-label">Back</span>
+    </a>
+
+    <div class="wbit-reader-actions">
+        <form action="/demo/star/96?redirect=/view/96" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn favorite" data-wbit-action="star" title="Toggle starred (f)" aria-pressed="false">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg><span class="wbit-sr">Toggle starred</span>
+            </button>
+        </form>
+
+        <a href="#" class="wbit-icon-btn" data-wbit-tag-form-toggle="" title="Add a tag" aria-label="Add a tag"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+
+        <a class="wbit-icon-btn original" data-wbit-action="original" href="https://example.org/screen-typography" target="_blank" rel="noopener" title="Original article (o)" aria-label="Original article"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5H5V6h5"></path></svg></a>
+
+                    <details class="wbit-popover">
+                <summary class="wbit-icon-btn" title="Share" aria-label="Share"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5M5 13v7h14v-7"></path></svg></summary>
+                <ul class="wbit-menu wbit-popover-panel">
+                                            <li>
+                            <form action="/demo/share/96" method="post">
+                                <input type="hidden" name="token">
+                                <button type="submit" formtarget="_blank" class="wbit-menu-link"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg> public link</button>
+                            </form>
+                        </li>
+                                                                                        <li><a class="wbit-menu-link" href="mailto:?subject=Typography%20on%20screen%3A%20the%20rules%20that%20really%20matter&amp;body=https%3A%2F%2Fexample.org%2Fscreen-typography%20via%20@wallabagapp"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg> Email</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://myshaarli.com/index.php?post=https%3A%2F%2Fexample.org%2Fscreen-typography&amp;title=Typography%20on%20screen%3A%20the%20rules%20that%20really%20matter&amp;tags=Design%2CReading" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Shaarli</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://diasporapod.com/bookmarklet?url=https%3A%2F%2Fexample.org%2Fscreen-typography&amp;title=Typography%20on%20screen%3A%20the%20rules%20that%20really%20matter&amp;notes=&amp;v=1&amp;noui=1&amp;jump=doclose" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> diaspora*</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://unmark.it/mark/add?url=https%3A%2F%2Fexample.org%2Fscreen-typography&amp;title=Typography%20on%20screen%3A%20the%20rules%20that%20really%20matter&amp;v=6" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> unmark.it</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://twitter.com/share?text=Typography%20on%20screen%3A%20the%20rules%20that%20really%20matter%20https%3A%2F%2Fexample.org%2Fscreen-typography%20via%20@wallabagapp" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Twitter</a></li>
+                                    </ul>
+            </details>
+        
+        <details class="wbit-popover">
+            <summary class="wbit-icon-btn" title="More actions" aria-label="More actions"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.4" fill="currentColor"></circle><circle cx="12" cy="12" r="1.4" fill="currentColor"></circle><circle cx="19" cy="12" r="1.4" fill="currentColor"></circle></svg></summary>
+            <ul class="wbit-menu wbit-popover-panel">
+                <li>
+                    <form action="/demo/reload/96" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020reload\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.6-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.6 4.5L20 16M20 20v-4h-4"></path></svg> Re-fetch content</button>
+                    </form>
+                </li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg> Edit title</a></li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a></li>
+                                    <li><a class="wbit-menu-link" href="javascript: window.print();"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V4h10v5M7 17H4v-7h16v7h-3M7 14h10v6H7z"></path></svg> Print</a></li>
+                                <li class="wbit-menu-divider" role="separator"></li>
+                <li class="wbit-menu-title"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg> Export</li>
+                <li class="wbit-menu-formats">
+                    <a href="#" data-demo-disabled="">EPUB</a>                    <a href="#" data-demo-disabled="">PDF</a>                                        <a href="#" data-demo-disabled="">TXT</a>                    <a href="#" data-demo-disabled="">CSV</a>                    <a href="#" data-demo-disabled="">JSON</a>                    <a href="#" data-demo-disabled="">XML</a>                </li>
+                <li class="wbit-menu-divider" role="separator"></li>
+                                <li></li>
+                <li>
+                    <form action="/demo/delete/96?redirect=/view/96" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link wbit-menu-link--danger delete" data-wbit-action="delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg> Delete</button>
+                    </form>
+                </li>
+            </ul>
+        </details>
+
+        <span class="wbit-reader-sep" aria-hidden="true"></span>
+
+        <details class="wbit-popover wbit-reading-settings">
+    <summary class="wbit-btn wbit-btn--ghost wbit-aa" title="Reading settings" aria-label="Reading settings">Aa</summary>
+    <div class="wbit-popover-panel wbit-settings-panel">
+        <p class="wbit-settings-label">Theme</p>
+        <div class="wbit-settings-themes">
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--light js-theme-toggle" data-theme="light" data-wbit-theme="light">Light</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--sepia" data-wbit-theme="sepia">Sepia</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--dark js-theme-toggle" data-theme="dark" data-wbit-theme="dark">Dark</button>
+        </div>
+
+        <p class="wbit-settings-label">Font</p>
+        <div class="wbit-settings-fonts">
+            <button type="button" class="wbit-font-choice wbit-font-choice--serif" data-wbit-font="serif">Serif</button>
+            <button type="button" class="wbit-font-choice wbit-font-choice--sans" data-wbit-font="sans">Sans serif</button>
+        </div>
+
+        <p class="wbit-settings-label">Text size</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="-1" aria-label="Smaller text"><span class="wbit-step-small">A</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="size" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="1" aria-label="Larger text"><span class="wbit-step-big">A</span></button>
+        </div>
+
+        <p class="wbit-settings-label">Line width</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="-1" aria-label="Narrower lines"><span class="wbit-step-small">−</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="width" aria-hidden="true"><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="1" aria-label="Wider lines"><span class="wbit-step-big">+</span></button>
+        </div>
+    </div>
+</details>
+
+
+        <form action="/demo/archive/96?redirect=/view/96" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn markasread" data-wbit-action="archive" title="Mark as read (a)">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"></path></svg><span class="wbit-sr">Mark as read</span>
+            </button>
+        </form>
+    </div>
+</header>
+
+
+            <main>
+                
+                    
+                <div id="content" dir="auto">
+                            <div id="article" class="article wbit-article" data-wbit-annotations-annotate="Annotate" data-wbit-annotations-placeholder="Your note…" data-wbit-annotations-save="Save" data-wbit-annotations-cancel="Cancel" data-wbit-annotations-edit="Edit" data-wbit-annotations-delete="Delete" data-wbit-annotations-no-comment="No note">
+        
+<header class="wbit-article-header">
+    <p class="wbit-article-kicker">
+        <a href="https://example.org/screen-typography" target="_blank" rel="noopener" title="original : Typography on screen: the rules that really matter">example.org</a>
+        <span aria-hidden="true">·</span>
+                    <span>3 min</span>
+            </p>
+
+    <h1><span lang="en">Typography on screen: the rules that really matter</span></h1>
+
+    <div class="tools entry-tools wbit-article-meta" dir="auto">
+        <ul class="stats wbit-stats">
+            <li title="Creation date"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg> 2026-11-11 16:00</li>
+                                                        </ul>
+
+        <div class="wbit-article-tags">
+                <ul class="tags">
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/design">Design</a>
+                                                        <form action="/demo/remove-tag/96/3?redirect=/view/96" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/reading">Reading</a>
+                                                        <form action="/demo/remove-tag/96/26?redirect=/view/96" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+            </ul>
+            <button type="button" class="wbit-tag-add" data-wbit-tag-form-toggle="">+ add a tag</button>
+        </div>
+    </div>
+
+    <div class="input-field nav-panel-add-tag" style="display: none" data-wbit-tag-form="">
+        <form class="tags-add-form" name="tag" method="post" action="/demo/new-tag/96">
+    
+    
+    <input type="text" id="tag_label" name="tag[label]" required="required" placeholder="You can add several tags, separated by a comma." max_length="40" autocomplete="off">
+
+    <button type="submit" id="tag_add" name="tag[add]" class="btn waves-effect waves-light tags-add-form-submit">Add</button>
+    <input type="hidden" id="tag__token" name="tag[_token]">
+</form>
+
+    </div>
+</header>
+
+
+        <article lang="en">
+            <p>A page of text can be perfectly legible and still tiring. The difference comes down to a few settings nobody notices when they are right. On screen they matter even more, because we read in very different conditions: a large monitor at work, a phone on the subway, an e-reader at night.</p>
+<figure><img src="/demo/demo-img/b60d4be974bd3989.jpg" alt="The Gutenberg Bible, Lenox copy, New York Public Library."><figcaption>The Gutenberg Bible, Lenox copy, New York Public Library.<br><small>Source: NYC Wanderer (Kevin Eng), <a href="https://commons.wikimedia.org/wiki/File:Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg">Wikimedia Commons</a>, CC BY-SA 2.0.</small></figcaption></figure>
+<h2>Line length</h2>
+<p>This is the setting that matters most. Typographic tradition recommends 45 to 75 characters per line for running text, with an ideal often quoted around 66. Beyond that, the eye struggles to find the start of the next line. Below it, reading becomes choppy.</p>
+<p>A site that spreads its text across a 27-inch screen is wrong, however beautiful its typeface.</p>
+<h2>Line spacing</h2>
+<p>Tight text suffocates. For running text on screen, a line height of 1.5 times the font size is a good starting point. The longer the lines, the more air they need. Headings need far less: a large title with too much leading falls apart.</p>
+<h2>Size and typeface</h2>
+<p>On the web, 16 pixels has become a reasonable minimum, and 18 to 20 pixels suit long reading better. The serif versus sans-serif debate has lost most of its stakes since screens gained resolution. Pick a typeface designed for text, with clearly distinct letters, and let readers change it if they want.</p>
+<pre><code class="language-css">article {
+  max-width: 66ch;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  hyphens: auto;
+}</code></pre>
+<h2>Contrast</h2>
+<p>Pure black on pure white isn't always the most comfortable, especially in a dark room. A very dark grey on a slightly off-white background is easier on the eyes, as long as contrast stays high. WCAG accessibility rules require a ratio of at least 4.5 to 1 for body text.</p>
+<p>The ratio is computed from the relative luminance of the two colors, \( L_1 \) being the lighter one:</p>
+<p>\[ C = \frac{L_1 + 0.05}{L_2 + 0.05} \]</p>
+<p>That is also why a sepia or dark mode helps. Nobody reads the same way at noon and at midnight.</p>
+<h2>Leave the choice</h2>
+<p>The best typography is the kind readers can adjust. Poor eyesight, dyslexia, difficult light: no default suits everyone. A few good options beat a panel of twenty sliders.</p>
+<h2>Margins and vertical rhythm</h2>
+<p>We talk a lot about letters and rather little about the space around them. A column of text stuck to the edge of a phone screen feels cramped. A few pixels of margin are enough to let it breathe, and the room gained by removing them never makes up for the discomfort.</p>
+<p>The space between paragraphs matters too. It should be clearly larger than the line spacing, otherwise the blocks merge, but not so large that each one drifts off on its own. The same logic applies to subheadings: a heading must sit closer to the text it announces than to the text before it. If the distance is the same on both sides, the eye can no longer tell what it belongs to.</p>
+<h2>Details you barely see</h2>
+<p>Every language has typographic habits, and they get lost easily on screen. Real quotation marks and a real curved apostrophe cost nothing to produce and change the look of a text. French needs non-breaking spaces before colons and question marks, so that a sign never ends up alone at the start of a line.</p>
+<p>Hyphenation is more delicate. On a narrow column, like a phone's, justified text without hyphenation leaves ugly gaps between words. If the browser can't break words correctly in the language concerned, align left and accept an uneven right edge. It bothers readers far less than you might think.</p>
+<h2>Links, images and interruptions</h2>
+<p>A link should be visible without shouting. A thin underline, slightly lowered from the baseline, does the job very well. A bright color in the middle of a paragraph draws the eye and holds it there, while the reader wanted to finish the sentence.</p>
+<p>Everything inserted into the text interrupts reading: ad slots, subscription prompts, recommended articles in the middle of a paragraph. Strictly speaking that isn't a typography problem, but it is a legibility problem, and probably the most widespread one. It is one of the reasons so many people prefer a reading mode to the original layout.</p>
+<h2>Test on real texts</h2>
+<p>A mockup filled with placeholder Latin always lies a little. Its words have a regular length, and there is no endless proper noun, no table, no three-line quotation. Test with real articles, long ones, in your readers' language. Read one to the end, on a phone, in the evening. It is less scientific than an accessibility audit, but you learn different things.</p>
+
+        </article>
+
+        
+<footer class="wbit-article-end">
+    <span>Finished reading?</span>
+    <form action="/demo/archive/96?redirect=/view/96" method="post">
+        <input type="hidden" name="token">
+        <button type="submit" class="wbit-btn wbit-btn--primary"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"></path></svg> Mark as read</button>
+    </form>
+    <a class="wbit-article-end-random" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a>
+</footer>
+
+    </div>
+
+    
+
+
+<script id="annotationroutes" type="application/json">
+{
+    "prefix": "/demo",
+    "urls": {
+        "create": "/annotations/96",
+        "update": "/annotations/idAnnotation",
+        "destroy": "/annotations/idAnnotation",
+        "search": "/annotations/96"
+    },
+    "entryId": "96"
+}</script>
+
+                </div>
+            </main>
+        </div>
+
+        
+            
+
+</body></html>

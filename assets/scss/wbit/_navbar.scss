@@ -1,0 +1,125 @@
+// Navbar: light and translucent, like the app top bar
+
+.td-navbar,
+.td-navbar.navbar-bg-onscroll {
+  min-height: 4.25rem;
+  border-bottom: 1px solid var(--wb-line);
+  background: rgba(245, 244, 240, 0.82) !important;
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+
+  > .container-fluid {
+    max-width: calc(var(--wb-max) + 2rem);
+    margin: 0 auto;
+  }
+
+  .navbar-brand svg {
+    width: auto; // the SVG declares width="200px", which centers the logo in a wide box
+    height: 34px;
+    margin: 0 4px 0 0;
+
+    path,
+    [fill="#FFFFFF"] {
+      fill: var(--wb-ink);
+    }
+  }
+
+  .nav-link {
+    padding: 0.45rem 0.75rem !important;
+    border-radius: 999px;
+    color: var(--wb-muted) !important;
+    font-size: 0.92rem;
+    font-weight: 500;
+    text-shadow: none;
+
+    &:hover,
+    &:focus,
+    &.active {
+      background: var(--wb-hover);
+      color: var(--wb-ink) !important;
+    }
+  }
+
+  .navbar-nav {
+    align-items: center;
+    gap: 2px;
+  }
+
+  // "Free trial" and "My account" (menu entries pointing to the app)
+  .nav-link[data-cta="nav-trial"],
+  .nav-link[href="https://app.wallabag.it"] {
+    margin-left: 0.35rem;
+    padding: 0.45rem 1rem !important;
+    font-weight: 600;
+  }
+
+  .nav-link[data-cta="nav-trial"] {
+    background: var(--wb-accent);
+    color: #fff !important;
+
+    &:hover,
+    &:focus {
+      background: #6e3c10;
+      color: #fff !important;
+    }
+  }
+
+  .nav-link[href="https://app.wallabag.it"] {
+    border: 1px solid var(--wb-line-strong);
+    background: var(--wb-surface-raised);
+    color: var(--wb-ink) !important;
+  }
+
+  .dropdown-menu {
+    border: 1px solid var(--wb-line);
+    border-radius: 12px;
+    background: var(--wb-surface-raised);
+    box-shadow: var(--wb-shadow-lg);
+
+    .dropdown-item {
+      border-radius: 8px;
+      color: var(--wb-ink);
+
+      &:hover,
+      &:focus {
+        background: var(--wb-hover);
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border: 1px solid var(--wb-line-strong);
+    border-radius: 10px;
+
+    &:focus {
+      box-shadow: 0 0 0 3px var(--wb-accent-soft);
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  // Logo and menu button on the same line
+  .td-navbar > .container-fluid {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .td-navbar #main_navbar.show .navbar-nav {
+    align-items: stretch;
+  }
+
+  .td-navbar .navbar-brand {
+    margin: 0 auto 0 0;
+    padding: 0;
+  }
+
+  .td-navbar .nav-link[data-cta="nav-trial"],
+  .td-navbar .nav-link[href="https://app.wallabag.it"] {
+    display: flex;
+    margin: 0.35rem 0 0;
+    justify-content: center;
+  }
+}

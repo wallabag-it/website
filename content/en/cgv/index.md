@@ -4,13 +4,11 @@ linkTitle: Terms
 slug: terms
 ---
 
-{{% blocks/cover title="Terms of use and sale" color="primary" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Terms of use and sale" subtitle="Last updated: November 8, 2026" color="primary" image_anchor="bottom" height="auto" %}}
 
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}
-
-Last updated: November 8, 2026
 
 These Terms of use and sale apply to wallabag.it, a hosted read-it-later service published by Nicolas Lœuillet, sole proprietor.
 

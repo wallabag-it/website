@@ -4,7 +4,7 @@ description: "Omnivore has shut down. wallabag.it is open source too, has been a
 date: 2026-06-15
 ---
 
-{{% blocks/cover title="Which alternative to Omnivore should I choose?" color="primary" height="auto" %}}
+{{% blocks/cover title="Which alternative to Omnivore should I choose?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

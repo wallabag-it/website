@@ -13,7 +13,7 @@ command = "npm run build:production"
 
 [[redirects]]
   from = "/en/news.rss"
-  to = "/en/blog/announcements/index.xml"
+  to = "/en/blog/index.xml"
 
 [[redirects]]
   from = "/bot"
@@ -25,3 +25,42 @@ command = "npm run build:production"
   from = "/bot"
   to = "/en/bot/"
   status = 302
+
+# The blog no longer has categories: their pages and feeds lead to the whole blog
+[[redirects]]
+  from = "/en/blog/announcements/index.xml"
+  to = "/en/blog/index.xml"
+
+[[redirects]]
+  from = "/en/blog/announcements/*"
+  to = "/en/blog/"
+
+[[redirects]]
+  from = "/en/blog/releases/index.xml"
+  to = "/en/blog/index.xml"
+
+[[redirects]]
+  from = "/en/blog/releases/*"
+  to = "/en/blog/"
+
+[[redirects]]
+  from = "/en/blog/maintenance/index.xml"
+  to = "/en/blog/index.xml"
+
+[[redirects]]
+  from = "/en/blog/maintenance/*"
+  to = "/en/blog/"
+
+[[redirects]]
+  from = "/fr/blog/announcements/index.xml"
+  to = "/fr/blog/index.xml"
+
+[[redirects]]
+  from = "/fr/blog/announcements/*"
+  to = "/fr/blog/"
+
+# Static demo of the application (generated, see scripts/demo-site in the application fork)
+[[headers]]
+  for = "/demo/annotations/*"
+  [headers.values]
+    Content-Type = "application/json"

@@ -1,0 +1,32 @@
+{{/* A blog post: one centred column, a link back to the list, the reading time, and the posts before and after. */ -}}
+{{ define "main" -}}
+{{ $fr := eq .Site.Language.Lang "fr" -}}
+<article class="wbit-article">
+  <p class="wbit-article__back"><a href="{{ .CurrentSection.RelPermalink }}">← {{ if $fr }}Tous les billets{{ else }}All posts{{ end }}</a></p>
+  <header class="wbit-article__head">
+    <p class="wbit-article__meta">{{ .Date | time.Format ":date_full" }}{{ if .Site.Params.ui.readingtime.enable }} · {{ partial "reading-time.html" . }}{{ end }}</p>
+    <h1 class="wbit-article__title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="wbit-article__lead">{{ . }}</p>{{ end }}
+  </header>
+  <div class="wbit-article__body">
+    {{ .Content }}
+  </div>
+  <nav class="wbit-article__next" aria-label="{{ if $fr }}Autres billets{{ else }}Other posts{{ end }}">
+    {{/* In the list sorted by date, PrevInSection is the older post and NextInSection the newer one */ -}}
+    {{ with .PrevInSection -}}
+    <a class="wbit-article__link" href="{{ .RelPermalink }}">
+      <span class="wbit-article__dir">{{ if $fr }}Plus ancien{{ else }}Older{{ end }}</span>
+      <span class="wbit-article__name">{{ .Title }}</span>
+      <span class="wbit-article__date">{{ .Date | time.Format ":date_full" }}</span>
+    </a>
+    {{- end }}
+    {{ with .NextInSection -}}
+    <a class="wbit-article__link wbit-article__link--newer" href="{{ .RelPermalink }}">
+      <span class="wbit-article__dir">{{ if $fr }}Plus récent{{ else }}Newer{{ end }}</span>
+      <span class="wbit-article__name">{{ .Title }}</span>
+      <span class="wbit-article__date">{{ .Date | time.Format ":date_full" }}</span>
+    </a>
+    {{- end }}
+  </nav>
+</article>
+{{- end }}

@@ -1,0 +1,322 @@
+<!doctype html>
+<html class="" lang="en"><head><script src="/demo/demo.js"></script>
+                    <meta name="viewport" content="initial-scale=1.0">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="referrer" content="strict-origin-when-cross-origin">
+            <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=10">
+            <![endif]-->
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+
+            <link rel="shortcut icon" type="image/x-icon" href="/demo/favicon.ico">
+
+            
+
+                                
+            <link rel="stylesheet" href="/demo/wallassets/wallabagit.css">
+    
+    <script>
+    (function () {
+        var root = document.documentElement;
+        var settings = {};
+        try {
+            settings = JSON.parse(localStorage.getItem('wbit-reader') || '{}') || {};
+        } catch (e) {}
+        if (settings.sepia && !root.classList.contains('dark-theme')) {
+            root.classList.add('wbit-sepia');
+        }
+        root.setAttribute('data-wbit-font', settings.font || 'serif');
+        root.setAttribute('data-wbit-size', typeof settings.size === 'number' ? settings.size : 2);
+        root.setAttribute('data-wbit-width', typeof settings.width === 'number' ? settings.width : 1);
+    })();
+</script>
+
+                                        <script src="/demo/bundles/fosjsrouting/js/router.js"></script>
+            <script src="/demo/js/routing.js"></script>
+            
+    <script src="/demo/wallassets/wallabagit.js"></script>
+
+            <title>Self-Reliance (gutenberg.org) – wallabag</title>
+            <meta name="robots" content="noindex"><link rel="stylesheet" href="/demo/demo.css"></head>
+
+    <body class="entry wbit wbit-reader">
+            <div id="incident-banner" class="incident-banner" role="status" hidden=""></div>
+<style>
+    .incident-banner { position: relative; z-index: 1000; padding: 10px 44px 10px 16px; background: #fff7ed; border-bottom: 1px solid #fdba74; color: #1f2937; font-size: 15px; line-height: 1.4; }
+    .incident-banner.incident-banner--down { background: #fef2f2; border-color: #fca5a5; }
+    .incident-banner.incident-banner--notice { background: #eff6ff; border-color: #93c5fd; }
+    .incident-banner p { margin: 0; }
+    .incident-banner p + p { margin-top: 4px; }
+    .incident-banner a { color: #1f2937; font-weight: bold; text-decoration: underline; }
+    .incident-banner button { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 22px; line-height: 1; padding: 4px 8px; color: #6b7280; cursor: pointer; }
+    html.dark-theme .incident-banner { background: #3b2a1a; border-color: #9a3412; color: #f3f4f6; }
+    html.dark-theme .incident-banner.incident-banner--down { background: #3f1d1d; border-color: #991b1b; }
+    html.dark-theme .incident-banner.incident-banner--notice { background: #1e293b; border-color: #1e40af; }
+    html.dark-theme .incident-banner a { color: #f3f4f6; }
+    @media only screen and (min-width: 993px) { body:not(.login) .incident-banner { margin-left: 240px; } }
+</style>
+
+
+
+        <div id="main">
+                
+<div class="progress wbit-progress" aria-hidden="true">
+    <div class="determinate"></div>
+</div>
+
+<aside class="wbit-rail" aria-label="wallabag.it">
+    <a class="wbit-rail-brand" href="/demo/unread/list" title="Back to unread articles">
+            <img class="wbit-logo wbit-logo--light" src="/demo/img/logo-square.svg" alt="wallabag" width="36" height="36">
+    <img class="wbit-logo wbit-logo--dark" src="/demo/img/wallabagit/logo-square-white.svg" alt="wallabag" width="36" height="36">
+    </a>
+    <a class="wbit-rail-link" href="/demo/unread/list" title="Unread" aria-label="Unread"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16l-6-4-6 4z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/starred/list" title="Starred" aria-label="Starred"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/archive/list" title="Archive" aria-label="Archive"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/all/list" title="All entries" aria-label="All entries"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h6l2 2h10v11H3z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/tag/list" title="Tags" aria-label="Tags"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+</aside>
+
+
+    
+<header class="wbit-reader-bar left-bar">
+    <a class="wbit-btn wbit-reader-back" href="/demo/">
+        <svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span class="wbit-reader-back-label">Back</span>
+    </a>
+
+    <div class="wbit-reader-actions">
+        <form action="/demo/star/111?redirect=/view/111" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn favorite" data-wbit-action="star" title="Toggle starred (f)" aria-pressed="false">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg><span class="wbit-sr">Toggle starred</span>
+            </button>
+        </form>
+
+        <a href="#" class="wbit-icon-btn" data-wbit-tag-form-toggle="" title="Add a tag" aria-label="Add a tag"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+
+        <a class="wbit-icon-btn original" data-wbit-action="original" href="https://www.gutenberg.org/ebooks/2944#self-reliance" target="_blank" rel="noopener" title="Original article (o)" aria-label="Original article"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5H5V6h5"></path></svg></a>
+
+                    <details class="wbit-popover">
+                <summary class="wbit-icon-btn" title="Share" aria-label="Share"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5M5 13v7h14v-7"></path></svg></summary>
+                <ul class="wbit-menu wbit-popover-panel">
+                                            <li>
+                            <form action="/demo/share/111" method="post">
+                                <input type="hidden" name="token">
+                                <button type="submit" formtarget="_blank" class="wbit-menu-link"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg> public link</button>
+                            </form>
+                        </li>
+                                                                                        <li><a class="wbit-menu-link" href="mailto:?subject=Self-Reliance&amp;body=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F2944%23self-reliance%20via%20@wallabagapp"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg> Email</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://myshaarli.com/index.php?post=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F2944%23self-reliance&amp;title=Self-Reliance&amp;tags=Essays%2CPhilosophy" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Shaarli</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://diasporapod.com/bookmarklet?url=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F2944%23self-reliance&amp;title=Self-Reliance&amp;notes=&amp;v=1&amp;noui=1&amp;jump=doclose" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> diaspora*</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://unmark.it/mark/add?url=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F2944%23self-reliance&amp;title=Self-Reliance&amp;v=6" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> unmark.it</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://twitter.com/share?text=Self-Reliance%20https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F2944%23self-reliance%20via%20@wallabagapp" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Twitter</a></li>
+                                    </ul>
+            </details>
+        
+        <details class="wbit-popover">
+            <summary class="wbit-icon-btn" title="More actions" aria-label="More actions"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.4" fill="currentColor"></circle><circle cx="12" cy="12" r="1.4" fill="currentColor"></circle><circle cx="19" cy="12" r="1.4" fill="currentColor"></circle></svg></summary>
+            <ul class="wbit-menu wbit-popover-panel">
+                <li>
+                    <form action="/demo/reload/111" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020reload\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.6-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.6 4.5L20 16M20 20v-4h-4"></path></svg> Re-fetch content</button>
+                    </form>
+                </li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg> Edit title</a></li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a></li>
+                                    <li><a class="wbit-menu-link" href="javascript: window.print();"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V4h10v5M7 17H4v-7h16v7h-3M7 14h10v6H7z"></path></svg> Print</a></li>
+                                <li class="wbit-menu-divider" role="separator"></li>
+                <li class="wbit-menu-title"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg> Export</li>
+                <li class="wbit-menu-formats">
+                    <a href="#" data-demo-disabled="">EPUB</a>                    <a href="#" data-demo-disabled="">PDF</a>                                        <a href="#" data-demo-disabled="">TXT</a>                    <a href="#" data-demo-disabled="">CSV</a>                    <a href="#" data-demo-disabled="">JSON</a>                    <a href="#" data-demo-disabled="">XML</a>                </li>
+                <li class="wbit-menu-divider" role="separator"></li>
+                                <li></li>
+                <li>
+                    <form action="/demo/delete/111?redirect=/view/111" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link wbit-menu-link--danger delete" data-wbit-action="delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg> Delete</button>
+                    </form>
+                </li>
+            </ul>
+        </details>
+
+        <span class="wbit-reader-sep" aria-hidden="true"></span>
+
+        <details class="wbit-popover wbit-reading-settings">
+    <summary class="wbit-btn wbit-btn--ghost wbit-aa" title="Reading settings" aria-label="Reading settings">Aa</summary>
+    <div class="wbit-popover-panel wbit-settings-panel">
+        <p class="wbit-settings-label">Theme</p>
+        <div class="wbit-settings-themes">
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--light js-theme-toggle" data-theme="light" data-wbit-theme="light">Light</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--sepia" data-wbit-theme="sepia">Sepia</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--dark js-theme-toggle" data-theme="dark" data-wbit-theme="dark">Dark</button>
+        </div>
+
+        <p class="wbit-settings-label">Font</p>
+        <div class="wbit-settings-fonts">
+            <button type="button" class="wbit-font-choice wbit-font-choice--serif" data-wbit-font="serif">Serif</button>
+            <button type="button" class="wbit-font-choice wbit-font-choice--sans" data-wbit-font="sans">Sans serif</button>
+        </div>
+
+        <p class="wbit-settings-label">Text size</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="-1" aria-label="Smaller text"><span class="wbit-step-small">A</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="size" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="1" aria-label="Larger text"><span class="wbit-step-big">A</span></button>
+        </div>
+
+        <p class="wbit-settings-label">Line width</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="-1" aria-label="Narrower lines"><span class="wbit-step-small">−</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="width" aria-hidden="true"><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="1" aria-label="Wider lines"><span class="wbit-step-big">+</span></button>
+        </div>
+    </div>
+</details>
+
+
+        <form action="/demo/archive/111?redirect=/view/111" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn markasread" data-wbit-action="archive" title="Mark as read (a)">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"></path></svg><span class="wbit-sr">Mark as read</span>
+            </button>
+        </form>
+    </div>
+</header>
+
+
+            <main>
+                
+                    
+                <div id="content" dir="auto">
+                            <div id="article" class="article wbit-article" data-wbit-annotations-annotate="Annotate" data-wbit-annotations-placeholder="Your note…" data-wbit-annotations-save="Save" data-wbit-annotations-cancel="Cancel" data-wbit-annotations-edit="Edit" data-wbit-annotations-delete="Delete" data-wbit-annotations-no-comment="No note">
+        
+<header class="wbit-article-header">
+    <p class="wbit-article-kicker">
+        <a href="https://www.gutenberg.org/ebooks/2944#self-reliance" target="_blank" rel="noopener" title="original : Self-Reliance">gutenberg.org</a>
+        <span aria-hidden="true">·</span>
+                    <span>12 min</span>
+            </p>
+
+    <h1><span lang="en">Self-Reliance</span></h1>
+
+    <div class="tools entry-tools wbit-article-meta" dir="auto">
+        <ul class="stats wbit-stats">
+            <li title="Creation date"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg> 2026-10-27 16:00</li>
+                                                        </ul>
+
+        <div class="wbit-article-tags">
+                <ul class="tags">
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/essays">Essays</a>
+                                                        <form action="/demo/remove-tag/111/31?redirect=/view/111" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/philosophy">Philosophy</a>
+                                                        <form action="/demo/remove-tag/111/34?redirect=/view/111" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+            </ul>
+            <button type="button" class="wbit-tag-add" data-wbit-tag-form-toggle="">+ add a tag</button>
+        </div>
+    </div>
+
+    <div class="input-field nav-panel-add-tag" style="display: none" data-wbit-tag-form="">
+        <form class="tags-add-form" name="tag" method="post" action="/demo/new-tag/111">
+    
+    
+    <input type="text" id="tag_label" name="tag[label]" required="required" placeholder="You can add several tags, separated by a comma." max_length="40" autocomplete="off">
+
+    <button type="submit" id="tag_add" name="tag[add]" class="btn waves-effect waves-light tags-add-form-submit">Add</button>
+    <input type="hidden" id="tag__token" name="tag[_token]">
+</form>
+
+    </div>
+</header>
+
+
+        <article lang="en">
+            <p>I read the other day some verses written by an eminent painter which were original and not conventional. The soul always hears an admonition in such lines, let the subject be what it may. The sentiment they instil is of more value than any thought they may contain. To believe your own thought, to believe that what is true for you in your private heart is true for all men,—that is genius. Speak your latent conviction, and it shall be the universal sense; for the inmost in due time becomes the outmost, and our first thought is rendered back to us by the trumpets of the Last Judgment. Familiar as the voice of the mind is to each, the highest merit we ascribe to Moses, Plato and Milton is that they set at naught books and traditions, and spoke not what men, but what <em>they</em> thought. A man should learn to detect and watch that gleam of light which flashes across his mind from within, more than the lustre of the firmament of bards and sages. Yet he dismisses without notice his thought, because it is his. In every work of genius we recognize our own rejected thoughts; they come back to us with a certain alienated majesty. Great works of art have no more affecting lesson for us than this. They teach us to abide by our spontaneous impression with good-humored inflexibility then most when the whole cry of voices is on the other side. Else to-morrow a stranger will say with masterly good sense precisely what we have thought and felt all the time, and we shall be forced to take with shame our own opinion from another.</p>
+<figure><img src="/demo/demo-img/643a6af95b2cf780.jpeg" alt="Jan Ekels the Younger, A Writer at his Desk."><figcaption>Jan Ekels the Younger, A Writer at his Desk.<br><small>Source: Jan Ekels (II), <a href="https://commons.wikimedia.org/wiki/File:Een_man_schrijvend_aan_zijn_lessenaar_Rijksmuseum_SK-A-4130.jpeg">Wikimedia Commons</a>, Public domain.</small></figcaption></figure>
+<p>There is a time in every man’s education when he arrives at the conviction that envy is ignorance; that imitation is suicide; that he must take himself for better for worse as his portion; that though the wide universe is full of good, no kernel of nourishing corn can come to him but through his toil bestowed on that plot of ground which is given to him to till. The power which resides in him is new in nature, and none but he knows what that is which he can do, nor does he know until he has tried. Not for nothing one face, one character, one fact, makes much impression on him, and another none. This sculpture in the memory is not without preestablished harmony. The eye was placed where one ray should fall, that it might testify of that particular ray. We but half express ourselves, and are ashamed of that divine idea which each of us represents. It may be safely trusted as proportionate and of good issues, so it be faithfully imparted, but God will not have his work made manifest by cowards. A man is relieved and gay when he has put his heart into his work and done his best; but what he has said or done otherwise shall give him no peace. It is a deliverance which does not deliver. In the attempt his genius deserts him; no muse befriends; no invention, no hope.</p>
+<p>Trust thyself: every heart vibrates to that iron string. Accept the place the divine providence has found for you, the society of your contemporaries, the connection of events. Great men have always done so, and confided themselves childlike to the genius of their age, betraying their perception that the absolutely trustworthy was seated at their heart, working through their hands, predominating in all their being. And we are now men, and must accept in the highest mind the same transcendent destiny; and not minors and invalids in a protected corner, not cowards fleeing before a revolution, but guides, redeemers and benefactors, obeying the Almighty effort and advancing on Chaos and the Dark.</p>
+<p>What pretty oracles nature yields us on this text in the face and behavior of children, babes, and even brutes! That divided and rebel mind, that distrust of a sentiment because our arithmetic has computed the strength and means opposed to our purpose, these have not. Their mind being whole, their eye is as yet unconquered, and when we look in their faces we are disconcerted. Infancy conforms to nobody; all conform to it; so that one babe commonly makes four or five out of the adults who prattle and play to it. So God has armed youth and puberty and manhood no less with its own piquancy and charm, and made it enviable and gracious and its claims not to be put by, if it will stand by itself. Do not think the youth has no force, because he cannot speak to you and me. Hark! in the next room his voice is sufficiently clear and emphatic. It seems he knows how to speak to his contemporaries. Bashful or bold then, he will know how to make us seniors very unnecessary.</p>
+<p>The nonchalance of boys who are sure of a dinner, and would disdain as much as a lord to do or say aught to conciliate one, is the healthy attitude of human nature. A boy is in the parlor what the pit is in the playhouse; independent, irresponsible, looking out from his corner on such people and facts as pass by, he tries and sentences them on their merits, in the swift, summary way of boys, as good, bad, interesting, silly, eloquent, troublesome. He cumbers himself never about consequences, about interests; he gives an independent, genuine verdict. You must court him; he does not court you. But the man is as it were clapped into jail by his consciousness. As soon as he has once acted or spoken with <em>éclat</em> he is a committed person, watched by the sympathy or the hatred of hundreds, whose affections must now enter into his account. There is no Lethe for this. Ah, that he could pass again into his neutrality! Who can thus avoid all pledges and, having observed, observe again from the same unaffected, unbiased, unbribable, unaffrighted innocence,—must always be formidable. He would utter opinions on all passing affairs, which being seen to be not private but necessary, would sink like darts into the ear of men and put them in fear.</p>
+<p>These are the voices which we hear in solitude, but they grow faint and inaudible as we enter into the world. Society everywhere is in conspiracy against the manhood of every one of its members. Society is a joint-stock company, in which the members agree, for the better securing of his bread to each shareholder, to surrender the liberty and culture of the eater. The virtue in most request is conformity. Self-reliance is its aversion. It loves not realities and creators, but names and customs.</p>
+<p>Whoso would be a man, must be a nonconformist. He who would gather immortal palms must not be hindered by the name of goodness, but must explore if it be goodness. Nothing is at last sacred but the integrity of your own mind. Absolve you to yourself, and you shall have the suffrage of the world. I remember an answer which when quite young I was prompted to make to a valued adviser who was wont to importune me with the dear old doctrines of the church. On my saying, “What have I to do with the sacredness of traditions, if I live wholly from within?” my friend suggested,—“But these impulses may be from below, not from above.” I replied, “They do not seem to me to be such; but if I am the Devil’s child, I will live then from the Devil.” No law can be sacred to me but that of my nature. Good and bad are but names very readily transferable to that or this; the only right is what is after my constitution; the only wrong what is against it. A man is to carry himself in the presence of all opposition as if every thing were titular and ephemeral but he. I am ashamed to think how easily we capitulate to badges and names, to large societies and dead institutions. Every decent and well-spoken individual affects and sways me more than is right. I ought to go upright and vital, and speak the rude truth in all ways. If malice and vanity wear the coat of philanthropy, shall that pass? If an angry bigot assumes this bountiful cause of Abolition, and comes to me with his last news from Barbadoes, why should I not say to him, ‘Go love thy infant; love thy wood-chopper; be good-natured and modest; have that grace; and never varnish your hard, uncharitable ambition with this incredible tenderness for black folk a thousand miles off. Thy love afar is spite at home.’ Rough and graceless would be such greeting, but truth is handsomer than the affectation of love. Your goodness must have some edge to it,—else it is none. The doctrine of hatred must be preached, as the counteraction of the doctrine of love, when that pules and whines. I shun father and mother and wife and brother when my genius calls me. I would write on the lintels of the door-post, <em>Whim</em>. I hope it is somewhat better than whim at last, but we cannot spend the day in explanation. Expect me not to show cause why I seek or why I exclude company. Then again, do not tell me, as a good man did to-day, of my obligation to put all poor men in good situations. Are they <em>my</em> poor? I tell thee thou foolish philanthropist that I grudge the dollar, the dime, the cent, I give to such men as do not belong to me and to whom I do not belong. There is a class of persons to whom by all spiritual affinity I am bought and sold; for them I will go to prison if need be; but your miscellaneous popular charities; the education at college of fools; the building of meeting-houses to the vain end to which many now stand; alms to sots, and the thousand-fold Relief Societies;—though I confess with shame I sometimes succumb and give the dollar, it is a wicked dollar which by and by I shall have the manhood to withhold.</p>
+<p>Virtues are, in the popular estimate, rather the exception than the rule. There is the man <em>and</em> his virtues. Men do what is called a good action, as some piece of courage or charity, much as they would pay a fine in expiation of daily non-appearance on parade. Their works are done as an apology or extenuation of their living in the world,—as invalids and the insane pay a high board. Their virtues are penances. I do not wish to expiate, but to live. My life is for itself and not for a spectacle. I much prefer that it should be of a lower strain, so it be genuine and equal, than that it should be glittering and unsteady. I wish it to be sound and sweet, and not to need diet and bleeding. I ask primary evidence that you are a man, and refuse this appeal from the man to his actions. I know that for myself it makes no difference whether I do or forbear those actions which are reckoned excellent. I cannot consent to pay for a privilege where I have intrinsic right. Few and mean as my gifts may be, I actually am, and do not need for my own assurance or the assurance of my fellows any secondary testimony.</p>
+<p>What I must do is all that concerns me, not what the people think. This rule, equally arduous in actual and in intellectual life, may serve for the whole distinction between greatness and meanness. It is the harder because you will always find those who think they know what is your duty better than you know it. It is easy in the world to live after the world’s opinion; it is easy in solitude to live after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.</p>
+<p>The objection to conforming to usages that have become dead to you is that it scatters your force. It loses your time and blurs the impression of your character. If you maintain a dead church, contribute to a dead Bible-society, vote with a great party either for the government or against it, spread your table like base housekeepers,—under all these screens I have difficulty to detect the precise man you are: and of course so much force is withdrawn from your proper life. But do your work, and I shall know you. Do your work, and you shall reinforce yourself. A man must consider what a blindman’s-buff is this game of conformity. If I know your sect, I anticipate your argument. I hear a preacher announce for his text and topic the expediency of one of the institutions of his church. Do I not know beforehand that not possibly can he say a new and spontaneous word? Do I not know that with all this ostentation of examining the grounds of the institution he will do no such thing? Do I not know that he is pledged to himself not to look but at one side, the permitted side, not as a man, but as a parish minister? He is a retained attorney, and these airs of the bench are the emptiest affectation. Well, most men have bound their eyes with one or another handkerchief, and attached themselves to some one of these communities of opinion. This conformity makes them not false in a few particulars, authors of a few lies, but false in all particulars. Their every truth is not quite true. Their two is not the real two, their four not the real four; so that every word they say chagrins us and we know not where to begin to set them right. Meantime nature is not slow to equip us in the prison-uniform of the party to which we adhere. We come to wear one cut of face and figure, and acquire by degrees the gentlest asinine expression. There is a mortifying experience in particular, which does not fail to wreak itself also in the general history; I mean “the foolish face of praise,” the forced smile which we put on in company where we do not feel at ease in answer to conversation which does not interest us. The muscles, not spontaneously moved but moved by a low usurping wilfulness, grow tight about the outline of the face with the most disagreeable sensation.</p>
+<p>For nonconformity the world whips you with its displeasure. And therefore a man must know how to estimate a sour face. The by-standers look askance on him in the public street or in the friend’s parlor.</p>
+<p><em>Public domain text: Ralph Waldo Emerson, <cite>Essays: First Series</cite> (1841). Excerpt.</em></p>
+
+        </article>
+
+        
+<footer class="wbit-article-end">
+    <span>Finished reading?</span>
+    <form action="/demo/archive/111?redirect=/view/111" method="post">
+        <input type="hidden" name="token">
+        <button type="submit" class="wbit-btn wbit-btn--primary"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"></path></svg> Mark as read</button>
+    </form>
+    <a class="wbit-article-end-random" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a>
+</footer>
+
+    </div>
+
+    
+
+
+<script id="annotationroutes" type="application/json">
+{
+    "prefix": "/demo",
+    "urls": {
+        "create": "/annotations/111",
+        "update": "/annotations/idAnnotation",
+        "destroy": "/annotations/idAnnotation",
+        "search": "/annotations/111"
+    },
+    "entryId": "111"
+}</script>
+
+                </div>
+            </main>
+        </div>
+
+        
+            
+
+</body></html>

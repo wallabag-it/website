@@ -1,0 +1,73 @@
+// Home page blocks (product-glimpse, latest-blog-post shortcodes)
+
+.product-glimpse {
+  h2 {
+    font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  }
+
+  .lead {
+    color: var(--wb-muted);
+    font-size: 1.1rem;
+  }
+
+  .product-glimpse-list .fa-check {
+    color: var(--wb-accent) !important;
+  }
+}
+
+.product-glimpse-img {
+  border: 1px solid var(--wb-line);
+  border-radius: var(--wb-radius);
+  box-shadow: var(--wb-shadow-lg);
+}
+
+// The newest post on the home page: same width as the featured post on the blog list
+.latest-blog-post {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  // Side by side: the image fills the card height instead of leaving a band under it
+  @media (min-width: 768px) {
+    .wbit-lead__img {
+      display: flex;
+
+      img {
+        height: 100%;
+        aspect-ratio: auto;
+      }
+    }
+  }
+}
+
+// Band for the 10-year prize draw, under the navigation bar (layouts/_partials/prize-band.html)
+.wbit-prize-band {
+  margin-top: 0;
+  padding: 10px 16px;
+  text-align: center;
+  // Sepia palette of the reading view in the app (wallabag.it theme, _reader.scss)
+  color: #3a2e20;
+  background: #f1e6d0;
+  border-bottom: 1px solid #e2d6bf;
+  font-size: 15px;
+
+  a {
+    color: #8a4b14;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// The navigation bar is fixed on top of the page from 768px wide (and 68px high from 1200px):
+// the band starts under it. Below 768px the bar is in the page flow and the band follows it.
+@media (min-width: 768px) {
+  .wbit-prize-band {
+    margin-top: 76px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wbit-prize-band {
+    margin-top: 68px;
+  }
+}

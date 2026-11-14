@@ -4,7 +4,7 @@ description: "Omnivore a fermé. wallabag.it est open source lui aussi, existe d
 date: 2026-06-15
 ---
 
-{{% blocks/cover title="Quelle alternative à Omnivore choisir ?" color="primary" height="auto" %}}
+{{% blocks/cover title="Quelle alternative à Omnivore choisir ?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

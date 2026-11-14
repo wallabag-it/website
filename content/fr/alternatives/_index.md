@@ -5,16 +5,11 @@ description: "Vous cherchez une alternative à Pocket, Instapaper ou Raindrop.io
 menu: {main: {weight: 36}}
 ---
 
-{{% blocks/cover title="Alternatives aux outils de lecture différée" color="primary" height="auto" %}}
+{{% blocks/cover title="Alternatives aux outils de lecture différée" color="primary" height="auto" cta="true" image="/{lang}/features/homepage.png" image_alt="Liste de lecture wallabag.it affichant des articles sauvegardés." %}}
+<p class="lead">Vous pensez quitter votre appli de lecture différée ou votre gestionnaire de marque-pages ? Voici comment wallabag.it se compare aux plus courants.</p>
 {{% /blocks/cover %}}
 
-{{% blocks/lead color="white" %}}
-
-Vous pensez quitter votre appli de lecture différée ou votre gestionnaire de marque-pages ? Voici comment wallabag.it se compare aux plus courants.
-
-{{% /blocks/lead %}}
-
-{{% blocks/section color="light" %}}
+{{% blocks/section color="white" %}}
 
 ## Pourquoi choisir wallabag.it ?
 {.text-center}
@@ -25,7 +20,7 @@ wallabag.it est la version hébergée de wallabag, l'appli open source de lectur
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="white" %}}
+{{% blocks/section color="light" %}}
 {{< alternatives-grid >}}
 {{% /blocks/section %}}
 

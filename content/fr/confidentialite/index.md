@@ -4,13 +4,11 @@ linkTitle: Confidentialité
 description: "Politique de confidentialité de wallabag.it : données traitées, bases légales, durées de conservation, sous-traitants, suppression de compte et accès aux contenus sauvegardés."
 ---
 
-{{% blocks/cover title="Politique de confidentialité" color="primary" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Politique de confidentialité" subtitle="Dernière mise à jour : 7 novembre 2026" color="primary" image_anchor="bottom" height="auto" %}}
 
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}
-
-Dernière mise à jour : 7 novembre 2026
 
 wallabag.it est un service de lecture différée qui permet de sauvegarder des pages web, des URLs, des articles, des tags, des annotations et des préférences de lecture.
 
@@ -63,6 +61,7 @@ wallabag.it ne collecte pas de données bancaires complètes. Les paiements sont
 | Sécurité, prévention des abus et maintenance | Logs, IP, user-agent, événements techniques | Intérêt légitime | Jusqu'à 12 mois, sauf conservation plus longue nécessaire à la gestion d'un incident |
 | Mesure d'audience du site vitrine | Pages vues, provenance, navigateur, adresse IP tronquée | Intérêt légitime (mesure d'audience exemptée de consentement selon les conditions de la CNIL), avec droit d'opposition ci-dessous | Cookie Matomo jusqu'à 13 mois ; données anonymisées jusqu'à 6 mois |
 | Statistiques d'utilisation du service app.wallabag.it | Journaux du serveur : pages vues (sans paramètres d'URL ni jetons), navigateur, adresse IP tronquée avant analyse | Intérêt légitime | Données brutes jusqu'à 6 mois, puis statistiques anonymes |
+| Tirage au sort des 10 ans | Email du compte, dates et statut de l'abonnement, nom du gagnant seulement s'il accepte sa publication | Exécution du contrat (règlement du tirage) | Liste des participants : supprimée 6 mois après le tirage. Coordonnées du gagnant : jusqu'à la remise du lot |
 | Emails de service | Email, informations liées au compte ou à l'abonnement | Exécution du contrat | Durée du compte |
 | Newsletter et informations commerciales | Email, préférences d'inscription | Consentement ou intérêt légitime pour les clients existants | Jusqu'au désabonnement |
 | Signalements de contenus illicites | Identité et email de l'auteur, contenu signalé, échanges, décision | Obligation légale (règlement (UE) 2022/2065 sur les services numériques) | 1 an après la décision, sauf procédure en cours |

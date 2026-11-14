@@ -4,7 +4,7 @@ description: "Obsidian Web Clipper saves web pages into your Obsidian vault. wal
 date: 2026-06-16
 ---
 
-{{% blocks/cover title="Which alternative to Obsidian Web Clipper should I choose?" color="primary" height="auto" %}}
+{{% blocks/cover title="Which alternative to Obsidian Web Clipper should I choose?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

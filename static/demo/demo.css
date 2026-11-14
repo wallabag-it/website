@@ -1,0 +1,21 @@
+/* Added to every page of the static demo */
+.annotator-adder { display: none !important; }
+.wbit-demo-pill {
+  position: fixed; right: 16px; bottom: 16px; z-index: 2000;
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 8px 8px 16px; border-radius: 999px;
+  background: #1c1b19; color: #fff; font: 500 14px/1.2 Inter, system-ui, sans-serif;
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, .45);
+}
+.wbit-demo-pill a {
+  padding: 7px 13px; border-radius: 999px; background: #8a4b14; color: #fff !important;
+  font-weight: 600; text-decoration: none; white-space: nowrap;
+}
+.wbit-demo-toast {
+  position: fixed; left: 50%; bottom: 76px; z-index: 2001; transform: translateX(-50%);
+  max-width: calc(100vw - 32px); padding: 10px 16px; border-radius: 10px;
+  background: #1c1b19; color: #fff; font: 400 14px/1.4 Inter, system-ui, sans-serif;
+  opacity: 0; transition: opacity .15s ease; pointer-events: none;
+}
+.wbit-demo-toast.is-visible { opacity: 1; }
+@media print { .wbit-demo-pill, .wbit-demo-toast { display: none; } }

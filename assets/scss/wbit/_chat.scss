@@ -1,0 +1,200 @@
+// Zammad chat: our launcher, and the widget of helpdesk.wallabag.it restyled.
+// The widget loads its own chat.css after this file, hence the "body" prefix.
+// Its classes are not a public API: check this file after a Zammad upgrade.
+
+.wbit-chat-launcher {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 998;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .7rem 1rem;
+  color: var(--wb-ink);
+  font: 500 .9rem/1.2 var(--wb-font);
+  background: var(--wb-surface-raised);
+  border: 1px solid var(--wb-line-strong);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px -8px rgba(28, 27, 25, .28);
+  cursor: pointer;
+  transition: background-color .15s, border-color .15s;
+
+  &:hover {
+    background: var(--wb-soft);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--wb-accent);
+    outline-offset: 2px;
+  }
+
+  // The button only shows up when an agent is online
+  &.is-inactive,
+  &.zammad-chat-is-hidden {
+    display: none;
+  }
+}
+
+.wbit-chat-launcher__logo {
+  flex: none;
+  border-radius: 6px;
+}
+
+.wbit-chat-launcher__status {
+  width: .5rem;
+  height: .5rem;
+  background: var(--wb-accent);
+  border-radius: 50%;
+}
+
+body:has(.zammad-chat.zammad-chat-is-open) .wbit-chat-launcher {
+  display: none;
+}
+
+body .zammad-chat {
+  color: var(--wb-ink);
+  font-family: var(--wb-font);
+  font-size: 14px;
+
+  // Closed, only our launcher is visible
+  &:not(.zammad-chat-is-open) {
+    display: none;
+  }
+
+  &.zammad-chat-is-open {
+    background: var(--wb-surface-raised);
+  }
+
+  .zammad-chat-header {
+    color: var(--wb-ink);
+    font-weight: 600;
+    background: var(--wb-surface-raised);
+    border-bottom: 1px solid var(--wb-line);
+  }
+
+  .zammad-chat-icon,
+  .zammad-chat-header-icon {
+    color: var(--wb-muted);
+  }
+
+  .zammad-chat-header-icon-close {
+    width: 1em;
+  }
+
+  .zammad-chat-welcome-text {
+    font-size: 1em;
+  }
+
+  .zammad-chat-agent-status {
+    color: var(--wb-muted);
+    font-weight: 400;
+    background: var(--wb-soft);
+  }
+
+  .zammad-chat-agent-status[data-status="online"]::before {
+    background: var(--wb-accent);
+  }
+
+  .zammad-chat-modal,
+  .zammad-chat-body,
+  .zammad-chat-controls {
+    background: var(--wb-surface-raised);
+  }
+
+  .zammad-chat-modal-text {
+    font-size: 1em;
+    color: var(--wb-muted);
+  }
+
+  .zammad-chat-timestamp {
+    color: var(--wb-muted);
+  }
+
+  .zammad-chat-status-inner,
+  .zammad-chat-message-body {
+    max-width: 85%;
+    background: var(--wb-soft);
+    border-radius: var(--wb-radius-small);
+  }
+
+  .zammad-chat-message--customer .zammad-chat-message-body {
+    color: var(--wb-ink);
+    background: var(--wb-accent-soft);
+  }
+
+  .zammad-chat-controls {
+    align-items: center;
+    border-top: 1px solid var(--wb-line);
+
+    &:focus-within {
+      border-top-color: var(--wb-accent);
+    }
+  }
+
+  .zammad-chat-input {
+    padding: .9em 1em;
+    color: var(--wb-ink);
+
+    // A contenteditable div: the placeholder attribute does nothing by itself
+    &:empty::before {
+      color: var(--wb-muted);
+      content: attr(placeholder);
+    }
+  }
+
+  .zammad-chat-button {
+    margin: .5em .75em;
+    color: var(--wb-primary-ink);
+    font-weight: 500;
+    background: var(--wb-primary-bg);
+    border-radius: var(--wb-radius-small);
+  }
+
+  .zammad-chat-button:focus-visible {
+    outline: 2px solid var(--wb-accent);
+    outline-offset: 2px;
+  }
+}
+
+// Same limit as chat.css: below it, the opened widget is full screen
+@media (min-width: 769px) {
+  body .zammad-chat {
+    right: 24px;
+    bottom: 24px;
+    width: 380px;
+    max-width: calc(100vw - 48px);
+    overflow: hidden;
+    border: 1px solid var(--wb-line);
+    border-radius: var(--wb-radius);
+    box-shadow: var(--wb-shadow-lg);
+
+    &.zammad-chat-is-open {
+      height: 560px;
+      max-height: calc(100vh - 48px);
+    }
+
+    .zammad-chat-header {
+      border-radius: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wbit-chat-launcher {
+    right: 12px;
+    bottom: 12px;
+    padding: .85rem;
+  }
+
+  .wbit-chat-launcher__label,
+  .wbit-chat-launcher__status {
+    display: none;
+  }
+}
+
+@media print {
+  .wbit-chat-launcher {
+    display: none;
+  }
+}

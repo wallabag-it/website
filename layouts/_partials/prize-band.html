@@ -1,0 +1,19 @@
+{{/* Band for the 10-year prize draw, under the navigation bar on every page.
+     Shown between the two dates below (site build: from 14 November 2026 to 10 December included), and always in the local preview (hugo server).
+     Remove this partial call from layouts/_partials/navbar.html after December 11. */ -}}
+{{ $start := time "2026-11-14" -}}
+{{ $end := time "2026-12-11" -}}
+{{ if or hugo.IsServer (and (ge now $start) (lt now $end)) -}}
+{{ $fr := eq .Site.Language.Lang "fr" -}}
+<div class="wbit-prize-band" role="note">
+  <p class="mb-0">
+    {{- if $fr -}}
+    <strong>Tirage au sort des 10 ans :</strong> abonnez-vous du 1<sup>er</sup> au 10 décembre et gagnez 10 ans d'abonnement.
+    <a href="/fr/blog/2026/11/14/nouveau-design-wallabag-it/">Voir le billet</a>
+    {{- else -}}
+    <strong>10-year prize draw:</strong> subscribe between December 1 and 10 to win 10 years of subscription.
+    <a href="/en/blog/2026/11/14/new-design-wallabag-it/">See the post</a>
+    {{- end -}}
+  </p>
+</div>
+{{ end -}}

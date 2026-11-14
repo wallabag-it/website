@@ -13,8 +13,11 @@
   "name" "wallabag.it"
   "url" "https://wallabag.it"
   "logo" (absURL "favicons/android-192x192.png")
+  "description" site.Params.description
+  "foundingDate" "2016"
+  "founder" (dict "@type" "Person" "name" "Nicolas Lœuillet")
   "sameAs" (slice
-    "https://fosstodon.org/@wallabag"
+    "https://fosstodon.org/@wallabagit"
     "https://github.com/wallabag/wallabag")
 -}}
 <script type="application/ld+json">{{ $org | jsonify (dict "indent" "  ") | safeJS }}</script>

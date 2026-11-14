@@ -4,7 +4,7 @@ description: "Readeck is a good self-hosted read-it-later app. wallabag.it is ho
 date: 2026-06-18
 ---
 
-{{% blocks/cover title="Which alternative to Readeck should I choose?" color="primary" height="auto" %}}
+{{% blocks/cover title="Which alternative to Readeck should I choose?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

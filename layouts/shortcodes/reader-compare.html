@@ -1,0 +1,40 @@
+{{/* Before / after slider on real screenshots: light theme on the left, the other reading theme on the right.
+     The slider is placed over the screenshot itself. Without JavaScript, the sepia theme is shown at 50 %. */ -}}
+<div class="wbit-compare" data-wbit-compare style="--pos: 50%;">
+  <div class="wbit-compare__stage">
+    <img class="wbit-compare__img" src="/images/reader/theme-light.webp" width="1200" height="760" alt="{{ if eq site.Language.Lang "fr" }}Lecture en thème clair{{ else }}Reading in the light theme{{ end }}" loading="lazy">
+    <img class="wbit-compare__img wbit-compare__img--over" data-wbit-compare-over src="/images/reader/theme-sepia.webp" width="1200" height="760" alt="{{ if eq site.Language.Lang "fr" }}Lecture en thème sépia{{ else }}Reading in the sepia theme{{ end }}" loading="lazy">
+    <span class="wbit-compare__line" aria-hidden="true"><span class="wbit-compare__handle"></span></span>
+    <input class="wbit-compare__range" type="range" min="0" max="100" value="50" data-wbit-compare-range aria-label="{{ if eq site.Language.Lang "fr" }}Position du curseur de comparaison{{ else }}Comparison slider position{{ end }}">
+  </div>
+  <div class="wbit-compare__choices" role="group" aria-label="{{ if eq site.Language.Lang "fr" }}Thème à comparer{{ else }}Theme to compare{{ end }}">
+    <button type="button" class="wbit-compare__choice" data-wbit-compare-theme="sepia" aria-pressed="true">{{ if eq site.Language.Lang "fr" }}Sépia{{ else }}Sepia{{ end }}</button>
+    <button type="button" class="wbit-compare__choice" data-wbit-compare-theme="dark" aria-pressed="false">{{ if eq site.Language.Lang "fr" }}Sombre{{ else }}Dark{{ end }}</button>
+  </div>
+</div>
+<script>
+(function () {
+  if (window.wbitCompareReady) { return; }
+  window.wbitCompareReady = true;
+  var alts = {
+    sepia: { src: '/images/reader/theme-sepia.webp', fr: 'Lecture en thème sépia', en: 'Reading in the sepia theme' },
+    dark: { src: '/images/reader/theme-dark.webp', fr: 'Lecture en thème sombre', en: 'Reading in the dark theme' }
+  };
+  var lang = document.documentElement.lang === 'fr' ? 'fr' : 'en';
+  document.querySelectorAll('[data-wbit-compare]').forEach(function (box) {
+    var over = box.querySelector('[data-wbit-compare-over]');
+    var range = box.querySelector('[data-wbit-compare-range]');
+    range.addEventListener('input', function () { box.style.setProperty('--pos', range.value + '%'); });
+    box.querySelectorAll('[data-wbit-compare-theme]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var key = btn.getAttribute('data-wbit-compare-theme');
+        over.src = alts[key].src;
+        over.alt = alts[key][lang];
+        box.querySelectorAll('[data-wbit-compare-theme]').forEach(function (other) {
+          other.setAttribute('aria-pressed', other === btn ? 'true' : 'false');
+        });
+      });
+    });
+  });
+})();
+</script>

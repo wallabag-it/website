@@ -1,0 +1,2 @@
+{{- /* A capture of the features page in a post: {{< screenshot name="homepage.png" alt="…" >}} */ -}}
+<p>{{ partial "screenshot.html" (dict "page" (site.GetPage "/features") "name" (.Get "name") "alt" (.Get "alt") "sizes" "(min-width: 768px) 625px, 100vw") }}</p>

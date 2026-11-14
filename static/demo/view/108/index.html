@@ -1,0 +1,320 @@
+<!doctype html>
+<html class="" lang="en"><head><script src="/demo/demo.js"></script>
+                    <meta name="viewport" content="initial-scale=1.0">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="referrer" content="strict-origin-when-cross-origin">
+            <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=10">
+            <![endif]-->
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-152.png" sizes="152x152">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-144.png" sizes="144x144">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-120.png" sizes="120x120">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-114.png" sizes="114x114">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-76.png" sizes="76x76">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-72.png" sizes="72x72">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon-57.png" sizes="57x57">
+
+            <link rel="apple-touch-icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" href="/demo/img/appicon/apple-touch-icon.png">
+
+            <link rel="shortcut icon" type="image/x-icon" href="/demo/favicon.ico">
+
+            
+
+                                
+            <link rel="stylesheet" href="/demo/wallassets/wallabagit.css">
+    
+    <script>
+    (function () {
+        var root = document.documentElement;
+        var settings = {};
+        try {
+            settings = JSON.parse(localStorage.getItem('wbit-reader') || '{}') || {};
+        } catch (e) {}
+        if (settings.sepia && !root.classList.contains('dark-theme')) {
+            root.classList.add('wbit-sepia');
+        }
+        root.setAttribute('data-wbit-font', settings.font || 'serif');
+        root.setAttribute('data-wbit-size', typeof settings.size === 'number' ? settings.size : 2);
+        root.setAttribute('data-wbit-width', typeof settings.width === 'number' ? settings.width : 1);
+    })();
+</script>
+
+                                        <script src="/demo/bundles/fosjsrouting/js/router.js"></script>
+            <script src="/demo/js/routing.js"></script>
+            
+    <script src="/demo/wallassets/wallabagit.js"></script>
+
+            <title>Æs Triplex (gutenberg.org) – wallabag</title>
+            <meta name="robots" content="noindex"><link rel="stylesheet" href="/demo/demo.css"></head>
+
+    <body class="entry wbit wbit-reader">
+            <div id="incident-banner" class="incident-banner" role="status" hidden=""></div>
+<style>
+    .incident-banner { position: relative; z-index: 1000; padding: 10px 44px 10px 16px; background: #fff7ed; border-bottom: 1px solid #fdba74; color: #1f2937; font-size: 15px; line-height: 1.4; }
+    .incident-banner.incident-banner--down { background: #fef2f2; border-color: #fca5a5; }
+    .incident-banner.incident-banner--notice { background: #eff6ff; border-color: #93c5fd; }
+    .incident-banner p { margin: 0; }
+    .incident-banner p + p { margin-top: 4px; }
+    .incident-banner a { color: #1f2937; font-weight: bold; text-decoration: underline; }
+    .incident-banner button { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 22px; line-height: 1; padding: 4px 8px; color: #6b7280; cursor: pointer; }
+    html.dark-theme .incident-banner { background: #3b2a1a; border-color: #9a3412; color: #f3f4f6; }
+    html.dark-theme .incident-banner.incident-banner--down { background: #3f1d1d; border-color: #991b1b; }
+    html.dark-theme .incident-banner.incident-banner--notice { background: #1e293b; border-color: #1e40af; }
+    html.dark-theme .incident-banner a { color: #f3f4f6; }
+    @media only screen and (min-width: 993px) { body:not(.login) .incident-banner { margin-left: 240px; } }
+</style>
+
+
+
+        <div id="main">
+                
+<div class="progress wbit-progress" aria-hidden="true">
+    <div class="determinate"></div>
+</div>
+
+<aside class="wbit-rail" aria-label="wallabag.it">
+    <a class="wbit-rail-brand" href="/demo/unread/list" title="Back to unread articles">
+            <img class="wbit-logo wbit-logo--light" src="/demo/img/logo-square.svg" alt="wallabag" width="36" height="36">
+    <img class="wbit-logo wbit-logo--dark" src="/demo/img/wallabagit/logo-square-white.svg" alt="wallabag" width="36" height="36">
+    </a>
+    <a class="wbit-rail-link" href="/demo/unread/list" title="Unread" aria-label="Unread"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v16l-6-4-6 4z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/starred/list" title="Starred" aria-label="Starred"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/archive/list" title="Archive" aria-label="Archive"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M10 13h4"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/all/list" title="All entries" aria-label="All entries"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h6l2 2h10v11H3z"></path></svg></a>
+    <a class="wbit-rail-link" href="/demo/tag/list" title="Tags" aria-label="Tags"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+</aside>
+
+
+    
+<header class="wbit-reader-bar left-bar">
+    <a class="wbit-btn wbit-reader-back" href="/demo/">
+        <svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span class="wbit-reader-back-label">Back</span>
+    </a>
+
+    <div class="wbit-reader-actions">
+        <form action="/demo/star/108?redirect=/view/108" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn favorite" data-wbit-action="star" title="Toggle starred (f)" aria-pressed="false">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"></path></svg><span class="wbit-sr">Toggle starred</span>
+            </button>
+        </form>
+
+        <a href="#" class="wbit-icon-btn" data-wbit-tag-form-toggle="" title="Add a tag" aria-label="Add a tag"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></svg></a>
+
+        <a class="wbit-icon-btn original" data-wbit-action="original" href="https://www.gutenberg.org/ebooks/386#aes-triplex" target="_blank" rel="noopener" title="Original article (o)" aria-label="Original article"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5H5V6h5"></path></svg></a>
+
+                    <details class="wbit-popover">
+                <summary class="wbit-icon-btn" title="Share" aria-label="Share"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5M5 13v7h14v-7"></path></svg></summary>
+                <ul class="wbit-menu wbit-popover-panel">
+                                            <li>
+                            <form action="/demo/share/108" method="post">
+                                <input type="hidden" name="token">
+                                <button type="submit" formtarget="_blank" class="wbit-menu-link"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg> public link</button>
+                            </form>
+                        </li>
+                                                                                        <li><a class="wbit-menu-link" href="mailto:?subject=%C3%86s%20Triplex&amp;body=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F386%23aes-triplex%20via%20@wallabagapp"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg> Email</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://myshaarli.com/index.php?post=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F386%23aes-triplex&amp;title=%C3%86s%20Triplex&amp;tags=Essays%2CPhilosophy" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Shaarli</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://diasporapod.com/bookmarklet?url=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F386%23aes-triplex&amp;title=%C3%86s%20Triplex&amp;notes=&amp;v=1&amp;noui=1&amp;jump=doclose" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> diaspora*</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://unmark.it/mark/add?url=https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F386%23aes-triplex&amp;title=%C3%86s%20Triplex&amp;v=6" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> unmark.it</a></li>
+                                                                <li><a class="wbit-menu-link" href="https://twitter.com/share?text=%C3%86s%20Triplex%20https%3A%2F%2Fwww.gutenberg.org%2Febooks%2F386%23aes-triplex%20via%20@wallabagapp" target="_blank" rel="noopener"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg> Twitter</a></li>
+                                    </ul>
+            </details>
+        
+        <details class="wbit-popover">
+            <summary class="wbit-icon-btn" title="More actions" aria-label="More actions"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.4" fill="currentColor"></circle><circle cx="12" cy="12" r="1.4" fill="currentColor"></circle><circle cx="19" cy="12" r="1.4" fill="currentColor"></circle></svg></summary>
+            <ul class="wbit-menu wbit-popover-panel">
+                <li>
+                    <form action="/demo/reload/108" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020reload\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.6-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.6 4.5L20 16M20 20v-4h-4"></path></svg> Re-fetch content</button>
+                    </form>
+                </li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="m13.5 6.5 4 4"></path></svg> Edit title</a></li>
+                <li><a class="wbit-menu-link" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a></li>
+                                    <li><a class="wbit-menu-link" href="javascript: window.print();"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V4h10v5M7 17H4v-7h16v7h-3M7 14h10v6H7z"></path></svg> Print</a></li>
+                                <li class="wbit-menu-divider" role="separator"></li>
+                <li class="wbit-menu-title"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg> Export</li>
+                <li class="wbit-menu-formats">
+                    <a href="#" data-demo-disabled="">EPUB</a>                    <a href="#" data-demo-disabled="">PDF</a>                                        <a href="#" data-demo-disabled="">TXT</a>                    <a href="#" data-demo-disabled="">CSV</a>                    <a href="#" data-demo-disabled="">JSON</a>                    <a href="#" data-demo-disabled="">XML</a>                </li>
+                <li class="wbit-menu-divider" role="separator"></li>
+                                <li></li>
+                <li>
+                    <form action="/demo/delete/108?redirect=/view/108" method="post">
+                        <input type="hidden" name="token">
+                        <button type="submit" class="wbit-menu-link wbit-menu-link--danger delete" data-wbit-action="delete" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020article\u003F')"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"></path></svg> Delete</button>
+                    </form>
+                </li>
+            </ul>
+        </details>
+
+        <span class="wbit-reader-sep" aria-hidden="true"></span>
+
+        <details class="wbit-popover wbit-reading-settings">
+    <summary class="wbit-btn wbit-btn--ghost wbit-aa" title="Reading settings" aria-label="Reading settings">Aa</summary>
+    <div class="wbit-popover-panel wbit-settings-panel">
+        <p class="wbit-settings-label">Theme</p>
+        <div class="wbit-settings-themes">
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--light js-theme-toggle" data-theme="light" data-wbit-theme="light">Light</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--sepia" data-wbit-theme="sepia">Sepia</button>
+            <button type="button" class="wbit-theme-choice wbit-theme-choice--dark js-theme-toggle" data-theme="dark" data-wbit-theme="dark">Dark</button>
+        </div>
+
+        <p class="wbit-settings-label">Font</p>
+        <div class="wbit-settings-fonts">
+            <button type="button" class="wbit-font-choice wbit-font-choice--serif" data-wbit-font="serif">Serif</button>
+            <button type="button" class="wbit-font-choice wbit-font-choice--sans" data-wbit-font="sans">Sans serif</button>
+        </div>
+
+        <p class="wbit-settings-label">Text size</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="-1" aria-label="Smaller text"><span class="wbit-step-small">A</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="size" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="size" data-wbit-delta="1" aria-label="Larger text"><span class="wbit-step-big">A</span></button>
+        </div>
+
+        <p class="wbit-settings-label">Line width</p>
+        <div class="wbit-settings-stepper">
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="-1" aria-label="Narrower lines"><span class="wbit-step-small">−</span></button>
+            <span class="wbit-step-dots" data-wbit-dots="width" aria-hidden="true"><i></i><i></i><i></i></span>
+            <button type="button" class="wbit-step" data-wbit-step="width" data-wbit-delta="1" aria-label="Wider lines"><span class="wbit-step-big">+</span></button>
+        </div>
+    </div>
+</details>
+
+
+        <form action="/demo/archive/108?redirect=/view/108" method="post">
+            <input type="hidden" name="token">
+            <button type="submit" class="wbit-icon-btn markasread" data-wbit-action="archive" title="Mark as unread (a)">
+                <svg class="wbit-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M12 18v-6M9.5 14.5 12 12l2.5 2.5"></path></svg><span class="wbit-sr">Mark as unread</span>
+            </button>
+        </form>
+    </div>
+</header>
+
+
+            <main>
+                
+                    
+                <div id="content" dir="auto">
+                            <div id="article" class="article wbit-article" data-wbit-annotations-annotate="Annotate" data-wbit-annotations-placeholder="Your note…" data-wbit-annotations-save="Save" data-wbit-annotations-cancel="Cancel" data-wbit-annotations-edit="Edit" data-wbit-annotations-delete="Delete" data-wbit-annotations-no-comment="No note">
+        
+<header class="wbit-article-header">
+    <p class="wbit-article-kicker">
+        <a href="https://www.gutenberg.org/ebooks/386#aes-triplex" target="_blank" rel="noopener" title="original : Æs Triplex">gutenberg.org</a>
+        <span aria-hidden="true">·</span>
+                    <span>12 min</span>
+            </p>
+
+    <h1><span lang="en">Æs Triplex</span></h1>
+
+    <div class="tools entry-tools wbit-article-meta" dir="auto">
+        <ul class="stats wbit-stats">
+            <li title="Creation date"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M8 3v4M16 3v4"></path></svg> 2026-10-30 16:00</li>
+                                                        </ul>
+
+        <div class="wbit-article-tags">
+                <ul class="tags">
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/essays">Essays</a>
+                                                        <form action="/demo/remove-tag/108/31?redirect=/view/108" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+                    <li class="chip">
+                <a class="chip-label" href="/demo/tag/list/philosophy">Philosophy</a>
+                                                        <form action="/demo/remove-tag/108/34?redirect=/view/108" method="post">
+                        <input type="hidden" name="token">
+
+                        <button type="submit" class="btn-link chip-action" onclick="return confirm('Are\u0020you\u0020sure\u0020you\u0020want\u0020to\u0020remove\u0020that\u0020tag\u0020from\u0020that\u0020article\u003F')">
+                            <i class="material-icons vertical-align-middle">delete</i>
+                        </button>
+                    </form>
+                            </li>
+            </ul>
+            <button type="button" class="wbit-tag-add" data-wbit-tag-form-toggle="">+ add a tag</button>
+        </div>
+    </div>
+
+    <div class="input-field nav-panel-add-tag" style="display: none" data-wbit-tag-form="">
+        <form class="tags-add-form" name="tag" method="post" action="/demo/new-tag/108">
+    
+    
+    <input type="text" id="tag_label" name="tag[label]" required="required" placeholder="You can add several tags, separated by a comma." max_length="40" autocomplete="off">
+
+    <button type="submit" id="tag_add" name="tag[add]" class="btn waves-effect waves-light tags-add-form-submit">Add</button>
+    <input type="hidden" id="tag__token" name="tag[_token]">
+</form>
+
+    </div>
+</header>
+
+
+        <article lang="en">
+            <p>THE changes wrought by death are in themselves so sharp and final, and so terrible and melancholy in their consequences, that the thing stands alone in man’s experience, and has no parallel upon earth. It outdoes all other accidents because it is the last of them. Sometimes it leaps suddenly upon its victims, like a Thug; sometimes it lays a regular siege and creeps upon their citadel during a score of years. And when the business is done, there is sore havoc made in other people’s lives, and a pin knocked out by which many subsidiary friendships hung together. There are empty chairs, solitary walks, and single beds at night. Again, in taking away our friends, death does not take them away utterly, but leaves behind a mocking, tragical, and soon intolerable residue, which must be hurriedly concealed. Hence a whole chapter of sights and customs striking to the mind, from the pyramids of Egypt to the gibbets and dule trees of mediæval Europe. The poorest persons have a bit of pageant going towards the tomb; memorial stones are set up over the least memorable; and, in order to preserve some show of respect for what remains of our old loves and friendships, we must accompany it with much grimly ludicrous ceremonial, and the hired undertaker parades before the door. All this, and much more of the same sort, accompanied by the eloquence of poets, has gone a great way to put humanity in error; nay, in many philosophies the error has been embodied and laid down with every circumstance of logic; although in real life the bustle and swiftness, in leaving people little time to think, have not left them time enough to go dangerously wrong in practice.</p>
+<figure><img src="/demo/demo-img/7b8c0cc6e8ead31c.jpg" alt="Ludolf Bakhuizen, Storm."><figcaption>Ludolf Bakhuizen, Storm.<br><small>Source: Ludolf Bakhuizen, <a href="https://commons.wikimedia.org/wiki/File:Backhuysen_Storm.jpg">Wikimedia Commons</a>, Public domain.</small></figcaption></figure>
+<p>As a matter of fact, although few things are spoken of with more fearful whisperings than this prospect of death, few have less influence on conduct under healthy circumstances. We have all heard of cities in South America built upon the side of fiery mountains, and how, even in this tremendous neighbourhood, the inhabitants are not a jot more impressed by the solemnity of mortal conditions than if they were delving gardens in the greenest corner of England. There are serenades and suppers and much gallantry among the myrtles overhead; and meanwhile the foundation shudders underfoot, the bowels of the mountain growl, and at any moment living ruin may leap sky-high into the moonlight, and tumble man and his merry-making in the dust. In the eyes of very young people, and very dull old ones, there is something indescribably reckless and desperate in such a picture. It seems not credible that respectable married people, with umbrellas, should find appetite for a bit of supper within quite a long distance of a fiery mountain; ordinary life begins to smell of high-handed debauch when it is carried on so close to a catastrophe; and even cheese and salad, it seems, could hardly be relished in such circumstances without something like a defiance of the Creator. It should be a place for nobody but hermits dwelling in prayer and maceration, or mere born-devils drowning care in a perpetual carouse.</p>
+<p>And yet, when one comes to think upon it calmly, the situation of these South American citizens forms only a very pale figure for the state of ordinary mankind. This world itself, travelling blindly and swiftly in over-crowded space, among a million other worlds travelling blindly and swiftly in contrary directions, may very well come by a knock that would set it into explosion like a penny squib. And what, pathologically looked at, is the human body with all its organs, but a mere bagful of petards? The least of these is as dangerous to the whole economy as the ship’s powder-magazine to the ship; and with every breath we breathe, and every meal we eat, we are putting one or more of them in peril. If we clung as devotedly as some philosophers pretend we do to the abstract idea of life, or were half as frightened as they make out we are, for the subversive accident that ends it all, the trumpets might sound by the hour and no one would follow them into battle—the blue-peter might fly at the truck, but who would climb into a sea-going ship? Think (if these philosophers were right) with what a preparation of spirit we should affront the daily peril of the dinner-table: a deadlier spot than any battle-field in history, where the far greater proportion of our ancestors have miserably left their bones! What woman would ever be lured into marriage, so much more dangerous than the wildest sea? And what would it be to grow old? For, after a certain distance, every step we take in life we find the ice growing thinner below our feet, and all around us and behind us we see our contemporaries going through. By the time a man gets well into the seventies, his continued existence is a mere miracle; and when he lays his old bones in bed for the night, there is an overwhelming probability that he will never see the day. Do the old men mind it, as a matter of fact? Why, no. They were never merrier; they have their grog at night, and tell the raciest stories; they hear of the death of people about their own age, or even younger, not as if it was a grisly warning, but with a simple childlike pleasure at having outlived some one else; and when a draught might puff them out like a guttering candle, or a bit of a stumble shatter them like so much glass, their old hearts keep sound and unaffrighted, and they go on, bubbling with laughter, through years of man’s age compared to which the valley at Balaklava was as safe and peaceful as a village cricket-green on Sunday. It may fairly be questioned (if we look to the peril only) whether it was a much more daring feat for Curtius to plunge into the gulf, than for any old gentleman of ninety to doff his clothes and clamber into bed.</p>
+<p>Indeed, it is a memorable subject for consideration, with what unconcern and gaiety mankind pricks on along the Valley of the Shadow of Death. The whole way is one wilderness of snares, and the end of it, for those who fear the last pinch, is irrevocable ruin. And yet we go spinning through it all, like a party for the Derby. Perhaps the reader remembers one of the humorous devices of the deified Caligula: how he encouraged a vast concourse of holiday-makers on to his bridge over Baiæ bay; and when they were in the height of their enjoyment, turned loose the Prætorian guards among the company, and had them tossed into the sea. This is no bad miniature of the dealings of nature with the transitory race of man. Only, what a chequered picnic we have of it, even while it lasts! and into what great waters, not to be crossed by any swimmer, God’s pale Prætorian throws us over in the end!</p>
+<p>We live the time that a match flickers; we pop the cork of a ginger-beer bottle, and the earthquake swallows us on the instant. Is it not odd, is it not incongruous, is it not, in the highest sense of human speech, incredible, that we should think so highly of the ginger-beer, and regard so little the devouring earthquake? The love of Life and the fear of Death are two famous phrases that grow harder to understand the more we think about them. It is a well-known fact that an immense proportion of boat accidents would never happen if people held the sheet in their hands instead of making it fast; and yet, unless it be some martinet of a professional mariner or some landsman with shattered nerves, every one of God’s creatures makes it fast. A strange instance of man’s unconcern and brazen boldness in the face of death!</p>
+<p>We confound ourselves with metaphysical phrases, which we import into daily talk with noble inappropriateness. We have no idea of what death is, apart from its circumstances and some of its consequences to others; and although we have some experience of living, there is not a man on earth who has flown so high into abstraction as to have any practical guess at the meaning of the word <em>life</em>. All literature, from Job and Omar Khayam to Thomas Carlyle or Walt Whitman, is but an attempt to look upon the human state with such largeness of view as shall enable us to rise from the consideration of living to the Definition of Life. And our sages give us about the best satisfaction in their power when they say that it is a vapour, or a show, or made out of the same stuff with dreams. Philosophy, in its more rigid sense, has been at the same work for ages; and after a myriad bald heads have wagged over the problem, and piles of words have been heaped one upon another into dry and cloudy volumes without end, philosophy has the honour of laying before us, with modest pride, her contribution towards the subject: that life is a Permanent Possibility of Sensation. Truly a fine result! A man may very well love beef, or hunting, or a woman; but surely, surely, not a Permanent Possibility of Sensation! He may be afraid of a precipice, or a dentist, or a large enemy with a club, or even an undertaker’s man; but not certainly of abstract death. We may trick with the word life in its dozen senses until we are weary of tricking; we may argue in terms of all the philosophies on earth, but one fact remains true throughout—that we do not love life, in the sense that we are greatly preoccupied about its conservation; that we do not, properly speaking, love life at all, but living. Into the views of the least careful there will enter some degree of providence; no man’s eyes are fixed entirely on the passing hour; but although we have some anticipation of good health, good weather, wine, active employment, love, and self-approval, the sum of these anticipations does not amount to anything like a general view of life’s possibilities and issues; nor are those who cherish them most vividly, at all the most scrupulous of their personal safety. To be deeply interested in the accidents of our existence, to enjoy keenly the mixed texture of human experience, rather leads a man to disregard precautions, and risk his neck against a straw. For surely the love of living is stronger in an Alpine climber roping over a peril, or a hunter riding merrily at a stiff fence, than in a creature who lives upon a diet and walks a measured distance in the interest of his constitution.</p>
+<p>There is a great deal of very vile nonsense talked upon both sides of the matter: tearing divines reducing life to the dimensions of a mere funeral procession, so short as to be hardly decent; and melancholy unbelievers yearning for the tomb as if it were a world too far away. Both sides must feel a little ashamed of their performances now and again when they draw in their chairs to dinner. Indeed, a good meal and a bottle of wine is an answer to most standard works upon the question. When a man’s heart warms to his viands, he forgets a great deal of sophistry, and soars into a rosy zone of contemplation. Death may be knocking at the door, like the Commander’s statue; we have something else in hand, thank God, and let him knock. Passing bells are ringing all the world over. All the world over, and every hour, some one is parting company with all his aches and ecstasies. For us also the trap is laid. But we are so fond of life that we have no leisure to entertain the terror of death. It is a honeymoon with us all through, and none of the longest. Small blame to us if we give our whole hearts to this glowing bride of ours, to the appetites, to honour, to the hungry curiosity of the mind, to the pleasure of the eyes in nature, and the pride of our own nimble bodies.</p>
+<p>We all of us appreciate the sensations; but as for caring about the Permanence of the Possibility, a man’s head is generally very bald, and his senses very dull, before he comes to that. Whether we regard life as a lane leading to a dead wall—a mere bag’s end, as the French say—or whether we think of it as a vestibule or gymnasium, where we wait our turn and prepare our faculties for some more noble destiny; whether we thunder in a pulpit, or pule in little atheistic poetry-books, about its vanity and brevity; whether we look justly for years of health and vigour, or are about to mount into a bath-chair, as a step towards the hearse; in each and all of these views and situations there is but one conclusion possible: that a man should stop his ears against paralysing terror, and run the race that is set before him with a single mind. No one surely could have recoiled with more heartache and terror from the thought of death than our respected lexicographer; and yet we know how little it affected his conduct, how wisely and boldly he walked, and in what a fresh and lively vein he spoke of life. Already an old man, he ventured on his Highland tour; and his heart, bound with triple brass, did not recoil before twenty-seven individual cups of tea. As courage and intelligence are the two qualities best worth a good man’s cultivation, so it is the first part of intelligence to recognise our precarious estate in life, and the first part of courage to be not at all abashed before the fact. A frank and somewhat headlong carriage, not looking too anxiously before, not dallying in maudlin regret over the past, stamps the man who is well armoured for this world.</p>
+<p>And not only well armoured for himself, but a good friend and a good citizen to boot. We do not go to cowards for tender dealing; there is nothing so cruel as panic; the man who has least fear for his own carcase, has most time to consider others. That eminent chemist who took his walks abroad in tin shoes, and subsisted wholly upon tepid milk, had all his work cut out for him in considerate dealings with his own digestion. So soon as prudence has begun to grow up in the brain, like a dismal fungus, it finds its first expression in a paralysis of generous acts.</p>
+<p><em>Public domain text: Robert Louis Stevenson, <cite>Virginibus Puerisque</cite> (1881). Excerpt.</em></p>
+
+        </article>
+
+        
+<footer class="wbit-article-end">
+    <span>Finished reading?</span>
+    <form action="/demo/archive/108?redirect=/view/108" method="post">
+        <input type="hidden" name="token">
+        <button type="submit" class="wbit-btn wbit-btn--primary"><svg class="wbit-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"></rect><path d="M5 9v10h14V9M12 18v-6M9.5 14.5 12 12l2.5 2.5"></path></svg> Mark as unread</button>
+    </form>
+    <a class="wbit-article-end-random" href="#" data-demo-disabled=""><svg class="wbit-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3c5 0 5 10 10 10h3M4 17h3c1.5 0 2.5-.8 3.3-2M14 9c.8-1.2 1.8-2 3-2h3M18 4l3 3-3 3M18 14l3 3-3 3"></path></svg> Jump to a random entry from that list</a>
+</footer>
+
+    </div>
+
+    
+
+
+<script id="annotationroutes" type="application/json">
+{
+    "prefix": "/demo",
+    "urls": {
+        "create": "/annotations/108",
+        "update": "/annotations/idAnnotation",
+        "destroy": "/annotations/idAnnotation",
+        "search": "/annotations/108"
+    },
+    "entryId": "108"
+}</script>
+
+                </div>
+            </main>
+        </div>
+
+        
+            
+
+</body></html>

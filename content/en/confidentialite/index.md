@@ -5,13 +5,11 @@ slug: privacy
 description: "wallabag.it privacy notice: processed data, legal bases, retention periods, subprocessors, account deletion, backups and access to saved URLs and article contents."
 ---
 
-{{% blocks/cover title="Privacy notice" color="primary" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Privacy notice" subtitle="Last updated: November 7, 2026" color="primary" image_anchor="bottom" height="auto" %}}
 
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}
-
-Last updated: November 7, 2026
 
 wallabag.it is a read-it-later service that lets you save web pages, URLs, articles, tags, annotations and reading preferences.
 
@@ -64,6 +62,7 @@ wallabag.it does not collect full payment card details. Payments are processed d
 | Security, abuse prevention and maintenance | Logs, IP address, user-agent, technical events | Legitimate interest | Up to 12 months, unless longer retention is needed to handle an incident |
 | Website analytics | Pages viewed, referrer, browser, truncated IP address | Legitimate interest (audience measurement exempt from consent under the CNIL conditions), with the right to object below | Matomo cookie up to 13 months; anonymized data up to 6 months |
 | Usage statistics of the app.wallabag.it service | Server logs: pages viewed (without URL parameters or tokens), browser, IP address truncated before analysis | Legitimate interest | Raw data up to 6 months, then anonymous statistics |
+| 10-year prize draw | Account email, subscription dates and status, the winner's name only if they agree to its publication | Performance of the contract (draw rules) | List of participants: deleted 6 months after the draw. Winner's contact details: until the prize is handed over |
 | Service emails | Email, account or subscription information | Performance of the contract | For the lifetime of the account |
 | Newsletter and commercial information | Email, subscription preferences | Consent or legitimate interest for existing customers | Until unsubscribe |
 | Notices of illegal content | Identity and email of the author, reported content, exchanges, decision | Legal obligation (Regulation (EU) 2022/2065, Digital Services Act) | 1 year after the decision, unless proceedings are ongoing |

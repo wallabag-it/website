@@ -1,27 +1,33 @@
+{{/* Home page: the newest post, shown like the featured post of the blog list (image when it has one).
+     Future-dated posts are included: they are in the preview build, and in production once their date has come. */ -}}
 {{ $lang := site.Language.Lang -}}
 {{ $title := "Latest from the blog" -}}
 {{ $readMore := "Read the post" -}}
 {{ $allPosts := "All blog posts" -}}
-{{ $dateFormat := "January 2, 2006" -}}
 {{ if eq $lang "fr" -}}
   {{ $title = "Dernier billet du blog" -}}
   {{ $readMore = "Lire le billet" -}}
   {{ $allPosts = "Tous les billets" -}}
-  {{ $dateFormat = "02/01/2006" -}}
 {{ end -}}
 {{ $posts := where site.RegularPages "Section" "blog" -}}
 {{ $posts = where $posts "Draft" "!=" true -}}
-{{ $posts = where $posts "Date" "le" now -}}
 {{ with index ($posts.ByDate.Reverse) 0 -}}
-  {{ $description := .Description | default (.Summary | plainify | strings.TrimSpace) -}}
-	<div class="latest-blog-post mx-auto text-center" style="max-width: 680px;">
-	<p class="text-uppercase text-body-secondary small fw-semibold mb-2">{{ $title }}</p>
-	<h2 class="h4 mb-2">{{ .Title }}</h2>
-	<p class="small text-body-secondary mb-3">{{ .Date.Format $dateFormat }}</p>
-	{{ with $description }}<p class="text-body-secondary mb-3">{{ . }}</p>{{ end }}
-	<div class="mt-3">
-	<a class="btn btn-sm btn-outline-primary me-2 mb-2" href="{{ .RelPermalink }}">{{ $readMore }} <i class="fa fa-arrow-right ms-2"></i></a>
-	<a class="btn btn-sm btn-link mb-2" href="{{ (site.GetPage "section" "blog").RelPermalink }}">{{ $allPosts }}</a>
-	</div>
-	</div>
+  {{ $link := .RelPermalink -}}
+  <div class="latest-blog-post">
+    <p class="text-uppercase text-body-secondary small fw-semibold mb-2 text-center">{{ $title }}</p>
+    <article class="wbit-lead{{ with .Params.preview }} wbit-lead--image{{ end }}">
+      {{ with .Params.preview -}}
+      <a class="wbit-lead__img" href="{{ $link }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ . }}" width="1200" height="630" alt="" loading="lazy">
+      </a>
+      {{- end }}
+      <div class="wbit-lead__body">
+        <p class="wbit-bpost__meta">{{ .Date | time.Format ":date_full" }}</p>
+        <h3 class="wbit-lead__title"><a href="{{ $link }}">{{ .Title }}</a></h3>
+        <p class="wbit-bpost__desc">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}</p>
+        <a class="wbit-bpost__more" href="{{ $link }}">{{ $readMore }} →</a>
+      </div>
+    </article>
+    <p class="text-center mt-3 mb-0"><a href="{{ (site.GetPage "section" "blog").RelPermalink }}">{{ $allPosts }}</a></p>
+  </div>
 {{ end -}}

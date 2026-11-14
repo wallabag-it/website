@@ -4,7 +4,7 @@ description: "Pocket a fermé. wallabag.it garde vos articles, importe votre exp
 date: 2026-06-13
 ---
 
-{{% blocks/cover title="Quelle alternative à Pocket choisir ?" color="primary" height="auto" %}}
+{{% blocks/cover title="Quelle alternative à Pocket choisir ?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}

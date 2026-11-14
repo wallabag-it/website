@@ -4,7 +4,7 @@ description: "Matter est une jolie appli de lecture, pensée d'abord pour l'iPho
 date: 2026-06-15
 ---
 
-{{% blocks/cover title="Quelle alternative à Matter choisir ?" color="primary" height="auto" %}}
+{{% blocks/cover title="Quelle alternative à Matter choisir ?" color="primary" height="auto" cta="true" %}}
 {{% /blocks/cover %}}
 
 {{% blocks/section color="white" %}}
