@@ -1,7 +1,7 @@
 ---
 title: Un nouveau design pour wallabag.it… et un beau cadeau à gagner
 slug: nouveau-design-wallabag-it
-date: 2026-11-14T15:00:00+01:00
+date: 2026-11-14T12:00:00+01:00
 author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
 description: >
   Dix ans après l'ouverture du service, le site et l'application changent de tête. Et pour fêter ces 10 ans, une petite surprise.
