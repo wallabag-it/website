@@ -5,7 +5,7 @@ date: 2026-11-14T12:00:00+01:00
 author: Nicolas Lœuillet ([@wallabagit](https://fosstodon.org/@wallabagit))
 description: >
   Dix ans après l'ouverture du service, le site et l'application changent de tête. Et pour fêter ces 10 ans, une petite surprise.
-images: ["/images/blog/fr-2026-11-15-new-design.png"]
+images: ["/images/blog/fr-2026-11-14-new-design.png"]
 categories: ["Nouveautés"]
 preview: "/images/blog/feature-new-design.png"
 ---
