@@ -44,7 +44,7 @@ Du coup, vos retours comptent double. Si quelque chose ne s'affiche pas bien che
 
 ## 10 ans de wallabag.it, 10 ans d'abonnement
 
-Pour fêter les 10 ans du service, j'organise un tirage au sort. Toute personne qui prend un abonnement entre le 1er et le 10 décembre, que ce soit un premier abonnement ou un renouvellement, y participe automatiquement, sans rien avoir à faire. **À la clé : 10 ans d'abonnement en plus**, d'une valeur d'au moins 110 €.
+Pour fêter les 10 ans du service, j'organise un grand tirage au sort le 11 décembre : 10 ans d'abonnement pour les 10 ans de wallabag.it. Tous les comptes avec un abonnement actif le jour du tirage, le 11 décembre, y participent automatiquement, sans rien avoir à faire, quelle que soit l'offre. **À la clé : 10 ans d'abonnement en plus**, d'une valeur d'au moins 110 €.
 
 Le tirage au sort aura lieu le 11 décembre, avec un seul gagnant ou une seule gagnante. Je contacterai la personne par e-mail et j'annoncerai le résultat dans un billet de blog. Tous les détails sont dans [le règlement](/fr/tirage-au-sort/).
 

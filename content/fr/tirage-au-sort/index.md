@@ -1,10 +1,10 @@
 ---
-title: Règlement du tirage au sort des 10 ans de wallabag.it
+title: Règlement du grand tirage au sort des 10 ans de wallabag.it
 linkTitle: Tirage au sort
-description: "Règlement du tirage au sort organisé pour les 10 ans de wallabag.it, du 1er au 10 décembre 2026."
+description: "Règlement du grand tirage au sort organisé pour les 10 ans de wallabag.it, le 11 décembre 2026."
 ---
 
-{{% blocks/cover title="Tirage au sort des 10 ans" subtitle="Règlement" color="primary" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Grand tirage au sort des 10 ans" subtitle="Règlement" color="primary" image_anchor="bottom" height="auto" %}}
 
 {{% /blocks/cover %}}
 
@@ -14,17 +14,17 @@ description: "Règlement du tirage au sort organisé pour les 10 ans de wallabag
 
 Le tirage au sort est organisé par Nicolas Lœuillet, entrepreneur individuel (EI), éditeur de wallabag.it, SIRET 823 678 560 00025, 30 bis rue des sapins, 62720 Rinxent, France. Contact : [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
 
-## Période
+## Date du tirage
 
-Du 1er décembre 2026 à 00 h 00 au 10 décembre 2026 à 23 h 59, heure de Paris.
+Le tirage a lieu le 11 décembre 2026, heure de Paris.
 
 ## Qui participe
 
-Toute personne qui paie un abonnement wallabag.it pendant cette période, qu'il s'agisse d'un premier abonnement ou d'un renouvellement, quelle que soit l'offre.
+Tous les comptes wallabag.it actifs le jour du tirage, c'est-à-dire qui ont un abonnement en cours le 11 décembre 2026, quelle que soit l'offre et la date à laquelle il a été souscrit.
 
 Le tirage est ouvert dans tous les pays, sauf ceux dont la loi interdit d'y participer.
 
-Il n'y a rien à faire pour participer. Chaque compte a une seule chance, quel que soit le nombre de paiements. L'essai gratuit ne permet pas de participer, et l'organisateur ne peut pas gagner.
+Il n'y a rien à faire pour participer. Chaque compte a une seule chance. L'essai gratuit ne permet pas de participer, et l'organisateur ne peut pas gagner.
 
 ## Lot
 
@@ -32,7 +32,7 @@ Il y a un seul lot, pour une seule personne : 10 ans d'abonnement ajoutés à l'
 
 ## Tirage
 
-Le tirage a lieu le 11 décembre 2026. Le compte gagnant est choisi au hasard par un programme informatique, parmi les comptes qui remplissent les conditions. L'organisateur conserve la liste des comptes participants pendant 6 mois après le tirage, puis la supprime, ainsi que le résultat.
+Le compte gagnant est choisi au hasard par un programme informatique, parmi les comptes qui remplissent les conditions. L'organisateur conserve la liste des comptes participants pendant 6 mois après le tirage, puis la supprime, ainsi que le résultat.
 
 ## Comment la personne gagnante est prévenue
 

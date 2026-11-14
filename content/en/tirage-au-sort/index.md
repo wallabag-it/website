@@ -1,11 +1,11 @@
 ---
-title: Rules of the wallabag.it 10-year prize draw
+title: Rules of the wallabag.it big 10-year prize draw
 linkTitle: Prize draw
 url: /en/prize-draw/
-description: "Rules of the prize draw held for the 10 years of wallabag.it, from December 1 to 10, 2026."
+description: "Rules of the big prize draw held for the 10 years of wallabag.it, on December 11, 2026."
 ---
 
-{{% blocks/cover title="10-year prize draw" subtitle="Rules" color="primary" image_anchor="bottom" height="auto" %}}
+{{% blocks/cover title="Big 10-year prize draw" subtitle="Rules" color="primary" image_anchor="bottom" height="auto" %}}
 
 {{% /blocks/cover %}}
 
@@ -15,17 +15,17 @@ description: "Rules of the prize draw held for the 10 years of wallabag.it, from
 
 The draw is organized by Nicolas Lœuillet, sole proprietor (entrepreneur individuel), publisher of wallabag.it, SIRET 823 678 560 00025, 30 bis rue des sapins, 62720 Rinxent, France. Contact: [nicolas@wallabag.it](mailto:nicolas@wallabag.it).
 
-## Period
+## Draw date
 
-From December 1, 2026 at 00:00 to December 10, 2026 at 23:59, Paris time.
+The draw takes place on December 11, 2026, Paris time.
 
 ## Who takes part
 
-Anyone who pays for a wallabag.it subscription during this period, whether it's a first subscription or a renewal, on any plan.
+All wallabag.it accounts active on the day of the draw, that is, with a subscription running on December 11, 2026, on any plan and whatever the date it was taken out.
 
 The draw is open in all countries, except those whose law forbids taking part.
 
-There's nothing to do to take part. Each account has one chance, however many payments it makes. The free trial doesn't count, and the organizer can't win.
+There's nothing to do to take part. Each account has one chance. The free trial doesn't count, and the organizer can't win.
 
 ## Prize
 
@@ -33,7 +33,7 @@ There is one prize, for one person: 10 years of subscription added to the winnin
 
 ## Draw
 
-The draw takes place on December 11, 2026. The winning account is picked at random by a computer program, among the eligible accounts. The organizer keeps the list of participating accounts for 6 months after the draw, then deletes it, along with the result.
+The winning account is picked at random by a computer program, among the eligible accounts. The organizer keeps the list of participating accounts for 6 months after the draw, then deletes it, along with the result.
 
 ## How the winner is told
 

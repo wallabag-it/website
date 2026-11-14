@@ -44,7 +44,7 @@ So your feedback counts twice. If something doesn't look right for you, if a but
 
 ## 10 years of wallabag.it, 10 years of subscription
 
-To celebrate the 10 years of the service, I'm holding a prize draw. Anyone who subscribes between December 1 and December 10, whether it's a first subscription or a renewal, takes part automatically, with nothing else to do. **The prize: 10 more years of subscription**, worth at least €110.
+To celebrate the 10 years of the service, I'm holding a big prize draw on December 11: 10 years of subscription for wallabag.it's 10th anniversary. Every account with an active subscription on the day of the draw, December 11, takes part automatically, with nothing else to do, on any plan. **The prize: 10 more years of subscription**, worth at least €110.
 
 The draw will take place on December 11, with a single winner. I'll contact that person by email and announce the result in a blog post. All the details are in [the rules](/en/prize-draw/).
 
