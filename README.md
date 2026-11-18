@@ -1,187 +1,163 @@
-# Docsy Example
+# wallabag.it website
 
-[Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy
-site navigation, structure, and more. This **Docsy Example Project** uses the Docsy
-theme component as a hugo module and provides a skeleton documentation structure for you to use.
-You can clone/copy this project and edit it with your own content, or use it as an example.
+Source of <https://wallabag.it>, the website of the hosted version of
+[wallabag](https://github.com/wallabag/wallabag). It is a static site built with
+[Cecil](https://cecil.app), in English (`/en/`) and in French (`/fr/`).
 
-In this project, the Docsy theme is pulled in as a Hugo module, together with
-its dependencies:
+## Run the site locally
 
-```console
-$ hugo mod graph
-...
-```
-
-For Docsy documentation, see [Docsy user guide][].
-
-This Docsy Example Project is hosted on [Netlify][] at [example.docsy.dev][].
-You can view deploy logs from the [deploy section of the project's Netlify
-dashboard][deploys], or this [alternate dashboard][].
-
-This is not an officially supported Google product. This project is currently maintained.
-
-## Using the Docsy Example Project as a template
-
-A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this:
-
-1. Use the dropdown for switching branches/tags to change to the **latest** released tag.
-
-2. Click **Use this template**.
-
-3. Select a name for your new project and click **Create repository from template**.
-
-4. Make your own local working copy of your new repo using git clone, replacing https://github.com/me/example.git with your repo’s web URL:
+Cecil needs PHP 8.3 or higher, with the `fileinfo`, `gd` (with FreeType) and `mbstring` extensions, and
+[Composer](https://getcomposer.org) to install the themes
+([other ways to install Cecil](https://cecil.app/documentation/installation/)):
 
 ```bash
-git clone --depth 1 https://github.com/me/example.git
+composer install       # installs the themes of composer.json (themes/ogimage)
+curl -LO https://cecil.app/cecil.phar
+php cecil.phar serve   # http://localhost:8000, rebuilt when a file changes
+php cecil.phar build   # builds the site in _site/
 ```
 
-Depending on your environment you may need to adjust the top-level `module` settings in your project's Hugo config file, for example, by adding a proxy to use when downloading remote modules.
-You can find details of what these configuration settings do in the [Hugo modules documentation](https://gohugo.io/hugo-modules/configuration/#module-config-top-level). 
+The first build takes about a minute: it compiles the style sheet (Bootstrap, Font Awesome).
+The next ones use the cache (`.cache/`).
 
-Once your settings are adjusted, you can edit your own versions of the site’s source files.
-
-If you want to do SCSS edits and want to publish these, you need to install `PostCSS`
+After a change in a Sass file other than `main.scss`, clear the cache of the assets so that the
+style sheet is compiled again:
 
 ```bash
-npm install
+php cecil.phar cache:clear:assets
 ```
 
-## Running the website locally
+## Where things are
 
-Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
-You can find out more about how to install Hugo for your environment in our
-[Getting started](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation) guide.
+| Path | Content |
+| --- | --- |
+| `cecil.yml` | Configuration: languages, menus, footer links, subscription plans |
+| `pages/` | The pages, in Markdown: `name.md` in English, `name.fr.md` in French |
+| `pages/blog/` | The posts of the blog: `YYYY-MM-DD-name.md` |
+| `data/` | FAQ, testimonials and compared services (YAML, by language) |
+| `layouts/` | Twig templates: pages, blog, `partials/` (hero, blocks of the pages, header, footer) |
+| `translations/` | French translation of the strings of the templates |
+| `assets/` | Processed files: Sass of the wallabag.it design (`scss/wbit/`), screenshots, logo |
+| `static/` | Files copied as they are: images, favicons, the static demo of the application |
+| `themes/docsy/` | Styles and scripts of Docsy, Bootstrap and Font Awesome (see its README) |
+| `themes/ogimage/` | [Open Graph image](https://github.com/Cecilapp/theme-ogimage) theme, installed by Composer (`composer.json`, not versioned): generates the social networks card of the pages without `image` |
 
-Once you've made your working copy of the site repo, from the repo root folder, run:
+## Write a page
 
-```bash
-hugo server
+A page starts with its front matter:
+
+```yaml
+---
+title: Pricing
+description: "Shown in search engines and social networks."
+slug: tarifs                              # last part of the URL, when it differs from the file name
+menu: {main: {weight: 25, name: "Pricing"}}  # entry in the navigation bar
+image: images/blog/social-card.png        # social networks card (default: generated, see below)
+---
 ```
 
-## Running a container locally
+The French version of `pages/pricing.md` is `pages/pricing.fr.md`: the same file name links the
+two versions (language selector, `hreflang`).
 
-You can run docsy-example inside a [Docker](https://docs.docker.com/)
-container, the container runs with a volume bound to the `docsy-example`
-folder. This approach doesn't require you to install any dependencies other
-than [Docker Desktop](https://www.docker.com/products/docker-desktop) on
-Windows and Mac, and [Docker Compose](https://docs.docker.com/compose/install/)
-on Linux.
+Without `image`, the social networks card of the page is generated by the `ogimage` theme
+(`og.png` next to the page): its title on the background `assets/images/og-background.png` (options in
+`cecil.yml`, under `ogimage`; font: Inter, in `assets/fonts/inter/`). The homepage uses the `image` of `cecil.yml`, and `ogimage: false` in the
+front matter disables the generated card.
 
-1. Build the docker image
+### Blog posts
 
-   ```bash
-   docker-compose build
-   ```
+The file name gives the date of the post, and the URL is `/blog/YYYY/MM/DD/slug/`:
 
-1. Run the built image
-
-   ```bash
-   docker-compose up
-   ```
-
-   > NOTE: You can run both commands at once with `docker-compose up --build`.
-
-1. Verify that the service is working.
-
-   Open your web browser and type `http://localhost:1313` in your navigation bar,
-   This opens a local instance of the docsy-example homepage. You can now make
-   changes to the docsy example and those changes will immediately show up in your
-   browser after you save.
-
-### Cleanup
-
-To stop Docker Compose, on your terminal window, press **Ctrl + C**.
-
-To remove the produced images run:
-
-```bash
-docker-compose rm
-```
-For more information see the [Docker Compose documentation][].
-
-## Using a local Docsy clone
-
-Make sure your installed go version is `1.18` or higher.
-
-Clone the latest version of the docsy theme into the parent folder of your project. The newly created repo should now reside in a sibling folder of your site's root folder.
-
-```shell
-cd root-of-your-site
-git clone --branch v0.12.0 https://github.com/google/docsy.git ../docsy
+```yaml
+---
+title: "Title of the post"
+slug: title-of-the-post
+date: 2026-11-14
+description: "Summary shown in the list of posts, under the title and in the feed readers."
+image: images/blog/en-2026-11-14-name.png
+preview: "/images/blog/feature-name.png"  # optional image of the post in the list
+---
 ```
 
-Now run:
+- The date prefix of the file must be the `date` of the post, and the name after it must be unique.
+- `trial` adds a band after the post: `trial: true` for the free trial, or a map (see the structure
+  of a page below), for example `{title: "", lead: "…", button: "See the plans", page: pricing, icon: heart}`.
+- To prepare a post in advance, add `schedule: {publish: 2026-12-11}`: it is published by the first
+  build made from that day.
 
-```shell
-HUGO_MODULE_WORKSPACE=docsy.work hugo server --ignoreVendorPaths "**"
+### Structure of a page
+
+The text of a page is Markdown only. The rest of the page is described in its front matter, and
+rendered by the templates (`layouts/partials/hero.html.twig`, `block.html.twig`, `blocks/`):
+
+```yaml
+---
+title: All the wallabag.it features
+hero:                          # the band at the top of the page
+  title: Everything wallabag.it does  # default: the title of the page
+  color: primary               # "dark" (default) or "primary"
+  lead: Save articles, read them offline…
+  cta: true                    # free trial and pricing buttons ("trial": the free trial button only)
+  image: images/features/homepage.png
+  image_alt: Homepage of a wallabag.it account.
+blocks:                        # full-width bands, after the text of the page
+  - type: features
+    color: light               # "white" (default), "light", "dark" or "primary"
+    title: What a subscription adds
+    lead: Included in every plan, from 11€ a year.
+    items:
+      - icon: fa-envelope
+        title: Save by email
+        text: Send a link to your private wallabag.it address… # Markdown
+    buttons:
+      - {label: See the plans, page: pricing, icon: arrow-right, cta: features-premium-pricing}
+trial: true                    # the free trial band at the end of the page (or a map: title, lead, button, page, icon)
+---
+
+## Just the article, nothing else
+
+The text of the page, in Markdown: it comes after the hero, in a white band.
 ```
 
-or, when using npm, prepend `local` to the script you want to invoke, e.g.:
+| Block `type` | Use |
+| --- | --- |
+| `text` (default) | Title and Markdown text (`text`) |
+| `features` | Cards with an icon (`items`: `icon`, `title`, `text`, `link`), `wide: true` on the whole width |
+| `plans` | Subscription plans (`plans`; the prices are the `plans` of `cecil.yml`) |
+| `faq` | FAQ of `data/faq.yaml`, or some questions: `ids: [trial-end, renewal]`; a page with all the questions gets the FAQPage structured data |
+| `testimonials`, `alternatives` | Cards of `data/testimonials.yaml` and `data/alternatives.yaml` |
+| `checklist` | List with check marks, on two columns (`items`) |
+| `glimpse`, `proof`, `compare`, `callout`, `latest` | Screenshot and text, three screenshots, reading themes slider, highlighted text, latest post |
 
-```shell
-npm run local serve
-```
+The files of `data/` are in English; their French version has the `.fr` suffix (`data/faq.fr.yaml`).
 
-By using the `HUGO_MODULE_WORKSPACE` directive (either directly or via prefix `local` when using npm), the server now watches all files and directories inside the sibling directory `../docsy` , too. Any changes inside the local `docsy` theme clone are  now immediately picked up (hot reload), you can instantly see the effect of your local edits.
+Every block also accepts `title`, `intro`, `lead`, `text`, `buttons` and `outro`. The parameters of
+each type are described at the top of its file in `layouts/partials/blocks/`. The front matter is
+checked when the site is built (`pages.schema` in `cecil.yml`): a wrong type or color stops the build
+with the name of the page.
 
-In the command above, we used the environment variable `HUGO_MODULE_WORKSPACE` to tell hugo about the local workspace file `docsy.work`. Alternatively, you can declare the workspace file inside your settings file `hugo.toml`:
+Things to know:
 
-```toml
-[module]
-  workspace = "docsy.work"
-```
+- The typography is not converted: write `’`, `“ ”` and `…` in the text.
+- Images are written in Markdown: `![Alternative text](/images/features/homepage.png)`, with a title
+  (`"Caption"` after the path) to show a caption under it. They are served in WebP, in the sizes the
+  browser needs.
+- An image of `assets/images/` has a French version when a `.fr` file exists
+  (`homepage.png`, `homepage.fr.png`): it is used on the French pages.
+- Tables written in Markdown are styled by the site, and the headings get an anchor.
+- The privacy page shows the opt-out of the audience measurement where it writes
+  `<div class="matomo-optout"></div>`.
+- The pages of the alternatives section end with the trial band: `cascade` in
+  `pages/alternatives/index.md`.
 
-Your project's `hugo.toml` file already contains these lines, the directive for workspace assignment is commented out, however. Remove the two trailing comment characters '//' so that this line takes effect.
+## Deployment
 
-## Troubleshooting
+- **Production** (<https://wallabag.it>): built by Netlify with the
+  [build script of Cecil](https://cecil.app/documentation/deployment/#netlify), see `netlify.toml`
+  (redirections, 404 pages, previews not indexed).
+- **Test on a fork**: the workflow `.github/workflows/pages.yml` publishes the site to GitHub Pages
+  (set the Pages source of the repository to "GitHub Actions"). That site is not indexed and has no
+  audience measurement.
 
-As you run the website locally, you may run into the following error:
-
-```console
-$ hugo server
-WARN 2023/06/27 16:59:06 Module "project" is not compatible with this Hugo version; run "hugo mod graph" for more information.
-Start building sites …
-hugo v0.101.0-466fa43c16709b4483689930a4f9ac8add5c9f66+extended windows/amd64 BuildDate=2022-06-16T07:09:16Z VendorInfo=gohugoio
-Error: Error building site: "C:\Users\foo\path\to\docsy-example\content\en\_index.md:5:1": failed to extract shortcode: template for shortcode "blocks/cover" not found
-Built in 27 ms
-```
-
-This error occurs if you are running an outdated version of Hugo. As of docsy theme version `v0.12.0`, hugo version `0.146.0` or higher is required.
-See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo) of the user guide for instructions on how to install Hugo.
-
-Or you may be confronted with the following error:
-
-```console
-$ hugo server
-
-INFO 2021/01/21 21:07:55 Using config file:
-Building sites … INFO 2021/01/21 21:07:55 syncing static files to /
-Built in 288 ms
-Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-scss): resource "scss/scss/main.scss_9fadf33d895a46083cdd64396b57ef68" not found in file cache
-```
-
-This error occurs if you have not installed the extended version of Hugo.
-See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo) of the user guide for instructions on how to install Hugo.
-
-Or you may encounter the following error:
-
-```console
-$ hugo server
-
-Error: failed to download modules: binary with name "go" not found
-```
-
-This error occurs if the `go` programming language is not available on your system.
-See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-go-language) of the user guide for instructions on how to install `go`.
-
-
-[alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
-[deploys]: https://app.netlify.com/sites/docsy-example/deploys
-[Docsy user guide]: https://docsy.dev/docs
-[Docsy]: https://github.com/google/docsy
-[example.docsy.dev]: https://example.docsy.dev
-[Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
-[Netlify]: https://netlify.com
-[Docker Compose documentation]: https://docs.docker.com/compose/gettingstarted/
+To remove the band of the prize draw after December 11, 2026: delete
+`layouts/partials/prize-band.html.twig` and its `include` in `layouts/partials/navbar.html.twig`.

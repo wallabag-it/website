@@ -1,0 +1,55 @@
+{#- Blog list: text cards; the latest post on the first page, with its image when it has one (`preview`). -#}
+{% extends 'blog/base.html.twig' %}
+
+{% block content %}
+            {%- set posts = page.paginator.pages ?? page.pages %}
+            {%- set first_page = page.paginator.current|default(1) == 1 %}
+            <a class="td-rss-button" title="{% trans %}RSS feed{% endtrans %}" href="{{ url('blog', {format: 'rss'}) }}" target="_blank" rel="noopener">
+              <i class="fa-solid fa-rss" aria-hidden="true"></i>
+              <span>{% trans %}RSS feed{% endtrans %}</span>
+            </a>
+            <div class="wbit-blog">
+              <header class="wbit-blog__head">
+                <h1>{{ page.title }}</h1>
+                {%- if page.content|trim %}
+                <div class="wbit-blog__intro">{{ page.content }}</div>
+                {%- endif %}
+              </header>
+              {%- for post in posts %}
+                {%- set description = post.description|default(post.content|striptags|excerpt(160)) %}
+                {%- if first_page and loop.first %}
+              <article class="wbit-lead{{ post.preview|default ? ' wbit-lead--image' }}">
+                {%- if post.preview|default %}
+                <a class="wbit-lead__img" href="{{ url(post) }}" tabindex="-1" aria-hidden="true">
+                  <img src="{{ basepath ~ post.preview|trim('/', 'left') }}" width="1200" height="630" alt="" loading="eager">
+                </a>
+                {%- endif %}
+                <div class="wbit-lead__body">
+                  <p class="wbit-bpost__meta">{{ include('partials/date.html.twig', {date: post.date}) }}</p>
+                  <h2 class="wbit-lead__title"><a href="{{ url(post) }}">{{ post.title }}</a></h2>
+                  <p class="wbit-bpost__desc">{{ description }}</p>
+                  <a class="wbit-bpost__more" href="{{ url(post) }}">{% trans %}Read more{% endtrans %} →</a>
+                </div>
+              </article>
+              <div class="wbit-blog__grid">
+                {%- else %}
+                  {%- if loop.first %}
+              <div class="wbit-blog__grid">
+                  {%- endif %}
+                <article class="wbit-bpost">
+                  <div class="wbit-bpost__body">
+                    <p class="wbit-bpost__meta">{{ include('partials/date.html.twig', {date: post.date}) }}</p>
+                    <h2 class="wbit-bpost__title"><a href="{{ url(post) }}">{{ post.title }}</a></h2>
+                    <p class="wbit-bpost__desc">{{ description }}</p>
+                  </div>
+                </article>
+                {%- endif %}
+                {%- if loop.last %}
+              </div>
+                {%- endif %}
+              {%- endfor %}
+              <div class="td-blog-posts__pagination">
+                {{- include('partials/pagination.html.twig') }}
+              </div>
+            </div>
+{% endblock content %}

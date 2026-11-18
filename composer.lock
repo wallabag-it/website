@@ -1,0 +1,145 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "8335345c551a927619d4bf13cedbcf1c",
+    "packages": [
+        {
+            "name": "cecil/theme-installer",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-installer.git",
+                "reference": "37c6f58e09cf36e94b10b078a9c5e1f3985d5a38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-installer/zipball/37c6f58e09cf36e94b10b078a9c5e1f3985d5a38",
+                "reference": "37c6f58e09cf36e94b10b078a9c5e1f3985d5a38",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "phpunit/phpunit": "^10.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Cecil\\Installer\\Composer\\CecilPlugin",
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cecil\\Installer\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arnaud Ligny",
+                    "email": "arnaud@ligny.fr",
+                    "homepage": "https://arnaudligny.fr",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Composer installer for Cecil's themes",
+            "homepage": "https://cecil.app",
+            "keywords": [
+                "cecil",
+                "composer-plugin",
+                "installer",
+                "themes"
+            ],
+            "support": {
+                "issues": "https://github.com/Cecilapp/theme-installer/issues",
+                "source": "https://github.com/Cecilapp/theme-installer/tree/2.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ArnaudLigny",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/cecil",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2026-10-22T20:56:35+00:00",
+            "published-time": "2026-10-22T20:57:20+00:00"
+        },
+        {
+            "name": "cecil/theme-ogimage",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-ogimage.git",
+                "reference": "3d2b5482f84e8f9f19e3b4b370208a0c47623e91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-ogimage/zipball/3d2b5482f84e8f9f19e3b4b370208a0c47623e91",
+                "reference": "3d2b5482f84e8f9f19e3b4b370208a0c47623e91",
+                "shasum": ""
+            },
+            "require": {
+                "cecil/theme-installer": "^2.1"
+            },
+            "type": "cecil-theme",
+            "extra": {
+                "cecil": {
+                    "theme-name": "ogimage"
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Cecil component theme Open Graph image: generates the Open Graph images of pages",
+            "keywords": [
+                "cecil",
+                "image",
+                "open graph",
+                "plugin",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/Cecilapp/theme-ogimage/issues",
+                "source": "https://github.com/Cecilapp/theme-ogimage/tree/1.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ArnaudLigny",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/cecil",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2026-11-16T10:32:09+00:00",
+            "published-time": "2026-11-16T10:33:40+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.11.0"
+}

@@ -1,0 +1,9 @@
+{#- A date in full, in the language of the page: "Saturday, November 14, 2026", "samedi 14 novembre 2026".
+    The names of the days and months are in translations/, so the `intl` PHP extension is not needed.
+    Parameter: `date`. -#}
+{{- '%weekday%, %month% %day%, %year%'|trans({
+  '%weekday%': date|date('l')|trans,
+  '%month%': date|date('F')|trans,
+  '%day%': date|date('j'),
+  '%year%': date|date('Y'),
+}) -}}

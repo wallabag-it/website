@@ -1,0 +1,79 @@
+{#- Scripts at the end of <body>: Bootstrap and the base script of Docsy (themes/docsy), then the status banner. -#}
+    <script src="{{ url(asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js', {minify: false})) }}"></script>
+    <script src="{{ url(asset('js/base.js')) }}"></script>
+    {#- Incidents and maintenances in progress, read from the status page API (cState).
+        Nothing is shown when everything is fine or when the status page cannot be reached. ~#}
+    <div id="status-banner" class="status-banner" role="status" hidden></div>
+    <style>
+  /* Same tokens as the rest of the site (assets/scss/wbit/_tokens.scss). The colored bar and dot
+     give the level: orange = disrupted, red = down, blue = notice (maintenance). */
+  .status-banner { --status-color: #c2410c; position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 1050; max-width: 600px; margin: 0 auto; padding: 14px 48px 14px 20px; border: 1px solid var(--wb-line, #e8e6e0); border-left: 4px solid var(--status-color); border-radius: 14px; background: var(--wb-surface-raised, #fff); color: var(--wb-ink, #1c1b19); font-size: 15px; line-height: 1.45; box-shadow: 0 24px 60px -18px rgba(28, 27, 25, 0.35), 0 2px 6px rgba(28, 27, 25, 0.06); }
+  .status-banner--down { --status-color: #b42318; }
+  .status-banner--notice { --status-color: #2f5bd3; }
+  .status-banner p { position: relative; margin: 0; padding-left: 18px; }
+  .status-banner p::before { content: ""; position: absolute; left: 0; top: 0.5em; width: 8px; height: 8px; border-radius: 50%; background: var(--status-color); box-shadow: 0 0 0 3px color-mix(in srgb, var(--status-color) 18%, transparent); }
+  .status-banner p + p { margin-top: 6px; }
+  .status-banner a { color: inherit; font-weight: 600; text-decoration: underline; text-decoration-color: var(--wb-line-strong, #d9d6ce); text-underline-offset: 0.18em; }
+  .status-banner a:hover, .status-banner a:focus { text-decoration-color: currentColor; }
+  .status-banner button { position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; border: 0; border-radius: 8px; background: none; font-size: 20px; line-height: 1; padding: 0; color: var(--wb-muted, #67655e); cursor: pointer; }
+  .status-banner button:hover, .status-banner button:focus { background: var(--wb-hover, #eae8e2); color: var(--wb-ink, #1c1b19); }
+    </style>
+    <script>
+  (function () {
+    var banner = document.getElementById('status-banner');
+    if (!banner || !window.fetch) {
+      return;
+    }
+
+    var storageKey = 'wallabag-status-banner-dismissed';
+    var dismissed = '';
+    try {
+      dismissed = localStorage.getItem(storageKey) || '';
+    } catch (e) {}
+
+    fetch({{ (site.statuspage|default('https://status.wallabag.it') ~ '/index.json')|json_encode(constant('JSON_UNESCAPED_SLASHES'))|raw }})
+      .then(function (response) { return response.ok ? response.json() : null; })
+      .then(function (data) {
+        if (!data || data.summaryStatus === 'ok') {
+          return;
+        }
+
+        var issues = {};
+        (data.systems || []).forEach(function (system) {
+          (system.unresolvedIssues || []).forEach(function (issue) {
+            issues[issue.permalink] = issue;
+          });
+        });
+        var list = Object.keys(issues).map(function (key) { return issues[key]; });
+        var signature = Object.keys(issues).sort().join(' ');
+        if (!list.length || signature === dismissed) {
+          return;
+        }
+
+        banner.className += ' status-banner--' + data.summaryStatus;
+        list.forEach(function (issue) {
+          var line = document.createElement('p');
+          var link = document.createElement('a');
+          link.href = issue.permalink;
+          link.textContent = issue.title;
+          line.appendChild(link);
+          line.appendChild(document.createTextNode(' · status.wallabag.it'));
+          banner.appendChild(line);
+        });
+
+        var close = document.createElement('button');
+        close.type = 'button';
+        close.setAttribute('aria-label', 'Close');
+        close.textContent = '×';
+        close.addEventListener('click', function () {
+          banner.hidden = true;
+          try {
+            localStorage.setItem(storageKey, signature);
+          } catch (e) {}
+        });
+        banner.appendChild(close);
+        banner.hidden = false;
+      })
+      .catch(function () {});
+  })();
+    </script>

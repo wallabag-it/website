@@ -1,0 +1,39 @@
+{#- Before / after slider on real screenshots: light theme on the left, the other reading theme on the right.
+    Without JavaScript, the sepia theme is shown at 50 %. -#}
+<div class="wbit-compare" data-wbit-compare style="--pos: 50%;">
+  <div class="wbit-compare__stage">
+    <img class="wbit-compare__img" src="{{ basepath }}images/reader/theme-light.webp" width="1200" height="760" alt="{% trans %}Reading in the light theme{% endtrans %}" loading="lazy">
+    <img class="wbit-compare__img wbit-compare__img--over" data-wbit-compare-over src="{{ basepath }}images/reader/theme-sepia.webp" width="1200" height="760" alt="{% trans %}Reading in the sepia theme{% endtrans %}" loading="lazy">
+    <span class="wbit-compare__line" aria-hidden="true"><span class="wbit-compare__handle"></span></span>
+    <input class="wbit-compare__range" type="range" min="0" max="100" value="50" data-wbit-compare-range aria-label="{% trans %}Comparison slider position{% endtrans %}">
+  </div>
+  <div class="wbit-compare__choices" role="group" aria-label="{% trans %}Theme to compare{% endtrans %}">
+    <button type="button" class="wbit-compare__choice" data-wbit-compare-theme="sepia" aria-pressed="true">{% trans %}Sepia{% endtrans %}</button>
+    <button type="button" class="wbit-compare__choice" data-wbit-compare-theme="dark" aria-pressed="false">{% trans %}Dark{% endtrans %}</button>
+  </div>
+</div>
+<script>
+(function () {
+  if (window.wbitCompareReady) { return; }
+  window.wbitCompareReady = true;
+  var alts = {
+    sepia: { src: '{{ basepath }}images/reader/theme-sepia.webp', alt: {{ 'Reading in the sepia theme'|trans|json_encode|raw }} },
+    dark: { src: '{{ basepath }}images/reader/theme-dark.webp', alt: {{ 'Reading in the dark theme'|trans|json_encode|raw }} }
+  };
+  document.querySelectorAll('[data-wbit-compare]').forEach(function (box) {
+    var over = box.querySelector('[data-wbit-compare-over]');
+    var range = box.querySelector('[data-wbit-compare-range]');
+    range.addEventListener('input', function () { box.style.setProperty('--pos', range.value + '%'); });
+    box.querySelectorAll('[data-wbit-compare-theme]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var key = btn.getAttribute('data-wbit-compare-theme');
+        over.src = alts[key].src;
+        over.alt = alts[key].alt;
+        box.querySelectorAll('[data-wbit-compare-theme]').forEach(function (other) {
+          other.setAttribute('aria-pressed', other === btn ? 'true' : 'false');
+        });
+      });
+    });
+  });
+})();
+</script>

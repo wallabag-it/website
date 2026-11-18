@@ -1,0 +1,58 @@
+{#- A block of a page: a full-width band, from an item of the `blocks` front matter variable.
+    Every block accepts:
+      type     what the block shows (default "text"): a partial of partials/blocks/;
+      color    "white" (default), "light", "dark" or "primary";
+      wide     true: the cards use the whole width of the page;
+      align    "center" (default) or "left" ("left" by default for the "text" blocks);
+      title    the heading of the block;
+      intro    a centred paragraph under the title, lead: the same, larger (Markdown);
+      text     Markdown, before what the type adds;
+      buttons  list of {label, url or page (ID of a page), style, size, icon, cta}, centred;
+      outro    Markdown, at the end of the block.
+    The text of the page itself is a block of type "content". -#}
+{%- set type = block.type|default('text') -%}
+{%- set wide = block.wide|default(false) -%}
+{%- set centered = block.align|default(type in ['text', 'content', 'compare'] ? 'left' : 'center') == 'center' -%}
+{#- these types show the title and the texts themselves -#}
+{%- set own = type in ['glimpse', 'callout'] -%}
+<div><a id="td-block-{{ index }}" class="td-offset-anchor"></a></div>
+<section class="row td-box td-box--{{ block.color|default('white') }} td-box--height-auto">
+<div class="col">
+<div class="{{ wide ? 'row' : 'container' }}">
+{%- if not own %}
+  {%- if block.title|default %}
+    {%- set margin = block.lead|default ? 'mb-2' : (block.intro|default ? 'mb-3' : (type in ['features', 'testimonials', 'faq'] and not block.text|default ? 'mb-5' : '')) %}
+<h2{% if centered or margin %} class="{{ [centered ? 'text-center', margin]|filter(c => c)|join(' ') }}"{% endif %} id="{{ block.title|slugify }}">{{ block.title }}</h2>
+  {%- endif %}
+  {%- if block.intro|default %}
+{{ block.intro|markdown_to_html|replace({'<p>': '<p class="text-center col-12 mx-auto mb-5" style="max-width: 760px;">'}) }}
+  {%- endif %}
+  {%- if block.lead|default %}
+{{ block.lead|markdown_to_html|replace({'<p>': '<p class="lead' ~ (centered ? ' text-center') ~ (wide ? ' col-12') ~ (type == 'text' ? '' : ' mb-5') ~ '">'}) }}
+  {%- endif %}
+  {%- if block.text|default %}
+{{ include('partials/content.html.twig', {content: block.text|markdown_to_html}) }}
+  {%- endif %}
+{%- endif %}
+{%- if type == 'content' %}
+{{ include('partials/content.html.twig') }}
+{%- elseif type != 'text' %}
+{{ include('partials/blocks/' ~ type ~ '.html.twig', {block: block, wide: wide}) }}
+{%- endif %}
+{%- if block.buttons|default([]) %}
+<div class="{{ wide ? 'col-12 ' }}text-center mt-4">
+  {%- for button in block.buttons %}
+<a class="btn btn-{{ button.style|default('secondary') }}{{ button.size|default ? ' btn-' ~ button.size }}{{ not loop.last ? ' me-2' }} mb-2" href="{{ button.page is defined ? url(button.page) : button.url }}"{% if button.cta|default %} data-cta="{{ button.cta }}"{% endif %}>{{ button.label }}{% if button.icon|default %} <i class="fa fa-{{ button.icon }} ms-2"></i>{% endif %}</a>
+  {%- endfor %}
+</div>
+{%- endif %}
+{%- if block.outro|default and centered %}
+<div class="{{ wide ? 'col-12 ' }}text-center mt-4">
+{{ include('partials/content.html.twig', {content: block.outro|markdown_to_html}) }}
+</div>
+{%- elseif block.outro|default %}
+{{ include('partials/content.html.twig', {content: block.outro|markdown_to_html}) }}
+{%- endif %}
+</div>
+</div>
+</section>

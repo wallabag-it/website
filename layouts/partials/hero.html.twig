@@ -1,0 +1,57 @@
+{#- Hero at the top of a page, from the `hero` front matter variable:
+      title, subtitle  the heading (default: the title of the page) and the line under it;
+      lead             text under the title (Markdown);
+      note             small line under the text (Markdown);
+      color            "dark" (default) or "primary";
+      compact: true    less space around the hero, so that what follows is visible at once;
+      cta              true: the free trial and pricing buttons, "trial": the free trial button only;
+      image            a screenshot beside the text (file of assets/: its ".fr" version is used on French pages),
+                       with image_alt and image_frame: "window" (default) or "phone".
+    On the home page, the buttons come before the text. -#}
+{%- set color = hero.color|default('dark') -%}
+{%- set image = hero.image|default -%}
+{%- set home = page.type == 'homepage' -%}
+{%- set cta = hero.cta|default(false) -%}
+{%- set actions -%}
+{%- if cta -%}
+<div class="wbit-hero__actions"><a class="btn btn-lg btn-secondary" href="https://app.wallabag.it/register/" data-cta="{{ tracking }}-hero-trial">{% trans %}Start your free trial{% endtrans %} <i class="fa fa-user-plus ms-2"></i></a>
+{%- if cta is not same as('trial') %}<a class="btn btn-lg {{ color == 'dark' ? 'btn-outline-light' : 'btn-outline-primary' }}" href="{{ url('pricing') }}">{% trans %}See plans from 11€ a year{% endtrans %}</a>{% endif -%}
+</div>
+{%- endif -%}
+{%- endset -%}
+<section id="td-cover-block-0" class="row wbit-hero wbit-hero--{{ color }}
+  {{- home ? ' wbit-hero--home' }}
+  {{- image ? ' wbit-hero--split' }}
+  {{- hero.compact|default(false) ? ' wbit-hero--compact' }}">
+<div class="col-12">
+<div class="container">
+<div class="wbit-hero__inner">
+<div class="wbit-hero__text">
+<h1 class="wbit-hero__title">{{ hero.title|default(page.title) }}</h1>
+{%- if hero.subtitle|default %}
+<p class="wbit-hero__subtitle">{{ hero.subtitle }}</p>
+{%- endif %}
+{%- if home %}
+{{ actions }}
+{%- endif %}
+{%- if hero.lead|default or hero.note|default %}
+<div class="wbit-hero__body">
+{%- if hero.lead|default %}
+{{ hero.lead|markdown_to_html|replace({'<p>': '<p class="lead">'}) }}
+{%- endif %}
+{%- if hero.note|default %}
+{{ hero.note|markdown_to_html|replace({'<p>': '<p class="small mb-0">'}) }}
+{%- endif %}
+</div>
+{%- endif %}
+{%- if not home %}
+{{ actions }}
+{%- endif %}
+</div>
+{%- if image %}
+<div class="wbit-hero__media wbit-hero__media--{{ hero.image_frame|default('window') }}"><img src="{{ url(asset(image, {language: site.language ~ ''})) }}" alt="{{ hero.image_alt|default|e('html_attr') }}" fetchpriority="high"></div>
+{%- endif %}
+</div>
+</div>
+</div>
+</section>

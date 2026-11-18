@@ -1,0 +1,21 @@
+{#- The newest post of the blog, shown like the featured post of the blog list (image when it has one). -#}
+{%- set post = site.pages.showable|filter_by('section', 'blog')|sort_by_date|first -%}
+{%- if post -%}
+<div class="latest-blog-post">
+  <p class="text-uppercase text-body-secondary small fw-semibold mb-2 text-center">{% trans %}Latest from the blog{% endtrans %}</p>
+  <article class="wbit-lead{{ post.preview|default ? ' wbit-lead--image' }}">
+    {%- if post.preview|default %}
+    <a class="wbit-lead__img" href="{{ url(post) }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ basepath ~ post.preview|trim('/', 'left') }}" width="1200" height="630" alt="" loading="lazy">
+    </a>
+    {%- endif %}
+    <div class="wbit-lead__body">
+      <p class="wbit-bpost__meta">{{ include('partials/date.html.twig', {date: post.date}) }}</p>
+      <h3 class="wbit-lead__title"><a href="{{ url(post) }}">{{ post.title }}</a></h3>
+      <p class="wbit-bpost__desc">{{ post.description|default(post.content|striptags|excerpt(160)) }}</p>
+      <a class="wbit-bpost__more" href="{{ url(post) }}">{% trans %}Read the post{% endtrans %} →</a>
+    </div>
+  </article>
+  <p class="text-center mt-3 mb-0"><a href="{{ url('blog') }}">{% trans %}All blog posts{% endtrans %}</a></p>
+</div>
+{%- endif -%}

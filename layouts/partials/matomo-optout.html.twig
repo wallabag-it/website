@@ -1,0 +1,34 @@
+{#- Opt-out of the Matomo audience measurement (CNIL condition for the consent exemption), shown where a page
+    writes `<div class="matomo-optout"></div>` (see partials/content.html.twig).
+    Uses the Matomo JS tracker loaded in partials/head.html.twig (optUserOut / forgetUserOptOut). -#}
+<div class="matomo-optout border rounded p-3 my-3">
+  <p class="matomo-optout-status mb-2">{% trans %}Audience measurement is not active in this browser (content blocker or script unavailable).{% endtrans %}</p>
+  <label class="matomo-optout-label d-none">
+    <input type="checkbox" class="matomo-optout-checkbox me-2">
+    {% trans %}My visits are counted in the statistics. Untick the box to stop it.{% endtrans %}
+  </label>
+</div>
+<script>  (function () {
+    var box = document.currentScript.previousElementSibling;
+    var status = box.querySelector('.matomo-optout-status');
+    var label = box.querySelector('.matomo-optout-label');
+    var checkbox = box.querySelector('.matomo-optout-checkbox');
+    var texts = {
+      in: {{ 'Your visits are counted, anonymously, in the website statistics.'|trans|json_encode|raw }},
+      out: {{ 'Your visits are no longer counted: a cookie remembers this choice in this browser.'|trans|json_encode|raw }}
+    };
+    function render(optedOut) {
+      checkbox.checked = !optedOut;
+      status.textContent = optedOut ? texts.out : texts.in;
+      label.classList.remove('d-none');
+    }
+    window._paq = window._paq || [];
+    window._paq.push([function () {
+      render(this.isUserOptedOut());
+    }]);
+    checkbox.addEventListener('change', function () {
+      window._paq.push([checkbox.checked ? 'forgetUserOptOut' : 'optUserOut']);
+      render(!checkbox.checked);
+    });
+  })();
+</script>

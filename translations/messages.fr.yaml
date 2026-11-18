@@ -1,0 +1,86 @@
+# French translation of the strings of the templates (layouts/), keyed by the English string.
+
+# Navigation bar and prize draw band
+"Big prize draw on December 11:": "Grand tirage au sort le 11 décembre :"
+"10 years of subscription for wallabag.it's 10th anniversary.": "10 ans d'abonnement pour les 10 ans de wallabag.it."
+"See the post": "Voir le billet"
+
+# Hero
+"Start your free trial": "Commencer l'essai gratuit"
+"See plans from 11€ a year": "Voir les offres dès 11 €/an"
+"Read more": "Lire plus"
+
+# Footer
+"All Rights Reserved": "Tous droits réservés"
+"Legal notice": "Mentions légales"
+"Privacy notice": "Confidentialité"
+"Terms of use and sale": "CGU / CGV"
+"Chat with us": "Discuter avec nous"
+"Got a question?": "Une question ?"
+"Ask us any question": "Posez-nous vos questions"
+
+# 404
+"Not found": "Page introuvable"
+"Oops! This page doesn't exist. Try going back to the <a href=\"%url%\">home page</a>.": "Oups ! Cette page n'existe pas. Revenez à la <a href=\"%url%\">page d'accueil</a>."
+
+# Trial band at the end of the pages
+"Try it free for 14 days": "Essayez gratuitement pendant 14 jours"
+
+# Blog
+"RSS feed": "Flux RSS"
+"All posts": "Tous les billets"
+"Other posts": "Autres billets"
+"Older": "Plus ancien"
+"Newer": "Plus récent"
+"Latest from the blog": "Dernier billet du blog"
+"Read the post": "Lire le billet"
+"All blog posts": "Tous les billets"
+
+# Alternatives
+"Shut down": "Fermé"
+"Uncertain future": "Avenir incertain"
+"Compare wallabag.it with": "Comparer wallabag.it avec"
+"Compare": "Comparer"
+
+# Features page: comparison of the reading themes
+"Reading in the light theme": "Lecture en thème clair"
+"Reading in the sepia theme": "Lecture en thème sépia"
+"Reading in the dark theme": "Lecture en thème sombre"
+"Comparison slider position": "Position du curseur de comparaison"
+"Theme to compare": "Thème à comparer"
+"Sepia": "Sépia"
+"Dark": "Sombre"
+
+# Privacy page: opt-out of the audience measurement
+"Audience measurement is not active in this browser (content blocker or script unavailable).": "La mesure d'audience n'est pas active dans ce navigateur (bloqueur de contenu ou script indisponible)."
+"My visits are counted in the statistics. Untick the box to stop it.": "Mes visites sont comptées dans les statistiques. Décochez la case pour ne plus l'être."
+"Your visits are counted, anonymously, in the website statistics.": "Vos visites sont comptées, de façon anonyme, dans les statistiques du site."
+"Your visits are no longer counted: a cookie remembers this choice in this browser.": "Vos visites ne sont plus comptées : un cookie mémorise ce choix dans ce navigateur."
+
+# Structured data (JSON-LD): subscription plans
+"3 months": "3 mois"
+"1 year": "1 an"
+"Heart subscription": "Abonnement soutien"
+"wallabag.it subscription with all premium features included and a 14-day free trial.": "Abonnement wallabag.it avec toutes les fonctionnalités premium incluses et 14 jours d'essai gratuit."
+
+# Dates
+"%weekday%, %month% %day%, %year%": "%weekday% %day% %month% %year%"
+"Monday": "lundi"
+"Tuesday": "mardi"
+"Wednesday": "mercredi"
+"Thursday": "jeudi"
+"Friday": "vendredi"
+"Saturday": "samedi"
+"Sunday": "dimanche"
+"January": "janvier"
+"February": "février"
+"March": "mars"
+"April": "avril"
+"May": "mai"
+"June": "juin"
+"July": "juillet"
+"August": "août"
+"September": "septembre"
+"October": "octobre"
+"November": "novembre"
+"December": "décembre"

@@ -1,0 +1,11 @@
+{#- HTML converted from Markdown: the text of the page (default) or the `content` parameter.
+    - `<div class="matomo-optout"></div>` is replaced by the opt-out of the audience measurement;
+    - a site published in a subdirectory gets its path in the links and images written from the root. -#}
+{%- set content = content ?? page.content -%}
+{%- if '<div class="matomo-optout"></div>' in content -%}
+  {%- set content = content|replace({'<div class="matomo-optout"></div>': include('partials/matomo-optout.html.twig')}) -%}
+{%- endif -%}
+{%- if basepath|default('/') != '/' -%}
+  {%- set content = content|replace({'href="/': 'href="' ~ basepath, 'src="/': 'src="' ~ basepath}) -%}
+{%- endif -%}
+{{- content -}}

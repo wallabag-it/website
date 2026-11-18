@@ -1,0 +1,43 @@
+# Builds the site with Cecil and publishes it to GitHub Pages: a way to test the site on a fork
+# (set the Pages source of the repository to "GitHub Actions"). The production site is built by Netlify.
+name: Test on GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - feat/cecil-migration
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # not on the main repository, which is deployed by Netlify
+    if: github.repository != 'wallabag-it/website'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v7
+      - name: Build site
+        uses: Cecilapp/Cecil-Action@v4
+        env:
+          # a test site: not indexed, no audience measurement
+          CECIL_METATAGS_ROBOTS: "noindex, nofollow"
+          CECIL_ANALYTICS: "false"
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

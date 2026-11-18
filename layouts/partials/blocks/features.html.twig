@@ -1,0 +1,29 @@
+{#- Cards with an icon: `items`, each with
+      icon   Font Awesome icon ("fa-server", or with its style: "fa-brands fa-android");
+      title  the heading of the card;
+      text   Markdown;
+      link   optional {label, url or page} under the text.
+    `columns`: Bootstrap columns of a card (default: "col-md-6 col-lg-4"). -#}
+{%- if not wide %}
+<div class="row g-4">
+{%- endif %}
+{%- for item in block.items|default([]) %}
+  {%- set icon = item.icon|default('fa-lightbulb') %}
+<div class="{{ block.columns|default('col-md-6 col-lg-4') }} wbit-feature">
+<div class="wbit-feature__card">
+<div class="wbit-feature__icon" aria-hidden="true">
+  <i class="{{ icon starts with 'fas ' or icon starts with 'fab ' ? '' : 'fas ' }}{{ icon }}"></i>
+</div>
+<h3 class="wbit-feature__title">{{ item.title }}</h3>
+<div class="wbit-feature__text">
+{{ include('partials/content.html.twig', {content: item.text|default|markdown_to_html}) }}
+</div>
+{%- if item.link is defined %}
+<p class="wbit-feature__more"><a href="{{ item.link.page is defined ? url(item.link.page) : item.link.url }}">{{ item.link.label }}</a></p>
+{%- endif %}
+</div>
+</div>
+{%- endfor %}
+{%- if not wide %}
+</div>
+{%- endif -%}

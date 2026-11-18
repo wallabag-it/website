@@ -1,0 +1,65 @@
+// Adjustments for the pages built by Cecil
+
+// The "#" self-link Cecil adds to the titles is styled like the one of Docsy
+.heading-anchor {
+  @extend .td-heading-self-link;
+}
+
+// No autoprefixer in the build: the prefix Safari still needs
+.btn,
+.td-blog .td-rss-button,
+.user-select-none {
+  -webkit-user-select: none;
+}
+
+.user-select-all {
+  -webkit-user-select: all;
+}
+
+.user-select-auto {
+  -webkit-user-select: auto;
+}
+
+// An image written in Markdown with a title (`![alt](image.png "Caption")`) is a figure with its caption:
+// same look as the screenshots of the features page
+.td-box figure:not([class]) {
+  @extend .feature-screenshot;
+  margin: 1.5rem auto;
+
+  img {
+    @extend .feature-screenshot-img;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    @extend .feature-screenshot-caption;
+    margin-top: 0.5rem;
+  }
+}
+
+// Tables written in Markdown (styled by Docsy as `.td-table`): as wide as their content, centred,
+// on the background of their section; they scroll on small screens
+.td-box table:not(.td-initial) {
+  --bs-table-bg: transparent;
+  display: table;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+}
+
+.td-box--dark figure:not([class]) {
+  img {
+    border-color: rgba(255, 255, 255, .18);
+    box-shadow: 0 .75rem 2rem rgba(0, 0, 0, .25);
+  }
+
+  figcaption {
+    color: rgba(255, 255, 255, .72);
+  }
+}

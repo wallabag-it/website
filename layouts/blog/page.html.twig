@@ -1,0 +1,40 @@
+{#- A blog post: one centred column, a link back to the list, and the posts before and after. -#}
+{% extends 'blog/base.html.twig' %}
+
+{% block content %}
+            <article class="wbit-article">
+              <p class="wbit-article__back"><a href="{{ url('blog') }}">← {% trans %}All posts{% endtrans %}</a></p>
+              <header class="wbit-article__head">
+                <p class="wbit-article__meta">{{ include('partials/date.html.twig', {date: page.date}) }}</p>
+                <h1 class="wbit-article__title">{{ page.title }}</h1>
+                {%- if page.description|default %}
+                <p class="wbit-article__lead">{{ page.description }}</p>
+                {%- endif %}
+              </header>
+              <div class="wbit-article__body">
+                {{- include('partials/content.html.twig') }}
+              </div>
+              {%- if page.trial|default(false) %}
+              <div class="wbit-article__trial">
+                {{- include('partials/trial.html.twig', {trial: page.trial is iterable ? page.trial : {}}) }}
+              </div>
+              {%- endif %}
+              <nav class="wbit-article__next" aria-label="{% trans %}Other posts{% endtrans %}">
+                {#- in the list sorted by date, `prev` is the older post and `next` the newer one #}
+                {%- if page.prev.path is defined %}
+                <a class="wbit-article__link" href="{{ url(page.prev) }}">
+                  <span class="wbit-article__dir">{% trans %}Older{% endtrans %}</span>
+                  <span class="wbit-article__name">{{ page.prev.title }}</span>
+                  <span class="wbit-article__date">{{ include('partials/date.html.twig', {date: page.prev.date}) }}</span>
+                </a>
+                {%- endif %}
+                {%- if page.next.path is defined %}
+                <a class="wbit-article__link wbit-article__link--newer" href="{{ url(page.next) }}">
+                  <span class="wbit-article__dir">{% trans %}Newer{% endtrans %}</span>
+                  <span class="wbit-article__name">{{ page.next.title }}</span>
+                  <span class="wbit-article__date">{{ include('partials/date.html.twig', {date: page.next.date}) }}</span>
+                </a>
+                {%- endif %}
+              </nav>
+            </article>
+{% endblock content %}

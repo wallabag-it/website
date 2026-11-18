@@ -1,0 +1,223 @@
+# Configuration of the website: https://cecil.app/documentation/configuration/
+title: wallabag.it
+# Shown after the title in the <title> of the home page: "wallabag.it | Read-it-later app hosted in Europe"
+baseline: "Read-it-later app hosted in Europe"
+description: "Save web articles and read them later on any device. wallabag.it is the open-source, privacy-first read-it-later service hosted in Europe — a simple alternative to Pocket, Instapaper and Pinboard. 14-day free trial, no credit card."
+baseurl: https://wallabag.it/
+# Default image of the social networks cards
+#image: images/social-card.png
+
+# The styles and scripts of Docsy (Bootstrap, Font Awesome): see themes/docsy/README.md
+# Open Graph image of the pages without `image` (title and site title): see themes/ogimage/README.md
+theme: [docsy, ogimage]
+
+# Languages: every URL starts with the language code (/en/, /fr/)
+language:
+  code: en
+  prefix: true
+languages:
+  - code: en
+    name: English
+    locale: en_US
+  - code: fr
+    name: Français
+    locale: fr_FR
+    config:
+      baseline: "Lecture différée hébergée en Europe"
+      description: "Enregistrez vos articles web et lisez-les plus tard sur tous vos appareils. wallabag.it est le service open-source de lecture différée, respectueux de la vie privée et hébergé en Europe — une alternative à Pocket, Instapaper et Pinboard. Essai gratuit de 14 jours, sans carte bancaire."
+      image: images/social-card-fr.png
+      menus:
+        main:
+          - {id: index, enabled: false}
+          - {id: demo, name: Démo, url: /demo/, weight: 50}
+          - {id: trial, name: Essai gratuit, url: 'https://app.wallabag.it/register/', weight: 90}
+          - {id: account, name: Mon compte, url: 'https://app.wallabag.it', weight: 100}
+      # Footer links, French version
+      links:
+        user:
+          - name: Nous contacter
+            url: mailto:helpdesk@wallabag.it
+            icon: fa fa-envelope
+          - name: Mastodon
+            url: https://fosstodon.org/@wallabagit
+            icon: fab fa-mastodon
+          - name: État du service
+            url: https://status.wallabag.it
+            icon: fa fa-laptop-medical
+        developer:
+          - name: Comparer les alternatives
+            page: alternatives
+          - name: Documentation
+            url: https://helpdesk.wallabag.it/help/
+          - name: FAQ
+            page: faq
+
+# Navigation bar: the pages add themselves with their `menu` front matter variable
+menus:
+  main:
+    - {id: index, enabled: false}
+    - {id: demo, name: Demo, url: /demo/, weight: 50}
+    - {id: trial, name: Free trial, url: 'https://app.wallabag.it/register/', weight: 90}
+    - {id: account, name: My account, url: 'https://app.wallabag.it', weight: 100}
+
+# Footer links: `user` on the left (icons), `developer` on the right (`page` is a page ID, `url` an address)
+links:
+  user:
+    - name: Contact us
+      url: mailto:helpdesk@wallabag.it
+      icon: fa fa-envelope
+    - name: Mastodon
+      url: https://fosstodon.org/@wallabagit
+      icon: fab fa-mastodon
+    - name: Status website
+      url: https://status.wallabag.it
+      icon: fa fa-laptop-medical
+  developer:
+    - name: Compare alternatives
+      page: alternatives
+    - name: Documentation
+      url: https://helpdesk.wallabag.it/help/en-gb
+    - name: FAQ
+      page: faq
+
+# Open Graph image generated for the pages without `image` (ogimage theme: see themes/ogimage/README.md):
+# the title of the page and the site title, on the background of the social cards (logo, no text)
+ogimage:
+  background: images/og-background.png
+  color: '#ffffff'
+  padding:
+    top: 200
+    right: 110
+    bottom: 80
+    left: 78
+  # Inter 4.1 (SIL Open Font License: assets/fonts/inter/OFL.txt)
+  fonts:
+    regular: fonts/inter/Inter-Regular.ttf
+    bold: fonts/inter/Inter-Bold.ttf
+
+copyright:
+  authors: Nicolas Lœuillet
+  from_year: 2016
+
+# Subscription plans: single source of truth, used by the pricing page (`plan` component)
+# and the JSON-LD structured data. Prices in EUR.
+plans:
+  - id: 3m
+    name: "3 months"
+    price: "4"
+    duration: P3M
+  - id: 1y
+    name: "1 year"
+    price: "11"
+    duration: P1Y
+  - id: heart
+    name: "Heart subscription"
+    price: "30"
+    duration: P1Y
+
+# Audience measurement (Matomo) and conversion tracking: disabled on the test deployments (CECIL_ANALYTICS=false)
+analytics: true
+# Incidents and maintenances in progress are read from the status page
+statuspage: https://status.wallabag.it
+
+metatags:
+  title:
+    divider: ' | '
+  robots: 'index, follow'
+  # no prev/next links in <head>
+  navigation: false
+
+pages:
+  # Only the blog is paginated (see pages/blog/index.md)
+  pagination: false
+  # The feed of the blog is RSS, not Atom: its style sheet (shown when the feed is opened in a browser)
+  default:
+    xsl/rss: {published: true}
+    xsl/atom: {published: false}
+    # the page not found is not shared: no Open Graph image
+    404: {ogimage: false}
+  # Front matter of the pages: the hero, the blocks and the trial band (see README.md).
+  # An invalid page makes the build fail.
+  validation: strict
+  schema:
+    "*":
+      hero:
+        type: map
+        fields:
+          title: string
+          subtitle: string
+          lead: {type: string, format: markdown}
+          note: {type: string, format: markdown}
+          color: {type: string, enum: [dark, primary]}
+          compact: bool
+          cta: scalar
+          image: string
+          image_alt: string
+          image_frame: {type: string, enum: [window, phone]}
+      blocks:
+        type: list
+        items:
+          type: map
+          fields:
+            type: {type: string, enum: [text, features, plans, proof, checklist, testimonials, faq, alternatives, latest, glimpse, compare, callout]}
+            color: {type: string, enum: [white, light, dark, primary]}
+            align: {type: string, enum: [center, left]}
+            wide: bool
+            title: string
+            intro: {type: string, format: markdown}
+            lead: {type: string, format: markdown}
+            text: {type: string, format: markdown}
+            outro: {type: string, format: markdown}
+            buttons:
+              type: list
+              items:
+                type: map
+                fields:
+                  label: {type: string, required: true}
+                  url: {type: string, format: url}
+                  page: string
+                  style: {type: string, enum: [secondary, outline-primary, outline-light]}
+                  size: {type: string, enum: [lg]}
+                  icon: string
+                  cta: string
+      trial:
+        type: mixed
+        description: "true, or a map: title, lead, button, page, icon"
+  # Same URLs as before: /blog/2026/11/14/slug/
+  paths:
+    - section: blog
+      path: :section/:year/:month/:day/:slug
+  body:
+    # No language is given to the code blocks of the pages: they stay plain
+    highlight: false
+    # Images written in Markdown: WebP, in the sizes the browser needs
+    images:
+      formats: [webp]
+      responsive: true
+      caption: true
+      class: img-fluid
+    links:
+      external:
+        noopener: false
+        noreferrer: false
+
+output:
+  formats:
+    # Feed of the blog: /en/blog/index.xml, /fr/blog/index.xml
+    - name: rss
+      filename: index
+  pagetypeformats:
+    homepage: [html]
+    section: [html]
+
+assets:
+  images:
+    # the screenshots hold text: a high quality keeps it sharp
+    quality: 90
+    responsive:
+      widths: [480, 640, 800, 1140, 1440]
+      sizes:
+        default: '(min-width: 768px) 720px, 100vw'
+        # by CSS class of the image
+        product-glimpse-img: '(min-width: 992px) 570px, calc(100vw - 48px)'
+        product-proof-img: '(min-width: 768px) 33vw, 100vw'

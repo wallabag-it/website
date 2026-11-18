@@ -1,0 +1,12 @@
+{#- Band for the 10-year prize draw, under the navigation bar on every page.
+    Shown when the site is built between the two dates below (from 14 November 2026 to 10 December included).
+    Remove this partial, and its include in partials/navbar.html.twig, after December 11. -#}
+{%- set today = 'now'|date('Y-m-d') -%}
+{%- if today >= '2026-11-14' and today < '2026-12-11' %}
+      <div class="wbit-prize-band" role="note">
+        <p class="mb-0">
+          <strong>{% trans %}Big prize draw on December 11:{% endtrans %}</strong> {% trans %}10 years of subscription for wallabag.it's 10th anniversary.{% endtrans %}
+          <a href="{{ url('blog/new-design') }}">{% trans %}See the post{% endtrans %}</a>
+        </p>
+      </div>
+{%- endif -%}

@@ -1,0 +1,15 @@
+{#- Screenshots of the product, with a title and a text: `items`, each with
+    image (file of assets/, its ".fr" version is used on French pages), alt, title and text. -#}
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-4 product-proof">
+{%- for item in block.items|default([]) %}
+<div class="col">
+<div class="card h-100 shadow-sm overflow-hidden">
+{{ html(asset(item.image, {language: site.language ~ ''}), {alt: item.alt, class: 'card-img-top product-proof-img', loading: 'lazy'}, {responsive: true, formats: ['webp']}) }}
+<div class="card-body">
+<h3 class="h5 card-title">{{ item.title }}</h3>
+<p class="card-text">{{ item.text }}</p>
+</div>
+</div>
+</div>
+{%- endfor %}
+</div>

@@ -1,0 +1,44 @@
+{#- Pagination of a list (Bootstrap markup): first, previous, page numbers, next, last. -#}
+{%- if page.paginator is defined and page.paginator.count > 1 %}
+  {#- the IDs of the paginator start with the language ("fr/blog"): `url()` finds the pages without it #}
+  {%- set prefix = site.language ~ '/' %}
+  {%- set first = page.paginator.links.first starts with prefix ? page.paginator.links.first|slice(prefix|length) : page.paginator.links.first %}
+  {%- set path = first ~ '/' ~ (config.pages.pagination.path ?? 'page') %}
+  {%- set current = page.paginator.current %}
+  {%- set count = page.paginator.count %}
+                <ul class="pagination pagination-default">
+                  {%- for label, target in {First: 1, Previous: current - 1} %}
+                    {%- if current == 1 %}
+                  <li class="page-item disabled">
+                    <a aria-disabled="true" aria-label="{{ label }}" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">{{ label == 'First' ? '&#171;&#171;' : '&#171;' }}</span></a>
+                  </li>
+                    {%- else %}
+                  <li class="page-item">
+                    <a href="{{ url(target == 1 ? first : path ~ '/' ~ target) }}" aria-label="{{ label }}" class="page-link" role="button"><span aria-hidden="true">{{ label == 'First' ? '&#171;&#171;' : '&#171;' }}</span></a>
+                  </li>
+                    {%- endif %}
+                  {%- endfor %}
+                  {%- for index in 1..count %}
+                    {%- if index == current %}
+                  <li class="page-item active">
+                    <a aria-current="page" aria-label="Page {{ index }}" class="page-link" role="button">{{ index }}</a>
+                  </li>
+                    {%- else %}
+                  <li class="page-item">
+                    <a href="{{ url(index == 1 ? first : path ~ '/' ~ index) }}" aria-label="Page {{ index }}" class="page-link" role="button">{{ index }}</a>
+                  </li>
+                    {%- endif %}
+                  {%- endfor %}
+                  {%- for label, target in {Next: current + 1, Last: count} %}
+                    {%- if current == count %}
+                  <li class="page-item disabled">
+                    <a aria-disabled="true" aria-label="{{ label }}" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">{{ label == 'Last' ? '&#187;&#187;' : '&#187;' }}</span></a>
+                  </li>
+                    {%- else %}
+                  <li class="page-item">
+                    <a href="{{ url(path ~ '/' ~ target) }}" aria-label="{{ label }}" class="page-link" role="button"><span aria-hidden="true">{{ label == 'Last' ? '&#187;&#187;' : '&#187;' }}</span></a>
+                  </li>
+                    {%- endif %}
+                  {%- endfor %}
+                </ul>
+{%- endif -%}

@@ -1,5 +1,8 @@
-/public
-resources/
-node_modules/
-package-lock.json
-.hugo_build.lock
+/_site
+/.cache
+/.cecil
+/cecil.phar
+/build.sh
+/vendor
+/composer-cache
+/themes/ogimage

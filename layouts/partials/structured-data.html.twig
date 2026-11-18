@@ -1,0 +1,124 @@
+{#- JSON-LD structured data.
+    - Organization: emitted on every page.
+    - SoftwareApplication (with subscription offers): home, and pages with `software_schema: true`.
+    - BreadcrumbList: emitted on non-home pages.
+    - ItemList: emitted on the alternatives hub.
+    - FAQPage (pages with a block of type "faq" showing all the questions): built from data/faq.yaml.
+    - BlogPosting: blog posts.
+    Built with maps + json_encode so the JSON is always valid & escaped. -#}
+{%- set json_flags = constant('JSON_PRETTY_PRINT') b-or constant('JSON_UNESCAPED_SLASHES') b-or constant('JSON_UNESCAPED_UNICODE') -%}
+{%- set permalink = url(page, {canonical: true}) -%}
+
+{#- Organization (sitewide) -#}
+{%- set org = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'wallabag.it',
+  url: 'https://wallabag.it',
+  logo: site.baseurl ~ 'favicons/android-192x192.png',
+  description: site.description,
+  foundingDate: '2016',
+  founder: {'@type': 'Person', name: 'Nicolas Lœuillet'},
+  sameAs: ['https://fosstodon.org/@wallabagit', 'https://github.com/wallabag/wallabag'],
+} ~%}
+    <script type="application/ld+json">{{ org|json_encode(json_flags) }}</script>
+
+{#- SoftwareApplication (home + pages with software_schema: true) -#}
+{%- if page.type == 'homepage' or page.software_schema|default(false) -%}
+  {%- set offers = [] -%}
+  {%- for plan in site.plans -%}
+    {%- set offers = offers|merge([{
+      '@type': 'Offer',
+      name: plan.name|trans,
+      category: 'Subscription',
+      description: 'wallabag.it subscription with all premium features included and a 14-day free trial.'|trans,
+      price: plan.price,
+      priceCurrency: 'EUR',
+      availability: 'https://schema.org/InStock',
+      seller: {'@type': 'Organization', name: 'wallabag.it', url: 'https://wallabag.it'},
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: plan.price,
+        priceCurrency: 'EUR',
+        billingDuration: plan.duration,
+      },
+      url: 'https://app.wallabag.it/register/',
+    }]) -%}
+  {%- endfor -%}
+  {%- set app = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'wallabag.it',
+    applicationCategory: 'ProductivityApplication',
+    operatingSystem: 'Web, Android, iOS',
+    url: 'https://wallabag.it',
+    description: site.description,
+    offers: offers,
+  } ~%}
+    <script type="application/ld+json">{{ app|json_encode(json_flags) }}</script>
+{%- endif -%}
+
+{#- BreadcrumbList (non-home pages) -#}
+{%- if page.type != 'homepage' -%}
+  {%- set home = site.page(site.home) -%}
+  {%- set crumbs = [{title: home.title, url: url(home, {canonical: true})}] -%}
+  {%- if page.type == 'page' and page.section|default -%}
+    {%- set section = site.page(page.section) -%}
+    {%- if section -%}
+      {%- set crumbs = crumbs|merge([{title: section.title, url: url(section, {canonical: true})}]) -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- set crumbs = crumbs|merge([{title: page.title, url: permalink}]) -%}
+  {%- set items = [] -%}
+  {%- for crumb in crumbs -%}
+    {%- set items = items|merge([{'@type': 'ListItem', position: loop.index, name: crumb.title, item: crumb.url}]) -%}
+  {%- endfor -%}
+  {%- set breadcrumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items} ~%}
+    <script type="application/ld+json">{{ breadcrumbs|json_encode(json_flags) }}</script>
+{%- endif -%}
+
+{#- ItemList (alternatives hub) -#}
+{%- if page.type == 'section' and page.id|split('/')|last == 'alternatives' -%}
+  {%- set items = [] -%}
+  {%- for alternative in site.data.alternatives -%}
+    {%- set items = items|merge([{
+      '@type': 'ListItem',
+      position: loop.index,
+      name: 'wallabag.it vs ' ~ alternative.name,
+      url: permalink ~ alternative.slug ~ '/',
+    }]) -%}
+  {%- endfor -%}
+  {%- set list = {'@context': 'https://schema.org', '@type': 'ItemList', name: page.title, itemListElement: items} ~%}
+    <script type="application/ld+json">{{ list|json_encode(json_flags) }}</script>
+{%- endif -%}
+
+{#- FAQPage (pages with a block of type "faq" showing all the questions) -#}
+{%- if page.blocks|default([])|filter(b => b.type|default == 'faq' and not b.ids|default)|length > 0 -%}
+  {%- set questions = [] -%}
+  {%- for item in site.data.faq -%}
+    {%- set answer = item.a|markdown_to_html|striptags|replace({'&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#039;': "'"})|trim -%}
+    {%- set questions = questions|merge([{
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {'@type': 'Answer', text: answer},
+    }]) -%}
+  {%- endfor -%}
+  {%- set faq = {'@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: questions} ~%}
+    <script type="application/ld+json">{{ faq|json_encode(json_flags) }}</script>
+{%- endif -%}
+
+{#- BlogPosting (individual blog posts only) -#}
+{%- if page.type == 'page' and page.section|default == 'blog' -%}
+  {%- set article = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: page.title,
+    description: page.description|default(page.content|striptags|excerpt(160)),
+    url: permalink,
+    datePublished: page.date|date('c'),
+    dateModified: page.updated|default(page.date)|date('c'),
+    author: {'@type': 'Person', name: 'Nicolas Lœuillet'},
+    publisher: {'@type': 'Organization', name: 'wallabag.it', url: 'https://wallabag.it'},
+  } ~%}
+    <script type="application/ld+json">{{ article|json_encode(json_flags) }}</script>
+{%- endif -%}

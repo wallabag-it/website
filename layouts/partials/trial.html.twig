@@ -1,0 +1,26 @@
+{#- Band at the end of a page or of a post, to start the free trial: `trial: true` in the front matter,
+    or a map to change it:
+      title   the heading (default: "Try it free for 14 days"; "" for no heading);
+      lead    text under the heading (Markdown);
+      button  label of the button (default: "Start your free trial");
+      page    the button leads to this page (ID, e.g. "pricing") instead of the sign-up page;
+      icon    Font Awesome icon of the button (default: "user-plus"). -#}
+{%- set title = trial.title ?? 'Try it free for 14 days'|trans -%}
+{%- set href = trial.page is defined ? url(trial.page) : 'https://app.wallabag.it/register/' -%}
+{%- set cta = tracking ~ (trial.page is defined ? '-bottom-' ~ trial.page : '-bottom-trial') -%}
+<section class="row td-box td-box--primary td-box--height-auto">
+<div class="col">
+<div class="container">
+{%- if title %}
+<h2 class="text-center" id="trial">{{ title }}</h2>
+{%- endif %}
+{%- if trial.lead|default %}
+{{ trial.lead|markdown_to_html|replace({'<p>': '<p class="lead text-center">'}) }}
+{%- endif %}
+<div class="text-center">
+{#- the sign-up button has the accent color; another page: a light button on the dark band #}
+<a class="btn btn-lg {{ trial.page is defined ? 'btn-light' : 'btn-secondary' }} mb-4" href="{{ href }}" data-cta="{{ cta }}">{{ trial.button|default('Start your free trial'|trans) }} <i class="fa fa-{{ trial.icon|default('user-plus') }} ms-2"></i></a>
+</div>
+</div>
+</div>
+</section>

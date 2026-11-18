@@ -1,0 +1,5 @@
+{#- A highlighted text: `title` (a short sentence, not a heading) and `text` (Markdown). -#}
+<div class="wbit-applead">
+<p class="wbit-applead__title">{{ block.title }}</p>
+{{ include('partials/content.html.twig', {content: block.text|markdown_to_html|replace({'<p>': '<p class="wbit-applead__text">'})}) }}
+</div>

@@ -1,0 +1,11 @@
+{% extends 'page.html.twig' %}
+
+{% block body_class %}td-404{% endblock %}
+
+{% block content %}
+        <div class="td-content wbit-notfound">
+          <p class="wbit-notfound__code">404</p>
+          <h1>{% trans %}Not found{% endtrans %}</h1>
+          <p>{% trans with {'%url%': url(site.home)} %}Oops! This page doesn't exist. Try going back to the <a href="%url%">home page</a>.{% endtrans %}</p>
+        </div>
+{% endblock content %}

@@ -1,0 +1,25 @@
+{#- What the product looks like: a text on the left, a screenshot on the right.
+      eyebrow, title, text  the small line above the title, the title and the text;
+      items                 list with check marks;
+      button                {label, cta}: the free trial button;
+      image, image_alt      the screenshot (file of assets/, its ".fr" version is used on French pages). -#}
+<div class="row align-items-center g-4 product-glimpse">
+<div class="col-lg-5">
+{%- if block.eyebrow|default %}
+<p class="text-uppercase text-body-secondary fw-semibold small mb-2">{{ block.eyebrow }}</p>
+{%- endif %}
+<h2 class="h3">{{ block.title }}</h2>
+<p class="lead">{{ block.text }}</p>
+<ul class="list-unstyled product-glimpse-list">
+{%- for item in block.items|default([]) %}
+<li><i class="fa fa-check text-secondary me-2"></i>{{ item }}</li>
+{%- endfor %}
+</ul>
+{%- if block.button is defined %}
+<a class="btn btn-secondary mt-2" href="https://app.wallabag.it/register/"{% if block.button.cta|default %} data-cta="{{ block.button.cta }}"{% endif %}>{{ block.button.label }} <i class="fa fa-user-plus ms-2"></i></a>
+{%- endif %}
+</div>
+<div class="col-lg-7">
+{{ html(asset(block.image, {language: site.language ~ ''}), {alt: block.image_alt|default, class: 'img-fluid product-glimpse-img', loading: 'lazy'}, {responsive: true, formats: ['webp']}) }}
+</div>
+</div>

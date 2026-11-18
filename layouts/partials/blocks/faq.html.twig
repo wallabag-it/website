@@ -1,0 +1,22 @@
+{#- FAQ accordion fed by data/faq.yaml (data/faq.<lang>.yaml for a translation).
+    `ids`: the questions to show, e.g. on the pricing page (default: all of them).
+    The FAQPage JSON-LD is in partials/structured-data.html.twig. -#}
+{%- set items = site.data.faq -%}
+{%- if block.ids|default([]) -%}
+  {%- set items = items|filter(item => item.id in block.ids) -%}
+{%- endif -%}
+{%- set uid = 'faq-accordion-0' -%}
+<div class="accordion mx-auto text-start" id="{{ uid }}" style="max-width: 800px;">
+{%- for item in items %}
+  {#- an answer of one paragraph is shown without the paragraph #}
+  {%- set answer = include('partials/content.html.twig', {content: item.a|markdown_to_html|trim}) %}
+<div class="accordion-item">
+<h3 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ uid }}-{{ loop.index0 }}" aria-expanded="false" aria-controls="{{ uid }}-{{ loop.index0 }}">{{ item.q }}</button>
+</h3>
+<div id="{{ uid }}-{{ loop.index0 }}" class="accordion-collapse collapse" data-bs-parent="#{{ uid }}">
+<div class="accordion-body">{{ answer|split('<p>')|length == 2 ? answer|replace({'<p>': '', '</p>': ''}) : answer }}</div>
+</div>
+</div>
+{%- endfor %}
+</div>

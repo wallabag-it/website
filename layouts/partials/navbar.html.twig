@@ -1,0 +1,48 @@
+{#- Navigation bar: the logo, the `main` menu (pages with a `menu` front matter variable and
+    the entries of cecil.yml) and the language selector. -#}
+      <nav class="td-navbar js-navbar-scroll" data-bs-theme="light">
+        <div class="container-fluid flex-column flex-md-row">
+          <a class="navbar-brand" href="{{ url(site.home) }}">
+            <span class="navbar-brand__logo navbar-logo">{{ asset('icons/logo.svg').content }}</span>
+            <span class="navbar-brand__name">{{ site.title }}</span>
+          </a>
+          <button class="navbar-toggler d-xl-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#main_navbar" aria-controls="main_navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+            <ul class="navbar-nav">
+              {%- for entry in site.menus.main|sort_by_weight %}
+                {#- the demo is one static folder, the same for every language -#}
+                {%- set demo = entry.id == 'demo' %}
+                {%- set external = entry is external %}
+                {%- set href = demo ? basepath ~ 'demo/' : (external ? entry.url : url(entry.url)) %}
+                {%- set active = not demo and not external and url(page) starts with href %}
+              <li class="nav-item">
+                <a class="nav-link{{ active ? ' active' }}" href="{{ href }}"
+                  {%- if external or demo %} target="_blank" rel="noopener"{% endif %}
+                  {%- if 'app.wallabag.it/register' in href %} data-cta="nav-trial"{% endif %}
+                  {%- if demo %} data-cta="nav-demo"{% endif %}><span>{{ entry.name }}</span></a>
+              </li>
+              {%- endfor %}
+              {#- language selector: the translation of the page, or the home page in the other language #}
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ site.language.name }}</a>
+                  <ul class="dropdown-menu">
+                    {#- a page of a paginated list has no translation: the ones of its section are used #}
+                    {%- set translated = page.paginator.current|default(1) > 1 and page.section|default ? site.page(page.section) : page %}
+                    {%- for translation in translated.translations|default([]) %}
+                    <li><a class="dropdown-item" href="{{ url(translation) }}">{{ site.language.name(translation.language) }}</a></li>
+                    {%- else %}
+                      {%- for language in site.languages|filter(l => l.code != site.language ~ '') %}
+                    <li><a class="dropdown-item" href="{{ url('index', {language: language.code}) }}">{{ language.name }}</a></li>
+                      {%- endfor %}
+                    {%- endfor %}
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      {{- include('partials/prize-band.html.twig') -}}

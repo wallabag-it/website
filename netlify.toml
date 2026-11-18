@@ -1,19 +1,39 @@
-# Hugo build configuration for Netlify
-# (https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
+# Cecil build configuration for Netlify
+# (https://cecil.app/documentation/deployment/#netlify)
+# The script downloads Cecil and builds the site: production with the `baseurl` of cecil.yml,
+# previews with the URL of the deploy.
 
 [build]
-command = "npm run build:preview"
-publish = "public"
+command = "curl -sSOL https://cecil.app/build.sh && bash ./build.sh"
+publish = "_site"
 
 [build.environment]
-GO_VERSION = "1.22.2"
+PHP_VERSION = "8.3"
 
-[context.production]
-command = "npm run build:production"
+[context.production.environment]
+CECIL_ENV = "production"
+
+# Previews are not indexed
+[context.deploy-preview.environment]
+CECIL_ENV = "preview"
+CECIL_METATAGS_ROBOTS = "noindex, nofollow"
+
+[context.branch-deploy.environment]
+CECIL_ENV = "preview"
+CECIL_METATAGS_ROBOTS = "noindex, nofollow"
 
 [[redirects]]
   from = "/en/news.rss"
   to = "/en/blog/index.xml"
+
+# Feeds of the home pages (the previous site had them): the feed is the one of the blog
+[[redirects]]
+  from = "/en/index.xml"
+  to = "/en/blog/index.xml"
+
+[[redirects]]
+  from = "/fr/index.xml"
+  to = "/fr/blog/index.xml"
 
 [[redirects]]
   from = "/bot"
@@ -58,6 +78,17 @@ command = "npm run build:production"
 [[redirects]]
   from = "/fr/blog/announcements/*"
   to = "/fr/blog/"
+
+# Page not found: the 404 pages are /en/404.html and /fr/404.html
+[[redirects]]
+  from = "/fr/*"
+  to = "/fr/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/*"
+  to = "/en/404.html"
+  status = 404
 
 # Static demo of the application (generated, see scripts/demo-site in the application fork)
 [[headers]]

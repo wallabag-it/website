@@ -1,0 +1,38 @@
+{#- Base layout of every page: head, navigation bar, content, footer and scripts.
+    The markup is the one of Docsy (td-* classes), styled by themes/docsy and assets/scss/wbit.
+    `basepath` is the path of the site ("/" in production, "/repository/" on GitHub Pages): it prefixes the static files.
+    `tracking` names the page in the `data-cta` attributes of the trial buttons (conversion tracking). -#}
+{%- set basepath = '/' ~ (site.baseurl|split('/', 4)[3]|default('')) -%}
+{%- set tracking = page.type == 'homepage' ? 'home' : page.section|default(page.id|split('/')|last) -%}
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="{{ site.language }}" class="no-js">
+  <head>
+    {{- include('partials/head.html.twig') }}
+  </head>
+  <body class="{% block body_class %}td-{{ page.type == 'homepage' ? 'home' : page.type }}{% endblock %}">
+    <header>
+      {{- include('partials/navbar.html.twig') }}
+    </header>
+    {%- block outer %}
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        {%- block content %}
+        {#- the hero (`hero`), the text of the page, the blocks (`blocks`), then the trial band (`trial`) #}
+        {%- if page.hero is defined %}
+        {{- include('partials/hero.html.twig', {hero: page.hero}) }}
+        {%- endif %}
+        {%- set blocks = page.content|trim ? [{type: 'content'}] : [] %}
+        {%- for block in blocks|merge(page.blocks|default([])) %}
+        {{- include('partials/block.html.twig', {block: block, index: loop.index}) }}
+        {%- endfor %}
+        {%- if page.trial|default(false) %}
+        {{- include('partials/trial.html.twig', {trial: page.trial is iterable ? page.trial : {}}) }}
+        {%- endif %}
+        {%- endblock content %}
+      </main>
+      {{- include('partials/footer.html.twig') }}
+    </div>
+    {%- endblock outer %}
+    {{- include('partials/scripts.html.twig') }}
+  </body>
+</html>
