@@ -1,0 +1,17 @@
+{#- Tiles of the same size, with a name and an optional line under it: `items`, each with
+      name   the text of the tile;
+      site   optional, shown in small under the name (a domain name, for example);
+      country optional, a country code shown in a small badge at the top right ("FR"). -#}
+<ul class="wbit-tiles list-unstyled">
+{%- for item in block.items|default([]) %}
+<li class="wbit-tiles__item">
+  {%- if item.country is defined %}
+<span class="wbit-tiles__country">{{ item.country }}</span>
+  {%- endif %}
+<span class="wbit-tiles__name">{{ item.name }}</span>
+  {%- if item.site is defined %}
+<span class="wbit-tiles__site">{{ item.site }}</span>
+  {%- endif %}
+</li>
+{%- endfor %}
+</ul>

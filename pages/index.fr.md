@@ -39,7 +39,7 @@ blocks:
     items:
       - icon: fa-bookmark
         title: Sauvegardez l’article complet
-        text: wallabag.it conserve le texte lisible de vos articles, pas seulement un lien qui peut changer ou disparaître.
+        text: "wallabag.it conserve le texte lisible de vos articles, pas seulement un lien qui peut changer ou disparaître. Même ceux de [vos journaux sur abonnement](/fr/paywalled-sites/)."
       - icon: fa-mobile-alt
         title: Lisez partout, même hors connexion
         text: Retrouvez vos articles sur le web, Android, iPhone, tablette et liseuse, avec la lecture hors-ligne.

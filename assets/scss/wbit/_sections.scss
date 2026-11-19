@@ -359,3 +359,55 @@
     }
   }
 }
+
+// Tiles of the same size (paywalled sites page): layouts/partials/blocks/tiles.html.twig
+.wbit-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 1rem;
+  max-width: 60rem;
+  margin: 2rem auto 0;
+  padding: 0;
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 6.5rem;
+    padding: 1rem;
+    border: 1px solid var(--wb-line);
+    border-radius: var(--wb-radius);
+    background: var(--wb-surface-raised);
+    box-shadow: var(--wb-shadow);
+    text-align: center;
+  }
+
+  &__name {
+    color: var(--wb-ink);
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  &__site {
+    margin-top: 0.35rem;
+    color: var(--wb-muted);
+    font-size: 0.85rem;
+  }
+
+  &__country {
+    position: absolute;
+    top: 0.55rem;
+    right: 0.6rem;
+    padding: 0.05rem 0.4rem;
+    border-radius: 999px;
+    background: var(--wb-accent-soft);
+    color: var(--wb-accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+}
