@@ -69,6 +69,12 @@ blocks:
       - icon: fa-box-archive
         title: Conservez vos données pour toujours
         text: "Vos données vous appartiennent. C’est pourquoi vous pouvez télécharger les articles en plusieurs formats : PDF, ePUB, .mobi, JSON, CSV, txt ou HTML."
+      - icon: fa-key
+        title: Lisez vos journaux sur abonnement
+        text: "Abonné au Monde, à Mediapart, au Monde diplomatique ou à Next ? Ajoutez vos identifiants une fois et wallabag.it enregistre les articles complets."
+        link:
+          label: "Voir les sites pris en charge →"
+          page: paywalled-sites
 trial:
   title: Essayez avec votre prochain article
   lead: 14 jours d’essai gratuit, sans carte bancaire. Vous vous abonnez ensuite si ça vous plaît.

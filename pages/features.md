@@ -69,6 +69,12 @@ blocks:
       - icon: fa-box-archive
         title: Keep your data forever
         text: "All your data belongs to you. You can download all your articles in many formats: PDF, ePUB, .mobi, JSON, CSV, txt or HTML."
+      - icon: fa-key
+        title: Read your paywalled news sites
+        text: "Subscribed to Le Monde, Mediapart, The Economist or heise? Add your login once and wallabag.it saves the full articles."
+        link:
+          label: "See the supported sites →"
+          page: paywalled-sites
 trial:
   title: Try it with your next article
   lead: 14-day free trial, no credit card. Subscribe afterwards if you like it.

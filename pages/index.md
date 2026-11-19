@@ -39,7 +39,7 @@ blocks:
     items:
       - icon: fa-bookmark
         title: Save the full article
-        text: wallabag.it keeps the readable text of your articles, not just a link that can change or disappear.
+        text: "wallabag.it keeps the readable text of your articles, not just a link that can change or disappear. Even from [your paywalled news sites](/en/paywalled-sites/)."
       - icon: fa-mobile-alt
         title: Read anywhere, even offline
         text: Find your articles on the web, Android, iPhone, tablet and e-reader, with offline reading.

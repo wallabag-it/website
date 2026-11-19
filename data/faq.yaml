@@ -51,6 +51,10 @@
     The easiest fix is to save the article with the [Firefox or Chrome extension](/en/applications/): it sends the page as you see it in your browser, so it works even on these websites.
     For a website that requires a login, you can add your credentials in the **Site credentials** menu (it only works for some websites).
     If a website never works, send the link to [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it): we can sometimes add a specific configuration for it.
+- id: paywall
+  q: "Can I save articles from my paywalled news sites?"
+  a: |
+    Yes, for many sites: Le Monde, Mediapart, The Economist, heise, LWN… Add the login and password of your subscription once in **Site credentials**, and wallabag.it saves the full article. [See the supported sites](/en/paywalled-sites/).
 - id: missing-articles
   q: "Some of my articles have disappeared. What happened?"
   a: |

@@ -48,6 +48,10 @@
     Le plus simple est d’enregistrer l’article avec l’[extension Firefox ou Chrome](/fr/applications/) : elle envoie la page telle que vous la voyez dans votre navigateur, ça fonctionne donc même sur ces sites.
     Pour un site qui demande une connexion, vous pouvez ajouter vos identifiants dans le menu **Accès aux sites** (ça ne fonctionne que pour certains sites).
     Si un site ne fonctionne jamais, envoyez le lien à [helpdesk@wallabag.it](mailto:helpdesk@wallabag.it) : nous pouvons parfois ajouter une configuration spécifique.
+- id: paywall
+  q: "Puis-je enregistrer les articles de mon journal sur abonnement ?"
+  a: |
+    Oui, pour de nombreux sites : Le Monde, Mediapart, Le Monde diplomatique, Next, The Economist… Ajoutez une fois l’identifiant et le mot de passe de votre abonnement dans **Accès aux sites**, et wallabag.it récupère l’article complet. [Voir les sites pris en charge](/fr/paywalled-sites/).
 - id: missing-articles
   q: "Des articles ont disparu de mon compte. Que s'est-il passé ?"
   a: |

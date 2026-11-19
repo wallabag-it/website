@@ -47,6 +47,8 @@ languages:
         developer:
           - name: Comparer les alternatives
             page: alternatives
+          - name: Sites sur abonnement
+            page: paywalled-sites
           - name: Documentation
             url: https://helpdesk.wallabag.it/help/
           - name: FAQ
@@ -75,6 +77,8 @@ links:
   developer:
     - name: Compare alternatives
       page: alternatives
+    - name: Paywalled news sites
+      page: paywalled-sites
     - name: Documentation
       url: https://helpdesk.wallabag.it/help/en-gb
     - name: FAQ
@@ -159,7 +163,7 @@ pages:
         items:
           type: map
           fields:
-            type: {type: string, enum: [text, features, plans, proof, checklist, testimonials, faq, alternatives, latest, glimpse, compare, callout]}
+            type: {type: string, enum: [text, features, plans, proof, checklist, testimonials, faq, alternatives, latest, glimpse, compare, callout, tiles]}
             color: {type: string, enum: [white, light, dark, primary]}
             align: {type: string, enum: [center, left]}
             wide: bool
