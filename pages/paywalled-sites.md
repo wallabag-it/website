@@ -17,7 +17,6 @@ blocks:
       - {name: "Courrier international", site: courrierinternational.com, country: FR}
       - {name: "Gamekult", site: gamekult.com, country: FR}
       - {name: "heise online", site: heise.de, country: DE}
-      - {name: "Les Jours", site: lesjours.fr, country: FR}
       - {name: "LWN.net", site: lwn.net, country: US}
       - {name: "Le Monde", site: lemonde.fr, country: FR}
       - {name: "Le Monde diplomatique", site: monde-diplomatique.fr, country: FR}
