@@ -26,7 +26,7 @@ blocks:
     items:
       - icon: fa-user-secret
         title: No ads, no tracking
-        text: "The service is funded by subscriptions, not by ads, tracking or data resale, and [part of them funds the development of wallabag](/en/blog/2026/06/30/wallabag-it-funds-open-source-development/)."
+        text: "The service is funded by subscriptions, not by ads, tracking or data resale, and [part of them funds the development of wallabag](/en/open-source/)."
       - icon: fa-server
         title: Hosted in Europe
         text: Your articles are stored on servers in Europe. Updates and support are included.

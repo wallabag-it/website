@@ -68,7 +68,7 @@ blocks:
         title: Il finance le projet open source wallabag
         text: |
           wallabag existe depuis 2013 et wallabag.it depuis 2016. Votre abonnement paie le service hébergé et le projet open source derrière.
-          [Ce que ça finance](/fr/blog/2026/06/30/wallabag-it-finance-developpements-open-source/) · [Voir wallabag sur GitHub](https://github.com/wallabag/wallabag).
+          [Ce que ça finance](/fr/open-source/) · [Voir wallabag sur GitHub](https://github.com/wallabag/wallabag).
   - type: features
     color: dark
     wide: true
