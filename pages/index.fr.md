@@ -26,7 +26,7 @@ blocks:
     items:
       - icon: fa-user-secret
         title: Sans publicité ni pistage
-        text: "Le service vit des abonnements, pas du suivi publicitaire ni de la revente de données, et [une partie finance le développement de wallabag](/fr/blog/2026/06/30/wallabag-it-finance-developpements-open-source/)."
+        text: "Le service vit des abonnements, pas du suivi publicitaire ni de la revente de données, et [une partie finance le développement de wallabag](/fr/open-source/)."
       - icon: fa-server
         title: Hébergé en Europe
         text: Vos articles sont stockés sur des serveurs en Europe. Les mises à jour et le support sont inclus.

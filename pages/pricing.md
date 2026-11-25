@@ -67,7 +67,7 @@ blocks:
         title: It funds the open-source wallabag project
         text: |
           wallabag has existed since 2013 and wallabag.it since 2016. Your subscription pays for the hosted service and for the open-source project behind it.
-          [What it funds](/en/blog/2026/06/30/wallabag-it-funds-open-source-development/) · [See wallabag on GitHub](https://github.com/wallabag/wallabag).
+          [What it funds](/en/open-source/) · [See wallabag on GitHub](https://github.com/wallabag/wallabag).
   - type: features
     color: dark
     wide: true

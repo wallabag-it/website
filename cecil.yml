@@ -49,6 +49,8 @@ languages:
             page: alternatives
           - name: Sites sur abonnement
             page: paywalled-sites
+          - name: Ce que wallabag.it finance
+            page: open-source
           - name: Documentation
             url: https://helpdesk.wallabag.it/help/
           - name: FAQ
@@ -79,6 +81,8 @@ links:
       page: alternatives
     - name: Paywalled news sites
       page: paywalled-sites
+    - name: What wallabag.it funds
+      page: open-source
     - name: Documentation
       url: https://helpdesk.wallabag.it/help/en-gb
     - name: FAQ
